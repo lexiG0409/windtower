@@ -77,11 +77,25 @@ function shuffle(a) {
   }
   return a;
 }
-// 对战题目：难度 1、2、3 各 5 题，由易到难
-function pickMatch() {
-  let out = [];
-  for (const l of [1, 2, 3]) out = out.concat(shuffle(BANK.filter(q => q.l === l)).slice(0, 5));
-  return out.slice(0, N);
+// 对战难度：房主在房间里选择。数字是 Lv1 / Lv2 / Lv3 各占的比例
+const DIFFICULTY = {
+  easy:     [2, 1, 0], // 简单：以 Lv1 为主，夹一些 Lv2
+  standard: [1, 1, 1], // 标准：三个等级各占三分之一
+  hard:     [0, 1, 2], // 困难：以 Lv3 为主，夹一些 Lv2
+};
+// 按难度挑 N 道题，由易到难排列。某个等级题目不够时，从相邻等级补足
+function pickMatch(difficulty) {
+  const w = DIFFICULTY[difficulty] || DIFFICULTY.standard;
+  const sum = w.reduce((a, b) => a + b, 0);
+  const want = w.map(x => Math.floor((N * x) / sum));
+  want[w.indexOf(Math.max(...w))] += N - want.reduce((a, b) => a + b, 0); // 除不尽的余数给占比最大的等级
+  const pools = [1, 2, 3].map(l => shuffle(BANK.filter(q => q.l === l)));
+  const out = [];
+  want.forEach((n, i) => out.push(...pools[i].splice(0, n)));
+  // 补足：优先从离目标难度最近的等级拿
+  const order = difficulty === "hard" ? [2, 1, 0] : difficulty === "easy" ? [0, 1, 2] : [1, 0, 2];
+  for (const i of order) while (out.length < N && pools[i].length) out.push(pools[i].shift());
+  return out.sort((a, b) => a.l - b.l).slice(0, N);
 }
 function newCode() {
   const s = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -97,6 +111,7 @@ function publicState(room) {
   return {
     code: room.code,
     phase: room.phase, // lobby | question | reveal | end
+    difficulty: room.difficulty,
     index: room.index,
     total: N,
     hostId: room.hostId,
@@ -173,7 +188,7 @@ io.on("connection", socket => {
 
   socket.on("create", ({ name }) => {
     const code = newCode();
-    const r = { code, hostId: pid, players: new Map(), phase: "lobby", index: 0, qs: [], answers: new Map(), timer: null };
+    const r = { code, hostId: pid, players: new Map(), phase: "lobby", difficulty: "standard", index: 0, qs: [], answers: new Map(), timer: null };
     rooms.set(code, r);
     join(r, name);
   });
@@ -188,9 +203,17 @@ io.on("connection", socket => {
   socket.on("start", () => {
     if (!room || room.hostId !== pid) return;
     if (room.phase !== "lobby" && room.phase !== "end") return;
-    room.qs = pickMatch(); room.index = 0;
+    room.qs = pickMatch(room.difficulty); room.index = 0;
     for (const p of room.players.values()) p.heights = [];
     askQuestion(room);
+  });
+
+  // 房主在开始前（或一局结束后）选择难度
+  socket.on("difficulty", ({ value }) => {
+    if (!room || room.hostId !== pid || !DIFFICULTY[value]) return;
+    if (room.phase !== "lobby" && room.phase !== "end") return;
+    room.difficulty = value;
+    broadcast(room);
   });
 
   socket.on("answer", ({ value }) => {
