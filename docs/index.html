@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#1f8a70">
+<meta name="theme-color" content="#F4F6FA">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,123 +13,166 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>WindTower</title>
 <style>
-:root{--sky1:#cfe8f7;--sky2:#f3f8fb;--ink:#14324a;--mute:#5d7487;--acc:#1f8a70;--warn:#d9822b;--card:#ffffffee;--line:#d6e2ea}
+/* ===== 配色：灰白底 · 海军蓝主色 · 浅蓝点缀 · 少量红色强调 ===== */
+:root{
+  --bg:#F4F6FA;        /* 页面底色：很浅的灰蓝 */
+  --card:#FFFFFF;      /* 卡片：白 */
+  --line:#E3E8F0;      /* 边框：浅灰 */
+  --ink:#1B2B44;       /* 主文字：深蓝灰 */
+  --mute:#6B7890;      /* 次要文字：灰 */
+  --acc:#1F4E8C;       /* 主色：海军蓝（按钮、正确答案） */
+  --acc-soft:#E8EEF7;  /* 浅蓝：标签、选中、格子 */
+  --acc-ink:#24497A;   /* 浅蓝上的文字 */
+  --red:#C8373B;       /* 强调红：标题竖线、倒计时警告 */
+  --warn:var(--red);
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--sky1),var(--sky2) 70%,#e7efe2);min-height:100vh}
-.wrap{max-width:620px;margin:0 auto;padding:16px;padding-top:calc(16px + env(safe-area-inset-top));padding-bottom:calc(16px + env(safe-area-inset-bottom));padding-left:calc(16px + env(safe-area-inset-left));padding-right:calc(16px + env(safe-area-inset-right))}
-h1{font-size:22px;margin:6px 0 2px}
-.sub{color:var(--mute);font-size:14px;margin-bottom:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
-button{font:inherit;border:0;border-radius:10px;padding:12px 16px;background:var(--acc);color:#fff;font-weight:600;cursor:pointer}
-button.ghost{background:#e8f0f4;color:var(--ink)}
-button:disabled{opacity:.5;cursor:default}
-input{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;width:100%;background:#fff}
-.row{display:flex;gap:8px;align-items:center}
-.row>*{flex:1}
-.hide{display:none!important}
-.pill{display:inline-block;font-size:12px;padding:3px 8px;border-radius:99px;background:#e3eef5;color:var(--mute);margin-right:6px}
-.q{font-size:18px;line-height:1.45;margin:10px 0 14px}
-.timer{height:6px;background:#e3eef5;border-radius:6px;overflow:hidden;margin-top:8px}
-.timer>div{height:100%;background:var(--acc);width:100%;transition:width .2s linear}
-.scene{position:relative;height:260px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#bfe0f3,#eaf4fa);border:1px solid var(--line)}
-.scene svg{position:absolute;inset:0;width:100%;height:100%}
-.big{font-size:28px;font-weight:700}
-.mute{color:var(--mute);font-size:14px}
-.ex{font-size:14px;line-height:1.5;color:#2b4a60;margin-top:8px}
-.farm{display:flex;align-items:flex-end;gap:3px;height:120px;margin-top:8px}
-.farm div{flex:1;background:linear-gradient(180deg,#fff,#c9d6de);border-radius:3px 3px 0 0;min-height:2px;position:relative}
-.lvl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;font-size:12.5px;text-align:center}
-.lvl div{overflow-wrap:anywhere}
-@media(max-width:480px){.lvl{grid-template-columns:repeat(2,minmax(0,1fr))}}
 html,body{overflow-x:hidden}
-.lvl div{background:#eef4f8;border-radius:8px;padding:6px}
-.board div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:15px}
-#result .big{font-size:22px;word-break:keep-all}
-.langs{display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap;margin-bottom:4px}
-.langs button{padding:5px 10px;font-size:13px;font-weight:500;background:#e8f0f4;color:var(--ink);border-radius:99px}
-.langs button.on{background:var(--acc);color:#fff}
-.toast{pointer-events:none;position:fixed;left:50%;top:18px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:99px;font-size:14px;z-index:9;transition:opacity .3s}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans SC",Roboto,sans-serif;color:var(--ink);background:var(--bg);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.5}
+.wrap{max-width:600px;margin:0 auto;padding:20px;padding-top:calc(20px + env(safe-area-inset-top));padding-bottom:calc(32px + env(safe-area-inset-bottom));padding-left:calc(20px + env(safe-area-inset-left));padding-right:calc(20px + env(safe-area-inset-right))}
+
+/* 顶部 */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;letter-spacing:.2px;color:var(--acc)}
+.brand svg{flex:0 0 auto}
+.langs{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px}
+.langs button{padding:6px 10px;font-size:13px;font-weight:500;background:transparent;color:var(--mute);border-radius:7px}
+.langs button.on{background:var(--acc-soft);color:var(--acc-ink);font-weight:600}
+h1{font-size:22px;line-height:1.3;margin:0 0 8px;font-weight:700}
+.sub{color:var(--mute);font-size:14.5px;margin-bottom:26px;line-height:1.6}
+
+/* 卡片 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;margin-bottom:16px;box-shadow:0 1px 2px rgba(27,43,68,.04)}
+.card>b{display:block;font-size:15px;font-weight:600;color:var(--acc-ink);background:var(--acc-soft);border-left:3px solid var(--red);border-radius:0 8px 8px 0;padding:8px 12px;margin:0 0 14px}
+
+/* 按钮 / 输入框 */
+button{font:inherit;border:1px solid transparent;border-radius:10px;padding:13px 18px;background:var(--acc);color:#fff;font-weight:600;cursor:pointer;transition:background .15s,opacity .15s}
+button:active{opacity:.85}
+button.ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+button:disabled{opacity:.45;cursor:default}
+input{font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line);border-radius:10px;width:100%;background:#fff;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}
+input:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
+.row{display:flex;gap:10px;align-items:center}
+.row>*{flex:1}
+.stack>*+*{margin-top:10px}
+.hide{display:none!important}
+.mute{color:var(--mute);font-size:14px;line-height:1.6}
+.label{color:var(--mute);font-size:13px;margin-bottom:8px}
+
+/* 答题 */
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{display:inline-block;font-size:12px;font-weight:500;padding:4px 10px;border-radius:99px;background:var(--acc-soft);color:var(--acc-ink)}
+.q{font-size:18px;line-height:1.6;margin:16px 0 20px;font-weight:500}
+.unit{flex:0 0 auto!important;min-width:36px;color:var(--mute);font-size:14px}
+.timer{height:4px;background:#EDF1F6;border-radius:4px;overflow:hidden;margin-top:16px}
+.timer>div{height:100%;background:var(--acc);width:100%;transition:width .2s linear}
+.scene{position:relative;height:250px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#E9EFF8 0%,#F7F9FC 100%);border:1px solid var(--line);margin-bottom:16px}
+.scene svg{position:absolute;inset:0;width:100%;height:100%}
+
+/* 结果 */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stat{background:#F7F9FC;border:1px solid var(--line);border-radius:10px;padding:12px}
+.stat .mute{font-size:12px;line-height:1.3}
+.big{font-size:26px;font-weight:700;line-height:1.25}
+.stat .big{font-size:19px;margin-top:6px;overflow-wrap:anywhere}
+.ex{font-size:14.5px;line-height:1.65;color:#3A4A63;margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line)}
+.board div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #EEF1F5;font-size:15px}
+.board div:last-child{border-bottom:0}
+.board span:last-child{color:var(--mute);white-space:nowrap}
+#rAll:not(:empty){margin-top:12px}
+
+/* 结算 */
+.farm{display:flex;align-items:flex-end;gap:4px;height:120px;margin-top:18px;padding-bottom:1px;border-bottom:1px solid var(--line)}
+.farm div{flex:1;background:linear-gradient(180deg,#5E83B8,#B9CBE4);border-radius:3px 3px 0 0;min-height:2px}
+
+/* 等级 */
+.lvl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;font-size:12.5px;text-align:center;margin:4px 0 18px}
+.lvl div{background:#F7F9FC;border:1px solid var(--line);border-radius:10px;padding:10px 6px;overflow-wrap:anywhere;color:var(--mute)}
+.lvl b{display:block;color:var(--acc);font-size:14px;margin-top:2px}
+@media(max-width:480px){.lvl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.toast{pointer-events:none;position:fixed;left:50%;top:calc(16px + env(safe-area-inset-top));transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;font-size:14px;z-index:9;transition:opacity .3s;box-shadow:0 6px 20px rgba(27,43,68,.18);max-width:90vw}
 @keyframes spin{to{transform:rotate(360deg)}}
 .rotor{animation:spin 3s linear infinite}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="langs" id="langs"></div>
-  <h1>🌬️ <span data-t="title"></span></h1>
+  <div class="top"><div class="brand"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="7" fill="#1F4E8C"/><path d="M12.3 24 L13.7 24 L13.35 11.5 L12.65 11.5Z" fill="#fff"/><g fill="#fff"><path d="M13 11 L12.2 3.5 L13 2.5 L13.8 3.5Z"/><path d="M13 11 L19.6 14.6 L19.9 15.8 L18.7 15.6Z" /><path d="M13 11 L6.4 14.6 L6.1 15.8 L7.3 15.6Z"/></g><circle cx="13" cy="11" r="1.5" fill="#C8373B"/></svg>WindTower</div><div class="langs" id="langs"></div></div>
+  <h1 id="headline"></h1>
   <div class="sub" data-t="subtitle"></div>
 
   <section id="home">
     <div class="card hide" id="installCard">
       <b data-t="installTitle"></b>
-      <div class="mute" id="installTip" style="margin-top:6px"></div>
-      <div class="row" style="margin-top:10px"><button id="installBtn" class="hide" data-t="install"></button><button class="ghost" id="installClose" data-t="gotIt"></button></div>
+      <div class="mute" id="installTip"></div>
+      <div class="row" style="margin-top:16px"><button id="installBtn" class="hide" data-t="install"></button><button class="ghost" id="installClose" data-t="gotIt"></button></div>
     </div>
     <div class="card">
-      <div class="mute" style="margin-bottom:6px" data-t="nickname"></div>
+      <div class="label" data-t="nickname"></div>
       <input id="nick" maxlength="16" data-tp="nickPh">
     </div>
     <div class="card">
       <b data-t="soloTitle"></b>
-      <div class="mute" style="margin:6px 0 10px" data-t="soloDesc"></div>
+      <div class="mute" style="margin-bottom:16px" data-t="soloDesc"></div>
       <div class="lvl" id="lvlShow"></div>
-      <div class="row" style="margin-top:12px"><button id="soloBtn" data-t="soloStart"></button><button class="ghost" id="resetLvl" data-t="resetLvl"></button></div>
+      <div class="row"><button id="soloBtn" data-t="soloStart"></button><button class="ghost" id="resetLvl" data-t="resetLvl"></button></div>
     </div>
     <div class="card" id="multiCard">
       <b data-t="multiTitle"></b>
-      <div class="mute" style="margin:6px 0 10px" data-t="multiDesc"></div>
+      <div class="mute" style="margin-bottom:16px" data-t="multiDesc"></div>
       <div class="row"><button id="createBtn" data-t="createRoom"></button></div>
-      <div class="row" style="margin-top:8px"><input id="codeIn" data-tp="codePh" maxlength="6" style="text-transform:uppercase"><button class="ghost" id="joinBtn" data-t="join"></button></div>
-      <div class="mute" id="netMsg" style="margin-top:8px"></div>
+      <div class="row" style="margin-top:10px"><input id="codeIn" data-tp="codePh" maxlength="6" style="text-transform:uppercase"><button class="ghost" id="joinBtn" data-t="join"></button></div>
+      <div class="mute" id="netMsg" style="margin-top:10px"></div>
     </div>
     <div class="card hide" id="demoNote">
       <b data-t="multiTitle"></b>
-      <div class="mute" style="margin-top:6px" data-t="demoNote"></div>
+      <div class="mute" data-t="demoNote"></div>
     </div>
   </section>
 
   <section id="lobby" class="hide">
     <div class="card">
-      <div class="mute" data-t="roomCode"></div>
-      <div class="big" id="roomCode"></div>
-      <div class="row" style="margin-top:8px"><input id="shareLink" readonly><button class="ghost" id="copyBtn" style="flex:0 0 auto" data-t="copyLink"></button></div>
-      <div class="mute" style="margin:10px 0 4px" data-t="players"></div>
+      <div class="label" data-t="roomCode"></div>
+      <div class="big" id="roomCode" style="letter-spacing:3px;color:var(--acc)"></div>
+      <div class="row" style="margin-top:14px"><input id="shareLink" readonly><button class="ghost" id="copyBtn" style="flex:0 0 auto" data-t="copyLink"></button></div>
+      <div class="label" style="margin-top:22px" data-t="players"></div>
       <div class="board" id="lobbyList"></div>
-      <div class="row" style="margin-top:12px"><button id="startBtn" data-t="startMatch"></button><button class="ghost" id="leaveBtn" data-t="leave"></button></div>
-      <div class="mute" id="lobbyMsg" style="margin-top:8px"></div>
+      <div class="row" style="margin-top:18px"><button id="startBtn" data-t="startMatch"></button><button class="ghost" id="leaveBtn" data-t="leave"></button></div>
+      <div class="mute" id="lobbyMsg" style="margin-top:12px"></div>
     </div>
   </section>
 
   <section id="game" class="hide">
     <div class="card">
-      <div><span class="pill" id="qNum"></span><span class="pill" id="qCat"></span><span class="pill" id="qLvl"></span></div>
+      <div class="pills"><span class="pill" id="qNum"></span><span class="pill" id="qCat"></span><span class="pill" id="qLvl"></span></div>
       <div class="q" id="qText"></div>
       <form id="ansForm" class="row" autocomplete="off">
         <input id="ans" inputmode="decimal" data-tp="ansPh">
-        <div id="unit" class="mute" style="flex:0 0 auto;min-width:40px"></div>
+        <div id="unit" class="unit"></div>
         <button style="flex:0 0 auto" data-t="ok"></button>
       </form>
       <div class="timer"><div id="bar"></div></div>
-      <div class="mute" id="waitMsg" style="margin-top:6px"></div>
+      <div class="mute" id="waitMsg" style="margin-top:10px"></div>
     </div>
     <div class="scene" id="scene"></div>
-    <div class="card hide" id="result" style="margin-top:12px">
-      <div class="row"><div><div class="mute" data-t="yourAns"></div><div class="big" id="rYou"></div></div><div><div class="mute" data-t="rightAns"></div><div class="big" id="rAns" style="color:var(--acc)"></div></div><div><div class="mute" data-t="towerH"></div><div class="big" id="rH"></div></div></div>
+    <div class="card hide" id="result">
+      <div class="stats"><div class="stat"><div class="mute" data-t="yourAns"></div><div class="big" id="rYou"></div></div><div class="stat"><div class="mute" data-t="rightAns"></div><div class="big" id="rAns" style="color:var(--acc)"></div></div><div class="stat"><div class="mute" data-t="towerH"></div><div class="big" id="rH"></div></div></div>
       <div class="ex" id="rEx"></div>
-      <div class="board" id="rAll" style="margin-top:8px"></div>
-      <button id="nextBtn" style="width:100%;margin-top:12px"></button>
-      <div class="mute" id="nextMsg" style="margin-top:6px"></div>
+      <div class="board" id="rAll"></div>
+      <button id="nextBtn" style="width:100%;margin-top:20px"></button>
+      <div class="mute" id="nextMsg" style="margin-top:10px;text-align:center"></div>
     </div>
-    <div class="card hide" id="liveBoard" style="margin-top:12px"><b data-t="liveRank"></b><div class="board" id="liveList"></div></div>
+    <div class="card hide" id="liveBoard"><b data-t="liveRank"></b><div class="board" id="liveList"></div></div>
   </section>
 
   <section id="end" class="hide">
     <div class="card">
-      <div class="mute" data-t="farmTotal"></div>
+      <div class="label" data-t="farmTotal"></div>
       <div class="big" id="endTotal"></div>
-      <div class="mute" id="endAvg"></div>
+      <div class="mute" id="endAvg" style="margin-top:6px"></div>
       <div class="farm" id="farm"></div>
-      <div class="mute" style="margin-top:6px" data-t="farmNote"></div>
+      <div class="mute" style="margin-top:10px;font-size:12.5px" data-t="farmNote"></div>
     </div>
     <div class="card hide" id="endBoardCard"><b data-t="finalRank"></b><div class="board" id="endBoard"></div></div>
     <div class="row"><button id="againBtn" data-t="again"></button><button class="ghost" id="homeBtn" data-t="home"></button></div>
@@ -213,7 +256,8 @@ const N=15,TIME=25;
 // 网站所在的路径（例如公司服务器上可能是 /windtower/），所有地址都相对它计算
 const BASE=location.pathname.replace(/[^/]*$/,"");
 const $=id=>document.getElementById(id);
-const show=id=>["home","lobby","game","end"].forEach(s=>$(s).classList.toggle("hide",s!==id));
+// 切换页面；大标题和说明只在首页显示，答题时界面更清爽
+const show=id=>{["home","lobby","game","end"].forEach(s=>$(s).classList.toggle("hide",s!==id));$("headline").classList.toggle("hide",id!=="home");document.querySelector(".sub").classList.toggle("hide",id!=="home");window.scrollTo(0,0)};
 function toast(s){const e=$("toast");e.textContent=s;e.style.opacity=1;clearTimeout(e._t);e._t=setTimeout(()=>e.style.opacity=0,1800)}
 const fmt=n=>(Math.round(n*100)/100).toLocaleString(I18N[LANG]._locale);
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
@@ -225,6 +269,8 @@ function parseAns(){const raw=$("ans").value.replace(/\s/g,"").replace(",",".");
 let curQ=null,curResult=null; // 记住当前显示的题目/结果，切换语言时重绘
 function applyLang(){
   document.documentElement.lang=LANG;document.title=t("title");
+  // 标题里 "WindTower · " 已经显示在左上角，这里只显示后半句
+  $("headline").textContent=t("title").split(" · ").slice(1).join(" · ")||t("title");
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
   document.querySelectorAll("[data-tp]").forEach(e=>e.placeholder=t(e.dataset.tp));
   $("langs").innerHTML=LANGS.map(l=>`<button class="${l===LANG?"on":""}" data-lang="${l}">${I18N[l]._name}</button>`).join("");
@@ -241,15 +287,15 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-lang]");if
 // ---------- 风机画面 ----------
 function drawScene(h,animate,emptyText){
   const W=360,H=260,ground=235,top=20,scale=(ground-top)/199;
-  const ticks=[50,100,150,199].map(m=>{const y=ground-m*scale;return `<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="#9fbfd2" stroke-dasharray="3 5"/><text x="6" y="${y-3}" font-size="10" fill="#6c8aa0">${m} m</text>`}).join("");
+  const ticks=[50,100,150,199].map(m=>{const y=ground-m*scale;return `<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="#D3DCE8" stroke-dasharray="2 6"/><text x="6" y="${y-3}" font-size="10" fill="#97A3B6">${m} m</text>`}).join("");
   const hubY=ground-h*scale,bl=Math.max(8,h*scale*0.42),cx=W/2;
   $("scene").innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax meet">${ticks}
-  <rect x="0" y="${ground}" width="${W}" height="${H-ground}" fill="#9cc58a"/>
+  <rect x="0" y="${ground}" width="${W}" height="${H-ground}" fill="#DCE4EF"/>
   <g id="tw" style="transition:transform 1.2s cubic-bezier(.2,.8,.2,1);transform-origin:${cx}px ${ground}px;transform:scaleY(${animate?0.001:1})">
-    <polygon points="${cx-6},${ground} ${cx+6},${ground} ${cx+3},${hubY} ${cx-3},${hubY}" fill="#f4f7f9" stroke="#b9c7d0"/></g>
-  ${h>0?`<g id="rt" style="opacity:${animate?0:1};transition:opacity .4s 1.1s"><rect x="${cx-4}" y="${hubY-5}" width="16" height="9" rx="3" fill="#e9eef2" stroke="#b9c7d0"/>
-   <g class="rotor" style="transform-origin:${cx}px ${hubY}px">${[0,120,240].map(a=>`<path d="M${cx} ${hubY} L${cx-3} ${hubY-bl*0.3} L${cx} ${hubY-bl} L${cx+2} ${hubY-bl*0.3} Z" fill="#fff" stroke="#b9c7d0" transform="rotate(${a} ${cx} ${hubY})"/>`).join("")}<circle cx="${cx}" cy="${hubY}" r="3" fill="#cfd9e0"/></g></g>
-   <text x="${cx+18}" y="${hubY+4}" font-size="15" font-weight="700" fill="#14324a">${h} m</text>`:`<text x="${cx}" y="${ground-10}" text-anchor="middle" font-size="13" fill="#5d7487">${esc(emptyText||t("hint"))}</text>`}</svg>`;
+    <polygon points="${cx-6},${ground} ${cx+6},${ground} ${cx+3},${hubY} ${cx-3},${hubY}" fill="#FFFFFF" stroke="#AFBCCD"/></g>
+  ${h>0?`<g id="rt" style="opacity:${animate?0:1};transition:opacity .4s 1.1s"><rect x="${cx-4}" y="${hubY-5}" width="16" height="9" rx="3" fill="#F1F4F8" stroke="#AFBCCD"/>
+   <g class="rotor" style="transform-origin:${cx}px ${hubY}px">${[0,120,240].map(a=>`<path d="M${cx} ${hubY} L${cx-3} ${hubY-bl*0.3} L${cx} ${hubY-bl} L${cx+2} ${hubY-bl*0.3} Z" fill="#FFFFFF" stroke="#AFBCCD" transform="rotate(${a} ${cx} ${hubY})"/>`).join("")}<circle cx="${cx}" cy="${hubY}" r="3" fill="#C8373B"/></g></g>
+   <text x="${cx+18}" y="${hubY+4}" font-size="15" font-weight="700" fill="#1F4E8C">${h} m</text>`:`<text x="${cx}" y="${ground-10}" text-anchor="middle" font-size="13" fill="#6B7890">${esc(emptyText||t("hint"))}</text>`}</svg>`;
   if(animate)requestAnimationFrame(()=>requestAnimationFrame(()=>{const a=$("tw");if(a)a.style.transform="scaleY(1)";const r=$("rt");if(r)r.style.opacity=1}));
 }
 let timerId=null,nextIsLast=false,lastEnd=null;
@@ -287,7 +333,7 @@ function showEnd(heights,players){
 $("nick").value=store("wt_nick")||"";
 const nick=()=>{const n=$("nick").value.trim()||"Player";store("wt_nick",n);return n};
 let levels=store("wt_levels")||{policy:1,oem:1,dev:1,fin:1};
-function renderLvl(){$("lvlShow").innerHTML=CATS.map(c=>`<div>${catName(c)}<br><b>Lv ${levels[c]}</b></div>`).join("")}
+function renderLvl(){$("lvlShow").innerHTML=CATS.map(c=>`<div>${catName(c)}<b>Lv ${levels[c]}</b></div>`).join("")}
 $("resetLvl").onclick=()=>{levels={policy:1,oem:1,dev:1,fin:1};store("wt_levels",levels);renderLvl();toast(t("lvlReset"))};
 
 // ---------- 单人模式（在浏览器里判分） ----------
