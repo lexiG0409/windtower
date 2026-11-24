@@ -68,12 +68,16 @@ input{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;
       <div class="lvl" id="lvlShow"></div>
       <div class="row" style="margin-top:12px"><button id="soloBtn">开始单人</button><button class="ghost" id="resetLvl">重置等级</button></div>
     </div>
-    <div class="card">
+    <div class="card" id="multiCard">
       <b>联机对战</b>
       <div class="mute" style="margin:6px 0 10px">创建房间，把链接或房间号发给朋友。所有人同时看到同一道题，答完一起揭晓。</div>
       <div class="row"><button id="createBtn">创建房间</button></div>
       <div class="row" style="margin-top:8px"><input id="codeIn" placeholder="输入房间号" maxlength="6" style="text-transform:uppercase"><button class="ghost" id="joinBtn">加入</button></div>
       <div class="mute" id="netMsg" style="margin-top:8px"></div>
+    </div>
+    <div class="card hide" id="demoNote">
+      <b>联机对战</b>
+      <div class="mute" style="margin-top:6px">这是展示版，只有单人模式。联机对战版本将部署在公司服务器上。</div>
     </div>
   </section>
 
@@ -254,8 +258,10 @@ $("againBtn").onclick=()=>{if(mode==="solo")startSolo();else if(M.state&&M.state
 $("homeBtn").onclick=()=>{if(socket){socket.disconnect();socket=null}history.replaceState(null,"",BASE);show("home")};
 
 // 通过分享链接打开（网址末尾带 #房间号）：自动填好房间号
+// 展示版（GitHub Pages）：没有服务器，只开放单人模式
+if(window.STATIC_DEMO){$("multiCard").classList.add("hide");$("demoNote").classList.remove("hide")}
 const hashCode=location.hash.slice(1).toUpperCase();
-if(hashCode){$("codeIn").value=hashCode;$("netMsg").textContent="填好昵称后点“加入”即可进入房间 "+hashCode}
+if(hashCode&&!window.STATIC_DEMO){$("codeIn").value=hashCode;$("netMsg").textContent="填好昵称后点“加入”即可进入房间 "+hashCode}
 drawScene(0,false);
 
 // ---------- PWA：离线缓存 + 安装提示 ----------

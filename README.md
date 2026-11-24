@@ -38,7 +38,15 @@ npm start
 
 然后浏览器打开 http://localhost:3000
 
-## 上线（让任何人打开链接就能玩）
+## 展示版：GitHub Pages（免费，只有单人模式）
+
+`docs/` 文件夹是不需要服务器的单人展示版，由 `npm run build:static` 生成。
+改了题库（`questions.json`）或网页（`public/`）之后，重新运行这条命令再提交，展示版就会更新。
+
+开启方法：仓库 Settings → Pages → Source 选 "Deploy from a branch"，Branch 选 `main`、文件夹选 `/docs` → Save。
+几分钟后网址是 `https://<GitHub用户名>.github.io/windtower/`。（免费账号需要仓库是 Public）
+
+## 联机版上线（让任何人打开链接就能玩）
 
 推荐 Render（有免费方案）：
 

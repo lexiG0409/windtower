@@ -1,0 +1,16 @@
+{
+  "name": "风机塔 · 风能估数挑战",
+  "short_name": "风机塔",
+  "description": "欧洲陆上风电估数答题游戏，单人或联机对战",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#cfe8f7",
+  "theme_color": "#1f8a70",
+  "lang": "zh",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
