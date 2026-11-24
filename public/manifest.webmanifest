@@ -1,6 +1,6 @@
 {
-  "name": "WindTower · 风机塔",
-  "short_name": "WindTower",
+  "name": "Wind Tower Challenge Cup",
+  "short_name": "Tower Cup",
   "description": "European onshore wind estimation quiz · 欧洲陆上风电估数答题 · Windenergie-Quiz · Quiz de eólica",
   "start_url": "./",
   "scope": "./",

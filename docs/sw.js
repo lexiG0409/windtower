@@ -1,6 +1,6 @@
 // 离线缓存：先尝试联网拿最新版，断网时用上次缓存的页面（单人模式可离线玩）
 // 所有路径都相对于网站所在目录，所以放在 / 或 /windtower/ 下都能用
-const CACHE = "windtower-v5";
+const CACHE = "windtower-v6";
 const BASE = new URL("./", self.location).pathname;
 const SHELL = ["", "index.html", "api/questions", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png"].map(p => BASE + p);
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });

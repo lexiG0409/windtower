@@ -1,7 +1,7 @@
 {
   "name": "windtower-quiz",
   "version": "0.1.0",
-  "description": "风机塔 · 欧洲陆上风电估数挑战（单人 + 线上多人对战）",
+  "description": "Wind Tower Challenge Cup · 欧洲陆上风电估数挑战（单人 + 线上多人对战）",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
