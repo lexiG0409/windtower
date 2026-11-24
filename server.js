@@ -29,7 +29,10 @@ const CONFIG = {
 
 function loadBank() {
   const bank = JSON.parse(fs.readFileSync(CONFIG.questionsFile, "utf8"));
-  const bad = bank.filter(q => !q.q || typeof q.a !== "number" || !(q.r > 0) || ![1, 2, 3].includes(q.l));
+  // 每道题的题目(q)、解释(ex)、单位(u) 都要有四种语言：zh 中文、en 英文、de 德语、es 西班牙语
+  const LANGS = ["zh", "en", "de", "es"];
+  const hasAll = o => o && typeof o === "object" && LANGS.every(l => typeof o[l] === "string");
+  const bad = bank.filter(q => !hasAll(q.q) || !hasAll(q.ex) || !hasAll(q.u) || typeof q.a !== "number" || !(q.r > 0) || ![1, 2, 3].includes(q.l));
   if (bad.length) throw new Error(`题库里有 ${bad.length} 道题格式不对，例如：${JSON.stringify(bad[0]).slice(0, 120)}`);
   return bank;
 }
@@ -177,8 +180,8 @@ io.on("connection", socket => {
 
   socket.on("join", ({ code, name }) => {
     const r = rooms.get(String(code || "").toUpperCase().trim());
-    if (!r) return socket.emit("err", "找不到这个房间，请检查房间号");
-    if (r.players.size >= CONFIG.maxPlayersPerRoom && !r.players.has(pid)) return socket.emit("err", `房间已满（最多 ${CONFIG.maxPlayersPerRoom} 人）`);
+    if (!r) return socket.emit("err", "room_not_found");
+    if (r.players.size >= CONFIG.maxPlayersPerRoom && !r.players.has(pid)) return socket.emit("err", "room_full");
     join(r, name);
   });
 
@@ -224,7 +227,7 @@ server.listen(CONFIG.port, CONFIG.host, () => {
 // 服务器重启/关机时，先通知玩家再退出
 function shutdown(sig) {
   console.log(`收到 ${sig}，正在关闭…`);
-  io.emit("err", "服务器正在维护重启，请稍后刷新页面");
+  io.emit("err", "server_restart");
   io.close();
   server.close(() => process.exit(0));
   setTimeout(() => process.exit(0), 5000).unref();

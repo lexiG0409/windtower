@@ -9,9 +9,9 @@
 <link rel="icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="风机塔">
+<meta name="apple-mobile-web-app-title" content="WindTower">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>风机塔 · 风能估数挑战</title>
+<title>WindTower</title>
 <style>
 :root{--sky1:#cfe8f7;--sky2:#f3f8fb;--ink:#14324a;--mute:#5d7487;--acc:#1f8a70;--warn:#d9822b;--card:#ffffffee;--line:#d6e2ea}
 *{box-sizing:border-box}
@@ -38,57 +38,64 @@ input{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;
 .ex{font-size:14px;line-height:1.5;color:#2b4a60;margin-top:8px}
 .farm{display:flex;align-items:flex-end;gap:3px;height:120px;margin-top:8px}
 .farm div{flex:1;background:linear-gradient(180deg,#fff,#c9d6de);border-radius:3px 3px 0 0;min-height:2px;position:relative}
-.lvl{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:13px;text-align:center}
+.lvl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;font-size:12.5px;text-align:center}
+.lvl div{overflow-wrap:anywhere}
+@media(max-width:480px){.lvl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+html,body{overflow-x:hidden}
 .lvl div{background:#eef4f8;border-radius:8px;padding:6px}
 .board div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:15px}
 #result .big{font-size:22px;word-break:keep-all}
-.toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:99px;font-size:14px;z-index:9;transition:opacity .3s}
+.langs{display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap;margin-bottom:4px}
+.langs button{padding:5px 10px;font-size:13px;font-weight:500;background:#e8f0f4;color:var(--ink);border-radius:99px}
+.langs button.on{background:var(--acc);color:#fff}
+.toast{pointer-events:none;position:fixed;left:50%;top:18px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:99px;font-size:14px;z-index:9;transition:opacity .3s}
 @keyframes spin{to{transform:rotate(360deg)}}
 .rotor{animation:spin 3s linear infinite}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>🌬️ 风机塔 · 风能估数挑战</h1>
-  <div class="sub">欧洲陆上风电 · 每局 15 题 · 答案越接近，风机塔越高（最高 199 米）</div>
+  <div class="langs" id="langs"></div>
+  <h1>🌬️ <span data-t="title"></span></h1>
+  <div class="sub" data-t="subtitle"></div>
 
   <section id="home">
     <div class="card hide" id="installCard">
-      <b>📱 装到手机桌面</b>
+      <b data-t="installTitle"></b>
       <div class="mute" id="installTip" style="margin-top:6px"></div>
-      <div class="row" style="margin-top:10px"><button id="installBtn" class="hide">安装</button><button class="ghost" id="installClose">知道了</button></div>
+      <div class="row" style="margin-top:10px"><button id="installBtn" class="hide" data-t="install"></button><button class="ghost" id="installClose" data-t="gotIt"></button></div>
     </div>
     <div class="card">
-      <div class="mute" style="margin-bottom:6px">你的昵称</div>
-      <input id="nick" maxlength="16" placeholder="例如：Lexi">
+      <div class="mute" style="margin-bottom:6px" data-t="nickname"></div>
+      <input id="nick" maxlength="16" data-tp="nickPh">
     </div>
     <div class="card">
-      <b>单人模式</b>
-      <div class="mute" style="margin:6px 0 10px">同一类题连续两次塔高 ≥150 米，这一类就升一级（共 3 级）。</div>
+      <b data-t="soloTitle"></b>
+      <div class="mute" style="margin:6px 0 10px" data-t="soloDesc"></div>
       <div class="lvl" id="lvlShow"></div>
-      <div class="row" style="margin-top:12px"><button id="soloBtn">开始单人</button><button class="ghost" id="resetLvl">重置等级</button></div>
+      <div class="row" style="margin-top:12px"><button id="soloBtn" data-t="soloStart"></button><button class="ghost" id="resetLvl" data-t="resetLvl"></button></div>
     </div>
     <div class="card" id="multiCard">
-      <b>联机对战</b>
-      <div class="mute" style="margin:6px 0 10px">创建房间，把链接或房间号发给朋友。所有人同时看到同一道题，答完一起揭晓。</div>
-      <div class="row"><button id="createBtn">创建房间</button></div>
-      <div class="row" style="margin-top:8px"><input id="codeIn" placeholder="输入房间号" maxlength="6" style="text-transform:uppercase"><button class="ghost" id="joinBtn">加入</button></div>
+      <b data-t="multiTitle"></b>
+      <div class="mute" style="margin:6px 0 10px" data-t="multiDesc"></div>
+      <div class="row"><button id="createBtn" data-t="createRoom"></button></div>
+      <div class="row" style="margin-top:8px"><input id="codeIn" data-tp="codePh" maxlength="6" style="text-transform:uppercase"><button class="ghost" id="joinBtn" data-t="join"></button></div>
       <div class="mute" id="netMsg" style="margin-top:8px"></div>
     </div>
     <div class="card hide" id="demoNote">
-      <b>联机对战</b>
-      <div class="mute" style="margin-top:6px">这是展示版，只有单人模式。联机对战版本将部署在公司服务器上。</div>
+      <b data-t="multiTitle"></b>
+      <div class="mute" style="margin-top:6px" data-t="demoNote"></div>
     </div>
   </section>
 
   <section id="lobby" class="hide">
     <div class="card">
-      <div class="mute">房间号</div>
+      <div class="mute" data-t="roomCode"></div>
       <div class="big" id="roomCode"></div>
-      <div class="row" style="margin-top:8px"><input id="shareLink" readonly><button class="ghost" id="copyBtn" style="flex:0 0 auto">复制链接</button></div>
-      <div class="mute" style="margin:10px 0 4px">玩家：</div>
+      <div class="row" style="margin-top:8px"><input id="shareLink" readonly><button class="ghost" id="copyBtn" style="flex:0 0 auto" data-t="copyLink"></button></div>
+      <div class="mute" style="margin:10px 0 4px" data-t="players"></div>
       <div class="board" id="lobbyList"></div>
-      <div class="row" style="margin-top:12px"><button id="startBtn">开始比赛</button><button class="ghost" id="leaveBtn">离开</button></div>
+      <div class="row" style="margin-top:12px"><button id="startBtn" data-t="startMatch"></button><button class="ghost" id="leaveBtn" data-t="leave"></button></div>
       <div class="mute" id="lobbyMsg" style="margin-top:8px"></div>
     </div>
   </section>
@@ -98,52 +105,138 @@ input{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;
       <div><span class="pill" id="qNum"></span><span class="pill" id="qCat"></span><span class="pill" id="qLvl"></span></div>
       <div class="q" id="qText"></div>
       <form id="ansForm" class="row" autocomplete="off">
-        <input id="ans" inputmode="decimal" placeholder="输入数字">
+        <input id="ans" inputmode="decimal" data-tp="ansPh">
         <div id="unit" class="mute" style="flex:0 0 auto;min-width:40px"></div>
-        <button style="flex:0 0 auto">确定</button>
+        <button style="flex:0 0 auto" data-t="ok"></button>
       </form>
       <div class="timer"><div id="bar"></div></div>
       <div class="mute" id="waitMsg" style="margin-top:6px"></div>
     </div>
     <div class="scene" id="scene"></div>
     <div class="card hide" id="result" style="margin-top:12px">
-      <div class="row"><div><div class="mute">你的答案</div><div class="big" id="rYou"></div></div><div><div class="mute">正确答案</div><div class="big" id="rAns" style="color:var(--acc)"></div></div><div><div class="mute">塔高</div><div class="big" id="rH"></div></div></div>
+      <div class="row"><div><div class="mute" data-t="yourAns"></div><div class="big" id="rYou"></div></div><div><div class="mute" data-t="rightAns"></div><div class="big" id="rAns" style="color:var(--acc)"></div></div><div><div class="mute" data-t="towerH"></div><div class="big" id="rH"></div></div></div>
       <div class="ex" id="rEx"></div>
       <div class="board" id="rAll" style="margin-top:8px"></div>
-      <button id="nextBtn" style="width:100%;margin-top:12px">下一题</button>
+      <button id="nextBtn" style="width:100%;margin-top:12px"></button>
       <div class="mute" id="nextMsg" style="margin-top:6px"></div>
     </div>
-    <div class="card hide" id="liveBoard" style="margin-top:12px"><b>实时排行</b><div class="board" id="liveList"></div></div>
+    <div class="card hide" id="liveBoard" style="margin-top:12px"><b data-t="liveRank"></b><div class="board" id="liveList"></div></div>
   </section>
 
   <section id="end" class="hide">
     <div class="card">
-      <div class="mute">你的风电场总高度</div>
+      <div class="mute" data-t="farmTotal"></div>
       <div class="big" id="endTotal"></div>
       <div class="mute" id="endAvg"></div>
       <div class="farm" id="farm"></div>
-      <div class="mute" style="margin-top:6px">每根柱子 = 一题的风机塔（满格 199 米）</div>
+      <div class="mute" style="margin-top:6px" data-t="farmNote"></div>
     </div>
-    <div class="card hide" id="endBoardCard"><b>最终排名</b><div class="board" id="endBoard"></div></div>
-    <div class="row"><button id="againBtn">再来一局</button><button class="ghost" id="homeBtn">回首页</button></div>
+    <div class="card hide" id="endBoardCard"><b data-t="finalRank"></b><div class="board" id="endBoard"></div></div>
+    <div class="row"><button id="againBtn" data-t="again"></button><button class="ghost" id="homeBtn" data-t="home"></button></div>
   </section>
 </div>
 <div class="toast" id="toast" style="opacity:0"></div>
 
 <script src="socket.io/socket.io.js"></script>
 <script>
-const CATS={policy:"政策",oem:"OEM/技术",dev:"开发/市场",fin:"融资"};
+// ================= 多语言 =================
+// 界面文字。{n} 之类的是占位符，运行时替换成具体内容。
+const I18N={
+zh:{_name:"中文",_locale:"zh-CN",title:"风机塔 · 风能估数挑战",subtitle:"欧洲陆上风电 · 每局 15 题 · 答案越接近，风机塔越高（最高 199 米）",
+ installTitle:"📱 装到手机桌面",installIOS:"在 Safari 里点底部的「分享」按钮 ⬆️，再选「添加到主屏幕」。",installOther:"一键把风机塔装到手机桌面，像 App 一样全屏打开。",install:"安装",gotIt:"知道了",
+ nickname:"你的昵称",nickPh:"例如：Lexi",soloTitle:"单人模式",soloDesc:"同一类题连续两次塔高 ≥150 米，这一类就升一级（共 3 级）。",soloStart:"开始单人",resetLvl:"重置等级",
+ multiTitle:"联机对战",multiDesc:"创建房间，把链接或房间号发给朋友。所有人同时看到同一道题，答完一起揭晓。",createRoom:"创建房间",codePh:"输入房间号",join:"加入",
+ demoNote:"这是展示版，只有单人模式。联机对战版本将部署在公司服务器上。",roomCode:"房间号",copyLink:"复制链接",players:"玩家：",startMatch:"开始比赛",leave:"离开",
+ ansPh:"输入数字",ok:"确定",yourAns:"你的答案",rightAns:"正确答案",towerH:"塔高",next:"下一题",seeResult:"看结果",liveRank:"实时排行",
+ farmTotal:"你的风电场总高度",farmNote:"每根柱子 = 一题的风机塔（满格 199 米）",finalRank:"最终排名",again:"再来一局",home:"回首页",
+ qNum:"第 {n}/{t} 题",m:"米",avg:"平均塔高 {n} 米",levels:"等级：",tooFar:"差太远，塔没盖起来 😅",hint:"答得越准，塔越高",timeout:"超时",
+ lvlReset:"等级已重置",lvlUp:"⬆️ {c} 升到 Lv {n}！",loadFail:"题库加载失败",linkCopied:"链接已复制",
+ connecting:"正在连接服务器…",noServer:"连不上服务器，请稍后刷新再试",creating:"创建中…",joining:"加入中…",needCode:"请输入房间号",joinPrompt:"填好昵称后点“加入”即可进入房间 {c}",
+ hostHint:"朋友到齐后点“开始比赛”。",waitHost:"等房主开始…",you:"（你）",offline:" · 离线",answered:"✅ 已答",thinking:"⏳ 思考中",submitted:"已提交，等其他人…",
+ autoNext:"{n} 秒后自动进入下一题",finalSoon:"马上公布最终排名…",
+ err_room_not_found:"找不到这个房间，请检查房间号",err_room_full:"房间已满",err_server_restart:"服务器正在维护重启，请稍后刷新页面",
+ cat_policy:"政策",cat_oem:"OEM/技术",cat_dev:"开发/市场",cat_fin:"融资"},
+en:{_name:"English",_locale:"en-GB",title:"WindTower · Wind Energy Estimation Challenge",subtitle:"European onshore wind · 15 questions per round · the closer your answer, the taller your tower (max. 199 m)",
+ installTitle:"📱 Add to home screen",installIOS:"In Safari, tap the Share button ⬆️ at the bottom, then “Add to Home Screen”.",installOther:"Install WindTower on your phone and open it full-screen like an app.",install:"Install",gotIt:"Got it",
+ nickname:"Your nickname",nickPh:"e.g. Lexi",soloTitle:"Solo mode",soloDesc:"Build a tower of ≥150 m twice in a row in one category to level up that category (3 levels).",soloStart:"Play solo",resetLvl:"Reset levels",
+ multiTitle:"Multiplayer",multiDesc:"Create a room and send the link or room code to friends. Everyone sees the same question at the same time; answers are revealed together.",createRoom:"Create room",codePh:"Room code",join:"Join",
+ demoNote:"This is the demo version with solo mode only. Multiplayer will run on the company server.",roomCode:"Room code",copyLink:"Copy link",players:"Players:",startMatch:"Start match",leave:"Leave",
+ ansPh:"Enter a number",ok:"OK",yourAns:"Your answer",rightAns:"Correct answer",towerH:"Tower",next:"Next question",seeResult:"See results",liveRank:"Live ranking",
+ farmTotal:"Total height of your wind farm",farmNote:"Each bar = one question's tower (full bar = 199 m)",finalRank:"Final ranking",again:"Play again",home:"Home",
+ qNum:"Question {n}/{t}",m:"m",avg:"Average tower height {n} m",levels:"Levels: ",tooFar:"Too far off – no tower this time 😅",hint:"The more accurate, the taller the tower",timeout:"Time's up",
+ lvlReset:"Levels reset",lvlUp:"⬆️ {c} is now Lv {n}!",loadFail:"Could not load questions",linkCopied:"Link copied",
+ connecting:"Connecting to server…",noServer:"Cannot reach the server – please refresh later",creating:"Creating…",joining:"Joining…",needCode:"Please enter a room code",joinPrompt:"Enter your nickname and tap “Join” to enter room {c}",
+ hostHint:"Tap “Start match” when everyone is here.",waitHost:"Waiting for the host to start…",you:" (you)",offline:" · offline",answered:"✅ Answered",thinking:"⏳ Thinking",submitted:"Submitted – waiting for others…",
+ autoNext:"Next question in {n} s",finalSoon:"Final ranking coming up…",
+ err_room_not_found:"Room not found – please check the code",err_room_full:"Room is full",err_server_restart:"Server is restarting – please refresh in a moment",
+ cat_policy:"Policy",cat_oem:"OEM/Tech",cat_dev:"Development/Market",cat_fin:"Finance"},
+de:{_name:"Deutsch",_locale:"de-DE",title:"WindTower · Windenergie-Schätzchallenge",subtitle:"Wind an Land in Europa · 15 Fragen pro Runde · je genauer die Antwort, desto höher der Turm (max. 199 m)",
+ installTitle:"📱 Zum Home-Bildschirm",installIOS:"Tippe in Safari unten auf „Teilen“ ⬆️ und dann auf „Zum Home-Bildschirm“.",installOther:"WindTower aufs Handy installieren und wie eine App im Vollbild öffnen.",install:"Installieren",gotIt:"Verstanden",
+ nickname:"Dein Spitzname",nickPh:"z. B. Lexi",soloTitle:"Einzelspieler",soloDesc:"Zweimal hintereinander ≥150 m in einer Kategorie – dann steigt diese Kategorie ein Level auf (3 Level).",soloStart:"Allein spielen",resetLvl:"Level zurücksetzen",
+ multiTitle:"Mehrspieler",multiDesc:"Raum erstellen und Link oder Raumcode an Freunde schicken. Alle sehen dieselbe Frage gleichzeitig, die Antworten werden gemeinsam aufgedeckt.",createRoom:"Raum erstellen",codePh:"Raumcode",join:"Beitreten",
+ demoNote:"Dies ist die Demo-Version mit Einzelspieler-Modus. Der Mehrspieler-Modus läuft später auf dem Firmenserver.",roomCode:"Raumcode",copyLink:"Link kopieren",players:"Spieler:",startMatch:"Spiel starten",leave:"Verlassen",
+ ansPh:"Zahl eingeben",ok:"OK",yourAns:"Deine Antwort",rightAns:"Richtige Antwort",towerH:"Turm",next:"Nächste Frage",seeResult:"Ergebnis",liveRank:"Live-Rangliste",
+ farmTotal:"Gesamthöhe deines Windparks",farmNote:"Jeder Balken = Turm einer Frage (voll = 199 m)",finalRank:"Endstand",again:"Nochmal spielen",home:"Startseite",
+ qNum:"Frage {n}/{t}",m:"m",avg:"Durchschnittliche Turmhöhe {n} m",levels:"Level: ",tooFar:"Zu weit daneben – kein Turm diesmal 😅",hint:"Je genauer, desto höher der Turm",timeout:"Zeit abgelaufen",
+ lvlReset:"Level zurückgesetzt",lvlUp:"⬆️ {c} jetzt auf Lv {n}!",loadFail:"Fragen konnten nicht geladen werden",linkCopied:"Link kopiert",
+ connecting:"Verbinde mit dem Server…",noServer:"Server nicht erreichbar – bitte später neu laden",creating:"Wird erstellt…",joining:"Trete bei…",needCode:"Bitte Raumcode eingeben",joinPrompt:"Spitznamen eingeben und auf „Beitreten“ tippen, um Raum {c} zu betreten",
+ hostHint:"Auf „Spiel starten“ tippen, wenn alle da sind.",waitHost:"Warte auf den Start durch den Host…",you:" (du)",offline:" · offline",answered:"✅ Beantwortet",thinking:"⏳ Überlegt",submitted:"Abgeschickt – warte auf die anderen…",
+ autoNext:"Nächste Frage in {n} s",finalSoon:"Gleich kommt der Endstand…",
+ err_room_not_found:"Raum nicht gefunden – bitte Code prüfen",err_room_full:"Raum ist voll",err_server_restart:"Server startet neu – bitte gleich neu laden",
+ cat_policy:"Politik",cat_oem:"OEM/Technik",cat_dev:"Entwicklung/Markt",cat_fin:"Finanzierung"},
+es:{_name:"Español",_locale:"es-ES",title:"WindTower · Reto de estimación eólica",subtitle:"Eólica terrestre en Europa · 15 preguntas por partida · cuanto más te acerques, más alta será tu torre (máx. 199 m)",
+ installTitle:"📱 Añadir a pantalla de inicio",installIOS:"En Safari, toca el botón Compartir ⬆️ abajo y luego «Añadir a pantalla de inicio».",installOther:"Instala WindTower en tu móvil y ábrelo a pantalla completa como una app.",install:"Instalar",gotIt:"Entendido",
+ nickname:"Tu apodo",nickPh:"p. ej. Lexi",soloTitle:"Modo individual",soloDesc:"Consigue dos torres seguidas de ≥150 m en una categoría para subir esa categoría de nivel (3 niveles).",soloStart:"Jugar solo",resetLvl:"Reiniciar niveles",
+ multiTitle:"Multijugador",multiDesc:"Crea una sala y envía el enlace o el código a tus amigos. Todos ven la misma pregunta a la vez y las respuestas se revelan juntas.",createRoom:"Crear sala",codePh:"Código de sala",join:"Unirse",
+ demoNote:"Esta es la versión de demostración, solo con modo individual. El multijugador funcionará en el servidor de la empresa.",roomCode:"Código de sala",copyLink:"Copiar enlace",players:"Jugadores:",startMatch:"Empezar partida",leave:"Salir",
+ ansPh:"Escribe un número",ok:"OK",yourAns:"Tu respuesta",rightAns:"Respuesta correcta",towerH:"Torre",next:"Siguiente pregunta",seeResult:"Ver resultado",liveRank:"Clasificación en directo",
+ farmTotal:"Altura total de tu parque eólico",farmNote:"Cada barra = la torre de una pregunta (barra llena = 199 m)",finalRank:"Clasificación final",again:"Jugar otra vez",home:"Inicio",
+ qNum:"Pregunta {n}/{t}",m:"m",avg:"Altura media de torre {n} m",levels:"Niveles: ",tooFar:"Demasiado lejos: esta vez no hay torre 😅",hint:"Cuanto más precisa, más alta la torre",timeout:"Se acabó el tiempo",
+ lvlReset:"Niveles reiniciados",lvlUp:"⬆️ ¡{c} sube a Lv {n}!",loadFail:"No se pudieron cargar las preguntas",linkCopied:"Enlace copiado",
+ connecting:"Conectando con el servidor…",noServer:"No se puede conectar con el servidor; recarga más tarde",creating:"Creando…",joining:"Uniéndose…",needCode:"Introduce un código de sala",joinPrompt:"Escribe tu apodo y toca «Unirse» para entrar en la sala {c}",
+ hostHint:"Toca «Empezar partida» cuando estén todos.",waitHost:"Esperando a que el anfitrión empiece…",you:" (tú)",offline:" · desconectado",answered:"✅ Respondido",thinking:"⏳ Pensando",submitted:"Enviado; esperando a los demás…",
+ autoNext:"Siguiente pregunta en {n} s",finalSoon:"Enseguida la clasificación final…",
+ err_room_not_found:"Sala no encontrada; revisa el código",err_room_full:"La sala está llena",err_server_restart:"El servidor se está reiniciando; recarga en un momento",
+ cat_policy:"Política",cat_oem:"OEM/Tecnología",cat_dev:"Desarrollo/Mercado",cat_fin:"Financiación"}
+};
+const LANGS=Object.keys(I18N);
+function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+function detectLang(){const saved=store("wt_lang");if(LANGS.includes(saved))return saved;
+  for(const l of (navigator.languages||[navigator.language||"en"])){const s=String(l).slice(0,2).toLowerCase();if(LANGS.includes(s))return s}return "en"}
+let LANG=detectLang();
+// t("key",{n:1}) → 当前语言的文字；L(obj) → 从 {zh,en,de,es} 里取当前语言
+const t=(k,v)=>{let s=(I18N[LANG][k]??I18N.en[k]??k);if(v)for(const x in v)s=s.replace("{"+x+"}",v[x]);return s};
+const L=o=>o&&typeof o==="object"?(o[LANG]??o.en??o.zh??""):(o??"");
+const CATS=["policy","oem","dev","fin"];const catName=c=>t("cat_"+c);
+
 const N=15,TIME=25;
 // 网站所在的路径（例如公司服务器上可能是 /windtower/），所有地址都相对它计算
 const BASE=location.pathname.replace(/[^/]*$/,"");
 const $=id=>document.getElementById(id);
 const show=id=>["home","lobby","game","end"].forEach(s=>$(s).classList.toggle("hide",s!==id));
-function toast(t){const e=$("toast");e.textContent=t;e.style.opacity=1;clearTimeout(e._t);e._t=setTimeout(()=>e.style.opacity=0,1800)}
-function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
-const fmt=n=>(Math.round(n*100)/100).toLocaleString("de-DE");
+function toast(s){const e=$("toast");e.textContent=s;e.style.opacity=1;clearTimeout(e._t);e._t=setTimeout(()=>e.style.opacity=0,1800)}
+const fmt=n=>(Math.round(n*100)/100).toLocaleString(I18N[LANG]._locale);
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const withUnit=(n,u)=>u?fmt(n)+" "+u:fmt(n);
 function heightFor(q,g){if(g===null||isNaN(g))return 0;const d=Math.min(1,Math.abs(g-q.a)/q.r);return Math.round(199*Math.pow(1-d,2))}
 function parseAns(){const raw=$("ans").value.replace(/\s/g,"").replace(",",".");if(raw==="")return null;const g=parseFloat(raw);return isNaN(g)?null:g}
+
+// ---------- 语言切换：重绘所有界面文字和当前题目 ----------
+let curQ=null,curResult=null; // 记住当前显示的题目/结果，切换语言时重绘
+function applyLang(){
+  document.documentElement.lang=LANG;document.title=t("title");
+  document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
+  document.querySelectorAll("[data-tp]").forEach(e=>e.placeholder=t(e.dataset.tp));
+  $("langs").innerHTML=LANGS.map(l=>`<button class="${l===LANG?"on":""}" data-lang="${l}">${I18N[l]._name}</button>`).join("");
+  renderLvl();renderInstallTip();
+  if(curQ)fillQuestion(curQ.q,curQ.idx);
+  if(curResult)fillResult(...curResult);
+  $("nextBtn").textContent=t(nextIsLast?"seeResult":"next");
+  if(M.state)renderBoards(M.state);
+  if(lastEnd)showEnd(...lastEnd);
+  if(netKey)$("netMsg").textContent=t(...netKey);
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-lang]");if(!b)return;LANG=b.dataset.lang;store("wt_lang",LANG);applyLang()});
 
 // ---------- 风机画面 ----------
 function drawScene(h,animate,emptyText){
@@ -156,125 +249,137 @@ function drawScene(h,animate,emptyText){
     <polygon points="${cx-6},${ground} ${cx+6},${ground} ${cx+3},${hubY} ${cx-3},${hubY}" fill="#f4f7f9" stroke="#b9c7d0"/></g>
   ${h>0?`<g id="rt" style="opacity:${animate?0:1};transition:opacity .4s 1.1s"><rect x="${cx-4}" y="${hubY-5}" width="16" height="9" rx="3" fill="#e9eef2" stroke="#b9c7d0"/>
    <g class="rotor" style="transform-origin:${cx}px ${hubY}px">${[0,120,240].map(a=>`<path d="M${cx} ${hubY} L${cx-3} ${hubY-bl*0.3} L${cx} ${hubY-bl} L${cx+2} ${hubY-bl*0.3} Z" fill="#fff" stroke="#b9c7d0" transform="rotate(${a} ${cx} ${hubY})"/>`).join("")}<circle cx="${cx}" cy="${hubY}" r="3" fill="#cfd9e0"/></g></g>
-   <text x="${cx+18}" y="${hubY+4}" font-size="15" font-weight="700" fill="#14324a">${h} m</text>`:`<text x="${cx}" y="${ground-10}" text-anchor="middle" font-size="13" fill="#5d7487">${emptyText||"答得越准，塔越高"}</text>`}</svg>`;
-  if(animate)requestAnimationFrame(()=>requestAnimationFrame(()=>{const t=$("tw");if(t)t.style.transform="scaleY(1)";const r=$("rt");if(r)r.style.opacity=1}));
+   <text x="${cx+18}" y="${hubY+4}" font-size="15" font-weight="700" fill="#14324a">${h} m</text>`:`<text x="${cx}" y="${ground-10}" text-anchor="middle" font-size="13" fill="#5d7487">${esc(emptyText||t("hint"))}</text>`}</svg>`;
+  if(animate)requestAnimationFrame(()=>requestAnimationFrame(()=>{const a=$("tw");if(a)a.style.transform="scaleY(1)";const r=$("rt");if(r)r.style.opacity=1}));
 }
-let timerId=null;
+let timerId=null,nextIsLast=false,lastEnd=null;
 function runTimer(deadline,onEnd){clearInterval(timerId);timerId=setInterval(()=>{const left=(deadline-Date.now())/1000;$("bar").style.width=Math.max(0,left/TIME*100)+"%";$("bar").style.background=left<6?"var(--warn)":"var(--acc)";if(left<=0){clearInterval(timerId);onEnd&&onEnd()}},200)}
+function fillQuestion(q,idx){
+  $("qNum").textContent=t("qNum",{n:idx+1,t:N});$("qCat").textContent=catName(q.c);$("qLvl").textContent="Lv "+q.l;
+  $("qText").textContent=L(q.q);$("unit").textContent=L(q.u);
+}
 function showQuestion(q,idx){
-  $("qNum").textContent=`第 ${idx+1}/${N} 题`;$("qCat").textContent=CATS[q.c];$("qLvl").textContent="Lv "+q.l;
-  $("qText").textContent=q.q;$("unit").textContent=q.u;$("ans").value="";$("ans").disabled=false;
-  $("ansForm").querySelector("button").disabled=false;$("result").classList.add("hide");$("waitMsg").textContent="";
+  curQ={q,idx};curResult=null;lastEnd=null;fillQuestion(q,idx);
+  $("ans").value="";$("ans").disabled=false;$("ansForm").querySelector("button").disabled=false;
+  $("result").classList.add("hide");$("waitMsg").textContent="";
   drawScene(0,false);setTimeout(()=>$("ans").focus(),50);
 }
 function lockInput(){$("ans").disabled=true;$("ansForm").querySelector("button").disabled=true}
-function showResult(g,a,u,ex,h){
-  $("rYou").textContent=g===null?"—":fmt(g);$("rAns").textContent=fmt(a)+" "+u;$("rH").textContent=h+" 米";$("rEx").textContent=ex;
-  $("result").classList.remove("hide");drawScene(h,true,"差太远，塔没盖起来 😅");
+function fillResult(g,a,u,ex,h,timedOut){
+  $("rYou").textContent=g===null?(timedOut?t("timeout"):"—"):fmt(g);$("rAns").textContent=withUnit(a,L(u));$("rH").textContent=h+" "+t("m");$("rEx").textContent=L(ex);
 }
-function showEnd(heights,board){
-  const tot=heights.reduce((a,b)=>a+(b||0),0);
-  $("endTotal").textContent=tot.toLocaleString("de-DE")+" 米 / "+(199*N).toLocaleString("de-DE");
-  $("endAvg").textContent=`平均塔高 ${Math.round(tot/N)} 米`+(mode==="solo"?" · 等级："+Object.keys(CATS).map(c=>CATS[c]+" Lv"+levels[c]).join("，"):"");
+function showResult(g,a,u,ex,h,timedOut){
+  curResult=[g,a,u,ex,h,timedOut];fillResult(g,a,u,ex,h,timedOut);
+  $("result").classList.remove("hide");drawScene(h,true,t("tooFar"));
+}
+function showEnd(heights,players){
+  lastEnd=[heights,players];curQ=null;curResult=null;
+  const tot=heights.reduce((a,b)=>a+(b||0),0),loc=I18N[LANG]._locale;
+  $("endTotal").textContent=tot.toLocaleString(loc)+" / "+(199*N).toLocaleString(loc)+" "+t("m");
+  $("endAvg").textContent=t("avg",{n:Math.round(tot/N)})+(mode==="solo"?" · "+t("levels")+CATS.map(c=>catName(c)+" Lv"+levels[c]).join(", "):"");
   $("farm").innerHTML=Array.from({length:N},(_,i)=>`<div style="height:${(heights[i]||0)/199*100}%"></div>`).join("");
-  $("endBoardCard").classList.toggle("hide",!board);if(board)$("endBoard").innerHTML=board;
-  renderLvl();show("end");
+  $("endBoardCard").classList.toggle("hide",!players);
+  if(players)$("endBoard").innerHTML=players.map((p,i)=>`<div><span>${["🥇","🥈","🥉"][i]||i+1+"."} ${esc(p.name)}${p.id===pid?t("you"):""}</span><span>${p.total.toLocaleString(loc)} ${t("m")}</span></div>`).join("");
+  show("end");
 }
 
 // ---------- 昵称 & 等级 ----------
 $("nick").value=store("wt_nick")||"";
-const nick=()=>{const n=$("nick").value.trim()||"玩家";store("wt_nick",n);return n};
+const nick=()=>{const n=$("nick").value.trim()||"Player";store("wt_nick",n);return n};
 let levels=store("wt_levels")||{policy:1,oem:1,dev:1,fin:1};
-function renderLvl(){$("lvlShow").innerHTML=Object.keys(CATS).map(c=>`<div>${CATS[c]}<br><b>Lv ${levels[c]}</b></div>`).join("")}
-renderLvl();
-$("resetLvl").onclick=()=>{levels={policy:1,oem:1,dev:1,fin:1};store("wt_levels",levels);renderLvl();toast("等级已重置")};
+function renderLvl(){$("lvlShow").innerHTML=CATS.map(c=>`<div>${catName(c)}<br><b>Lv ${levels[c]}</b></div>`).join("")}
+$("resetLvl").onclick=()=>{levels={policy:1,oem:1,dev:1,fin:1};store("wt_levels",levels);renderLvl();toast(t("lvlReset"))};
 
 // ---------- 单人模式（在浏览器里判分） ----------
 let mode=null,BANK=null,S=null;
 async function startSolo(){
   mode="solo";nick();
-  if(!BANK){try{BANK=await (await fetch("api/questions")).json()}catch(e){toast("题库加载失败");return}}
+  if(!BANK){try{BANK=await (await fetch("api/questions")).json()}catch(e){toast(t("loadFail"));return}}
   S={i:0,heights:[],used:new Set(),streak:{policy:0,oem:0,dev:0,fin:0}};
   $("liveBoard").classList.add("hide");show("game");soloNext();
 }
-function soloPick(){const c=Object.keys(CATS)[S.i%4];
+function soloPick(){const c=CATS[S.i%4];
   for(const dl of [0,-1,1,-2,2]){const pool=BANK.filter(q=>q.c===c&&q.l===levels[c]+dl&&!S.used.has(q));if(pool.length)return pool[Math.floor(Math.random()*pool.length)]}
   const rest=BANK.filter(q=>!S.used.has(q));return rest[Math.floor(Math.random()*rest.length)]}
 function soloNext(){
   if(S.i>=N)return showEnd(S.heights,null);
   const q=soloPick();S.used.add(q);S.cur=q;showQuestion(q,S.i);
   $("nextBtn").classList.remove("hide");$("nextMsg").textContent="";$("rAll").innerHTML="";
-  runTimer(Date.now()+TIME*1000,()=>soloSubmit());
+  runTimer(Date.now()+TIME*1000,()=>soloSubmit(true));
 }
-function soloSubmit(){
+function soloSubmit(timedOut){
   if($("ans").disabled)return;clearInterval(timerId);lockInput();
   const g=parseAns(),q=S.cur,h=heightFor(q,g);S.heights.push(h);S.i++;
-  showResult(g,q.a,q.u,q.ex,h);$("nextBtn").textContent=S.i>=N?"看结果":"下一题";
-  if(h>=150){S.streak[q.c]++;if(S.streak[q.c]>=2&&levels[q.c]<3){levels[q.c]++;S.streak[q.c]=0;store("wt_levels",levels);toast(`⬆️ ${CATS[q.c]} 升到 Lv ${levels[q.c]}！`)}}else S.streak[q.c]=0;
+  showResult(g,q.a,q.u,q.ex,h,timedOut===true);nextIsLast=S.i>=N;$("nextBtn").textContent=t(nextIsLast?"seeResult":"next");
+  if(h>=150){S.streak[q.c]++;if(S.streak[q.c]>=2&&levels[q.c]<3){levels[q.c]++;S.streak[q.c]=0;store("wt_levels",levels);toast(t("lvlUp",{c:catName(q.c),n:levels[q.c]}))}}else S.streak[q.c]=0;
 }
 $("soloBtn").onclick=startSolo;
 $("nextBtn").onclick=()=>{if(mode==="solo")soloNext()};
 
 // ---------- 联机模式（服务器出题、判分） ----------
 let pid=store("wt_pid");if(!pid){pid=Math.random().toString(36).slice(2)+Date.now().toString(36);store("wt_pid",pid)}
-let socket=null,M={code:null,you:pid,state:null,heights:[],myGuess:null};
+let socket=null;const M={code:null,state:null,heights:[]};
+let netKey=null; // 记住提示的"代码"，切换语言时重新翻译
+const netMsg=(k,v)=>{netKey=k?[k,v]:null;$("netMsg").textContent=k?t(k,v):""};
 function connect(){
   if(socket)return socket;
-  if(typeof io==="undefined"){$("netMsg").textContent="连不上服务器，请稍后刷新再试";return null}
+  if(typeof io==="undefined"){netMsg("noServer");return null}
   socket=io({path:BASE+"socket.io",auth:{pid}});
-  socket.on("connect_error",()=>$("netMsg").textContent="正在连接服务器…（免费服务器第一次唤醒可能要 30–60 秒）");
-  socket.on("err",m=>{$("netMsg").textContent=m;toast(m)});
-  socket.on("joined",({code})=>{mode="multi";M.code=code;M.heights=[];$("netMsg").textContent="";
+  socket.on("connect_error",()=>netMsg("connecting"));
+  socket.on("err",code=>{netMsg("err_"+code);toast(t("err_"+code))});
+  socket.on("joined",({code})=>{mode="multi";M.code=code;M.heights=[];netMsg("");
     history.replaceState(null,"","#"+code);$("roomCode").textContent=code;$("shareLink").value=location.origin+BASE+"#"+code;show("lobby")});
   socket.on("state",st=>{M.state=st;renderBoards(st)});
-  socket.on("question",q=>{mode="multi";M.myGuess=null;$("liveBoard").classList.remove("hide");show("game");showQuestion(q,q.index);
+  socket.on("question",q=>{mode="multi";$("liveBoard").classList.remove("hide");show("game");showQuestion(q,q.index);
     $("nextBtn").classList.add("hide");$("rAll").innerHTML="";runTimer(q.deadline,()=>{if(!$("ans").disabled)multiSubmit()})});
   socket.on("reveal",r=>{clearInterval(timerId);lockInput();
     const me=r.results.find(x=>x.id===pid)||{guess:null,height:0};M.heights[r.index]=me.height;
-    showResult(me.guess,r.a,r.u,r.ex,me.height);$("waitMsg").textContent="";
-    $("rAll").innerHTML=r.results.map((x,i)=>`<div><span>${i+1}. ${esc(x.name)}${x.id===pid?"（你）":""}</span><span>${x.guess===null?"—":fmt(x.guess)} → ${x.height} 米</span></div>`).join("");
-    $("nextMsg").textContent=r.index+1>=N?"马上公布最终排名…":`${r.seconds} 秒后自动进入下一题`});
-  socket.on("end",e=>{const me=e.players.find(p=>p.id===pid);
-    const board=e.players.map((p,i)=>`<div><span>${["🥇","🥈","🥉"][i]||i+1+"."} ${esc(p.name)}${p.id===pid?"（你）":""}</span><span>${p.total.toLocaleString("de-DE")} 米</span></div>`).join("");
-    showEnd(me?me.heights:M.heights,board)});
+    showResult(me.guess,r.a,r.u,r.ex,me.height,false);$("waitMsg").textContent="";
+    $("rAll").innerHTML=r.results.map((x,i)=>`<div><span>${i+1}. ${esc(x.name)}${x.id===pid?t("you"):""}</span><span>${x.guess===null?"—":fmt(x.guess)} → ${x.height} ${t("m")}</span></div>`).join("");
+    $("nextMsg").textContent=r.index+1>=N?t("finalSoon"):t("autoNext",{n:r.seconds})});
+  socket.on("end",e=>{const me=e.players.find(p=>p.id===pid);showEnd(me?me.heights:M.heights,e.players)});
   return socket;
 }
 function renderBoards(st){
-  const rows=st.players.map(p=>`<div><span>${p.id===st.hostId?"👑 ":""}${esc(p.name)}${p.id===pid?"（你）":""}${p.online?"":" · 离线"}</span><span>${st.phase==="question"?(p.answered?"✅ 已答":"⏳ 思考中"):p.total.toLocaleString("de-DE")+" 米"}</span></div>`).join("");
+  const loc=I18N[LANG]._locale;
+  const rows=st.players.map(p=>`<div><span>${p.id===st.hostId?"👑 ":""}${esc(p.name)}${p.id===pid?t("you"):""}${p.online?"":t("offline")}</span><span>${st.phase==="question"?(p.answered?t("answered"):t("thinking")):p.total.toLocaleString(loc)+" "+t("m")}</span></div>`).join("");
   $("lobbyList").innerHTML=rows;$("liveList").innerHTML=rows;
   const host=st.hostId===pid;
   $("startBtn").classList.toggle("hide",!host);
-  $("lobbyMsg").textContent=host?"朋友到齐后点“开始比赛”。":"等房主开始…";
+  $("lobbyMsg").textContent=host?t("hostHint"):t("waitHost");
 }
-function multiSubmit(){if($("ans").disabled)return;lockInput();const g=parseAns();M.myGuess=g;socket.emit("answer",{value:g});$("waitMsg").textContent="已提交，等其他人…"}
-$("ansForm").onsubmit=e=>{e.preventDefault();mode==="solo"?soloSubmit():multiSubmit()};
-$("createBtn").onclick=()=>{const s=connect();if(s){$("netMsg").textContent="创建中…";s.emit("create",{name:nick()})}};
-$("joinBtn").onclick=()=>{const c=$("codeIn").value.trim().toUpperCase();if(c.length<4){$("netMsg").textContent="请输入房间号";return}
-  const s=connect();if(s){$("netMsg").textContent="加入中…";s.emit("join",{code:c,name:nick()})}};
+function multiSubmit(){if($("ans").disabled)return;lockInput();socket.emit("answer",{value:parseAns()});$("waitMsg").textContent=t("submitted")}
+$("ansForm").onsubmit=e=>{e.preventDefault();mode==="solo"?soloSubmit(false):multiSubmit()};
+$("createBtn").onclick=()=>{const s=connect();if(s){netMsg("creating");s.emit("create",{name:nick()})}};
+$("joinBtn").onclick=()=>{const c=$("codeIn").value.trim().toUpperCase();if(c.length<4){netMsg("needCode");return}
+  const s=connect();if(s){netMsg("joining");s.emit("join",{code:c,name:nick()})}};
 $("startBtn").onclick=()=>socket&&socket.emit("start");
-$("copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText($("shareLink").value);toast("链接已复制")}catch(e){$("shareLink").select()}};
-$("leaveBtn").onclick=()=>{if(socket){socket.disconnect();socket=null}history.replaceState(null,"",BASE);show("home")};
-$("againBtn").onclick=()=>{if(mode==="solo")startSolo();else if(M.state&&M.state.hostId===pid)socket.emit("start");else{show("lobby")}};
-$("homeBtn").onclick=()=>{if(socket){socket.disconnect();socket=null}history.replaceState(null,"",BASE);show("home")};
-
-// 通过分享链接打开（网址末尾带 #房间号）：自动填好房间号
-// 展示版（GitHub Pages）：没有服务器，只开放单人模式
-if(window.STATIC_DEMO){$("multiCard").classList.add("hide");$("demoNote").classList.remove("hide")}
-const hashCode=location.hash.slice(1).toUpperCase();
-if(hashCode&&!window.STATIC_DEMO){$("codeIn").value=hashCode;$("netMsg").textContent="填好昵称后点“加入”即可进入房间 "+hashCode}
-drawScene(0,false);
+$("copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText($("shareLink").value);toast(t("linkCopied"))}catch(e){$("shareLink").select()}};
+function goHome(){if(socket){socket.disconnect();socket=null}curQ=null;curResult=null;lastEnd=null;history.replaceState(null,"",BASE);show("home")}
+$("leaveBtn").onclick=goHome;
+$("againBtn").onclick=()=>{if(mode==="solo")startSolo();else if(M.state&&M.state.hostId===pid)socket.emit("start");else{lastEnd=null;show("lobby")}};
+$("homeBtn").onclick=goHome;
 
 // ---------- PWA：离线缓存 + 安装提示 ----------
 if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone;
 const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
 let deferredPrompt=null;
+function renderInstallTip(){$("installTip").textContent=deferredPrompt?t("installOther"):t("installIOS")}
 if(!standalone&&!store("wt_install_hide")){
-  if(isIOS){$("installTip").textContent="在 Safari 里点底部的「分享」按钮 ⬆️，再选「添加到主屏幕」。";$("installCard").classList.remove("hide")}
-  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;$("installTip").textContent="一键把风机塔装到手机桌面，像 App 一样全屏打开。";$("installBtn").classList.remove("hide");$("installCard").classList.remove("hide")});
+  if(isIOS)$("installCard").classList.remove("hide");
+  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;renderInstallTip();$("installBtn").classList.remove("hide");$("installCard").classList.remove("hide")});
 }
 $("installBtn").onclick=async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$("installCard").classList.add("hide")};
 $("installClose").onclick=()=>{store("wt_install_hide",true);$("installCard").classList.add("hide")};
+
+// ---------- 启动 ----------
+// 展示版（GitHub Pages）：没有服务器，只开放单人模式
+if(window.STATIC_DEMO){$("multiCard").classList.add("hide");$("demoNote").classList.remove("hide")}
+applyLang();drawScene(0,false);
+// 通过分享链接打开（网址末尾带 #房间号）：自动填好房间号
+const hashCode=location.hash.slice(1).toUpperCase();
+if(hashCode&&!window.STATIC_DEMO){$("codeIn").value=hashCode;netMsg("joinPrompt",{c:hashCode})}
 </script>
 </body>
 </html>

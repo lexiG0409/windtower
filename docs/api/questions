@@ -1,317 +1,877 @@
 [
  {
+  "id": "policy-01",
   "c": "policy",
   "l": 1,
-  "q": "德国 EEG 2023 定下的目标：到 2030 年陆上风电装机要达到多少 GW？",
   "a": 115,
-  "u": "GW",
   "r": 80,
-  "ex": "EEG 2023 目标为 2030 年陆上风电 115 GW，差不多是 2024 年底存量的近两倍。"
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW"
+  },
+  "q": {
+   "zh": "德国 EEG 2023 定下的目标：到 2030 年陆上风电装机要达到多少 GW？",
+   "en": "Germany's EEG 2023 target: how many GW of onshore wind should be installed by 2030?",
+   "de": "Ziel des EEG 2023: Wie viele GW Windenergie an Land sollen bis 2030 installiert sein?",
+   "es": "Objetivo de la EEG 2023 de Alemania: ¿cuántos GW de eólica terrestre deben estar instalados en 2030?"
+  },
+  "ex": {
+   "zh": "EEG 2023 目标为 2030 年陆上风电 115 GW，差不多是 2024 年底存量的近两倍。",
+   "en": "The EEG 2023 target is 115 GW of onshore wind by 2030 – almost twice the fleet at the end of 2024.",
+   "de": "Das EEG 2023 sieht 115 GW Wind an Land bis 2030 vor – fast doppelt so viel wie Ende 2024 installiert.",
+   "es": "La EEG 2023 fija 115 GW de eólica terrestre para 2030, casi el doble de lo instalado a finales de 2024."
+  }
  },
  {
+  "id": "policy-02",
   "c": "policy",
   "l": 1,
-  "q": "德国《陆上风电法》(Wind-an-Land-Gesetz) 要求到 2032 年把国土面积的百分之多少划给风电？",
   "a": 2,
-  "u": "%",
   "r": 5,
-  "ex": "目标是 2032 年前 2% 的国土面积用于风电，由各州分摊。"
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%"
+  },
+  "q": {
+   "zh": "德国《陆上风电法》(Wind-an-Land-Gesetz) 要求到 2032 年把国土面积的百分之多少划给风电？",
+   "en": "Germany's Wind-an-Land-Gesetz: what percentage of the country's land area must be designated for wind by 2032?",
+   "de": "Wind-an-Land-Gesetz: Wie viel Prozent der Bundesfläche sollen bis 2032 für Windenergie ausgewiesen sein?",
+   "es": "Ley alemana Wind-an-Land-Gesetz: ¿qué porcentaje del territorio debe reservarse para la eólica en 2032?"
+  },
+  "ex": {
+   "zh": "目标是 2032 年前 2% 的国土面积用于风电，由各州分摊。",
+   "en": "The target is 2% of federal territory by 2032, split among the federal states.",
+   "de": "Ziel sind 2 % der Bundesfläche bis 2032, verteilt auf die Bundesländer.",
+   "es": "El objetivo es el 2 % del territorio federal en 2032, repartido entre los estados federados."
+  }
  },
  {
+  "id": "policy-03",
   "c": "policy",
   "l": 1,
-  "q": "德国 EEG 对一个中标风电项目的补贴（市场溢价）一般持续多少年？",
   "a": 20,
-  "u": "年",
   "r": 15,
-  "ex": "EEG 支付期为 20 年，这也是很多项目财务模型的基础周期。"
+  "u": {
+   "zh": "年",
+   "en": "years",
+   "de": "Jahre",
+   "es": "años"
+  },
+  "q": {
+   "zh": "德国 EEG 对一个中标风电项目的补贴（市场溢价）一般持续多少年？",
+   "en": "For how many years does Germany's EEG pay support (market premium) to a winning wind project?",
+   "de": "Wie viele Jahre zahlt das EEG einer bezuschlagten Windanlage die Förderung (Marktprämie)?",
+   "es": "¿Durante cuántos años paga la EEG alemana el apoyo (prima de mercado) a un proyecto eólico adjudicado?"
+  },
+  "ex": {
+   "zh": "EEG 支付期为 20 年，这也是很多项目财务模型的基础周期。",
+   "en": "The EEG support period is 20 years – also the base period of many project finance models.",
+   "de": "Der Förderzeitraum beträgt 20 Jahre – die Basis vieler Finanzmodelle.",
+   "es": "El periodo de apoyo es de 20 años, la base de muchos modelos financieros de proyectos."
+  }
  },
  {
+  "id": "policy-04",
   "c": "policy",
   "l": 2,
-  "q": "欧盟 RED III 把 2030 年可再生能源占终端能源消费的约束性目标定为百分之多少？",
   "a": 42.5,
-  "u": "%",
   "r": 30,
-  "ex": "RED III：2030 年 42.5%（另有 2.5% 的指示性目标，合计争取 45%）。"
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%"
+  },
+  "q": {
+   "zh": "欧盟 RED III 把 2030 年可再生能源占终端能源消费的约束性目标定为百分之多少？",
+   "en": "What binding 2030 share of renewables in final energy consumption does the EU's RED III set?",
+   "de": "Welches verbindliche Ziel für den Anteil erneuerbarer Energien am Endenergieverbrauch 2030 setzt die EU-Richtlinie RED III?",
+   "es": "¿Qué cuota vinculante de renovables en el consumo final de energía para 2030 fija la RED III de la UE?"
+  },
+  "ex": {
+   "zh": "RED III：2030 年 42.5%（另有 2.5% 的指示性目标，合计争取 45%）。",
+   "en": "RED III: 42.5% by 2030, plus an indicative 2.5% top-up aiming for 45%.",
+   "de": "RED III: 42,5 % bis 2030, plus 2,5 % indikativ – zusammen 45 % als Ambition.",
+   "es": "RED III: 42,5 % en 2030, más un 2,5 % indicativo para aspirar al 45 %."
+  }
  },
  {
+  "id": "policy-05",
   "c": "policy",
   "l": 2,
-  "q": "从 2025 年起，德国每年陆上风电招标量是多少 GW？",
   "a": 10,
-  "u": "GW",
   "r": 8,
-  "ex": "EEG 2023 规定 2025 年起每年招标 10 GW 陆上风电。"
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW"
+  },
+  "q": {
+   "zh": "从 2025 年起，德国每年陆上风电招标量是多少 GW？",
+   "en": "From 2025, how many GW of onshore wind does Germany tender each year?",
+   "de": "Wie viele GW Wind an Land schreibt Deutschland ab 2025 jährlich aus?",
+   "es": "A partir de 2025, ¿cuántos GW de eólica terrestre subasta Alemania cada año?"
+  },
+  "ex": {
+   "zh": "EEG 2023 规定 2025 年起每年招标 10 GW 陆上风电。",
+   "en": "Under EEG 2023, 10 GW of onshore wind is tendered every year from 2025.",
+   "de": "Laut EEG 2023 werden ab 2025 jährlich 10 GW Wind an Land ausgeschrieben.",
+   "es": "Según la EEG 2023, desde 2025 se subastan 10 GW de eólica terrestre al año."
+  }
  },
  {
+  "id": "policy-06",
   "c": "policy",
   "l": 2,
-  "q": "巴伐利亚著名的“XH 规则”：风机离住宅的距离至少是风机总高度的几倍？",
   "a": 10,
-  "u": "倍",
   "r": 8,
-  "ex": "10H 规则曾让巴伐利亚风电几乎停滞，2022 年起在多类区域被放宽。"
+  "u": {
+   "zh": "倍",
+   "en": "×",
+   "de": "×",
+   "es": "×"
+  },
+  "q": {
+   "zh": "巴伐利亚著名的“XH 规则”：风机离住宅的距离至少是风机总高度的几倍？",
+   "en": "Bavaria's famous \"xH rule\": the minimum distance to homes is how many times the turbine's total height?",
+   "de": "Bayerns bekannte „xH-Regel“: Der Mindestabstand zu Wohngebäuden beträgt das Wievielfache der Anlagenhöhe?",
+   "es": "La famosa «regla xH» de Baviera: ¿cuántas veces la altura total del aerogenerador debe ser la distancia mínima a viviendas?"
+  },
+  "ex": {
+   "zh": "10H 规则曾让巴伐利亚风电几乎停滞，2022 年起在多类区域被放宽。",
+   "en": "The 10H rule nearly froze wind expansion in Bavaria; it has been relaxed for many areas since 2022.",
+   "de": "Die 10H-Regel brachte den Ausbau in Bayern fast zum Erliegen; seit 2022 gilt sie in vielen Gebieten nicht mehr.",
+   "es": "La regla 10H casi paralizó la eólica en Baviera; desde 2022 se ha flexibilizado en muchas zonas."
+  }
  },
  {
+  "id": "policy-07",
   "c": "policy",
   "l": 2,
-  "q": "2025 年德国陆上风电招标的最高限价（Höchstwert）是多少 ct/kWh？",
   "a": 7.35,
-  "u": "ct/kWh",
   "r": 5,
-  "ex": "联邦网络局 (BNetzA) 将限价定在 7.35 ct/kWh。"
+  "u": {
+   "zh": "ct/kWh",
+   "en": "ct/kWh",
+   "de": "ct/kWh",
+   "es": "ct/kWh"
+  },
+  "q": {
+   "zh": "2025 年德国陆上风电招标的最高限价（Höchstwert）是多少 ct/kWh？",
+   "en": "What was the ceiling price (Höchstwert) in Germany's 2025 onshore wind tenders, in ct/kWh?",
+   "de": "Wie hoch war der Höchstwert in den Ausschreibungen für Wind an Land 2025 (ct/kWh)?",
+   "es": "¿Cuál fue el precio máximo (Höchstwert) en las subastas alemanas de eólica terrestre de 2025, en ct/kWh?"
+  },
+  "ex": {
+   "zh": "联邦网络局 (BNetzA) 将限价定在 7.35 ct/kWh。",
+   "en": "The Federal Network Agency (BNetzA) set the ceiling at 7.35 ct/kWh.",
+   "de": "Die Bundesnetzagentur hat den Höchstwert auf 7,35 ct/kWh festgelegt.",
+   "es": "La Agencia Federal de Redes (BNetzA) lo fijó en 7,35 ct/kWh."
+  }
  },
  {
+  "id": "policy-08",
   "c": "policy",
   "l": 3,
-  "q": "RED III 规定：在“可再生能源加速区”内，新风电项目审批最长不超过几个月？",
   "a": 12,
-  "u": "个月",
   "r": 18,
-  "ex": "加速区内最长 12 个月，加速区外最长 24 个月。"
+  "u": {
+   "zh": "个月",
+   "en": "months",
+   "de": "Monate",
+   "es": "meses"
+  },
+  "q": {
+   "zh": "RED III 规定：在“可再生能源加速区”内，新风电项目审批最长不超过几个月？",
+   "en": "Under RED III, what is the maximum permitting time (months) for new wind projects inside renewables acceleration areas?",
+   "de": "RED III: Wie viele Monate darf die Genehmigung neuer Windprojekte in Beschleunigungsgebieten höchstens dauern?",
+   "es": "Según la RED III, ¿cuántos meses como máximo puede durar la autorización de nuevos parques en zonas de aceleración renovable?"
+  },
+  "ex": {
+   "zh": "加速区内最长 12 个月，加速区外最长 24 个月。",
+   "en": "Maximum 12 months inside acceleration areas, 24 months outside.",
+   "de": "Höchstens 12 Monate in Beschleunigungsgebieten, 24 Monate außerhalb.",
+   "es": "Máximo 12 meses dentro de las zonas de aceleración y 24 meses fuera."
+  }
  },
  {
+  "id": "policy-09",
   "c": "policy",
   "l": 3,
-  "q": "波兰 2023 年放宽风电距离法规后，风机离住宅的最小距离是多少米？",
   "a": 700,
-  "u": "米",
   "r": 1000,
-  "ex": "原本是 10H（实际约 1.5–2 公里），2023 年改为 700 米。"
+  "u": {
+   "zh": "米",
+   "en": "m",
+   "de": "m",
+   "es": "m"
+  },
+  "q": {
+   "zh": "波兰 2023 年放宽风电距离法规后，风机离住宅的最小距离是多少米？",
+   "en": "After Poland relaxed its distance law in 2023, what is the minimum distance from turbines to homes (metres)?",
+   "de": "Wie groß ist der Mindestabstand zu Wohngebäuden in Polen nach der Lockerung 2023 (in Metern)?",
+   "es": "Tras la flexibilización de 2023 en Polonia, ¿cuál es la distancia mínima de los aerogeneradores a las viviendas (en metros)?"
+  },
+  "ex": {
+   "zh": "原本是 10H（实际约 1.5–2 公里），2023 年改为 700 米。",
+   "en": "Previously 10H (about 1.5–2 km in practice); since 2023 it is 700 m.",
+   "de": "Früher galt 10H (praktisch 1,5–2 km); seit 2023 sind es 700 m.",
+   "es": "Antes era 10H (en la práctica 1,5–2 km); desde 2023 son 700 m."
+  }
  },
  {
+  "id": "policy-10",
   "c": "policy",
   "l": 3,
-  "q": "英国（英格兰）在哪一年取消了对陆上风电的“事实禁令”？",
   "a": 2024,
-  "u": "年",
   "r": 10,
-  "ex": "2024 年 7 月新政府上任后即取消，陆上风电重新纳入国家重大基础设施规划。"
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "英国（英格兰）在哪一年取消了对陆上风电的“事实禁令”？",
+   "en": "In which year did the UK lift the de facto ban on onshore wind in England?",
+   "de": "In welchem Jahr hob Großbritannien das faktische Verbot für Wind an Land in England auf?",
+   "es": "¿En qué año levantó el Reino Unido la prohibición de facto de la eólica terrestre en Inglaterra?"
+  },
+  "ex": {
+   "zh": "2024 年 7 月新政府上任后即取消，陆上风电重新纳入国家重大基础设施规划。",
+   "en": "Lifted in July 2024 right after the new government took office; onshore wind is back in the national infrastructure regime.",
+   "de": "Im Juli 2024 direkt nach dem Regierungswechsel aufgehoben; Wind an Land zählt wieder zur nationalen Infrastrukturplanung.",
+   "es": "Se levantó en julio de 2024, nada más llegar el nuevo gobierno; la eólica terrestre vuelve a la planificación de infraestructuras nacionales."
+  }
  },
  {
+  "id": "policy-11",
   "c": "policy",
   "l": 3,
-  "q": "欧盟委员会在哪一年发布《欧洲风电一揽子计划》(European Wind Power Package)？",
   "a": 2023,
-  "u": "年",
   "r": 8,
-  "ex": "2023 年 10 月发布，回应审批慢、通胀和中国竞争等问题。"
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "欧盟委员会在哪一年发布《欧洲风电一揽子计划》(European Wind Power Package)？",
+   "en": "In which year did the European Commission publish the European Wind Power Package?",
+   "de": "In welchem Jahr veröffentlichte die EU-Kommission das European Wind Power Package?",
+   "es": "¿En qué año publicó la Comisión Europea el European Wind Power Package?"
+  },
+  "ex": {
+   "zh": "2023 年 10 月发布，回应审批慢、通胀和中国竞争等问题。",
+   "en": "Published in October 2023 to address slow permitting, inflation and competition from China.",
+   "de": "Im Oktober 2023 veröffentlicht – Antwort auf langsame Genehmigungen, Inflation und Konkurrenz aus China.",
+   "es": "Publicado en octubre de 2023 para responder a permisos lentos, inflación y competencia china."
+  }
  },
  {
+  "id": "oem-12",
   "c": "oem",
   "l": 1,
-  "q": "Vestas V172-7.2 MW 这款陆上机型的额定功率是多少 MW？",
   "a": 7.2,
-  "u": "MW",
   "r": 6,
-  "ex": "型号里就藏着答案：V172 = 叶轮直径 172 米，7.2 = 额定 7.2 MW。"
+  "u": {
+   "zh": "MW",
+   "en": "MW",
+   "de": "MW",
+   "es": "MW"
+  },
+  "q": {
+   "zh": "Vestas V172-7.2 MW 这款陆上机型的额定功率是多少 MW？",
+   "en": "What is the rated power of the Vestas V172-7.2 MW onshore turbine, in MW?",
+   "de": "Welche Nennleistung hat die Vestas V172-7.2 MW (in MW)?",
+   "es": "¿Cuál es la potencia nominal del aerogenerador terrestre Vestas V172-7.2 MW, en MW?"
+  },
+  "ex": {
+   "zh": "型号里就藏着答案：V172 = 叶轮直径 172 米，7.2 = 额定 7.2 MW。",
+   "en": "The answer is in the name: V172 = 172 m rotor diameter, 7.2 = 7.2 MW rated power.",
+   "de": "Die Antwort steckt im Namen: V172 = 172 m Rotordurchmesser, 7.2 = 7,2 MW Nennleistung.",
+   "es": "La respuesta está en el nombre: V172 = rotor de 172 m, 7.2 = 7,2 MW de potencia nominal."
+  }
  },
  {
+  "id": "oem-13",
   "c": "oem",
   "l": 1,
-  "q": "风速超过多少 m/s 时，大多数风机会停机保护（切出风速）？",
   "a": 25,
-  "u": "m/s",
   "r": 20,
-  "ex": "典型切出风速约 25 m/s，相当于 9–10 级大风。"
+  "u": {
+   "zh": "m/s",
+   "en": "m/s",
+   "de": "m/s",
+   "es": "m/s"
+  },
+  "q": {
+   "zh": "风速超过多少 m/s 时，大多数风机会停机保护（切出风速）？",
+   "en": "Above what wind speed (m/s) do most turbines shut down for protection (cut-out speed)?",
+   "de": "Ab welcher Windgeschwindigkeit (m/s) schalten die meisten Anlagen ab (Abschaltgeschwindigkeit)?",
+   "es": "¿A partir de qué velocidad de viento (m/s) se detienen la mayoría de los aerogeneradores (velocidad de corte)?"
+  },
+  "ex": {
+   "zh": "典型切出风速约 25 m/s，相当于 9–10 级大风。",
+   "en": "Typical cut-out speed is about 25 m/s – a severe gale (Beaufort 9–10).",
+   "de": "Typisch sind etwa 25 m/s – das entspricht Sturm der Stärke 9–10.",
+   "es": "La velocidad de corte típica es de unos 25 m/s, un temporal de fuerza 9–10."
+  }
  },
  {
+  "id": "oem-14",
   "c": "oem",
   "l": 1,
-  "q": "风的功率与风速的几次方成正比？",
   "a": 3,
-  "u": "次方",
   "r": 3,
-  "ex": "P ∝ v³：风速翻倍，功率变 8 倍。所以选址时一点点风速差别都很重要。"
+  "u": {
+   "zh": "次方",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "风的功率与风速的几次方成正比？",
+   "en": "Wind power is proportional to wind speed raised to which power?",
+   "de": "Die Windleistung ist proportional zur Windgeschwindigkeit hoch wie viel?",
+   "es": "¿La potencia del viento es proporcional a la velocidad del viento elevada a qué potencia?"
+  },
+  "ex": {
+   "zh": "P ∝ v³：风速翻倍，功率变 8 倍。所以选址时一点点风速差别都很重要。",
+   "en": "P ∝ v³: double the wind speed and you get 8× the power – which is why small wind differences matter so much in siting.",
+   "de": "P ∝ v³: Doppelte Windgeschwindigkeit ergibt die 8-fache Leistung – deshalb zählt bei der Standortwahl jeder Zehntel-m/s.",
+   "es": "P ∝ v³: si la velocidad se duplica, la potencia se multiplica por 8. Por eso pequeñas diferencias de viento importan tanto al elegir emplazamiento."
+  }
  },
  {
+  "id": "oem-15",
   "c": "oem",
   "l": 2,
-  "q": "Nordex N163 机型的叶轮直径是多少米？",
   "a": 163,
-  "u": "米",
   "r": 100,
-  "ex": "和 Vestas 一样，Nordex 的型号数字就是叶轮直径。"
+  "u": {
+   "zh": "米",
+   "en": "m",
+   "de": "m",
+   "es": "m"
+  },
+  "q": {
+   "zh": "Nordex N163 机型的叶轮直径是多少米？",
+   "en": "What is the rotor diameter of the Nordex N163, in metres?",
+   "de": "Welchen Rotordurchmesser hat die Nordex N163 (in Metern)?",
+   "es": "¿Cuál es el diámetro del rotor del Nordex N163, en metros?"
+  },
+  "ex": {
+   "zh": "和 Vestas 一样，Nordex 的型号数字就是叶轮直径。",
+   "en": "Like Vestas, Nordex names its models after the rotor diameter.",
+   "de": "Wie bei Vestas steht die Zahl im Typnamen für den Rotordurchmesser.",
+   "es": "Igual que Vestas, Nordex nombra sus modelos por el diámetro del rotor."
+  }
  },
  {
+  "id": "oem-16",
   "c": "oem",
   "l": 2,
-  "q": "Enercon E-175 EP5 的叶轮直径是多少米？",
   "a": 175,
-  "u": "米",
   "r": 100,
-  "ex": "E-175 是 Enercon 目前最大的陆上机型之一，约 6 MW。"
+  "u": {
+   "zh": "米",
+   "en": "m",
+   "de": "m",
+   "es": "m"
+  },
+  "q": {
+   "zh": "Enercon E-175 EP5 的叶轮直径是多少米？",
+   "en": "What is the rotor diameter of the Enercon E-175 EP5, in metres?",
+   "de": "Welchen Rotordurchmesser hat die Enercon E-175 EP5 (in Metern)?",
+   "es": "¿Cuál es el diámetro del rotor del Enercon E-175 EP5, en metros?"
+  },
+  "ex": {
+   "zh": "E-175 是 Enercon 目前最大的陆上机型之一，约 6 MW。",
+   "en": "The E-175 is one of Enercon's largest onshore models, around 6 MW.",
+   "de": "Die E-175 gehört mit rund 6 MW zu Enercons größten Onshore-Anlagen.",
+   "es": "El E-175 es uno de los mayores modelos terrestres de Enercon, de unos 6 MW."
+  }
  },
  {
+  "id": "oem-17",
   "c": "oem",
   "l": 2,
-  "q": "贝茨极限：风机理论上最多能从风中提取百分之多少的能量？",
   "a": 59.3,
-  "u": "%",
   "r": 40,
-  "ex": "贝茨极限 16/27 ≈ 59.3%，现代风机实际约 45–50%。"
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%"
+  },
+  "q": {
+   "zh": "贝茨极限：风机理论上最多能从风中提取百分之多少的能量？",
+   "en": "Betz limit: what is the maximum percentage of wind energy a turbine can theoretically extract?",
+   "de": "Betz-Grenze: Wie viel Prozent der Windenergie kann eine Anlage theoretisch maximal nutzen?",
+   "es": "Límite de Betz: ¿qué porcentaje máximo de la energía del viento puede extraer teóricamente un aerogenerador?"
+  },
+  "ex": {
+   "zh": "贝茨极限 16/27 ≈ 59.3%，现代风机实际约 45–50%。",
+   "en": "Betz limit = 16/27 ≈ 59.3%; modern turbines reach about 45–50% in practice.",
+   "de": "Betz-Grenze = 16/27 ≈ 59,3 %; moderne Anlagen erreichen in der Praxis etwa 45–50 %.",
+   "es": "Límite de Betz = 16/27 ≈ 59,3 %; los aerogeneradores modernos alcanzan en la práctica un 45–50 %."
+  }
  },
  {
+  "id": "oem-18",
   "c": "oem",
   "l": 2,
-  "q": "大多数风机从多少 m/s 的风速开始发电（切入风速）？",
   "a": 3,
-  "u": "m/s",
   "r": 6,
-  "ex": "典型切入风速约 3 m/s，大约是能吹动树叶的微风。"
+  "u": {
+   "zh": "m/s",
+   "en": "m/s",
+   "de": "m/s",
+   "es": "m/s"
+  },
+  "q": {
+   "zh": "大多数风机从多少 m/s 的风速开始发电（切入风速）？",
+   "en": "At what wind speed (m/s) do most turbines start generating (cut-in speed)?",
+   "de": "Ab welcher Windgeschwindigkeit (m/s) beginnen die meisten Anlagen zu produzieren (Einschaltgeschwindigkeit)?",
+   "es": "¿A partir de qué velocidad de viento (m/s) empiezan a generar la mayoría de los aerogeneradores (velocidad de arranque)?"
+  },
+  "ex": {
+   "zh": "典型切入风速约 3 m/s，大约是能吹动树叶的微风。",
+   "en": "Typical cut-in speed is about 3 m/s – a light breeze that rustles leaves.",
+   "de": "Typisch sind etwa 3 m/s – eine leichte Brise, die Blätter rascheln lässt.",
+   "es": "La velocidad de arranque típica es de unos 3 m/s, una brisa ligera que mueve las hojas."
+  }
  },
  {
+  "id": "oem-19",
   "c": "oem",
   "l": 3,
-  "q": "Vestas 公司（最初是一家铁匠铺）创立于哪一年？",
   "a": 1898,
-  "u": "年",
   "r": 100,
-  "ex": "1898 年在丹麦创立，1979 年才开始做风机。"
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "Vestas 公司（最初是一家铁匠铺）创立于哪一年？",
+   "en": "In which year was Vestas (originally a blacksmith's shop) founded?",
+   "de": "In welchem Jahr wurde Vestas (ursprünglich eine Schmiede) gegründet?",
+   "es": "¿En qué año se fundó Vestas (originalmente una herrería)?"
+  },
+  "ex": {
+   "zh": "1898 年在丹麦创立，1979 年才开始做风机。",
+   "en": "Founded in Denmark in 1898; it only started building wind turbines in 1979.",
+   "de": "1898 in Dänemark gegründet; Windenergieanlagen baut Vestas erst seit 1979.",
+   "es": "Fundada en Dinamarca en 1898; no empezó a fabricar aerogeneradores hasta 1979."
+  }
  },
  {
+  "id": "oem-20",
   "c": "oem",
   "l": 3,
-  "q": "Enercon 由 Aloys Wobben 创立于哪一年？",
   "a": 1984,
-  "u": "年",
   "r": 30,
-  "ex": "1984 年创立于德国奥里希 (Aurich)，以无齿轮箱直驱技术著称。"
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "Enercon 由 Aloys Wobben 创立于哪一年？",
+   "en": "In which year did Aloys Wobben found Enercon?",
+   "de": "In welchem Jahr gründete Aloys Wobben Enercon?",
+   "es": "¿En qué año fundó Aloys Wobben Enercon?"
+  },
+  "ex": {
+   "zh": "1984 年创立于德国奥里希 (Aurich)，以无齿轮箱直驱技术著称。",
+   "en": "Founded in 1984 in Aurich, Germany – famous for gearless direct-drive technology.",
+   "de": "1984 in Aurich gegründet – bekannt für getriebelose Direktantriebe.",
+   "es": "Fundada en 1984 en Aurich (Alemania), conocida por su tecnología de accionamiento directo sin multiplicadora."
+  }
  },
  {
+  "id": "oem-21",
   "c": "oem",
   "l": 3,
-  "q": "Siemens 风电业务与西班牙 Gamesa 合并成 Siemens Gamesa 是哪一年？",
   "a": 2017,
-  "u": "年",
   "r": 15,
-  "ex": "2017 年合并；2023 年起 Siemens Energy 将其完全收购退市。"
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "Siemens 风电业务与西班牙 Gamesa 合并成 Siemens Gamesa 是哪一年？",
+   "en": "In which year did Siemens' wind business merge with Spain's Gamesa to form Siemens Gamesa?",
+   "de": "In welchem Jahr fusionierte das Windgeschäft von Siemens mit Gamesa zu Siemens Gamesa?",
+   "es": "¿En qué año se fusionó el negocio eólico de Siemens con la española Gamesa para formar Siemens Gamesa?"
+  },
+  "ex": {
+   "zh": "2017 年合并；2023 年起 Siemens Energy 将其完全收购退市。",
+   "en": "Merged in 2017; Siemens Energy took it fully private in 2023.",
+   "de": "Fusion 2017; 2023 hat Siemens Energy das Unternehmen vollständig übernommen und von der Börse genommen.",
+   "es": "Fusión en 2017; en 2023 Siemens Energy la adquirió por completo y la excluyó de bolsa."
+  }
  },
  {
+  "id": "oem-22",
   "c": "oem",
   "l": 3,
-  "q": "Nordex 创立于哪一年？",
   "a": 1985,
-  "u": "年",
   "r": 30,
-  "ex": "1985 年在丹麦创立，后总部迁到德国汉堡。"
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": ""
+  },
+  "q": {
+   "zh": "Nordex 创立于哪一年？",
+   "en": "In which year was Nordex founded?",
+   "de": "In welchem Jahr wurde Nordex gegründet?",
+   "es": "¿En qué año se fundó Nordex?"
+  },
+  "ex": {
+   "zh": "1985 年在丹麦创立，后总部迁到德国汉堡。",
+   "en": "Founded in Denmark in 1985; headquarters later moved to Hamburg.",
+   "de": "1985 in Dänemark gegründet; der Hauptsitz ist heute in Hamburg.",
+   "es": "Fundada en Dinamarca en 1985; su sede se trasladó después a Hamburgo."
+  }
  },
  {
+  "id": "dev-23",
   "c": "dev",
   "l": 1,
-  "q": "2024 年底德国陆上风电累计装机大约是多少 GW？",
   "a": 63,
-  "u": "GW",
   "r": 50,
-  "ex": "约 63 GW（Deutsche WindGuard 统计）。要到 2030 年 115 GW，每年得新增约 8–9 GW。"
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW"
+  },
+  "q": {
+   "zh": "2024 年底德国陆上风电累计装机大约是多少 GW？",
+   "en": "Roughly how many GW of onshore wind were installed in Germany at the end of 2024?",
+   "de": "Wie viele GW Wind an Land waren Ende 2024 in Deutschland ungefähr installiert?",
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre había instalados en Alemania a finales de 2024?"
+  },
+  "ex": {
+   "zh": "约 63 GW（Deutsche WindGuard 统计）。要到 2030 年 115 GW，每年得新增约 8–9 GW。",
+   "en": "About 63 GW (Deutsche WindGuard). Reaching 115 GW by 2030 needs roughly 8–9 GW of additions per year.",
+   "de": "Rund 63 GW (Deutsche WindGuard). Für 115 GW bis 2030 braucht es etwa 8–9 GW Zubau pro Jahr.",
+   "es": "Unos 63 GW (Deutsche WindGuard). Para llegar a 115 GW en 2030 hacen falta unos 8–9 GW nuevos al año."
+  }
  },
  {
+  "id": "dev-24",
   "c": "dev",
   "l": 1,
-  "q": "2024 年德国陆上风电获得建设许可（BImSchG 审批）的容量大约是多少 GW？",
   "a": 14,
-  "u": "GW",
   "r": 15,
-  "ex": "约 14 GW，是新增装机的 4 倍多——审批提速了，装机会在之后几年跟上。"
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW"
+  },
+  "q": {
+   "zh": "2024 年德国陆上风电获得建设许可（BImSchG 审批）的容量大约是多少 GW？",
+   "en": "Roughly how many GW of onshore wind received construction permits (BImSchG) in Germany in 2024?",
+   "de": "Wie viele GW Wind an Land wurden 2024 in Deutschland ungefähr nach BImSchG genehmigt?",
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre obtuvieron permiso de construcción (BImSchG) en Alemania en 2024?"
+  },
+  "ex": {
+   "zh": "约 14 GW，是新增装机的 4 倍多——审批提速了，装机会在之后几年跟上。",
+   "en": "About 14 GW – more than 4× the new installations. Permitting has sped up; construction will follow in the coming years.",
+   "de": "Rund 14 GW – mehr als das Vierfache des Zubaus. Die Genehmigungen haben angezogen, der Bau folgt in den nächsten Jahren.",
+   "es": "Unos 14 GW, más de 4 veces lo instalado. Los permisos se han acelerado; la construcción llegará en los próximos años."
+  }
  },
  {
+  "id": "dev-25",
   "c": "dev",
   "l": 2,
-  "q": "2024 年德国陆上风电新增装机（毛增量）大约是多少 GW？",
   "a": 3.3,
-  "u": "GW",
   "r": 5,
-  "ex": "约 3.3 GW，远低于实现目标所需的速度；但审批量在大幅回升。"
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW"
+  },
+  "q": {
+   "zh": "2024 年德国陆上风电新增装机（毛增量）大约是多少 GW？",
+   "en": "Roughly how many GW of new onshore wind (gross) did Germany install in 2024?",
+   "de": "Wie viele GW Wind an Land wurden 2024 in Deutschland ungefähr neu errichtet (brutto)?",
+   "es": "¿Aproximadamente cuántos GW de nueva eólica terrestre (bruta) instaló Alemania en 2024?"
+  },
+  "ex": {
+   "zh": "约 3.3 GW，远低于实现目标所需的速度；但审批量在大幅回升。",
+   "en": "About 3.3 GW – far below the pace the targets require, but permits are rising sharply.",
+   "de": "Rund 3,3 GW – weit unter dem nötigen Tempo, aber die Genehmigungen steigen deutlich.",
+   "es": "Unos 3,3 GW, muy por debajo del ritmo necesario, aunque los permisos están creciendo con fuerza."
+  }
  },
  {
+  "id": "dev-26",
   "c": "dev",
   "l": 2,
-  "q": "欧洲风电装机中，陆上风电大约占百分之多少？",
   "a": 87,
-  "u": "%",
   "r": 50,
-  "ex": "约 85–90%。海上风电新闻多，但欧洲风电的主力一直是陆上。"
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%"
+  },
+  "q": {
+   "zh": "欧洲风电装机中，陆上风电大约占百分之多少？",
+   "en": "Roughly what percentage of Europe's installed wind capacity is onshore?",
+   "de": "Wie viel Prozent der installierten Windleistung in Europa entfallen ungefähr auf Wind an Land?",
+   "es": "¿Aproximadamente qué porcentaje de la potencia eólica instalada en Europa es terrestre?"
+  },
+  "ex": {
+   "zh": "约 85–90%。海上风电新闻多，但欧洲风电的主力一直是陆上。",
+   "en": "About 85–90%. Offshore gets the headlines, but onshore has always been the backbone of European wind.",
+   "de": "Etwa 85–90 %. Offshore macht die Schlagzeilen, das Rückgrat ist aber Wind an Land.",
+   "es": "Alrededor del 85–90 %. La eólica marina acapara titulares, pero la terrestre es la columna vertebral en Europa."
+  }
  },
  {
+  "id": "dev-27",
   "c": "dev",
   "l": 2,
-  "q": "德国陆上风机一年的“满负荷小时数”大约是多少小时？",
   "a": 2000,
-  "u": "小时",
   "r": 1500,
-  "ex": "新机型在德国约 2000 小时左右（一年共 8760 小时），即容量系数约 23%。"
+  "u": {
+   "zh": "小时",
+   "en": "h",
+   "de": "h",
+   "es": "h"
+  },
+  "q": {
+   "zh": "德国陆上风机一年的“满负荷小时数”大约是多少小时？",
+   "en": "Roughly how many full-load hours per year does an onshore turbine in Germany achieve?",
+   "de": "Wie viele Volllaststunden erreicht eine Windanlage an Land in Deutschland ungefähr pro Jahr?",
+   "es": "¿Aproximadamente cuántas horas equivalentes a plena carga al año logra un aerogenerador terrestre en Alemania?"
+  },
+  "ex": {
+   "zh": "新机型在德国约 2000 小时左右（一年共 8760 小时），即容量系数约 23%。",
+   "en": "New turbines in Germany reach about 2,000 hours (out of 8,760) – a capacity factor of roughly 23%.",
+   "de": "Neue Anlagen kommen auf rund 2.000 Stunden (von 8.760) – ein Kapazitätsfaktor von etwa 23 %.",
+   "es": "Las máquinas nuevas en Alemania alcanzan unas 2.000 horas (de 8.760), un factor de capacidad de alrededor del 23 %."
+  }
  },
  {
+  "id": "dev-28",
   "c": "dev",
   "l": 3,
-  "q": "2024 年底欧洲（含非欧盟）陆上风电累计装机大约是多少 GW？",
   "a": 250,
-  "u": "GW",
   "r": 200,
-  "ex": "约 250 GW（欧洲风电总装机约 285 GW，海上约 37 GW）。"
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW"
+  },
+  "q": {
+   "zh": "2024 年底欧洲（含非欧盟）陆上风电累计装机大约是多少 GW？",
+   "en": "Roughly how many GW of onshore wind were installed across Europe (incl. non-EU) at the end of 2024?",
+   "de": "Wie viele GW Wind an Land waren Ende 2024 in ganz Europa (inkl. Nicht-EU) ungefähr installiert?",
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre había instalados en toda Europa (incl. fuera de la UE) a finales de 2024?"
+  },
+  "ex": {
+   "zh": "约 250 GW（欧洲风电总装机约 285 GW，海上约 37 GW）。",
+   "en": "About 250 GW (total European wind ≈ 285 GW, of which offshore ≈ 37 GW).",
+   "de": "Rund 250 GW (Windenergie in Europa insgesamt ≈ 285 GW, davon offshore ≈ 37 GW).",
+   "es": "Unos 250 GW (eólica total en Europa ≈ 285 GW, de los cuales marina ≈ 37 GW)."
+  }
  },
  {
+  "id": "dev-29",
   "c": "dev",
   "l": 3,
-  "q": "2024 年德国新装了大约多少台陆上风机？",
   "a": 635,
-  "u": "台",
   "r": 600,
-  "ex": "约 635 台、3.3 GW，平均每台约 5 MW。"
+  "u": {
+   "zh": "台",
+   "en": "turbines",
+   "de": "Anlagen",
+   "es": "aerogeneradores"
+  },
+  "q": {
+   "zh": "2024 年德国新装了大约多少台陆上风机？",
+   "en": "Roughly how many new onshore wind turbines were installed in Germany in 2024?",
+   "de": "Wie viele Windenergieanlagen an Land wurden 2024 in Deutschland ungefähr neu errichtet?",
+   "es": "¿Aproximadamente cuántos aerogeneradores terrestres nuevos se instalaron en Alemania en 2024?"
+  },
+  "ex": {
+   "zh": "约 635 台、3.3 GW，平均每台约 5 MW。",
+   "en": "About 635 turbines totalling 3.3 GW – roughly 5 MW each on average.",
+   "de": "Rund 635 Anlagen mit 3,3 GW – im Schnitt etwa 5 MW pro Anlage.",
+   "es": "Unos 635 aerogeneradores y 3,3 GW, en promedio unos 5 MW cada uno."
+  }
  },
  {
+  "id": "fin-30",
   "c": "fin",
   "l": 1,
-  "q": "一个典型的陆上风电项目融资中，银行贷款大约占总投资的百分之多少？",
   "a": 75,
-  "u": "%",
   "r": 50,
-  "ex": "通常 70–80% 是债务，其余是股本。补贴/长期 PPA 越稳，银行越愿意多借。"
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%"
+  },
+  "q": {
+   "zh": "一个典型的陆上风电项目融资中，银行贷款大约占总投资的百分之多少？",
+   "en": "In a typical onshore wind project financing, roughly what percentage of the total investment is bank debt?",
+   "de": "Wie viel Prozent der Gesamtinvestition eines typischen Onshore-Windprojekts sind ungefähr Bankkredit?",
+   "es": "En la financiación típica de un parque eólico terrestre, ¿qué porcentaje aproximado de la inversión total es deuda bancaria?"
+  },
+  "ex": {
+   "zh": "通常 70–80% 是债务，其余是股本。补贴/长期 PPA 越稳，银行越愿意多借。",
+   "en": "Usually 70–80% debt, the rest equity. The more stable the subsidy or long-term PPA, the more banks will lend.",
+   "de": "Meist 70–80 % Fremdkapital, der Rest Eigenkapital. Je stabiler Förderung oder langfristiger PPA, desto mehr leihen Banken.",
+   "es": "Normalmente un 70–80 % es deuda y el resto capital. Cuanto más estable sea el apoyo o el PPA a largo plazo, más prestan los bancos."
+  }
  },
  {
+  "id": "fin-31",
   "c": "fin",
   "l": 1,
-  "q": "欧洲陆上风电每 MW 的建设投资 (CAPEX) 大约是多少百万欧元？",
   "a": 1.5,
-  "u": "百万€/MW",
   "r": 1.5,
-  "ex": "大约 1.3–1.7 百万欧元/MW，德国偏高。一个 30 MW 风电场约 4500 万欧元。"
+  "u": {
+   "zh": "百万€/MW",
+   "en": "M€/MW",
+   "de": "Mio. €/MW",
+   "es": "M€/MW"
+  },
+  "q": {
+   "zh": "欧洲陆上风电每 MW 的建设投资 (CAPEX) 大约是多少百万欧元？",
+   "en": "Roughly how many million euros of CAPEX per MW does onshore wind cost in Europe?",
+   "de": "Wie viele Mio. € Investitionskosten (CAPEX) pro MW kostet Wind an Land in Europa ungefähr?",
+   "es": "¿Aproximadamente cuántos millones de euros de inversión (CAPEX) por MW cuesta la eólica terrestre en Europa?"
+  },
+  "ex": {
+   "zh": "大约 1.3–1.7 百万欧元/MW，德国偏高。一个 30 MW 风电场约 4500 万欧元。",
+   "en": "About €1.3–1.7 million per MW, higher in Germany. A 30 MW wind farm costs around €45 million.",
+   "de": "Etwa 1,3–1,7 Mio. €/MW, in Deutschland eher am oberen Ende. Ein 30-MW-Park kostet rund 45 Mio. €.",
+   "es": "Unos 1,3–1,7 M€/MW, más en Alemania. Un parque de 30 MW cuesta unos 45 millones de euros."
+  }
  },
  {
+  "id": "fin-32",
   "c": "fin",
   "l": 2,
-  "q": "陆上风电项目贷款的期限一般大约是多少年？",
   "a": 17,
-  "u": "年",
   "r": 15,
-  "ex": "通常 15–18 年，短于 EEG 的 20 年支付期，给银行留出“尾期”缓冲。"
+  "u": {
+   "zh": "年",
+   "en": "years",
+   "de": "Jahre",
+   "es": "años"
+  },
+  "q": {
+   "zh": "陆上风电项目贷款的期限一般大约是多少年？",
+   "en": "What is the typical tenor of an onshore wind project loan, in years?",
+   "de": "Welche Laufzeit hat ein typischer Projektkredit für Wind an Land (in Jahren)?",
+   "es": "¿Cuál es el plazo típico de un préstamo para un proyecto eólico terrestre, en años?"
+  },
+  "ex": {
+   "zh": "通常 15–18 年，短于 EEG 的 20 年支付期，给银行留出“尾期”缓冲。",
+   "en": "Usually 15–18 years – shorter than the 20-year EEG period, leaving banks a \"tail\" buffer.",
+   "de": "Meist 15–18 Jahre – kürzer als die 20 EEG-Jahre, damit Banken einen Puffer („Tail“) haben.",
+   "es": "Normalmente 15–18 años, menos que los 20 años de la EEG, para dejar a los bancos un colchón (\"tail\")."
+  }
  },
  {
+  "id": "fin-33",
   "c": "fin",
   "l": 2,
-  "q": "银行常要求的偿债覆盖率 DSCR（现金流 ÷ 还款额）大约是多少倍？",
   "a": 1.2,
-  "u": "倍",
   "r": 1,
-  "ex": "有补贴/PPA 的项目约 1.15–1.25 倍；纯市场电价项目要求更高。"
+  "u": {
+   "zh": "倍",
+   "en": "×",
+   "de": "×",
+   "es": "×"
+  },
+  "q": {
+   "zh": "银行常要求的偿债覆盖率 DSCR（现金流 ÷ 还款额）大约是多少倍？",
+   "en": "What debt service coverage ratio (DSCR = cash flow ÷ debt service) do banks typically require?",
+   "de": "Welchen Schuldendienstdeckungsgrad (DSCR = Cashflow ÷ Schuldendienst) verlangen Banken üblicherweise?",
+   "es": "¿Qué ratio de cobertura del servicio de la deuda (DSCR = flujo de caja ÷ servicio de la deuda) suelen exigir los bancos?"
+  },
+  "ex": {
+   "zh": "有补贴/PPA 的项目约 1.15–1.25 倍；纯市场电价项目要求更高。",
+   "en": "About 1.15–1.25× for projects with subsidy or PPA; merchant projects need more.",
+   "de": "Etwa 1,15–1,25 bei Projekten mit Förderung oder PPA; reine Merchant-Projekte brauchen mehr.",
+   "es": "Alrededor de 1,15–1,25 para proyectos con apoyo o PPA; los proyectos merchant necesitan más."
+  }
  },
  {
+  "id": "fin-34",
   "c": "fin",
   "l": 3,
-  "q": "算一算：1 MW 风机一年发 2000 小时，电价 70 €/MWh，年收入是多少千欧元？",
   "a": 140,
-  "u": "千€",
   "r": 140,
-  "ex": "1 MW × 2000 h = 2000 MWh；× 70 € = 140,000 €。"
+  "u": {
+   "zh": "千€",
+   "en": "k€",
+   "de": "Tsd. €",
+   "es": "miles de €"
+  },
+  "q": {
+   "zh": "算一算：1 MW 风机一年发 2000 小时，电价 70 €/MWh，年收入是多少千欧元？",
+   "en": "Calculate: 1 MW running 2,000 full-load hours at 70 €/MWh – what is the annual revenue in thousand euros?",
+   "de": "Rechnen Sie: 1 MW, 2.000 Volllaststunden, 70 €/MWh – wie hoch ist der Jahresumsatz in Tausend Euro?",
+   "es": "Calcula: 1 MW, 2.000 horas a plena carga y 70 €/MWh. ¿Cuántos miles de euros ingresa al año?"
+  },
+  "ex": {
+   "zh": "1 MW × 2000 h = 2000 MWh；× 70 € = 140,000 €。",
+   "en": "1 MW × 2,000 h = 2,000 MWh; × €70 = €140,000.",
+   "de": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €.",
+   "es": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €."
+  }
  },
  {
+  "id": "fin-35",
   "c": "fin",
   "l": 3,
-  "q": "算一算：每 MW 投资 150 万€，年收入 14 万€，运维成本 4 万€，静态回收期是几年？",
   "a": 15,
-  "u": "年",
   "r": 15,
-  "ex": "每年净现金流 14−4=10 万€，150÷10=15 年（未算利息和税）。"
+  "u": {
+   "zh": "年",
+   "en": "years",
+   "de": "Jahre",
+   "es": "años"
+  },
+  "q": {
+   "zh": "算一算：每 MW 投资 150 万€，年收入 14 万€，运维成本 4 万€，静态回收期是几年？",
+   "en": "Calculate: €1.5 m investment per MW, €140k revenue and €40k O&M cost per year – what is the simple payback period?",
+   "de": "Rechnen Sie: 1,5 Mio. € Investition pro MW, 140 Tsd. € Umsatz und 40 Tsd. € Betriebskosten pro Jahr – wie lang ist die statische Amortisationszeit?",
+   "es": "Calcula: 1,5 M€ de inversión por MW, 140.000 € de ingresos y 40.000 € de O&M al año. ¿Cuál es el periodo de retorno simple?"
+  },
+  "ex": {
+   "zh": "每年净现金流 14−4=10 万€，150÷10=15 年（未算利息和税）。",
+   "en": "Net cash flow €140k − €40k = €100k per year; 1,500 ÷ 100 = 15 years (before interest and tax).",
+   "de": "Netto-Cashflow 140 − 40 = 100 Tsd. € pro Jahr; 1.500 ÷ 100 = 15 Jahre (ohne Zinsen und Steuern).",
+   "es": "Flujo neto 140 − 40 = 100.000 € al año; 1.500 ÷ 100 = 15 años (sin intereses ni impuestos)."
+  }
  }
 ]
