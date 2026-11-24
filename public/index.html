@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1f8a70">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="风机塔">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>风机塔 · 风能估数挑战</title>
+<style>
+:root{--sky1:#cfe8f7;--sky2:#f3f8fb;--ink:#14324a;--mute:#5d7487;--acc:#1f8a70;--warn:#d9822b;--card:#ffffffee;--line:#d6e2ea}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--sky1),var(--sky2) 70%,#e7efe2);min-height:100vh}
+.wrap{max-width:620px;margin:0 auto;padding:16px;padding-top:calc(16px + env(safe-area-inset-top));padding-bottom:calc(16px + env(safe-area-inset-bottom));padding-left:calc(16px + env(safe-area-inset-left));padding-right:calc(16px + env(safe-area-inset-right))}
+h1{font-size:22px;margin:6px 0 2px}
+.sub{color:var(--mute);font-size:14px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+button{font:inherit;border:0;border-radius:10px;padding:12px 16px;background:var(--acc);color:#fff;font-weight:600;cursor:pointer}
+button.ghost{background:#e8f0f4;color:var(--ink)}
+button:disabled{opacity:.5;cursor:default}
+input{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;width:100%;background:#fff}
+.row{display:flex;gap:8px;align-items:center}
+.row>*{flex:1}
+.hide{display:none!important}
+.pill{display:inline-block;font-size:12px;padding:3px 8px;border-radius:99px;background:#e3eef5;color:var(--mute);margin-right:6px}
+.q{font-size:18px;line-height:1.45;margin:10px 0 14px}
+.timer{height:6px;background:#e3eef5;border-radius:6px;overflow:hidden;margin-top:8px}
+.timer>div{height:100%;background:var(--acc);width:100%;transition:width .2s linear}
+.scene{position:relative;height:260px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#bfe0f3,#eaf4fa);border:1px solid var(--line)}
+.scene svg{position:absolute;inset:0;width:100%;height:100%}
+.big{font-size:28px;font-weight:700}
+.mute{color:var(--mute);font-size:14px}
+.ex{font-size:14px;line-height:1.5;color:#2b4a60;margin-top:8px}
+.farm{display:flex;align-items:flex-end;gap:3px;height:120px;margin-top:8px}
+.farm div{flex:1;background:linear-gradient(180deg,#fff,#c9d6de);border-radius:3px 3px 0 0;min-height:2px;position:relative}
+.lvl{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:13px;text-align:center}
+.lvl div{background:#eef4f8;border-radius:8px;padding:6px}
+.board div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:15px}
+#result .big{font-size:22px;word-break:keep-all}
+.toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:99px;font-size:14px;z-index:9;transition:opacity .3s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rotor{animation:spin 3s linear infinite}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🌬️ 风机塔 · 风能估数挑战</h1>
+  <div class="sub">欧洲陆上风电 · 每局 15 题 · 答案越接近，风机塔越高（最高 199 米）</div>
+
+  <section id="home">
+    <div class="card hide" id="installCard">
+      <b>📱 装到手机桌面</b>
+      <div class="mute" id="installTip" style="margin-top:6px"></div>
+      <div class="row" style="margin-top:10px"><button id="installBtn" class="hide">安装</button><button class="ghost" id="installClose">知道了</button></div>
+    </div>
+    <div class="card">
+      <div class="mute" style="margin-bottom:6px">你的昵称</div>
+      <input id="nick" maxlength="16" placeholder="例如：Lexi">
+    </div>
+    <div class="card">
+      <b>单人模式</b>
+      <div class="mute" style="margin:6px 0 10px">同一类题连续两次塔高 ≥150 米，这一类就升一级（共 3 级）。</div>
+      <div class="lvl" id="lvlShow"></div>
+      <div class="row" style="margin-top:12px"><button id="soloBtn">开始单人</button><button class="ghost" id="resetLvl">重置等级</button></div>
+    </div>
+    <div class="card">
+      <b>联机对战</b>
+      <div class="mute" style="margin:6px 0 10px">创建房间，把链接或房间号发给朋友。所有人同时看到同一道题，答完一起揭晓。</div>
+      <div class="row"><button id="createBtn">创建房间</button></div>
+      <div class="row" style="margin-top:8px"><input id="codeIn" placeholder="输入房间号" maxlength="6" style="text-transform:uppercase"><button class="ghost" id="joinBtn">加入</button></div>
+      <div class="mute" id="netMsg" style="margin-top:8px"></div>
+    </div>
+  </section>
+
+  <section id="lobby" class="hide">
+    <div class="card">
+      <div class="mute">房间号</div>
+      <div class="big" id="roomCode"></div>
+      <div class="row" style="margin-top:8px"><input id="shareLink" readonly><button class="ghost" id="copyBtn" style="flex:0 0 auto">复制链接</button></div>
+      <div class="mute" style="margin:10px 0 4px">玩家：</div>
+      <div class="board" id="lobbyList"></div>
+      <div class="row" style="margin-top:12px"><button id="startBtn">开始比赛</button><button class="ghost" id="leaveBtn">离开</button></div>
+      <div class="mute" id="lobbyMsg" style="margin-top:8px"></div>
+    </div>
+  </section>
+
+  <section id="game" class="hide">
+    <div class="card">
+      <div><span class="pill" id="qNum"></span><span class="pill" id="qCat"></span><span class="pill" id="qLvl"></span></div>
+      <div class="q" id="qText"></div>
+      <form id="ansForm" class="row" autocomplete="off">
+        <input id="ans" inputmode="decimal" placeholder="输入数字">
+        <div id="unit" class="mute" style="flex:0 0 auto;min-width:40px"></div>
+        <button style="flex:0 0 auto">确定</button>
+      </form>
+      <div class="timer"><div id="bar"></div></div>
+      <div class="mute" id="waitMsg" style="margin-top:6px"></div>
+    </div>
+    <div class="scene" id="scene"></div>
+    <div class="card hide" id="result" style="margin-top:12px">
+      <div class="row"><div><div class="mute">你的答案</div><div class="big" id="rYou"></div></div><div><div class="mute">正确答案</div><div class="big" id="rAns" style="color:var(--acc)"></div></div><div><div class="mute">塔高</div><div class="big" id="rH"></div></div></div>
+      <div class="ex" id="rEx"></div>
+      <div class="board" id="rAll" style="margin-top:8px"></div>
+      <button id="nextBtn" style="width:100%;margin-top:12px">下一题</button>
+      <div class="mute" id="nextMsg" style="margin-top:6px"></div>
+    </div>
+    <div class="card hide" id="liveBoard" style="margin-top:12px"><b>实时排行</b><div class="board" id="liveList"></div></div>
+  </section>
+
+  <section id="end" class="hide">
+    <div class="card">
+      <div class="mute">你的风电场总高度</div>
+      <div class="big" id="endTotal"></div>
+      <div class="mute" id="endAvg"></div>
+      <div class="farm" id="farm"></div>
+      <div class="mute" style="margin-top:6px">每根柱子 = 一题的风机塔（满格 199 米）</div>
+    </div>
+    <div class="card hide" id="endBoardCard"><b>最终排名</b><div class="board" id="endBoard"></div></div>
+    <div class="row"><button id="againBtn">再来一局</button><button class="ghost" id="homeBtn">回首页</button></div>
+  </section>
+</div>
+<div class="toast" id="toast" style="opacity:0"></div>
+
+<script src="socket.io/socket.io.js"></script>
+<script>
+const CATS={policy:"政策",oem:"OEM/技术",dev:"开发/市场",fin:"融资"};
+const N=15,TIME=25;
+// 网站所在的路径（例如公司服务器上可能是 /windtower/），所有地址都相对它计算
+const BASE=location.pathname.replace(/[^/]*$/,"");
+const $=id=>document.getElementById(id);
+const show=id=>["home","lobby","game","end"].forEach(s=>$(s).classList.toggle("hide",s!==id));
+function toast(t){const e=$("toast");e.textContent=t;e.style.opacity=1;clearTimeout(e._t);e._t=setTimeout(()=>e.style.opacity=0,1800)}
+function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+const fmt=n=>(Math.round(n*100)/100).toLocaleString("de-DE");
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+function heightFor(q,g){if(g===null||isNaN(g))return 0;const d=Math.min(1,Math.abs(g-q.a)/q.r);return Math.round(199*Math.pow(1-d,2))}
+function parseAns(){const raw=$("ans").value.replace(/\s/g,"").replace(",",".");if(raw==="")return null;const g=parseFloat(raw);return isNaN(g)?null:g}
+
+// ---------- 风机画面 ----------
+function drawScene(h,animate,emptyText){
+  const W=360,H=260,ground=235,top=20,scale=(ground-top)/199;
+  const ticks=[50,100,150,199].map(m=>{const y=ground-m*scale;return `<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="#9fbfd2" stroke-dasharray="3 5"/><text x="6" y="${y-3}" font-size="10" fill="#6c8aa0">${m} m</text>`}).join("");
+  const hubY=ground-h*scale,bl=Math.max(8,h*scale*0.42),cx=W/2;
+  $("scene").innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax meet">${ticks}
+  <rect x="0" y="${ground}" width="${W}" height="${H-ground}" fill="#9cc58a"/>
+  <g id="tw" style="transition:transform 1.2s cubic-bezier(.2,.8,.2,1);transform-origin:${cx}px ${ground}px;transform:scaleY(${animate?0.001:1})">
+    <polygon points="${cx-6},${ground} ${cx+6},${ground} ${cx+3},${hubY} ${cx-3},${hubY}" fill="#f4f7f9" stroke="#b9c7d0"/></g>
+  ${h>0?`<g id="rt" style="opacity:${animate?0:1};transition:opacity .4s 1.1s"><rect x="${cx-4}" y="${hubY-5}" width="16" height="9" rx="3" fill="#e9eef2" stroke="#b9c7d0"/>
+   <g class="rotor" style="transform-origin:${cx}px ${hubY}px">${[0,120,240].map(a=>`<path d="M${cx} ${hubY} L${cx-3} ${hubY-bl*0.3} L${cx} ${hubY-bl} L${cx+2} ${hubY-bl*0.3} Z" fill="#fff" stroke="#b9c7d0" transform="rotate(${a} ${cx} ${hubY})"/>`).join("")}<circle cx="${cx}" cy="${hubY}" r="3" fill="#cfd9e0"/></g></g>
+   <text x="${cx+18}" y="${hubY+4}" font-size="15" font-weight="700" fill="#14324a">${h} m</text>`:`<text x="${cx}" y="${ground-10}" text-anchor="middle" font-size="13" fill="#5d7487">${emptyText||"答得越准，塔越高"}</text>`}</svg>`;
+  if(animate)requestAnimationFrame(()=>requestAnimationFrame(()=>{const t=$("tw");if(t)t.style.transform="scaleY(1)";const r=$("rt");if(r)r.style.opacity=1}));
+}
+let timerId=null;
+function runTimer(deadline,onEnd){clearInterval(timerId);timerId=setInterval(()=>{const left=(deadline-Date.now())/1000;$("bar").style.width=Math.max(0,left/TIME*100)+"%";$("bar").style.background=left<6?"var(--warn)":"var(--acc)";if(left<=0){clearInterval(timerId);onEnd&&onEnd()}},200)}
+function showQuestion(q,idx){
+  $("qNum").textContent=`第 ${idx+1}/${N} 题`;$("qCat").textContent=CATS[q.c];$("qLvl").textContent="Lv "+q.l;
+  $("qText").textContent=q.q;$("unit").textContent=q.u;$("ans").value="";$("ans").disabled=false;
+  $("ansForm").querySelector("button").disabled=false;$("result").classList.add("hide");$("waitMsg").textContent="";
+  drawScene(0,false);setTimeout(()=>$("ans").focus(),50);
+}
+function lockInput(){$("ans").disabled=true;$("ansForm").querySelector("button").disabled=true}
+function showResult(g,a,u,ex,h){
+  $("rYou").textContent=g===null?"—":fmt(g);$("rAns").textContent=fmt(a)+" "+u;$("rH").textContent=h+" 米";$("rEx").textContent=ex;
+  $("result").classList.remove("hide");drawScene(h,true,"差太远，塔没盖起来 😅");
+}
+function showEnd(heights,board){
+  const tot=heights.reduce((a,b)=>a+(b||0),0);
+  $("endTotal").textContent=tot.toLocaleString("de-DE")+" 米 / "+(199*N).toLocaleString("de-DE");
+  $("endAvg").textContent=`平均塔高 ${Math.round(tot/N)} 米`+(mode==="solo"?" · 等级："+Object.keys(CATS).map(c=>CATS[c]+" Lv"+levels[c]).join("，"):"");
+  $("farm").innerHTML=Array.from({length:N},(_,i)=>`<div style="height:${(heights[i]||0)/199*100}%"></div>`).join("");
+  $("endBoardCard").classList.toggle("hide",!board);if(board)$("endBoard").innerHTML=board;
+  renderLvl();show("end");
+}
+
+// ---------- 昵称 & 等级 ----------
+$("nick").value=store("wt_nick")||"";
+const nick=()=>{const n=$("nick").value.trim()||"玩家";store("wt_nick",n);return n};
+let levels=store("wt_levels")||{policy:1,oem:1,dev:1,fin:1};
+function renderLvl(){$("lvlShow").innerHTML=Object.keys(CATS).map(c=>`<div>${CATS[c]}<br><b>Lv ${levels[c]}</b></div>`).join("")}
+renderLvl();
+$("resetLvl").onclick=()=>{levels={policy:1,oem:1,dev:1,fin:1};store("wt_levels",levels);renderLvl();toast("等级已重置")};
+
+// ---------- 单人模式（在浏览器里判分） ----------
+let mode=null,BANK=null,S=null;
+async function startSolo(){
+  mode="solo";nick();
+  if(!BANK){try{BANK=await (await fetch("api/questions")).json()}catch(e){toast("题库加载失败");return}}
+  S={i:0,heights:[],used:new Set(),streak:{policy:0,oem:0,dev:0,fin:0}};
+  $("liveBoard").classList.add("hide");show("game");soloNext();
+}
+function soloPick(){const c=Object.keys(CATS)[S.i%4];
+  for(const dl of [0,-1,1,-2,2]){const pool=BANK.filter(q=>q.c===c&&q.l===levels[c]+dl&&!S.used.has(q));if(pool.length)return pool[Math.floor(Math.random()*pool.length)]}
+  const rest=BANK.filter(q=>!S.used.has(q));return rest[Math.floor(Math.random()*rest.length)]}
+function soloNext(){
+  if(S.i>=N)return showEnd(S.heights,null);
+  const q=soloPick();S.used.add(q);S.cur=q;showQuestion(q,S.i);
+  $("nextBtn").classList.remove("hide");$("nextMsg").textContent="";$("rAll").innerHTML="";
+  runTimer(Date.now()+TIME*1000,()=>soloSubmit());
+}
+function soloSubmit(){
+  if($("ans").disabled)return;clearInterval(timerId);lockInput();
+  const g=parseAns(),q=S.cur,h=heightFor(q,g);S.heights.push(h);S.i++;
+  showResult(g,q.a,q.u,q.ex,h);$("nextBtn").textContent=S.i>=N?"看结果":"下一题";
+  if(h>=150){S.streak[q.c]++;if(S.streak[q.c]>=2&&levels[q.c]<3){levels[q.c]++;S.streak[q.c]=0;store("wt_levels",levels);toast(`⬆️ ${CATS[q.c]} 升到 Lv ${levels[q.c]}！`)}}else S.streak[q.c]=0;
+}
+$("soloBtn").onclick=startSolo;
+$("nextBtn").onclick=()=>{if(mode==="solo")soloNext()};
+
+// ---------- 联机模式（服务器出题、判分） ----------
+let pid=store("wt_pid");if(!pid){pid=Math.random().toString(36).slice(2)+Date.now().toString(36);store("wt_pid",pid)}
+let socket=null,M={code:null,you:pid,state:null,heights:[],myGuess:null};
+function connect(){
+  if(socket)return socket;
+  if(typeof io==="undefined"){$("netMsg").textContent="连不上服务器，请稍后刷新再试";return null}
+  socket=io({path:BASE+"socket.io",auth:{pid}});
+  socket.on("connect_error",()=>$("netMsg").textContent="正在连接服务器…（免费服务器第一次唤醒可能要 30–60 秒）");
+  socket.on("err",m=>{$("netMsg").textContent=m;toast(m)});
+  socket.on("joined",({code})=>{mode="multi";M.code=code;M.heights=[];$("netMsg").textContent="";
+    history.replaceState(null,"","#"+code);$("roomCode").textContent=code;$("shareLink").value=location.origin+BASE+"#"+code;show("lobby")});
+  socket.on("state",st=>{M.state=st;renderBoards(st)});
+  socket.on("question",q=>{mode="multi";M.myGuess=null;$("liveBoard").classList.remove("hide");show("game");showQuestion(q,q.index);
+    $("nextBtn").classList.add("hide");$("rAll").innerHTML="";runTimer(q.deadline,()=>{if(!$("ans").disabled)multiSubmit()})});
+  socket.on("reveal",r=>{clearInterval(timerId);lockInput();
+    const me=r.results.find(x=>x.id===pid)||{guess:null,height:0};M.heights[r.index]=me.height;
+    showResult(me.guess,r.a,r.u,r.ex,me.height);$("waitMsg").textContent="";
+    $("rAll").innerHTML=r.results.map((x,i)=>`<div><span>${i+1}. ${esc(x.name)}${x.id===pid?"（你）":""}</span><span>${x.guess===null?"—":fmt(x.guess)} → ${x.height} 米</span></div>`).join("");
+    $("nextMsg").textContent=r.index+1>=N?"马上公布最终排名…":`${r.seconds} 秒后自动进入下一题`});
+  socket.on("end",e=>{const me=e.players.find(p=>p.id===pid);
+    const board=e.players.map((p,i)=>`<div><span>${["🥇","🥈","🥉"][i]||i+1+"."} ${esc(p.name)}${p.id===pid?"（你）":""}</span><span>${p.total.toLocaleString("de-DE")} 米</span></div>`).join("");
+    showEnd(me?me.heights:M.heights,board)});
+  return socket;
+}
+function renderBoards(st){
+  const rows=st.players.map(p=>`<div><span>${p.id===st.hostId?"👑 ":""}${esc(p.name)}${p.id===pid?"（你）":""}${p.online?"":" · 离线"}</span><span>${st.phase==="question"?(p.answered?"✅ 已答":"⏳ 思考中"):p.total.toLocaleString("de-DE")+" 米"}</span></div>`).join("");
+  $("lobbyList").innerHTML=rows;$("liveList").innerHTML=rows;
+  const host=st.hostId===pid;
+  $("startBtn").classList.toggle("hide",!host);
+  $("lobbyMsg").textContent=host?"朋友到齐后点“开始比赛”。":"等房主开始…";
+}
+function multiSubmit(){if($("ans").disabled)return;lockInput();const g=parseAns();M.myGuess=g;socket.emit("answer",{value:g});$("waitMsg").textContent="已提交，等其他人…"}
+$("ansForm").onsubmit=e=>{e.preventDefault();mode==="solo"?soloSubmit():multiSubmit()};
+$("createBtn").onclick=()=>{const s=connect();if(s){$("netMsg").textContent="创建中…";s.emit("create",{name:nick()})}};
+$("joinBtn").onclick=()=>{const c=$("codeIn").value.trim().toUpperCase();if(c.length<4){$("netMsg").textContent="请输入房间号";return}
+  const s=connect();if(s){$("netMsg").textContent="加入中…";s.emit("join",{code:c,name:nick()})}};
+$("startBtn").onclick=()=>socket&&socket.emit("start");
+$("copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText($("shareLink").value);toast("链接已复制")}catch(e){$("shareLink").select()}};
+$("leaveBtn").onclick=()=>{if(socket){socket.disconnect();socket=null}history.replaceState(null,"",BASE);show("home")};
+$("againBtn").onclick=()=>{if(mode==="solo")startSolo();else if(M.state&&M.state.hostId===pid)socket.emit("start");else{show("lobby")}};
+$("homeBtn").onclick=()=>{if(socket){socket.disconnect();socket=null}history.replaceState(null,"",BASE);show("home")};
+
+// 通过分享链接打开（网址末尾带 #房间号）：自动填好房间号
+const hashCode=location.hash.slice(1).toUpperCase();
+if(hashCode){$("codeIn").value=hashCode;$("netMsg").textContent="填好昵称后点“加入”即可进入房间 "+hashCode}
+drawScene(0,false);
+
+// ---------- PWA：离线缓存 + 安装提示 ----------
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone;
+const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
+let deferredPrompt=null;
+if(!standalone&&!store("wt_install_hide")){
+  if(isIOS){$("installTip").textContent="在 Safari 里点底部的「分享」按钮 ⬆️，再选「添加到主屏幕」。";$("installCard").classList.remove("hide")}
+  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;$("installTip").textContent="一键把风机塔装到手机桌面，像 App 一样全屏打开。";$("installBtn").classList.remove("hide");$("installCard").classList.remove("hide")});
+}
+$("installBtn").onclick=async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$("installCard").classList.add("hide")};
+$("installClose").onclick=()=>{store("wt_install_hide",true);$("installCard").classList.add("hide")};
+</script>
+</body>
+</html>
