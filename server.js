@@ -29,8 +29,8 @@ const CONFIG = {
 
 function loadBank() {
   const bank = JSON.parse(fs.readFileSync(CONFIG.questionsFile, "utf8"));
-  // 每道题的题目(q)、解释(ex)、单位(u) 都要有四种语言：zh 中文、en 英文、de 德语、es 西班牙语
-  const LANGS = ["zh", "en", "de", "es"];
+  // 每道题的题目(q)、解释(ex)、单位(u) 都要有 10 种语言（和网页右上角的语言菜单一致）
+  const LANGS = ["zh", "en", "de", "es", "fr", "pl", "it", "pt", "nl", "sv"];
   const hasAll = o => o && typeof o === "object" && LANGS.every(l => typeof o[l] === "string");
   const bad = bank.filter(q => !hasAll(q.q) || !hasAll(q.ex) || !hasAll(q.u) || typeof q.a !== "number" || !(q.r > 0) || ![1, 2, 3].includes(q.l));
   if (bad.length) throw new Error(`题库里有 ${bad.length} 道题格式不对，例如：${JSON.stringify(bad[0]).slice(0, 120)}`);

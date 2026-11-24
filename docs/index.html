@@ -32,12 +32,13 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang 
 .wrap{max-width:600px;margin:0 auto;padding:20px;padding-top:calc(20px + env(safe-area-inset-top));padding-bottom:calc(32px + env(safe-area-inset-bottom));padding-left:calc(20px + env(safe-area-inset-left));padding-right:calc(20px + env(safe-area-inset-right))}
 
 /* 顶部 */
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;letter-spacing:.2px;color:var(--acc)}
 .brand svg{flex:0 0 auto}
-.langs{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px}
-.langs button{padding:6px 10px;font-size:13px;font-weight:500;background:transparent;color:var(--mute);border-radius:7px}
-.langs button.on{background:var(--acc-soft);color:var(--acc-ink);font-weight:600}
+.langsel{position:relative;display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0 10px;color:var(--mute)}
+.langsel select{appearance:none;-webkit-appearance:none;border:0;background:transparent;font:inherit;font-size:14px;font-weight:500;color:var(--ink);padding:9px 18px 9px 0;cursor:pointer;outline:none}
+.langsel::after{content:"";position:absolute;right:11px;top:50%;width:6px;height:6px;border-right:1.5px solid var(--mute);border-bottom:1.5px solid var(--mute);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.langsel:focus-within{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 .seg{display:grid;grid-template-columns:repeat(3,1fr);background:#F7F9FC;border:1px solid var(--line);border-radius:10px;padding:3px;gap:3px}
 .seg button{padding:9px 6px;font-size:14px;font-weight:500;background:transparent;color:var(--mute);border-radius:7px}
 .seg button.on{background:var(--card);color:var(--acc);font-weight:600;box-shadow:0 1px 3px rgba(27,43,68,.12)}
@@ -70,7 +71,7 @@ input:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 .unit{flex:0 0 auto!important;min-width:36px;color:var(--mute);font-size:14px}
 .timer{height:4px;background:#EDF1F6;border-radius:4px;overflow:hidden;margin-top:16px}
 .timer>div{height:100%;background:var(--acc);width:100%;transition:width .2s linear}
-.scene{position:relative;height:250px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#E9EFF8 0%,#F7F9FC 100%);border:1px solid var(--line);margin-bottom:16px}
+.scene{position:relative;height:270px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#E9EFF8 0%,#F7F9FC 100%);border:1px solid var(--line);margin-bottom:16px}
 .scene svg{position:absolute;inset:0;width:100%;height:100%}
 
 /* 结果 */
@@ -86,8 +87,8 @@ input:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 #rAll:not(:empty){margin-top:12px}
 
 /* 结算 */
-.farm{display:flex;align-items:flex-end;gap:4px;height:120px;margin-top:18px;padding-bottom:1px;border-bottom:1px solid var(--line)}
-.farm div{flex:1;background:linear-gradient(180deg,#5E83B8,#B9CBE4);border-radius:3px 3px 0 0;min-height:2px}
+.farm{margin-top:18px;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#E9EFF8 0%,#F7F9FC 100%);border:1px solid var(--line)}
+.farm svg{display:block;width:100%;height:auto}
 
 /* 等级 */
 .lvl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;font-size:12.5px;text-align:center;margin:4px 0 18px}
@@ -102,7 +103,7 @@ input:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><div class="brand"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="7" fill="#1F4E8C"/><path d="M12.3 24 L13.7 24 L13.35 11.5 L12.65 11.5Z" fill="#fff"/><g fill="#fff"><path d="M13 11 L12.2 3.5 L13 2.5 L13.8 3.5Z"/><path d="M13 11 L19.6 14.6 L19.9 15.8 L18.7 15.6Z" /><path d="M13 11 L6.4 14.6 L6.1 15.8 L7.3 15.6Z"/></g><circle cx="13" cy="11" r="1.5" fill="#C8373B"/></svg>WindTower</div><div class="langs" id="langs"></div></div>
+  <div class="top"><div class="brand"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="7" fill="#1F4E8C"/><path d="M12.3 24 L13.7 24 L13.35 11.5 L12.65 11.5Z" fill="#fff"/><g fill="#fff"><path d="M13 11 L12.2 3.5 L13 2.5 L13.8 3.5Z"/><path d="M13 11 L19.6 14.6 L19.9 15.8 L18.7 15.6Z" /><path d="M13 11 L6.4 14.6 L6.1 15.8 L7.3 15.6Z"/></g><circle cx="13" cy="11" r="1.5" fill="#C8373B"/></svg>WindTower</div><label class="langsel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><select id="langs" aria-label="Language"></select></label></div>
   <h1 id="headline"></h1>
   <div class="sub" data-t="subtitle"></div>
 
@@ -192,62 +193,146 @@ input:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
 // ================= 多语言 =================
 // 界面文字。{n} 之类的是占位符，运行时替换成具体内容。
 const I18N={
-zh:{diffLabel:"难度",diff_easy:"简单",diff_standard:"标准",diff_hard:"困难",diffHint_easy:"以 Lv 1 为主，夹几道 Lv 2：10 道 Lv 1 + 5 道 Lv 2",diffHint_standard:"三个等级各 5 道，由易到难",diffHint_hard:"以 Lv 3 为主，夹几道 Lv 2：5 道 Lv 2 + 10 道 Lv 3",diffHostOnly:"由房主选择",_name:"中文",_locale:"zh-CN",title:"风机塔 · 风能估数挑战",subtitle:"欧洲陆上风电 · 单人 8 题，对战 15 题 · 答案越接近，风机塔越高（最高 199 米）",
+zh:{diffLabel:"难度",diff_easy:"简单",diff_standard:"标准",diff_hard:"困难",diffHint_easy:"以 Lv 1 为主，夹几道 Lv 2：10 道 Lv 1 + 5 道 Lv 2",diffHint_standard:"三个等级各 5 道，由易到难",diffHint_hard:"以 Lv 3 为主，夹几道 Lv 2：5 道 Lv 2 + 10 道 Lv 3",diffHostOnly:"由房主选择",_name:"中文",_locale:"zh-CN",title:"风机塔 · 风能估数挑战",subtitle:"欧洲陆上风电 · 单人 8 题，对战 15 题 · 答案越接近，风机塔加得越高（每题最多 199 米）",
  installTitle:"📱 装到手机桌面",installIOS:"在 Safari 里点底部的「分享」按钮 ⬆️，再选「添加到主屏幕」。",installOther:"一键把风机塔装到手机桌面，像 App 一样全屏打开。",install:"安装",gotIt:"知道了",
  nickname:"你的昵称",nickPh:"例如：Lexi",soloTitle:"单人模式",soloDesc:"每局 8 题。同一类题连续两次塔高 ≥150 米（可跨局累计），这一类就升一级（共 3 级）。",soloStart:"开始单人",resetLvl:"重置等级",
  multiTitle:"联机对战",multiDesc:"每局 15 题。创建房间，把链接或房间号发给朋友。所有人同时看到同一道题，答完一起揭晓。",createRoom:"创建房间",codePh:"输入房间号",join:"加入",
  demoNote:"这是展示版，只有单人模式。联机对战版本将部署在公司服务器上。",roomCode:"房间号",copyLink:"复制链接",players:"玩家：",startMatch:"开始比赛",leave:"离开",
- ansPh:"输入数字",ok:"确定",yourAns:"你的答案",rightAns:"正确答案",towerH:"塔高",next:"下一题",seeResult:"看结果",liveRank:"实时排行",
- farmTotal:"你的风电场总高度",farmNote:"每根柱子 = 一题的风机塔（满格 199 米）",finalRank:"最终排名",again:"再来一局",home:"回首页",
- qNum:"第 {n}/{t} 题",m:"米",avg:"平均塔高 {n} 米",levels:"等级：",tooFar:"差太远，塔没盖起来 😅",hint:"答得越准，塔越高",timeout:"超时",
+ ansPh:"输入数字",ok:"确定",yourAns:"你的答案",rightAns:"正确答案",towerH:"本题加高",next:"下一题",seeResult:"看结果",liveRank:"实时排行",
+ farmTotal:"你的风机塔总高度",farmNote:"每一段 = 一道题加的高度（每题最多 199 米）",finalRank:"最终排名",again:"再来一局",home:"回首页",
+ qNum:"第 {n}/{t} 题",m:"米",avg:"平均每题 {n} 米",levels:"等级：",tooFar:"这题差太远，塔没有加高 😅",hint:"每题答得越准，塔加得越高",timeout:"超时",
  lvlReset:"等级已重置",lvlUp:"⬆️ {c} 升到 Lv {n}！",loadFail:"题库加载失败",linkCopied:"链接已复制",
  connecting:"正在连接服务器…",noServer:"连不上服务器，请稍后刷新再试",creating:"创建中…",joining:"加入中…",needCode:"请输入房间号",joinPrompt:"填好昵称后点“加入”即可进入房间 {c}",
  hostHint:"朋友到齐后点“开始比赛”。",waitHost:"等房主开始…",you:"（你）",offline:" · 离线",answered:"✅ 已答",thinking:"⏳ 思考中",submitted:"已提交，等其他人…",
  autoNext:"{n} 秒后自动进入下一题",finalSoon:"马上公布最终排名…",
  err_room_not_found:"找不到这个房间，请检查房间号",err_room_full:"房间已满",err_server_restart:"服务器正在维护重启，请稍后刷新页面",
  cat_policy:"政策",cat_oem:"OEM/技术",cat_dev:"开发/市场",cat_fin:"融资"},
-en:{diffLabel:"Difficulty",diff_easy:"Easy",diff_standard:"Standard",diff_hard:"Hard",diffHint_easy:"Mostly Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 questions from each level, easy to hard",diffHint_hard:"Mostly Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"chosen by the host",_name:"English",_locale:"en-GB",title:"WindTower · Wind Energy Estimation Challenge",subtitle:"European onshore wind · 8 questions solo, 15 in multiplayer · the closer your answer, the taller your tower (max. 199 m)",
+en:{diffLabel:"Difficulty",diff_easy:"Easy",diff_standard:"Standard",diff_hard:"Hard",diffHint_easy:"Mostly Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 questions from each level, easy to hard",diffHint_hard:"Mostly Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"chosen by the host",_name:"English",_locale:"en-GB",title:"WindTower · Wind Energy Estimation Challenge",subtitle:"European onshore wind · 8 questions solo, 15 in multiplayer · the closer your answer, the taller your tower (max. 199 m per question)",
  installTitle:"📱 Add to home screen",installIOS:"In Safari, tap the Share button ⬆️ at the bottom, then “Add to Home Screen”.",installOther:"Install WindTower on your phone and open it full-screen like an app.",install:"Install",gotIt:"Got it",
  nickname:"Your nickname",nickPh:"e.g. Lexi",soloTitle:"Solo mode",soloDesc:"8 questions per round. Build a tower of ≥150 m twice in a row in one category (counts across rounds) to level up that category (3 levels).",soloStart:"Play solo",resetLvl:"Reset levels",
  multiTitle:"Multiplayer",multiDesc:"15 questions per round. Create a room and send the link or room code to friends. Everyone sees the same question at the same time; answers are revealed together.",createRoom:"Create room",codePh:"Room code",join:"Join",
  demoNote:"This is the demo version with solo mode only. Multiplayer will run on the company server.",roomCode:"Room code",copyLink:"Copy link",players:"Players:",startMatch:"Start match",leave:"Leave",
- ansPh:"Enter a number",ok:"OK",yourAns:"Your answer",rightAns:"Correct answer",towerH:"Tower",next:"Next question",seeResult:"See results",liveRank:"Live ranking",
- farmTotal:"Total height of your wind farm",farmNote:"Each bar = one question's tower (full bar = 199 m)",finalRank:"Final ranking",again:"Play again",home:"Home",
- qNum:"Question {n}/{t}",m:"m",avg:"Average tower height {n} m",levels:"Levels: ",tooFar:"Too far off – no tower this time 😅",hint:"The more accurate, the taller the tower",timeout:"Time's up",
+ ansPh:"Enter a number",ok:"OK",yourAns:"Your answer",rightAns:"Correct answer",towerH:"Added",next:"Next question",seeResult:"See results",liveRank:"Live ranking",
+ farmTotal:"Total height of your tower",farmNote:"Each section = height added by one question (max. 199 m each)",finalRank:"Final ranking",again:"Play again",home:"Home",
+ qNum:"Question {n}/{t}",m:"m",avg:"Average per question: {n} m",levels:"Levels: ",tooFar:"Too far off – no height added this time 😅",hint:"The more accurate, the taller the tower",timeout:"Time's up",
  lvlReset:"Levels reset",lvlUp:"⬆️ {c} is now Lv {n}!",loadFail:"Could not load questions",linkCopied:"Link copied",
  connecting:"Connecting to server…",noServer:"Cannot reach the server – please refresh later",creating:"Creating…",joining:"Joining…",needCode:"Please enter a room code",joinPrompt:"Enter your nickname and tap “Join” to enter room {c}",
  hostHint:"Tap “Start match” when everyone is here.",waitHost:"Waiting for the host to start…",you:" (you)",offline:" · offline",answered:"✅ Answered",thinking:"⏳ Thinking",submitted:"Submitted – waiting for others…",
  autoNext:"Next question in {n} s",finalSoon:"Final ranking coming up…",
  err_room_not_found:"Room not found – please check the code",err_room_full:"Room is full",err_server_restart:"Server is restarting – please refresh in a moment",
  cat_policy:"Policy",cat_oem:"OEM/Tech",cat_dev:"Development/Market",cat_fin:"Finance"},
-de:{diffLabel:"Schwierigkeit",diff_easy:"Leicht",diff_standard:"Standard",diff_hard:"Schwer",diffHint_easy:"Vor allem Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"Je 5 Fragen pro Level, von leicht nach schwer",diffHint_hard:"Vor allem Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"wählt der Host",_name:"Deutsch",_locale:"de-DE",title:"WindTower · Windenergie-Schätzchallenge",subtitle:"Wind an Land in Europa · 8 Fragen allein, 15 im Mehrspieler · je genauer die Antwort, desto höher der Turm (max. 199 m)",
+de:{diffLabel:"Schwierigkeit",diff_easy:"Leicht",diff_standard:"Standard",diff_hard:"Schwer",diffHint_easy:"Vor allem Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"Je 5 Fragen pro Level, von leicht nach schwer",diffHint_hard:"Vor allem Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"wählt der Host",_name:"Deutsch",_locale:"de-DE",title:"WindTower · Windenergie-Schätzchallenge",subtitle:"Wind an Land in Europa · 8 Fragen allein, 15 im Mehrspieler · je genauer die Antwort, desto höher der Turm (max. 199 m pro Frage)",
  installTitle:"📱 Zum Home-Bildschirm",installIOS:"Tippe in Safari unten auf „Teilen“ ⬆️ und dann auf „Zum Home-Bildschirm“.",installOther:"WindTower aufs Handy installieren und wie eine App im Vollbild öffnen.",install:"Installieren",gotIt:"Verstanden",
  nickname:"Dein Spitzname",nickPh:"z. B. Lexi",soloTitle:"Einzelspieler",soloDesc:"8 Fragen pro Runde. Zweimal hintereinander ≥150 m in einer Kategorie (zählt rundenübergreifend) – dann steigt diese Kategorie ein Level auf (3 Level).",soloStart:"Allein spielen",resetLvl:"Level zurücksetzen",
  multiTitle:"Mehrspieler",multiDesc:"15 Fragen pro Runde. Raum erstellen und Link oder Raumcode an Freunde schicken. Alle sehen dieselbe Frage gleichzeitig, die Antworten werden gemeinsam aufgedeckt.",createRoom:"Raum erstellen",codePh:"Raumcode",join:"Beitreten",
  demoNote:"Dies ist die Demo-Version mit Einzelspieler-Modus. Der Mehrspieler-Modus läuft später auf dem Firmenserver.",roomCode:"Raumcode",copyLink:"Link kopieren",players:"Spieler:",startMatch:"Spiel starten",leave:"Verlassen",
- ansPh:"Zahl eingeben",ok:"OK",yourAns:"Deine Antwort",rightAns:"Richtige Antwort",towerH:"Turm",next:"Nächste Frage",seeResult:"Ergebnis",liveRank:"Live-Rangliste",
- farmTotal:"Gesamthöhe deines Windparks",farmNote:"Jeder Balken = Turm einer Frage (voll = 199 m)",finalRank:"Endstand",again:"Nochmal spielen",home:"Startseite",
- qNum:"Frage {n}/{t}",m:"m",avg:"Durchschnittliche Turmhöhe {n} m",levels:"Level: ",tooFar:"Zu weit daneben – kein Turm diesmal 😅",hint:"Je genauer, desto höher der Turm",timeout:"Zeit abgelaufen",
+ ansPh:"Zahl eingeben",ok:"OK",yourAns:"Deine Antwort",rightAns:"Richtige Antwort",towerH:"Zuwachs",next:"Nächste Frage",seeResult:"Ergebnis",liveRank:"Live-Rangliste",
+ farmTotal:"Gesamthöhe deines Turms",farmNote:"Jedes Segment = Zuwachs aus einer Frage (max. 199 m pro Frage)",finalRank:"Endstand",again:"Nochmal spielen",home:"Startseite",
+ qNum:"Frage {n}/{t}",m:"m",avg:"Durchschnitt pro Frage: {n} m",levels:"Level: ",tooFar:"Zu weit daneben – diesmal kein Zuwachs 😅",hint:"Je genauer, desto höher der Turm",timeout:"Zeit abgelaufen",
  lvlReset:"Level zurückgesetzt",lvlUp:"⬆️ {c} jetzt auf Lv {n}!",loadFail:"Fragen konnten nicht geladen werden",linkCopied:"Link kopiert",
  connecting:"Verbinde mit dem Server…",noServer:"Server nicht erreichbar – bitte später neu laden",creating:"Wird erstellt…",joining:"Trete bei…",needCode:"Bitte Raumcode eingeben",joinPrompt:"Spitznamen eingeben und auf „Beitreten“ tippen, um Raum {c} zu betreten",
  hostHint:"Auf „Spiel starten“ tippen, wenn alle da sind.",waitHost:"Warte auf den Start durch den Host…",you:" (du)",offline:" · offline",answered:"✅ Beantwortet",thinking:"⏳ Überlegt",submitted:"Abgeschickt – warte auf die anderen…",
  autoNext:"Nächste Frage in {n} s",finalSoon:"Gleich kommt der Endstand…",
  err_room_not_found:"Raum nicht gefunden – bitte Code prüfen",err_room_full:"Raum ist voll",err_server_restart:"Server startet neu – bitte gleich neu laden",
  cat_policy:"Politik",cat_oem:"OEM/Technik",cat_dev:"Entwicklung/Markt",cat_fin:"Finanzierung"},
-es:{diffLabel:"Dificultad",diff_easy:"Fácil",diff_standard:"Estándar",diff_hard:"Difícil",diffHint_easy:"Sobre todo Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 preguntas de cada nivel, de fácil a difícil",diffHint_hard:"Sobre todo Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"lo elige el anfitrión",_name:"Español",_locale:"es-ES",title:"WindTower · Reto de estimación eólica",subtitle:"Eólica terrestre en Europa · 8 preguntas en solitario, 15 en multijugador · cuanto más te acerques, más alta será tu torre (máx. 199 m)",
+es:{diffLabel:"Dificultad",diff_easy:"Fácil",diff_standard:"Estándar",diff_hard:"Difícil",diffHint_easy:"Sobre todo Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 preguntas de cada nivel, de fácil a difícil",diffHint_hard:"Sobre todo Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"lo elige el anfitrión",_name:"Español",_locale:"es-ES",title:"WindTower · Reto de estimación eólica",subtitle:"Eólica terrestre en Europa · 8 preguntas en solitario, 15 en multijugador · cuanto más te acerques, más alta será tu torre (máx. 199 m por pregunta)",
  installTitle:"📱 Añadir a pantalla de inicio",installIOS:"En Safari, toca el botón Compartir ⬆️ abajo y luego «Añadir a pantalla de inicio».",installOther:"Instala WindTower en tu móvil y ábrelo a pantalla completa como una app.",install:"Instalar",gotIt:"Entendido",
  nickname:"Tu apodo",nickPh:"p. ej. Lexi",soloTitle:"Modo individual",soloDesc:"8 preguntas por partida. Consigue dos torres seguidas de ≥150 m en una categoría (cuenta entre partidas) para subir esa categoría de nivel (3 niveles).",soloStart:"Jugar solo",resetLvl:"Reiniciar niveles",
  multiTitle:"Multijugador",multiDesc:"15 preguntas por partida. Crea una sala y envía el enlace o el código a tus amigos. Todos ven la misma pregunta a la vez y las respuestas se revelan juntas.",createRoom:"Crear sala",codePh:"Código de sala",join:"Unirse",
  demoNote:"Esta es la versión de demostración, solo con modo individual. El multijugador funcionará en el servidor de la empresa.",roomCode:"Código de sala",copyLink:"Copiar enlace",players:"Jugadores:",startMatch:"Empezar partida",leave:"Salir",
- ansPh:"Escribe un número",ok:"OK",yourAns:"Tu respuesta",rightAns:"Respuesta correcta",towerH:"Torre",next:"Siguiente pregunta",seeResult:"Ver resultado",liveRank:"Clasificación en directo",
- farmTotal:"Altura total de tu parque eólico",farmNote:"Cada barra = la torre de una pregunta (barra llena = 199 m)",finalRank:"Clasificación final",again:"Jugar otra vez",home:"Inicio",
- qNum:"Pregunta {n}/{t}",m:"m",avg:"Altura media de torre {n} m",levels:"Niveles: ",tooFar:"Demasiado lejos: esta vez no hay torre 😅",hint:"Cuanto más precisa, más alta la torre",timeout:"Se acabó el tiempo",
+ ansPh:"Escribe un número",ok:"OK",yourAns:"Tu respuesta",rightAns:"Respuesta correcta",towerH:"Añadido",next:"Siguiente pregunta",seeResult:"Ver resultado",liveRank:"Clasificación en directo",
+ farmTotal:"Altura total de tu torre",farmNote:"Cada tramo = altura añadida por una pregunta (máx. 199 m cada una)",finalRank:"Clasificación final",again:"Jugar otra vez",home:"Inicio",
+ qNum:"Pregunta {n}/{t}",m:"m",avg:"Media por pregunta: {n} m",levels:"Niveles: ",tooFar:"Demasiado lejos: esta vez la torre no crece 😅",hint:"Cuanto más precisa, más alta la torre",timeout:"Se acabó el tiempo",
  lvlReset:"Niveles reiniciados",lvlUp:"⬆️ ¡{c} sube a Lv {n}!",loadFail:"No se pudieron cargar las preguntas",linkCopied:"Enlace copiado",
  connecting:"Conectando con el servidor…",noServer:"No se puede conectar con el servidor; recarga más tarde",creating:"Creando…",joining:"Uniéndose…",needCode:"Introduce un código de sala",joinPrompt:"Escribe tu apodo y toca «Unirse» para entrar en la sala {c}",
  hostHint:"Toca «Empezar partida» cuando estén todos.",waitHost:"Esperando a que el anfitrión empiece…",you:" (tú)",offline:" · desconectado",answered:"✅ Respondido",thinking:"⏳ Pensando",submitted:"Enviado; esperando a los demás…",
  autoNext:"Siguiente pregunta en {n} s",finalSoon:"Enseguida la clasificación final…",
  err_room_not_found:"Sala no encontrada; revisa el código",err_room_full:"La sala está llena",err_server_restart:"El servidor se está reiniciando; recarga en un momento",
- cat_policy:"Política",cat_oem:"OEM/Tecnología",cat_dev:"Desarrollo/Mercado",cat_fin:"Financiación"}
+ cat_policy:"Política",cat_oem:"OEM/Tecnología",cat_dev:"Desarrollo/Mercado",cat_fin:"Financiación"},
+fr:{_name:"Français",_locale:"fr-FR",diffLabel:"Difficulté",diff_easy:"Facile",diff_standard:"Standard",diff_hard:"Difficile",diffHint_easy:"Surtout Lv 1 : 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 questions par niveau, du plus facile au plus difficile",diffHint_hard:"Surtout Lv 3 : 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"choisi par l’hôte",title:"WindTower · Défi d’estimation éolienne",subtitle:"Éolien terrestre en Europe · 8 questions en solo, 15 en multijoueur · plus votre réponse est proche, plus votre tour est haute (max. 199 m par question)",
+ installTitle:"📱 Ajouter à l’écran d’accueil",installIOS:"Dans Safari, touchez le bouton Partager ⬆️ en bas, puis « Sur l’écran d’accueil ».",installOther:"Installez WindTower sur votre téléphone et ouvrez-le en plein écran comme une app.",install:"Installer",gotIt:"Compris",
+ nickname:"Votre pseudo",nickPh:"ex. Lexi",soloTitle:"Mode solo",soloDesc:"8 questions par partie. Construisez deux fois de suite une section de ≥150 m dans une catégorie (cumulé entre les parties) pour la faire monter de niveau (3 niveaux).",soloStart:"Jouer en solo",resetLvl:"Réinitialiser les niveaux",
+ multiTitle:"Multijoueur",multiDesc:"15 questions par partie. Créez une salle et envoyez le lien ou le code à vos amis. Tout le monde voit la même question en même temps ; les réponses sont révélées ensemble.",createRoom:"Créer une salle",codePh:"Code de la salle",join:"Rejoindre",
+ demoNote:"Ceci est la version de démonstration, en mode solo uniquement. Le multijoueur fonctionnera sur le serveur de l’entreprise.",roomCode:"Code de la salle",copyLink:"Copier le lien",players:"Joueurs :",startMatch:"Lancer la partie",leave:"Quitter",
+ ansPh:"Saisissez un nombre",ok:"OK",yourAns:"Votre réponse",rightAns:"Bonne réponse",towerH:"Ajouté",next:"Question suivante",seeResult:"Voir le résultat",liveRank:"Classement en direct",
+ farmTotal:"Hauteur totale de votre tour",farmNote:"Chaque section = hauteur ajoutée par une question (max. 199 m chacune)",finalRank:"Classement final",again:"Rejouer",home:"Accueil",
+ qNum:"Question {n}/{t}",m:"m",avg:"Hauteur moyenne par question : {n} m",levels:"Niveaux : ",tooFar:"Trop loin – pas de hauteur ajoutée cette fois 😅",hint:"Plus la réponse est précise, plus la tour est haute",timeout:"Temps écoulé",
+ lvlReset:"Niveaux réinitialisés",lvlUp:"⬆️ {c} passe au Lv {n} !",loadFail:"Impossible de charger les questions",linkCopied:"Lien copié",
+ connecting:"Connexion au serveur…",noServer:"Serveur injoignable – veuillez actualiser plus tard",creating:"Création…",joining:"Connexion à la salle…",needCode:"Veuillez saisir un code de salle",joinPrompt:"Saisissez votre pseudo et touchez « Rejoindre » pour entrer dans la salle {c}",
+ hostHint:"Touchez « Lancer la partie » quand tout le monde est là.",waitHost:"En attente du lancement par l’hôte…",you:" (vous)",offline:" · hors ligne",answered:"✅ Répondu",thinking:"⏳ Réfléchit",submitted:"Envoyé – en attente des autres…",
+ autoNext:"Question suivante dans {n} s",finalSoon:"Classement final dans un instant…",
+ err_room_not_found:"Salle introuvable – vérifiez le code",err_room_full:"La salle est pleine",err_server_restart:"Le serveur redémarre – actualisez dans un instant",
+ cat_policy:"Politique",cat_oem:"OEM/Technique",cat_dev:"Développement/Marché",cat_fin:"Financement"},
+pl:{_name:"Polski",_locale:"pl-PL",diffLabel:"Poziom trudności",diff_easy:"Łatwy",diff_standard:"Standardowy",diff_hard:"Trudny",diffHint_easy:"Głównie Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"Po 5 pytań z każdego poziomu, od łatwych do trudnych",diffHint_hard:"Głównie Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"wybiera gospodarz",title:"WindTower · Wyzwanie: szacowanie w energetyce wiatrowej",subtitle:"Lądowa energetyka wiatrowa w Europie · 8 pytań solo, 15 w trybie wieloosobowym · im bliżej poprawnej odpowiedzi, tym wyższa wieża (maks. 199 m za pytanie)",
+ installTitle:"📱 Dodaj do ekranu głównego",installIOS:"W Safari stuknij przycisk Udostępnij ⬆️ na dole, a potem „Do ekranu początkowego”.",installOther:"Zainstaluj WindTower na telefonie i otwieraj go na pełnym ekranie jak aplikację.",install:"Zainstaluj",gotIt:"Rozumiem",
+ nickname:"Twój pseudonim",nickPh:"np. Lexi",soloTitle:"Tryb solo",soloDesc:"8 pytań na rundę. Zbuduj dwa razy z rzędu odcinek ≥150 m w jednej kategorii (liczy się między rundami), aby awansować tę kategorię (3 poziomy).",soloStart:"Graj solo",resetLvl:"Resetuj poziomy",
+ multiTitle:"Tryb wieloosobowy",multiDesc:"15 pytań na rundę. Utwórz pokój i wyślij znajomym link lub kod. Wszyscy widzą to samo pytanie jednocześnie, a odpowiedzi są odkrywane razem.",createRoom:"Utwórz pokój",codePh:"Kod pokoju",join:"Dołącz",
+ demoNote:"To wersja demonstracyjna, tylko z trybem solo. Tryb wieloosobowy będzie działał na serwerze firmy.",roomCode:"Kod pokoju",copyLink:"Kopiuj link",players:"Gracze:",startMatch:"Rozpocznij grę",leave:"Wyjdź",
+ ansPh:"Wpisz liczbę",ok:"OK",yourAns:"Twoja odpowiedź",rightAns:"Poprawna odpowiedź",towerH:"Dodano",next:"Następne pytanie",seeResult:"Zobacz wynik",liveRank:"Ranking na żywo",
+ farmTotal:"Całkowita wysokość Twojej wieży",farmNote:"Każdy odcinek = wysokość dodana za jedno pytanie (maks. 199 m)",finalRank:"Ranking końcowy",again:"Zagraj ponownie",home:"Start",
+ qNum:"Pytanie {n}/{t}",m:"m",avg:"Średnio na pytanie: {n} m",levels:"Poziomy: ",tooFar:"Za daleko – tym razem wieża nie urosła 😅",hint:"Im dokładniej, tym wyższa wieża",timeout:"Koniec czasu",
+ lvlReset:"Poziomy zresetowane",lvlUp:"⬆️ {c} – teraz Lv {n}!",loadFail:"Nie udało się wczytać pytań",linkCopied:"Link skopiowany",
+ connecting:"Łączenie z serwerem…",noServer:"Brak połączenia z serwerem – odśwież stronę później",creating:"Tworzenie…",joining:"Dołączanie…",needCode:"Wpisz kod pokoju",joinPrompt:"Wpisz pseudonim i stuknij „Dołącz”, aby wejść do pokoju {c}",
+ hostHint:"Stuknij „Rozpocznij grę”, gdy wszyscy dołączą.",waitHost:"Czekamy, aż gospodarz rozpocznie…",you:" (ty)",offline:" · offline",answered:"✅ Odpowiedział",thinking:"⏳ Myśli",submitted:"Wysłano – czekamy na innych…",
+ autoNext:"Następne pytanie za {n} s",finalSoon:"Za chwilę ranking końcowy…",
+ err_room_not_found:"Nie znaleziono pokoju – sprawdź kod",err_room_full:"Pokój jest pełny",err_server_restart:"Serwer się restartuje – odśwież za chwilę",
+ cat_policy:"Polityka",cat_oem:"OEM/Technika",cat_dev:"Rozwój/Rynek",cat_fin:"Finansowanie"},
+it:{_name:"Italiano",_locale:"it-IT",diffLabel:"Difficoltà",diff_easy:"Facile",diff_standard:"Standard",diff_hard:"Difficile",diffHint_easy:"Soprattutto Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 domande per livello, dalla più facile alla più difficile",diffHint_hard:"Soprattutto Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"lo sceglie l’host",title:"WindTower · Sfida di stima sull’eolico",subtitle:"Eolico onshore in Europa · 8 domande in singolo, 15 in multigiocatore · più la risposta è vicina, più alta è la torre (max. 199 m a domanda)",
+ installTitle:"📱 Aggiungi alla schermata Home",installIOS:"In Safari tocca il pulsante Condividi ⬆️ in basso, poi «Aggiungi alla schermata Home».",installOther:"Installa WindTower sul telefono e aprilo a schermo intero come un’app.",install:"Installa",gotIt:"Ho capito",
+ nickname:"Il tuo nickname",nickPh:"es. Lexi",soloTitle:"Modalità singola",soloDesc:"8 domande per partita. Costruisci due volte di fila una sezione di ≥150 m in una categoria (vale anche tra partite) per farla salire di livello (3 livelli).",soloStart:"Gioca da solo",resetLvl:"Azzera i livelli",
+ multiTitle:"Multigiocatore",multiDesc:"15 domande per partita. Crea una stanza e invia il link o il codice agli amici. Tutti vedono la stessa domanda nello stesso momento; le risposte vengono svelate insieme.",createRoom:"Crea stanza",codePh:"Codice stanza",join:"Entra",
+ demoNote:"Questa è la versione demo, solo in modalità singola. Il multigiocatore funzionerà sul server aziendale.",roomCode:"Codice stanza",copyLink:"Copia link",players:"Giocatori:",startMatch:"Inizia partita",leave:"Esci",
+ ansPh:"Inserisci un numero",ok:"OK",yourAns:"La tua risposta",rightAns:"Risposta corretta",towerH:"Aggiunto",next:"Domanda successiva",seeResult:"Vedi risultato",liveRank:"Classifica in diretta",
+ farmTotal:"Altezza totale della tua torre",farmNote:"Ogni sezione = altezza aggiunta da una domanda (max. 199 m ciascuna)",finalRank:"Classifica finale",again:"Gioca ancora",home:"Home",
+ qNum:"Domanda {n}/{t}",m:"m",avg:"Media per domanda: {n} m",levels:"Livelli: ",tooFar:"Troppo lontano – questa volta la torre non cresce 😅",hint:"Più sei preciso, più alta è la torre",timeout:"Tempo scaduto",
+ lvlReset:"Livelli azzerati",lvlUp:"⬆️ {c} ora è Lv {n}!",loadFail:"Impossibile caricare le domande",linkCopied:"Link copiato",
+ connecting:"Connessione al server…",noServer:"Server non raggiungibile – ricarica più tardi",creating:"Creazione…",joining:"Accesso…",needCode:"Inserisci un codice stanza",joinPrompt:"Inserisci il nickname e tocca «Entra» per accedere alla stanza {c}",
+ hostHint:"Tocca «Inizia partita» quando ci sono tutti.",waitHost:"In attesa che l’host inizi…",you:" (tu)",offline:" · offline",answered:"✅ Risposto",thinking:"⏳ Sta pensando",submitted:"Inviato – in attesa degli altri…",
+ autoNext:"Prossima domanda tra {n} s",finalSoon:"Tra poco la classifica finale…",
+ err_room_not_found:"Stanza non trovata – controlla il codice",err_room_full:"La stanza è piena",err_server_restart:"Il server si sta riavviando – ricarica tra un attimo",
+ cat_policy:"Politica",cat_oem:"OEM/Tecnica",cat_dev:"Sviluppo/Mercato",cat_fin:"Finanza"},
+pt:{_name:"Português",_locale:"pt-PT",diffLabel:"Dificuldade",diff_easy:"Fácil",diff_standard:"Padrão",diff_hard:"Difícil",diffHint_easy:"Sobretudo Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 perguntas de cada nível, da mais fácil à mais difícil",diffHint_hard:"Sobretudo Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"escolhido pelo anfitrião",title:"WindTower · Desafio de estimativas eólicas",subtitle:"Eólica terrestre na Europa · 8 perguntas a solo, 15 em multijogador · quanto mais perto da resposta, mais alta a torre (máx. 199 m por pergunta)",
+ installTitle:"📱 Adicionar ao ecrã principal",installIOS:"No Safari, toque no botão Partilhar ⬆️ em baixo e depois em «Adicionar ao ecrã principal».",installOther:"Instale o WindTower no telemóvel e abra-o em ecrã inteiro como uma app.",install:"Instalar",gotIt:"Entendido",
+ nickname:"O seu nome de jogador",nickPh:"ex. Lexi",soloTitle:"Modo individual",soloDesc:"8 perguntas por jogo. Construa duas vezes seguidas uma secção de ≥150 m numa categoria (conta entre jogos) para subir essa categoria de nível (3 níveis).",soloStart:"Jogar a solo",resetLvl:"Repor níveis",
+ multiTitle:"Multijogador",multiDesc:"15 perguntas por jogo. Crie uma sala e envie o link ou o código aos amigos. Todos veem a mesma pergunta ao mesmo tempo; as respostas são reveladas em conjunto.",createRoom:"Criar sala",codePh:"Código da sala",join:"Entrar",
+ demoNote:"Esta é a versão de demonstração, só com modo individual. O multijogador funcionará no servidor da empresa.",roomCode:"Código da sala",copyLink:"Copiar link",players:"Jogadores:",startMatch:"Iniciar jogo",leave:"Sair",
+ ansPh:"Escreva um número",ok:"OK",yourAns:"A sua resposta",rightAns:"Resposta certa",towerH:"Acrescentado",next:"Pergunta seguinte",seeResult:"Ver resultado",liveRank:"Classificação ao vivo",
+ farmTotal:"Altura total da sua torre",farmNote:"Cada secção = altura acrescentada por uma pergunta (máx. 199 m cada)",finalRank:"Classificação final",again:"Jogar outra vez",home:"Início",
+ qNum:"Pergunta {n}/{t}",m:"m",avg:"Média por pergunta: {n} m",levels:"Níveis: ",tooFar:"Demasiado longe – desta vez a torre não cresce 😅",hint:"Quanto mais precisa, mais alta a torre",timeout:"Tempo esgotado",
+ lvlReset:"Níveis repostos",lvlUp:"⬆️ {c} sobe para Lv {n}!",loadFail:"Não foi possível carregar as perguntas",linkCopied:"Link copiado",
+ connecting:"A ligar ao servidor…",noServer:"Servidor inacessível – atualize mais tarde",creating:"A criar…",joining:"A entrar…",needCode:"Introduza um código de sala",joinPrompt:"Escreva o seu nome e toque em «Entrar» para entrar na sala {c}",
+ hostHint:"Toque em «Iniciar jogo» quando estiverem todos.",waitHost:"À espera que o anfitrião comece…",you:" (você)",offline:" · offline",answered:"✅ Respondeu",thinking:"⏳ A pensar",submitted:"Enviado – à espera dos outros…",
+ autoNext:"Próxima pergunta em {n} s",finalSoon:"A classificação final vem já…",
+ err_room_not_found:"Sala não encontrada – verifique o código",err_room_full:"A sala está cheia",err_server_restart:"O servidor está a reiniciar – atualize daqui a pouco",
+ cat_policy:"Política",cat_oem:"OEM/Técnica",cat_dev:"Desenvolvimento/Mercado",cat_fin:"Financiamento"},
+nl:{_name:"Nederlands",_locale:"nl-NL",diffLabel:"Moeilijkheid",diff_easy:"Makkelijk",diff_standard:"Standaard",diff_hard:"Moeilijk",diffHint_easy:"Vooral Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 vragen per niveau, van makkelijk naar moeilijk",diffHint_hard:"Vooral Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"gekozen door de host",title:"WindTower · Windenergie-schatuitdaging",subtitle:"Wind op land in Europa · 8 vragen solo, 15 in multiplayer · hoe dichter bij het antwoord, hoe hoger je toren (max. 199 m per vraag)",
+ installTitle:"📱 Zet op beginscherm",installIOS:"Tik in Safari onderaan op de deelknop ⬆️ en daarna op ‘Zet op beginscherm’.",installOther:"Installeer WindTower op je telefoon en open het schermvullend als een app.",install:"Installeren",gotIt:"Begrepen",
+ nickname:"Je bijnaam",nickPh:"bijv. Lexi",soloTitle:"Solomodus",soloDesc:"8 vragen per ronde. Bouw twee keer op rij een deel van ≥150 m in één categorie (telt over rondes heen) om die categorie een niveau hoger te zetten (3 niveaus).",soloStart:"Solo spelen",resetLvl:"Niveaus resetten",
+ multiTitle:"Multiplayer",multiDesc:"15 vragen per ronde. Maak een kamer en stuur de link of code naar vrienden. Iedereen ziet tegelijk dezelfde vraag; de antwoorden worden samen onthuld.",createRoom:"Kamer maken",codePh:"Kamercode",join:"Deelnemen",
+ demoNote:"Dit is de demoversie met alleen de solomodus. Multiplayer draait later op de bedrijfsserver.",roomCode:"Kamercode",copyLink:"Link kopiëren",players:"Spelers:",startMatch:"Spel starten",leave:"Verlaten",
+ ansPh:"Voer een getal in",ok:"OK",yourAns:"Jouw antwoord",rightAns:"Juist antwoord",towerH:"Toegevoegd",next:"Volgende vraag",seeResult:"Bekijk resultaat",liveRank:"Live ranglijst",
+ farmTotal:"Totale hoogte van je toren",farmNote:"Elk deel = hoogte toegevoegd door één vraag (max. 199 m per vraag)",finalRank:"Eindstand",again:"Opnieuw spelen",home:"Start",
+ qNum:"Vraag {n}/{t}",m:"m",avg:"Gemiddeld per vraag: {n} m",levels:"Niveaus: ",tooFar:"Te ver ernaast – deze keer groeit de toren niet 😅",hint:"Hoe nauwkeuriger, hoe hoger de toren",timeout:"Tijd is om",
+ lvlReset:"Niveaus gereset",lvlUp:"⬆️ {c} is nu Lv {n}!",loadFail:"Vragen konden niet worden geladen",linkCopied:"Link gekopieerd",
+ connecting:"Verbinden met de server…",noServer:"Server niet bereikbaar – probeer later opnieuw",creating:"Bezig met maken…",joining:"Bezig met deelnemen…",needCode:"Voer een kamercode in",joinPrompt:"Vul je bijnaam in en tik op ‘Deelnemen’ om kamer {c} binnen te gaan",
+ hostHint:"Tik op ‘Spel starten’ als iedereen er is.",waitHost:"Wachten tot de host start…",you:" (jij)",offline:" · offline",answered:"✅ Beantwoord",thinking:"⏳ Denkt na",submitted:"Verstuurd – wachten op de anderen…",
+ autoNext:"Volgende vraag over {n} s",finalSoon:"Zo meteen de eindstand…",
+ err_room_not_found:"Kamer niet gevonden – controleer de code",err_room_full:"De kamer is vol",err_server_restart:"De server herstart – vernieuw zo meteen",
+ cat_policy:"Beleid",cat_oem:"OEM/Techniek",cat_dev:"Ontwikkeling/Markt",cat_fin:"Financiering"},
+sv:{_name:"Svenska",_locale:"sv-SE",diffLabel:"Svårighetsgrad",diff_easy:"Lätt",diff_standard:"Standard",diff_hard:"Svår",diffHint_easy:"Mest Lv 1: 10 × Lv 1 + 5 × Lv 2",diffHint_standard:"5 frågor från varje nivå, från lätt till svår",diffHint_hard:"Mest Lv 3: 5 × Lv 2 + 10 × Lv 3",diffHostOnly:"väljs av värden",title:"WindTower · Uppskattningsutmaning om vindkraft",subtitle:"Landbaserad vindkraft i Europa · 8 frågor solo, 15 i flerspelarläge · ju närmare svaret, desto högre torn (max. 199 m per fråga)",
+ installTitle:"📱 Lägg till på hemskärmen",installIOS:"Tryck på Dela-knappen ⬆️ längst ned i Safari och sedan på ”Lägg till på hemskärmen”.",installOther:"Installera WindTower i mobilen och öppna den i helskärm som en app.",install:"Installera",gotIt:"Uppfattat",
+ nickname:"Ditt smeknamn",nickPh:"t.ex. Lexi",soloTitle:"Solospel",soloDesc:"8 frågor per omgång. Bygg en sektion på ≥150 m två gånger i rad i samma kategori (räknas mellan omgångar) för att höja kategorins nivå (3 nivåer).",soloStart:"Spela solo",resetLvl:"Återställ nivåer",
+ multiTitle:"Flerspelarläge",multiDesc:"15 frågor per omgång. Skapa ett rum och skicka länken eller koden till vänner. Alla ser samma fråga samtidigt och svaren visas tillsammans.",createRoom:"Skapa rum",codePh:"Rumskod",join:"Gå med",
+ demoNote:"Det här är demoversionen med enbart solospel. Flerspelarläget kommer att köras på företagets server.",roomCode:"Rumskod",copyLink:"Kopiera länk",players:"Spelare:",startMatch:"Starta spelet",leave:"Lämna",
+ ansPh:"Skriv ett tal",ok:"OK",yourAns:"Ditt svar",rightAns:"Rätt svar",towerH:"Tillagt",next:"Nästa fråga",seeResult:"Visa resultat",liveRank:"Topplista live",
+ farmTotal:"Ditt torns totala höjd",farmNote:"Varje sektion = höjd från en fråga (max. 199 m per fråga)",finalRank:"Slutställning",again:"Spela igen",home:"Start",
+ qNum:"Fråga {n}/{t}",m:"m",avg:"Snitt per fråga: {n} m",levels:"Nivåer: ",tooFar:"För långt ifrån – tornet växer inte den här gången 😅",hint:"Ju exaktare, desto högre torn",timeout:"Tiden är ute",
+ lvlReset:"Nivåerna återställda",lvlUp:"⬆️ {c} är nu Lv {n}!",loadFail:"Kunde inte ladda frågorna",linkCopied:"Länken kopierad",
+ connecting:"Ansluter till servern…",noServer:"Servern går inte att nå – ladda om senare",creating:"Skapar…",joining:"Går med…",needCode:"Ange en rumskod",joinPrompt:"Skriv ditt smeknamn och tryck på ”Gå med” för att gå in i rum {c}",
+ hostHint:"Tryck på ”Starta spelet” när alla är här.",waitHost:"Väntar på att värden startar…",you:" (du)",offline:" · offline",answered:"✅ Svarat",thinking:"⏳ Tänker",submitted:"Skickat – väntar på de andra…",
+ autoNext:"Nästa fråga om {n} s",finalSoon:"Slutställningen kommer strax…",
+ err_room_not_found:"Rummet hittades inte – kontrollera koden",err_room_full:"Rummet är fullt",err_server_restart:"Servern startar om – ladda om om en stund",
+ cat_policy:"Politik",cat_oem:"OEM/Teknik",cat_dev:"Utveckling/Marknad",cat_fin:"Finansiering"}
 };
 const LANGS=Object.keys(I18N);
 function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
@@ -282,30 +367,49 @@ function applyLang(){
   $("headline").textContent=t("title").split(" · ").slice(1).join(" · ")||t("title");
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
   document.querySelectorAll("[data-tp]").forEach(e=>e.placeholder=t(e.dataset.tp));
-  $("langs").innerHTML=LANGS.map(l=>`<button class="${l===LANG?"on":""}" data-lang="${l}">${I18N[l]._name}</button>`).join("");
+  $("langs").innerHTML=LANGS.map(l=>`<option value="${l}" ${l===LANG?"selected":""}>${I18N[l]._name}</option>`).join("");
   renderLvl();renderInstallTip();
   if(curQ)fillQuestion(curQ.q,curQ.idx);
-  if(curResult)fillResult(...curResult);
+  if(curResult){fillResult(...curResult);drawTower($("scene"),curResult[6])}
   $("nextBtn").textContent=t(nextIsLast?"seeResult":"next");
   if(M.state)renderBoards(M.state);
   if(lastEnd)showEnd(...lastEnd);
   if(netKey)$("netMsg").textContent=t(...netKey);
 }
-document.addEventListener("click",e=>{const b=e.target.closest("[data-lang]");if(!b)return;LANG=b.dataset.lang;store("wt_lang",LANG);applyLang()});
+$("langs").addEventListener("change",e=>{LANG=e.target.value;store("wt_lang",LANG);applyLang()});
 
-// ---------- 风机画面 ----------
-function drawScene(h,animate,emptyText){
-  const W=360,H=260,ground=235,top=20,scale=(ground-top)/199;
-  const ticks=[50,100,150,199].map(m=>{const y=ground-m*scale;return `<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="#D3DCE8" stroke-dasharray="2 6"/><text x="6" y="${y-3}" font-size="10" fill="#97A3B6">${m} m</text>`}).join("");
-  const hubY=ground-h*scale,bl=Math.max(8,h*scale*0.42),cx=W/2;
-  $("scene").innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax meet">${ticks}
-  <rect x="0" y="${ground}" width="${W}" height="${H-ground}" fill="#DCE4EF"/>
-  <g id="tw" style="transition:transform 1.2s cubic-bezier(.2,.8,.2,1);transform-origin:${cx}px ${ground}px;transform:scaleY(${animate?0.001:1})">
-    <polygon points="${cx-6},${ground} ${cx+6},${ground} ${cx+3},${hubY} ${cx-3},${hubY}" fill="#FFFFFF" stroke="#AFBCCD"/></g>
-  ${h>0?`<g id="rt" style="opacity:${animate?0:1};transition:opacity .4s 1.1s"><rect x="${cx-4}" y="${hubY-5}" width="16" height="9" rx="3" fill="#F1F4F8" stroke="#AFBCCD"/>
-   <g class="rotor" style="transform-origin:${cx}px ${hubY}px">${[0,120,240].map(a=>`<path d="M${cx} ${hubY} L${cx-3} ${hubY-bl*0.3} L${cx} ${hubY-bl} L${cx+2} ${hubY-bl*0.3} Z" fill="#FFFFFF" stroke="#AFBCCD" transform="rotate(${a} ${cx} ${hubY})"/>`).join("")}<circle cx="${cx}" cy="${hubY}" r="3" fill="#C8373B"/></g></g>
-   <text x="${cx+18}" y="${hubY+4}" font-size="15" font-weight="700" fill="#1F4E8C">${h} m</text>`:`<text x="${cx}" y="${ground-10}" text-anchor="middle" font-size="13" fill="#6B7890">${esc(emptyText||t("hint"))}</text>`}</svg>`;
-  if(animate)requestAnimationFrame(()=>requestAnimationFrame(()=>{const a=$("tw");if(a)a.style.transform="scaleY(1)";const r=$("rt");if(r)r.style.opacity=1}));
+// ---------- 风机画面：一座塔，每题答完往上加一段，整局累计 ----------
+// heights = 已答各题的塔高（米），最后一段是本题加的高度。纵轴最高 = 本局满分（题数 × 199 米）
+function towerSVG(heights,{animate=false,emptyText="",tall=false}={}){
+  const total=heights.reduce((a,b)=>a+(b||0),0),last=heights.length?heights[heights.length-1]||0:0,prev=total-last;
+  // 纵轴跟着塔"变焦"：塔矮时放大看得清，塔变高时再拉远；最高不超过本局满分
+  const full=N*199,steps=[400,600,800,1000,1200,1600,2000,2400,3000];
+  const maxM=Math.min(full,steps.find(x=>x>=total*1.25)||full);
+  const W=360,H=tall?340:270,ground=H-24,top=34,scale=(ground-top)/maxM,cx=W/2,loc=I18N[LANG]._locale;
+  const ticks=[0.25,0.5,0.75,1].map(f=>{const m=Math.round(maxM*f),y=ground-m*scale;return `<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="#D3DCE8" stroke-dasharray="2 6"/><text x="6" y="${y-4}" font-size="10" fill="#97A3B6">${m.toLocaleString(loc)} m</text>`}).join("");
+  // 塔身从下到上逐渐变细：底部半宽 11，顶部半宽 4
+  const halfW=m=>11-7*(m/maxM);
+  let acc=0;
+  const segs=heights.map((h,i)=>{
+    if(!h)return "";
+    const y0=ground-acc*scale,y1=ground-(acc+h)*scale,w0=halfW(acc),w1=halfW(acc+h);acc+=h;
+    const isNew=animate&&i===heights.length-1;
+    const fill=isNew?"#C9D8EE":(i%2?"#F1F5FA":"#FFFFFF");
+    return `<g ${isNew?`id="newSeg" style="transform-origin:${cx}px ${y0}px;transform:scaleY(0.001);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)"`:""}><polygon points="${cx-w0},${y0} ${cx+w0},${y0} ${cx+w1},${y1} ${cx-w1},${y1}" fill="${fill}" stroke="#AFBCCD" stroke-width="1"/></g>`;
+  }).join("");
+  const hubY=ground-total*scale,startY=ground-prev*scale,bl=30;
+  const rotor=total>0?`<g id="rotorG" style="transition:transform 1.1s cubic-bezier(.2,.8,.2,1);transform:translateY(${animate?startY-hubY:0}px)">
+    <rect x="${cx-5}" y="${hubY-6}" width="18" height="10" rx="3" fill="#F1F4F8" stroke="#AFBCCD"/>
+    <g class="rotor" style="transform-origin:${cx}px ${hubY}px">${[0,120,240].map(a=>`<path d="M${cx} ${hubY} L${cx-3} ${hubY-bl*0.3} L${cx} ${hubY-bl} L${cx+2} ${hubY-bl*0.3} Z" fill="#FFFFFF" stroke="#AFBCCD" transform="rotate(${a} ${cx} ${hubY})"/>`).join("")}<circle cx="${cx}" cy="${hubY}" r="3" fill="#C8373B"/></g>
+    <text x="${cx+22}" y="${hubY+5}" font-size="16" font-weight="700" fill="#1F4E8C">${total.toLocaleString(loc)} m</text>
+    ${animate?`<text x="${cx+22}" y="${hubY+22}" font-size="12" font-weight="600" fill="${last?"#C8373B":"#97A3B6"}">+${last} m</text>`:""}</g>`
+    :`<text x="${cx}" y="${ground-14}" text-anchor="middle" font-size="13" fill="#6B7890">${esc(emptyText||(animate?t("tooFar"):t("hint")))}</text>`;
+  const zeroNote=animate&&total>0&&!last?`<text x="${W/2}" y="${H-8}" text-anchor="middle" font-size="12" fill="#6B7890">${esc(t("tooFar"))}</text>`:"";
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax meet">${ticks}<rect x="0" y="${ground}" width="${W}" height="${H-ground}" fill="#DCE4EF"/>${segs}${rotor}${zeroNote}</svg>`;
+}
+function drawTower(el,heights,opts={}){
+  el.innerHTML=towerSVG(heights,opts);
+  if(opts.animate)requestAnimationFrame(()=>requestAnimationFrame(()=>{const s=el.querySelector("#newSeg");if(s)s.style.transform="scaleY(1)";const r=el.querySelector("#rotorG");if(r)r.style.transform="translateY(0)"}));
 }
 let timerId=null,nextIsLast=false,lastEnd=null;
 function runTimer(deadline,onEnd){clearInterval(timerId);timerId=setInterval(()=>{const left=(deadline-Date.now())/1000;$("bar").style.width=Math.max(0,left/TIME*100)+"%";$("bar").style.background=left<6?"var(--warn)":"var(--acc)";if(left<=0){clearInterval(timerId);onEnd&&onEnd()}},200)}
@@ -322,11 +426,12 @@ function showQuestion(q,idx){
 }
 function lockInput(){$("ans").disabled=true;$("ansForm").querySelector("button").disabled=true}
 function fillResult(g,a,u,ex,h,timedOut){
-  $("rYou").textContent=g===null?(timedOut?t("timeout"):"—"):fmt(g);$("rAns").textContent=withUnit(a,L(u));$("rH").textContent=h+" "+t("m");$("rEx").textContent=L(ex);
+  $("rYou").textContent=g===null?(timedOut?t("timeout"):"—"):fmt(g);$("rAns").textContent=withUnit(a,L(u));$("rH").textContent="+"+h+" "+t("m");$("rEx").textContent=L(ex);
 }
-function showResult(g,a,u,ex,h,timedOut){
-  curResult=[g,a,u,ex,h,timedOut];fillResult(g,a,u,ex,h,timedOut);
-  $("scene").classList.remove("hide");$("result").classList.remove("hide");drawScene(h,true,t("tooFar"));
+// heights：到这一题为止每题的塔高，用来画累计的塔
+function showResult(g,a,u,ex,h,timedOut,heights){
+  curResult=[g,a,u,ex,h,timedOut,heights.slice()];fillResult(g,a,u,ex,h,timedOut);
+  $("scene").classList.remove("hide");$("result").classList.remove("hide");drawTower($("scene"),heights,{animate:true});
   $("scene").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function showEnd(heights,players){
@@ -334,7 +439,7 @@ function showEnd(heights,players){
   const tot=heights.reduce((a,b)=>a+(b||0),0),loc=I18N[LANG]._locale;
   $("endTotal").textContent=tot.toLocaleString(loc)+" / "+(199*N).toLocaleString(loc)+" "+t("m");
   $("endAvg").textContent=t("avg",{n:Math.round(tot/N)})+(mode==="solo"?" · "+t("levels")+CATS.map(c=>catName(c)+" Lv"+levels[c]).join(", "):"");
-  $("farm").innerHTML=Array.from({length:N},(_,i)=>`<div style="height:${(heights[i]||0)/199*100}%"></div>`).join("");
+  drawTower($("farm"),heights,{tall:true});
   $("endBoardCard").classList.toggle("hide",!players);
   if(players)$("endBoard").innerHTML=players.map((p,i)=>`<div><span>${["🥇","🥈","🥉"][i]||i+1+"."} ${esc(p.name)}${p.id===pid?t("you"):""}</span><span>${p.total.toLocaleString(loc)} ${t("m")}</span></div>`).join("");
   show("end");
@@ -369,7 +474,7 @@ function soloNext(){
 function soloSubmit(timedOut){
   if($("ans").disabled)return;clearInterval(timerId);lockInput();
   const g=parseAns(),q=S.cur,h=heightFor(q,g);S.heights.push(h);S.i++;
-  showResult(g,q.a,q.u,q.ex,h,timedOut===true);nextIsLast=S.i>=N;$("nextBtn").textContent=t(nextIsLast?"seeResult":"next");
+  showResult(g,q.a,q.u,q.ex,h,timedOut===true,S.heights);nextIsLast=S.i>=N;$("nextBtn").textContent=t(nextIsLast?"seeResult":"next");
   if(h>=150){S.streak[q.c]++;if(S.streak[q.c]>=2&&levels[q.c]<3){levels[q.c]++;S.streak[q.c]=0;store("wt_levels",levels);toast(t("lvlUp",{c:catName(q.c),n:levels[q.c]}))}}else S.streak[q.c]=0;
   store("wt_streak",S.streak);
 }
@@ -394,7 +499,7 @@ function connect(){
     $("nextBtn").classList.add("hide");$("rAll").innerHTML="";runTimer(q.deadline,()=>{if(!$("ans").disabled)multiSubmit()})});
   socket.on("reveal",r=>{clearInterval(timerId);lockInput();
     const me=r.results.find(x=>x.id===pid)||{guess:null,height:0};M.heights[r.index]=me.height;
-    showResult(me.guess,r.a,r.u,r.ex,me.height,false);$("waitMsg").textContent="";
+    showResult(me.guess,r.a,r.u,r.ex,me.height,false,Array.from({length:r.index+1},(_,i)=>M.heights[i]||0));$("waitMsg").textContent="";
     $("rAll").innerHTML=r.results.map((x,i)=>`<div><span>${i+1}. ${esc(x.name)}${x.id===pid?t("you"):""}</span><span>${x.guess===null?"—":fmt(x.guess)} → ${x.height} ${t("m")}</span></div>`).join("");
     $("nextMsg").textContent=r.index+1>=N?t("finalSoon"):t("autoNext",{n:r.seconds})});
   socket.on("end",e=>{const me=e.players.find(p=>p.id===pid);if(me)N=me.heights.length||N;showEnd(me?me.heights:M.heights,e.players)});
@@ -442,7 +547,7 @@ $("installClose").onclick=()=>{store("wt_install_hide",true);$("installCard").cl
 // ---------- 启动 ----------
 // 展示版（GitHub Pages）：没有服务器，只开放单人模式
 if(window.STATIC_DEMO){$("multiCard").classList.add("hide");$("demoNote").classList.remove("hide")}
-applyLang();drawScene(0,false);
+applyLang();
 // 通过分享链接打开（网址末尾带 #房间号）：自动填好房间号
 const hashCode=location.hash.slice(1).toUpperCase();
 if(hashCode&&!window.STATIC_DEMO){$("codeIn").value=hashCode;netMsg("joinPrompt",{c:hashCode})}

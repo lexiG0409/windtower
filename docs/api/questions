@@ -9,19 +9,37 @@
    "zh": "GW",
    "en": "GW",
    "de": "GW",
-   "es": "GW"
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
   },
   "q": {
    "zh": "德国 EEG 2023 定下的目标：到 2030 年陆上风电装机要达到多少 GW？",
    "en": "Germany's EEG 2023 target: how many GW of onshore wind should be installed by 2030?",
    "de": "Ziel des EEG 2023: Wie viele GW Windenergie an Land sollen bis 2030 installiert sein?",
-   "es": "Objetivo de la EEG 2023 de Alemania: ¿cuántos GW de eólica terrestre deben estar instalados en 2030?"
+   "es": "Objetivo de la EEG 2023 de Alemania: ¿cuántos GW de eólica terrestre deben estar instalados en 2030?",
+   "fr": "Objectif de l’EEG 2023 en Allemagne : combien de GW d’éolien terrestre doivent être installés d’ici 2030 ?",
+   "pl": "Cel niemieckiej ustawy EEG 2023: ile GW lądowej energetyki wiatrowej ma być zainstalowane do 2030 r.?",
+   "it": "Obiettivo dell’EEG 2023 tedesca: quanti GW di eolico onshore devono essere installati entro il 2030?",
+   "pt": "Meta da EEG 2023 alemã: quantos GW de eólica terrestre devem estar instalados até 2030?",
+   "nl": "Doel van de Duitse EEG 2023: hoeveel GW wind op land moet er in 2030 staan?",
+   "sv": "Målet i Tysklands EEG 2023: hur många GW landbaserad vindkraft ska vara installerade 2030?"
   },
   "ex": {
    "zh": "EEG 2023 目标为 2030 年陆上风电 115 GW，差不多是 2024 年底存量的近两倍。",
    "en": "The EEG 2023 target is 115 GW of onshore wind by 2030 – almost twice the fleet at the end of 2024.",
    "de": "Das EEG 2023 sieht 115 GW Wind an Land bis 2030 vor – fast doppelt so viel wie Ende 2024 installiert.",
-   "es": "La EEG 2023 fija 115 GW de eólica terrestre para 2030, casi el doble de lo instalado a finales de 2024."
+   "es": "La EEG 2023 fija 115 GW de eólica terrestre para 2030, casi el doble de lo instalado a finales de 2024.",
+   "fr": "L’EEG 2023 vise 115 GW d’éolien terrestre en 2030 – près du double du parc fin 2024.",
+   "pl": "EEG 2023 zakłada 115 GW na lądzie do 2030 r. – prawie dwa razy więcej niż pod koniec 2024 r.",
+   "it": "L’EEG 2023 punta a 115 GW di eolico onshore nel 2030, quasi il doppio del parco a fine 2024.",
+   "pt": "A EEG 2023 prevê 115 GW de eólica terrestre em 2030 – quase o dobro do parque no fim de 2024.",
+   "nl": "De EEG 2023 mikt op 115 GW wind op land in 2030 – bijna het dubbele van eind 2024.",
+   "sv": "EEG 2023 siktar på 115 GW landbaserad vindkraft 2030 – nästan dubbelt så mycket som i slutet av 2024."
   }
  },
  {
@@ -34,19 +52,37 @@
    "zh": "%",
    "en": "%",
    "de": "%",
-   "es": "%"
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
   },
   "q": {
    "zh": "德国《陆上风电法》(Wind-an-Land-Gesetz) 要求到 2032 年把国土面积的百分之多少划给风电？",
    "en": "Germany's Wind-an-Land-Gesetz: what percentage of the country's land area must be designated for wind by 2032?",
    "de": "Wind-an-Land-Gesetz: Wie viel Prozent der Bundesfläche sollen bis 2032 für Windenergie ausgewiesen sein?",
-   "es": "Ley alemana Wind-an-Land-Gesetz: ¿qué porcentaje del territorio debe reservarse para la eólica en 2032?"
+   "es": "Ley alemana Wind-an-Land-Gesetz: ¿qué porcentaje del territorio debe reservarse para la eólica en 2032?",
+   "fr": "Loi allemande Wind-an-Land-Gesetz : quel pourcentage du territoire doit être réservé à l’éolien d’ici 2032 ?",
+   "pl": "Niemiecka ustawa Wind-an-Land-Gesetz: jaki procent powierzchni kraju ma zostać wyznaczony pod wiatraki do 2032 r.?",
+   "it": "Legge tedesca Wind-an-Land-Gesetz: quale percentuale del territorio va destinata all’eolico entro il 2032?",
+   "pt": "Lei alemã Wind-an-Land-Gesetz: que percentagem do território deve ser destinada à eólica até 2032?",
+   "nl": "Duitse Wind-an-Land-Gesetz: welk percentage van het landoppervlak moet in 2032 voor wind zijn aangewezen?",
+   "sv": "Tysklands Wind-an-Land-Gesetz: hur många procent av landytan ska avsättas för vindkraft till 2032?"
   },
   "ex": {
    "zh": "目标是 2032 年前 2% 的国土面积用于风电，由各州分摊。",
    "en": "The target is 2% of federal territory by 2032, split among the federal states.",
    "de": "Ziel sind 2 % der Bundesfläche bis 2032, verteilt auf die Bundesländer.",
-   "es": "El objetivo es el 2 % del territorio federal en 2032, repartido entre los estados federados."
+   "es": "El objetivo es el 2 % del territorio federal en 2032, repartido entre los estados federados.",
+   "fr": "L’objectif est 2 % du territoire fédéral d’ici 2032, réparti entre les Länder.",
+   "pl": "Cel to 2% powierzchni kraju do 2032 r., rozdzielone między kraje związkowe.",
+   "it": "L’obiettivo è il 2% del territorio federale entro il 2032, ripartito tra i Länder.",
+   "pt": "O objetivo é 2% do território federal até 2032, repartido entre os estados federados.",
+   "nl": "Het doel is 2% van het grondgebied in 2032, verdeeld over de deelstaten.",
+   "sv": "Målet är 2 % av landets yta till 2032, fördelat mellan delstaterna."
   }
  },
  {
@@ -59,19 +95,37 @@
    "zh": "年",
    "en": "years",
    "de": "Jahre",
-   "es": "años"
+   "es": "años",
+   "fr": "ans",
+   "pl": "lat",
+   "it": "anni",
+   "pt": "anos",
+   "nl": "jaar",
+   "sv": "år"
   },
   "q": {
    "zh": "德国 EEG 对一个中标风电项目的补贴（市场溢价）一般持续多少年？",
    "en": "For how many years does Germany's EEG pay support (market premium) to a winning wind project?",
    "de": "Wie viele Jahre zahlt das EEG einer bezuschlagten Windanlage die Förderung (Marktprämie)?",
-   "es": "¿Durante cuántos años paga la EEG alemana el apoyo (prima de mercado) a un proyecto eólico adjudicado?"
+   "es": "¿Durante cuántos años paga la EEG alemana el apoyo (prima de mercado) a un proyecto eólico adjudicado?",
+   "fr": "Pendant combien d’années l’EEG allemande verse-t-elle le soutien (prime de marché) à un projet éolien lauréat ?",
+   "pl": "Przez ile lat niemiecka EEG wypłaca wsparcie (premię rynkową) projektowi, który wygrał aukcję?",
+   "it": "Per quanti anni l’EEG tedesca paga il sostegno (premio di mercato) a un progetto eolico aggiudicatario?",
+   "pt": "Durante quantos anos a EEG alemã paga o apoio (prémio de mercado) a um projeto eólico vencedor?",
+   "nl": "Hoeveel jaar betaalt de Duitse EEG steun (marktpremie) aan een winnend windproject?",
+   "sv": "Hur många år betalar Tysklands EEG stöd (marknadspremie) till ett vinnande vindprojekt?"
   },
   "ex": {
    "zh": "EEG 支付期为 20 年，这也是很多项目财务模型的基础周期。",
    "en": "The EEG support period is 20 years – also the base period of many project finance models.",
    "de": "Der Förderzeitraum beträgt 20 Jahre – die Basis vieler Finanzmodelle.",
-   "es": "El periodo de apoyo es de 20 años, la base de muchos modelos financieros de proyectos."
+   "es": "El periodo de apoyo es de 20 años, la base de muchos modelos financieros de proyectos.",
+   "fr": "La période de soutien est de 20 ans – c’est aussi la durée de base de nombreux modèles de financement.",
+   "pl": "Okres wsparcia to 20 lat – na tym okresie opiera się wiele modeli finansowych projektów.",
+   "it": "Il periodo di sostegno è di 20 anni, la base di molti modelli di project financing.",
+   "pt": "O período de apoio é de 20 anos – a base de muitos modelos de financiamento de projetos.",
+   "nl": "De steunperiode is 20 jaar – ook de basis van veel financieringsmodellen.",
+   "sv": "Stödperioden är 20 år – också grunden i många projektfinansieringsmodeller."
   }
  },
  {
@@ -84,19 +138,37 @@
    "zh": "%",
    "en": "%",
    "de": "%",
-   "es": "%"
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
   },
   "q": {
    "zh": "欧盟 RED III 把 2030 年可再生能源占终端能源消费的约束性目标定为百分之多少？",
    "en": "What binding 2030 share of renewables in final energy consumption does the EU's RED III set?",
    "de": "Welches verbindliche Ziel für den Anteil erneuerbarer Energien am Endenergieverbrauch 2030 setzt die EU-Richtlinie RED III?",
-   "es": "¿Qué cuota vinculante de renovables en el consumo final de energía para 2030 fija la RED III de la UE?"
+   "es": "¿Qué cuota vinculante de renovables en el consumo final de energía para 2030 fija la RED III de la UE?",
+   "fr": "Quelle part contraignante d’énergies renouvelables dans la consommation finale la directive RED III fixe-t-elle pour 2030 ?",
+   "pl": "Jaki wiążący udział OZE w końcowym zużyciu energii w 2030 r. określa unijna dyrektywa RED III?",
+   "it": "Quale quota vincolante di rinnovabili nei consumi finali di energia fissa la direttiva UE RED III per il 2030?",
+   "pt": "Que quota vinculativa de renováveis no consumo final de energia fixa a diretiva RED III da UE para 2030?",
+   "nl": "Welk bindend aandeel hernieuwbare energie in het eindverbruik legt de EU-richtlijn RED III vast voor 2030?",
+   "sv": "Vilken bindande andel förnybar energi i den slutliga energianvändningen 2030 fastställer EU:s RED III?"
   },
   "ex": {
    "zh": "RED III：2030 年 42.5%（另有 2.5% 的指示性目标，合计争取 45%）。",
    "en": "RED III: 42.5% by 2030, plus an indicative 2.5% top-up aiming for 45%.",
    "de": "RED III: 42,5 % bis 2030, plus 2,5 % indikativ – zusammen 45 % als Ambition.",
-   "es": "RED III: 42,5 % en 2030, más un 2,5 % indicativo para aspirar al 45 %."
+   "es": "RED III: 42,5 % en 2030, más un 2,5 % indicativo para aspirar al 45 %.",
+   "fr": "RED III : 42,5 % en 2030, plus 2,5 % indicatifs pour viser 45 %.",
+   "pl": "RED III: 42,5% do 2030 r. plus orientacyjne 2,5%, aby dojść do 45%.",
+   "it": "RED III: 42,5% al 2030, più un 2,5% indicativo per puntare al 45%.",
+   "pt": "RED III: 42,5% em 2030, mais 2,5% indicativos para chegar aos 45%.",
+   "nl": "RED III: 42,5% in 2030, plus een indicatieve 2,5% om op 45% te mikken.",
+   "sv": "RED III: 42,5 % till 2030, plus vägledande 2,5 % för att nå 45 %."
   }
  },
  {
@@ -109,19 +181,37 @@
    "zh": "GW",
    "en": "GW",
    "de": "GW",
-   "es": "GW"
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
   },
   "q": {
    "zh": "从 2025 年起，德国每年陆上风电招标量是多少 GW？",
    "en": "From 2025, how many GW of onshore wind does Germany tender each year?",
    "de": "Wie viele GW Wind an Land schreibt Deutschland ab 2025 jährlich aus?",
-   "es": "A partir de 2025, ¿cuántos GW de eólica terrestre subasta Alemania cada año?"
+   "es": "A partir de 2025, ¿cuántos GW de eólica terrestre subasta Alemania cada año?",
+   "fr": "À partir de 2025, combien de GW d’éolien terrestre l’Allemagne met-elle aux enchères chaque année ?",
+   "pl": "Ile GW lądowej energetyki wiatrowej Niemcy wystawiają na aukcje co roku od 2025 r.?",
+   "it": "Dal 2025, quanti GW di eolico onshore mette all’asta la Germania ogni anno?",
+   "pt": "A partir de 2025, quantos GW de eólica terrestre a Alemanha leiloa por ano?",
+   "nl": "Hoeveel GW wind op land veilt Duitsland vanaf 2025 elk jaar?",
+   "sv": "Hur många GW landbaserad vindkraft auktionerar Tyskland ut varje år från 2025?"
   },
   "ex": {
    "zh": "EEG 2023 规定 2025 年起每年招标 10 GW 陆上风电。",
    "en": "Under EEG 2023, 10 GW of onshore wind is tendered every year from 2025.",
    "de": "Laut EEG 2023 werden ab 2025 jährlich 10 GW Wind an Land ausgeschrieben.",
-   "es": "Según la EEG 2023, desde 2025 se subastan 10 GW de eólica terrestre al año."
+   "es": "Según la EEG 2023, desde 2025 se subastan 10 GW de eólica terrestre al año.",
+   "fr": "Selon l’EEG 2023, 10 GW d’éolien terrestre sont mis aux enchères chaque année à partir de 2025.",
+   "pl": "Zgodnie z EEG 2023 od 2025 r. co roku wystawia się na aukcje 10 GW na lądzie.",
+   "it": "In base all’EEG 2023, dal 2025 vengono messi all’asta 10 GW di eolico onshore l’anno.",
+   "pt": "Segundo a EEG 2023, a partir de 2025 são leiloados 10 GW de eólica terrestre por ano.",
+   "nl": "Volgens de EEG 2023 wordt vanaf 2025 jaarlijks 10 GW wind op land geveild.",
+   "sv": "Enligt EEG 2023 auktioneras 10 GW landbaserad vindkraft ut varje år från 2025."
   }
  },
  {
@@ -134,19 +224,37 @@
    "zh": "倍",
    "en": "×",
    "de": "×",
-   "es": "×"
+   "es": "×",
+   "fr": "×",
+   "pl": "×",
+   "it": "×",
+   "pt": "×",
+   "nl": "×",
+   "sv": "×"
   },
   "q": {
    "zh": "巴伐利亚著名的“XH 规则”：风机离住宅的距离至少是风机总高度的几倍？",
    "en": "Bavaria's famous \"xH rule\": the minimum distance to homes is how many times the turbine's total height?",
    "de": "Bayerns bekannte „xH-Regel“: Der Mindestabstand zu Wohngebäuden beträgt das Wievielfache der Anlagenhöhe?",
-   "es": "La famosa «regla xH» de Baviera: ¿cuántas veces la altura total del aerogenerador debe ser la distancia mínima a viviendas?"
+   "es": "La famosa «regla xH» de Baviera: ¿cuántas veces la altura total del aerogenerador debe ser la distancia mínima a viviendas?",
+   "fr": "La fameuse « règle xH » de Bavière : la distance minimale aux habitations vaut combien de fois la hauteur totale de l’éolienne ?",
+   "pl": "Słynna bawarska „zasada xH”: minimalna odległość od domów to ile wysokości całkowitych turbiny?",
+   "it": "La famosa «regola xH» della Baviera: la distanza minima dalle abitazioni è pari a quante volte l’altezza totale della turbina?",
+   "pt": "A famosa «regra xH» da Baviera: a distância mínima às habitações equivale a quantas vezes a altura total da turbina?",
+   "nl": "De beroemde Beierse ‘xH-regel’: de minimale afstand tot woningen is hoeveel keer de totale hoogte van de turbine?",
+   "sv": "Bayerns kända ”xH-regel”: minsta avståndet till bostäder är hur många gånger turbinens totalhöjd?"
   },
   "ex": {
    "zh": "10H 规则曾让巴伐利亚风电几乎停滞，2022 年起在多类区域被放宽。",
    "en": "The 10H rule nearly froze wind expansion in Bavaria; it has been relaxed for many areas since 2022.",
    "de": "Die 10H-Regel brachte den Ausbau in Bayern fast zum Erliegen; seit 2022 gilt sie in vielen Gebieten nicht mehr.",
-   "es": "La regla 10H casi paralizó la eólica en Baviera; desde 2022 se ha flexibilizado en muchas zonas."
+   "es": "La regla 10H casi paralizó la eólica en Baviera; desde 2022 se ha flexibilizado en muchas zonas.",
+   "fr": "La règle 10H a presque gelé l’éolien en Bavière ; elle a été assouplie dans de nombreuses zones depuis 2022.",
+   "pl": "Zasada 10H prawie zatrzymała rozwój wiatraków w Bawarii; od 2022 r. złagodzono ją dla wielu obszarów.",
+   "it": "La regola 10H ha quasi bloccato l’eolico in Baviera; dal 2022 è stata allentata in molte aree.",
+   "pt": "A regra 10H quase paralisou a eólica na Baviera; desde 2022 foi flexibilizada em muitas zonas.",
+   "nl": "De 10H-regel legde windenergie in Beieren bijna stil; sinds 2022 is hij voor veel gebieden versoepeld.",
+   "sv": "10H-regeln stoppade nästan vindkraften i Bayern; sedan 2022 har den lättats för många områden."
   }
  },
  {
@@ -159,19 +267,37 @@
    "zh": "ct/kWh",
    "en": "ct/kWh",
    "de": "ct/kWh",
-   "es": "ct/kWh"
+   "es": "ct/kWh",
+   "fr": "ct/kWh",
+   "pl": "ct/kWh",
+   "it": "ct/kWh",
+   "pt": "ct/kWh",
+   "nl": "ct/kWh",
+   "sv": "ct/kWh"
   },
   "q": {
    "zh": "2025 年德国陆上风电招标的最高限价（Höchstwert）是多少 ct/kWh？",
    "en": "What was the ceiling price (Höchstwert) in Germany's 2025 onshore wind tenders, in ct/kWh?",
    "de": "Wie hoch war der Höchstwert in den Ausschreibungen für Wind an Land 2025 (ct/kWh)?",
-   "es": "¿Cuál fue el precio máximo (Höchstwert) en las subastas alemanas de eólica terrestre de 2025, en ct/kWh?"
+   "es": "¿Cuál fue el precio máximo (Höchstwert) en las subastas alemanas de eólica terrestre de 2025, en ct/kWh?",
+   "fr": "Quel était le prix plafond (Höchstwert) des appels d’offres éoliens terrestres allemands en 2025, en ct/kWh ?",
+   "pl": "Jaka była cena maksymalna (Höchstwert) w niemieckich aukcjach na lądowe farmy wiatrowe w 2025 r., w ct/kWh?",
+   "it": "Qual era il prezzo massimo (Höchstwert) nelle aste tedesche per l’eolico onshore del 2025, in ct/kWh?",
+   "pt": "Qual foi o preço máximo (Höchstwert) nos leilões alemães de eólica terrestre de 2025, em ct/kWh?",
+   "nl": "Wat was de maximumprijs (Höchstwert) in de Duitse veilingen voor wind op land in 2025, in ct/kWh?",
+   "sv": "Vilket var takpriset (Höchstwert) i Tysklands auktioner för landbaserad vindkraft 2025, i ct/kWh?"
   },
   "ex": {
    "zh": "联邦网络局 (BNetzA) 将限价定在 7.35 ct/kWh。",
    "en": "The Federal Network Agency (BNetzA) set the ceiling at 7.35 ct/kWh.",
    "de": "Die Bundesnetzagentur hat den Höchstwert auf 7,35 ct/kWh festgelegt.",
-   "es": "La Agencia Federal de Redes (BNetzA) lo fijó en 7,35 ct/kWh."
+   "es": "La Agencia Federal de Redes (BNetzA) lo fijó en 7,35 ct/kWh.",
+   "fr": "L’Agence fédérale des réseaux (BNetzA) l’a fixé à 7,35 ct/kWh.",
+   "pl": "Federalna Agencja Sieci (BNetzA) ustaliła ją na 7,35 ct/kWh.",
+   "it": "L’Agenzia federale delle reti (BNetzA) l’ha fissato a 7,35 ct/kWh.",
+   "pt": "A Agência Federal de Redes (BNetzA) fixou-o em 7,35 ct/kWh.",
+   "nl": "Het federale netagentschap (BNetzA) stelde hem vast op 7,35 ct/kWh.",
+   "sv": "Federala nätmyndigheten (BNetzA) satte det till 7,35 ct/kWh."
   }
  },
  {
@@ -184,19 +310,37 @@
    "zh": "个月",
    "en": "months",
    "de": "Monate",
-   "es": "meses"
+   "es": "meses",
+   "fr": "mois",
+   "pl": "mies.",
+   "it": "mesi",
+   "pt": "meses",
+   "nl": "maanden",
+   "sv": "månader"
   },
   "q": {
    "zh": "RED III 规定：在“可再生能源加速区”内，新风电项目审批最长不超过几个月？",
    "en": "Under RED III, what is the maximum permitting time (months) for new wind projects inside renewables acceleration areas?",
    "de": "RED III: Wie viele Monate darf die Genehmigung neuer Windprojekte in Beschleunigungsgebieten höchstens dauern?",
-   "es": "Según la RED III, ¿cuántos meses como máximo puede durar la autorización de nuevos parques en zonas de aceleración renovable?"
+   "es": "Según la RED III, ¿cuántos meses como máximo puede durar la autorización de nuevos parques en zonas de aceleración renovable?",
+   "fr": "Selon RED III, quelle est la durée maximale d’autorisation (en mois) des nouveaux projets éoliens dans les zones d’accélération ?",
+   "pl": "Zgodnie z RED III, ile miesięcy maksymalnie może trwać wydanie pozwolenia dla nowych farm w obszarach przyspieszonego rozwoju OZE?",
+   "it": "Secondo la RED III, qual è il tempo massimo di autorizzazione (in mesi) per nuovi progetti eolici nelle aree di accelerazione?",
+   "pt": "Segundo a RED III, qual é o prazo máximo de licenciamento (em meses) para novos projetos eólicos nas zonas de aceleração?",
+   "nl": "Wat is volgens RED III de maximale vergunningstermijn (in maanden) voor nieuwe windprojecten in versnellingsgebieden?",
+   "sv": "Enligt RED III, hur många månader får tillståndsprövningen för nya vindprojekt i accelerationsområden högst ta?"
   },
   "ex": {
    "zh": "加速区内最长 12 个月，加速区外最长 24 个月。",
    "en": "Maximum 12 months inside acceleration areas, 24 months outside.",
    "de": "Höchstens 12 Monate in Beschleunigungsgebieten, 24 Monate außerhalb.",
-   "es": "Máximo 12 meses dentro de las zonas de aceleración y 24 meses fuera."
+   "es": "Máximo 12 meses dentro de las zonas de aceleración y 24 meses fuera.",
+   "fr": "12 mois au maximum dans les zones d’accélération, 24 mois en dehors.",
+   "pl": "Maksymalnie 12 miesięcy w obszarach przyspieszonego rozwoju, 24 miesiące poza nimi.",
+   "it": "Al massimo 12 mesi nelle aree di accelerazione, 24 mesi al di fuori.",
+   "pt": "No máximo 12 meses nas zonas de aceleração e 24 meses fora delas.",
+   "nl": "Maximaal 12 maanden in versnellingsgebieden, 24 maanden daarbuiten.",
+   "sv": "Högst 12 månader i accelerationsområden, 24 månader utanför."
   }
  },
  {
@@ -209,19 +353,37 @@
    "zh": "米",
    "en": "m",
    "de": "m",
-   "es": "m"
+   "es": "m",
+   "fr": "m",
+   "pl": "m",
+   "it": "m",
+   "pt": "m",
+   "nl": "m",
+   "sv": "m"
   },
   "q": {
    "zh": "波兰 2023 年放宽风电距离法规后，风机离住宅的最小距离是多少米？",
    "en": "After Poland relaxed its distance law in 2023, what is the minimum distance from turbines to homes (metres)?",
    "de": "Wie groß ist der Mindestabstand zu Wohngebäuden in Polen nach der Lockerung 2023 (in Metern)?",
-   "es": "Tras la flexibilización de 2023 en Polonia, ¿cuál es la distancia mínima de los aerogeneradores a las viviendas (en metros)?"
+   "es": "Tras la flexibilización de 2023 en Polonia, ¿cuál es la distancia mínima de los aerogeneradores a las viviendas (en metros)?",
+   "fr": "Après l’assouplissement polonais de 2023, quelle est la distance minimale entre éoliennes et habitations (en mètres) ?",
+   "pl": "Jaka jest minimalna odległość turbin od domów (w metrach) po złagodzeniu przepisów w Polsce w 2023 r.?",
+   "it": "Dopo l’allentamento polacco del 2023, qual è la distanza minima tra turbine e abitazioni (in metri)?",
+   "pt": "Depois da flexibilização polaca de 2023, qual é a distância mínima entre turbinas e habitações (em metros)?",
+   "nl": "Wat is na de Poolse versoepeling van 2023 de minimale afstand tussen turbines en woningen (in meter)?",
+   "sv": "Vilket är minsta avståndet mellan vindkraftverk och bostäder i Polen efter lättnaderna 2023 (i meter)?"
   },
   "ex": {
    "zh": "原本是 10H（实际约 1.5–2 公里），2023 年改为 700 米。",
    "en": "Previously 10H (about 1.5–2 km in practice); since 2023 it is 700 m.",
    "de": "Früher galt 10H (praktisch 1,5–2 km); seit 2023 sind es 700 m.",
-   "es": "Antes era 10H (en la práctica 1,5–2 km); desde 2023 son 700 m."
+   "es": "Antes era 10H (en la práctica 1,5–2 km); desde 2023 son 700 m.",
+   "fr": "Auparavant 10H (en pratique 1,5–2 km) ; depuis 2023, 700 m.",
+   "pl": "Wcześniej obowiązywała zasada 10H (w praktyce 1,5–2 km); od 2023 r. to 700 m.",
+   "it": "Prima valeva la regola 10H (in pratica 1,5–2 km); dal 2023 sono 700 m.",
+   "pt": "Antes era 10H (na prática 1,5–2 km); desde 2023 são 700 m.",
+   "nl": "Eerst gold 10H (in de praktijk 1,5–2 km); sinds 2023 is het 700 m.",
+   "sv": "Tidigare gällde 10H (i praktiken 1,5–2 km); sedan 2023 är det 700 m."
   }
  },
  {
@@ -234,19 +396,37 @@
    "zh": "年",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "英国（英格兰）在哪一年取消了对陆上风电的“事实禁令”？",
    "en": "In which year did the UK lift the de facto ban on onshore wind in England?",
    "de": "In welchem Jahr hob Großbritannien das faktische Verbot für Wind an Land in England auf?",
-   "es": "¿En qué año levantó el Reino Unido la prohibición de facto de la eólica terrestre en Inglaterra?"
+   "es": "¿En qué año levantó el Reino Unido la prohibición de facto de la eólica terrestre en Inglaterra?",
+   "fr": "En quelle année le Royaume-Uni a-t-il levé l’interdiction de fait de l’éolien terrestre en Angleterre ?",
+   "pl": "W którym roku Wielka Brytania zniosła faktyczny zakaz budowy lądowych farm wiatrowych w Anglii?",
+   "it": "In che anno il Regno Unito ha revocato il divieto di fatto all’eolico onshore in Inghilterra?",
+   "pt": "Em que ano o Reino Unido levantou a proibição de facto da eólica terrestre em Inglaterra?",
+   "nl": "In welk jaar hief het VK het feitelijke verbod op wind op land in Engeland op?",
+   "sv": "Vilket år hävde Storbritannien det faktiska förbudet mot landbaserad vindkraft i England?"
   },
   "ex": {
    "zh": "2024 年 7 月新政府上任后即取消，陆上风电重新纳入国家重大基础设施规划。",
    "en": "Lifted in July 2024 right after the new government took office; onshore wind is back in the national infrastructure regime.",
    "de": "Im Juli 2024 direkt nach dem Regierungswechsel aufgehoben; Wind an Land zählt wieder zur nationalen Infrastrukturplanung.",
-   "es": "Se levantó en julio de 2024, nada más llegar el nuevo gobierno; la eólica terrestre vuelve a la planificación de infraestructuras nacionales."
+   "es": "Se levantó en julio de 2024, nada más llegar el nuevo gobierno; la eólica terrestre vuelve a la planificación de infraestructuras nacionales.",
+   "fr": "Levée en juillet 2024, juste après l’arrivée du nouveau gouvernement ; l’éolien terrestre revient dans le régime des infrastructures nationales.",
+   "pl": "Zniesiono go w lipcu 2024 r., tuż po objęciu władzy przez nowy rząd; lądowa energetyka wiatrowa wróciła do krajowego systemu infrastrukturalnego.",
+   "it": "Revocato a luglio 2024, subito dopo l’insediamento del nuovo governo; l’eolico onshore torna nel regime delle infrastrutture nazionali.",
+   "pt": "Foi levantada em julho de 2024, logo após a tomada de posse do novo governo; a eólica terrestre volta ao regime de infraestruturas nacionais.",
+   "nl": "Opgeheven in juli 2024, direct na het aantreden van de nieuwe regering; wind op land valt weer onder het nationale infrastructuurregime.",
+   "sv": "Det hävdes i juli 2024, direkt efter att den nya regeringen tillträtt; landbaserad vindkraft ingår åter i det nationella infrastruktursystemet."
   }
  },
  {
@@ -259,19 +439,37 @@
    "zh": "年",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "欧盟委员会在哪一年发布《欧洲风电一揽子计划》(European Wind Power Package)？",
    "en": "In which year did the European Commission publish the European Wind Power Package?",
    "de": "In welchem Jahr veröffentlichte die EU-Kommission das European Wind Power Package?",
-   "es": "¿En qué año publicó la Comisión Europea el European Wind Power Package?"
+   "es": "¿En qué año publicó la Comisión Europea el European Wind Power Package?",
+   "fr": "En quelle année la Commission européenne a-t-elle publié le European Wind Power Package ?",
+   "pl": "W którym roku Komisja Europejska opublikowała European Wind Power Package?",
+   "it": "In che anno la Commissione europea ha pubblicato il European Wind Power Package?",
+   "pt": "Em que ano a Comissão Europeia publicou o European Wind Power Package?",
+   "nl": "In welk jaar publiceerde de Europese Commissie het European Wind Power Package?",
+   "sv": "Vilket år publicerade EU-kommissionen European Wind Power Package?"
   },
   "ex": {
    "zh": "2023 年 10 月发布，回应审批慢、通胀和中国竞争等问题。",
    "en": "Published in October 2023 to address slow permitting, inflation and competition from China.",
    "de": "Im Oktober 2023 veröffentlicht – Antwort auf langsame Genehmigungen, Inflation und Konkurrenz aus China.",
-   "es": "Publicado en octubre de 2023 para responder a permisos lentos, inflación y competencia china."
+   "es": "Publicado en octubre de 2023 para responder a permisos lentos, inflación y competencia china.",
+   "fr": "Publié en octobre 2023 pour répondre à la lenteur des autorisations, à l’inflation et à la concurrence chinoise.",
+   "pl": "Opublikowany w październiku 2023 r. w odpowiedzi na powolne pozwolenia, inflację i konkurencję z Chin.",
+   "it": "Pubblicato a ottobre 2023 per affrontare autorizzazioni lente, inflazione e concorrenza cinese.",
+   "pt": "Publicado em outubro de 2023 para responder a licenciamentos lentos, inflação e concorrência chinesa.",
+   "nl": "Gepubliceerd in oktober 2023 als antwoord op trage vergunningen, inflatie en Chinese concurrentie.",
+   "sv": "Publicerades i oktober 2023 för att möta långsamma tillstånd, inflation och konkurrens från Kina."
   }
  },
  {
@@ -284,19 +482,37 @@
    "zh": "MW",
    "en": "MW",
    "de": "MW",
-   "es": "MW"
+   "es": "MW",
+   "fr": "MW",
+   "pl": "MW",
+   "it": "MW",
+   "pt": "MW",
+   "nl": "MW",
+   "sv": "MW"
   },
   "q": {
    "zh": "Vestas V172-7.2 MW 这款陆上机型的额定功率是多少 MW？",
    "en": "What is the rated power of the Vestas V172-7.2 MW onshore turbine, in MW?",
    "de": "Welche Nennleistung hat die Vestas V172-7.2 MW (in MW)?",
-   "es": "¿Cuál es la potencia nominal del aerogenerador terrestre Vestas V172-7.2 MW, en MW?"
+   "es": "¿Cuál es la potencia nominal del aerogenerador terrestre Vestas V172-7.2 MW, en MW?",
+   "fr": "Quelle est la puissance nominale de l’éolienne terrestre Vestas V172-7.2 MW, en MW ?",
+   "pl": "Jaka jest moc znamionowa lądowej turbiny Vestas V172-7.2 MW, w MW?",
+   "it": "Qual è la potenza nominale della turbina onshore Vestas V172-7.2 MW, in MW?",
+   "pt": "Qual é a potência nominal da turbina terrestre Vestas V172-7.2 MW, em MW?",
+   "nl": "Wat is het nominale vermogen van de Vestas V172-7.2 MW voor op land, in MW?",
+   "sv": "Vilken märkeffekt har det landbaserade vindkraftverket Vestas V172-7.2 MW, i MW?"
   },
   "ex": {
    "zh": "型号里就藏着答案：V172 = 叶轮直径 172 米，7.2 = 额定 7.2 MW。",
    "en": "The answer is in the name: V172 = 172 m rotor diameter, 7.2 = 7.2 MW rated power.",
    "de": "Die Antwort steckt im Namen: V172 = 172 m Rotordurchmesser, 7.2 = 7,2 MW Nennleistung.",
-   "es": "La respuesta está en el nombre: V172 = rotor de 172 m, 7.2 = 7,2 MW de potencia nominal."
+   "es": "La respuesta está en el nombre: V172 = rotor de 172 m, 7.2 = 7,2 MW de potencia nominal.",
+   "fr": "La réponse est dans le nom : V172 = rotor de 172 m, 7.2 = 7,2 MW de puissance nominale.",
+   "pl": "Odpowiedź jest w nazwie: V172 = wirnik o średnicy 172 m, 7.2 = 7,2 MW mocy znamionowej.",
+   "it": "La risposta è nel nome: V172 = rotore da 172 m, 7.2 = 7,2 MW di potenza nominale.",
+   "pt": "A resposta está no nome: V172 = rotor de 172 m, 7.2 = 7,2 MW de potência nominal.",
+   "nl": "Het antwoord zit in de naam: V172 = rotor van 172 m, 7.2 = 7,2 MW nominaal vermogen.",
+   "sv": "Svaret finns i namnet: V172 = rotordiameter 172 m, 7.2 = 7,2 MW märkeffekt."
   }
  },
  {
@@ -309,19 +525,37 @@
    "zh": "m/s",
    "en": "m/s",
    "de": "m/s",
-   "es": "m/s"
+   "es": "m/s",
+   "fr": "m/s",
+   "pl": "m/s",
+   "it": "m/s",
+   "pt": "m/s",
+   "nl": "m/s",
+   "sv": "m/s"
   },
   "q": {
    "zh": "风速超过多少 m/s 时，大多数风机会停机保护（切出风速）？",
    "en": "Above what wind speed (m/s) do most turbines shut down for protection (cut-out speed)?",
    "de": "Ab welcher Windgeschwindigkeit (m/s) schalten die meisten Anlagen ab (Abschaltgeschwindigkeit)?",
-   "es": "¿A partir de qué velocidad de viento (m/s) se detienen la mayoría de los aerogeneradores (velocidad de corte)?"
+   "es": "¿A partir de qué velocidad de viento (m/s) se detienen la mayoría de los aerogeneradores (velocidad de corte)?",
+   "fr": "Au-delà de quelle vitesse de vent (m/s) la plupart des éoliennes s’arrêtent-elles par sécurité (vitesse de coupure) ?",
+   "pl": "Przy jakiej prędkości wiatru (m/s) większość turbin wyłącza się dla bezpieczeństwa (prędkość wyłączenia)?",
+   "it": "Oltre quale velocità del vento (m/s) la maggior parte delle turbine si ferma per sicurezza (velocità di cut-out)?",
+   "pt": "A partir de que velocidade do vento (m/s) a maioria das turbinas para por segurança (velocidade de corte)?",
+   "nl": "Boven welke windsnelheid (m/s) schakelen de meeste turbines uit ter bescherming (afslagsnelheid)?",
+   "sv": "Över vilken vindhastighet (m/s) stänger de flesta vindkraftverk av för att skydda sig (stoppvind)?"
   },
   "ex": {
    "zh": "典型切出风速约 25 m/s，相当于 9–10 级大风。",
    "en": "Typical cut-out speed is about 25 m/s – a severe gale (Beaufort 9–10).",
    "de": "Typisch sind etwa 25 m/s – das entspricht Sturm der Stärke 9–10.",
-   "es": "La velocidad de corte típica es de unos 25 m/s, un temporal de fuerza 9–10."
+   "es": "La velocidad de corte típica es de unos 25 m/s, un temporal de fuerza 9–10.",
+   "fr": "La vitesse de coupure typique est d’environ 25 m/s – une forte tempête (Beaufort 9–10).",
+   "pl": "Typowo około 25 m/s – to silny sztorm (9–10 w skali Beauforta).",
+   "it": "La velocità di cut-out tipica è circa 25 m/s, una forte burrasca (Beaufort 9–10).",
+   "pt": "A velocidade de corte típica é cerca de 25 m/s – um temporal forte (Beaufort 9–10).",
+   "nl": "Meestal rond 25 m/s – een zware storm (Beaufort 9–10).",
+   "sv": "Typiskt omkring 25 m/s – full storm (Beaufort 9–10)."
   }
  },
  {
@@ -334,19 +568,37 @@
    "zh": "次方",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "风的功率与风速的几次方成正比？",
    "en": "Wind power is proportional to wind speed raised to which power?",
    "de": "Die Windleistung ist proportional zur Windgeschwindigkeit hoch wie viel?",
-   "es": "¿La potencia del viento es proporcional a la velocidad del viento elevada a qué potencia?"
+   "es": "¿La potencia del viento es proporcional a la velocidad del viento elevada a qué potencia?",
+   "fr": "La puissance du vent est proportionnelle à la vitesse du vent élevée à quelle puissance ?",
+   "pl": "Moc wiatru jest proporcjonalna do prędkości wiatru podniesionej do jakiej potęgi?",
+   "it": "La potenza del vento è proporzionale alla velocità del vento elevata a quale potenza?",
+   "pt": "A potência do vento é proporcional à velocidade do vento elevada a que potência?",
+   "nl": "Het windvermogen is evenredig met de windsnelheid tot welke macht?",
+   "sv": "Vindens effekt är proportionell mot vindhastigheten upphöjd till vad?"
   },
   "ex": {
    "zh": "P ∝ v³：风速翻倍，功率变 8 倍。所以选址时一点点风速差别都很重要。",
    "en": "P ∝ v³: double the wind speed and you get 8× the power – which is why small wind differences matter so much in siting.",
    "de": "P ∝ v³: Doppelte Windgeschwindigkeit ergibt die 8-fache Leistung – deshalb zählt bei der Standortwahl jeder Zehntel-m/s.",
-   "es": "P ∝ v³: si la velocidad se duplica, la potencia se multiplica por 8. Por eso pequeñas diferencias de viento importan tanto al elegir emplazamiento."
+   "es": "P ∝ v³: si la velocidad se duplica, la potencia se multiplica por 8. Por eso pequeñas diferencias de viento importan tanto al elegir emplazamiento.",
+   "fr": "P ∝ v³ : doublez la vitesse du vent et la puissance est multipliée par 8 – d’où l’importance de petites différences de vent dans le choix du site.",
+   "pl": "P ∝ v³: dwa razy większa prędkość wiatru daje 8 razy większą moc – dlatego przy wyborze lokalizacji liczą się nawet małe różnice.",
+   "it": "P ∝ v³: raddoppiando la velocità del vento la potenza cresce di 8 volte – per questo piccole differenze di vento contano molto nella scelta del sito.",
+   "pt": "P ∝ v³: com o dobro da velocidade do vento, a potência multiplica por 8 – por isso pequenas diferenças de vento pesam tanto na escolha do local.",
+   "nl": "P ∝ v³: verdubbel de windsnelheid en het vermogen wordt 8 keer zo groot – daarom tellen kleine windverschillen zo zwaar bij de locatiekeuze.",
+   "sv": "P ∝ v³: dubbla vindhastigheten ger 8 gånger effekten – därför spelar små skillnader i vind stor roll vid val av plats."
   }
  },
  {
@@ -359,19 +611,37 @@
    "zh": "米",
    "en": "m",
    "de": "m",
-   "es": "m"
+   "es": "m",
+   "fr": "m",
+   "pl": "m",
+   "it": "m",
+   "pt": "m",
+   "nl": "m",
+   "sv": "m"
   },
   "q": {
    "zh": "Nordex N163 机型的叶轮直径是多少米？",
    "en": "What is the rotor diameter of the Nordex N163, in metres?",
    "de": "Welchen Rotordurchmesser hat die Nordex N163 (in Metern)?",
-   "es": "¿Cuál es el diámetro del rotor del Nordex N163, en metros?"
+   "es": "¿Cuál es el diámetro del rotor del Nordex N163, en metros?",
+   "fr": "Quel est le diamètre du rotor de la Nordex N163, en mètres ?",
+   "pl": "Jaka jest średnica wirnika turbiny Nordex N163, w metrach?",
+   "it": "Qual è il diametro del rotore della Nordex N163, in metri?",
+   "pt": "Qual é o diâmetro do rotor da Nordex N163, em metros?",
+   "nl": "Wat is de rotordiameter van de Nordex N163, in meter?",
+   "sv": "Vilken rotordiameter har Nordex N163, i meter?"
   },
   "ex": {
    "zh": "和 Vestas 一样，Nordex 的型号数字就是叶轮直径。",
    "en": "Like Vestas, Nordex names its models after the rotor diameter.",
    "de": "Wie bei Vestas steht die Zahl im Typnamen für den Rotordurchmesser.",
-   "es": "Igual que Vestas, Nordex nombra sus modelos por el diámetro del rotor."
+   "es": "Igual que Vestas, Nordex nombra sus modelos por el diámetro del rotor.",
+   "fr": "Comme Vestas, Nordex nomme ses modèles d’après le diamètre du rotor.",
+   "pl": "Podobnie jak Vestas, Nordex nazywa modele od średnicy wirnika.",
+   "it": "Come Vestas, Nordex dà ai modelli il nome del diametro del rotore.",
+   "pt": "Tal como a Vestas, a Nordex dá aos modelos o nome do diâmetro do rotor.",
+   "nl": "Net als Vestas noemt Nordex zijn modellen naar de rotordiameter.",
+   "sv": "Precis som Vestas namnger Nordex sina modeller efter rotordiametern."
   }
  },
  {
@@ -384,19 +654,37 @@
    "zh": "米",
    "en": "m",
    "de": "m",
-   "es": "m"
+   "es": "m",
+   "fr": "m",
+   "pl": "m",
+   "it": "m",
+   "pt": "m",
+   "nl": "m",
+   "sv": "m"
   },
   "q": {
    "zh": "Enercon E-175 EP5 的叶轮直径是多少米？",
    "en": "What is the rotor diameter of the Enercon E-175 EP5, in metres?",
    "de": "Welchen Rotordurchmesser hat die Enercon E-175 EP5 (in Metern)?",
-   "es": "¿Cuál es el diámetro del rotor del Enercon E-175 EP5, en metros?"
+   "es": "¿Cuál es el diámetro del rotor del Enercon E-175 EP5, en metros?",
+   "fr": "Quel est le diamètre du rotor de l’Enercon E-175 EP5, en mètres ?",
+   "pl": "Jaka jest średnica wirnika turbiny Enercon E-175 EP5, w metrach?",
+   "it": "Qual è il diametro del rotore dell’Enercon E-175 EP5, in metri?",
+   "pt": "Qual é o diâmetro do rotor da Enercon E-175 EP5, em metros?",
+   "nl": "Wat is de rotordiameter van de Enercon E-175 EP5, in meter?",
+   "sv": "Vilken rotordiameter har Enercon E-175 EP5, i meter?"
   },
   "ex": {
    "zh": "E-175 是 Enercon 目前最大的陆上机型之一，约 6 MW。",
    "en": "The E-175 is one of Enercon's largest onshore models, around 6 MW.",
    "de": "Die E-175 gehört mit rund 6 MW zu Enercons größten Onshore-Anlagen.",
-   "es": "El E-175 es uno de los mayores modelos terrestres de Enercon, de unos 6 MW."
+   "es": "El E-175 es uno de los mayores modelos terrestres de Enercon, de unos 6 MW.",
+   "fr": "L’E-175 est l’un des plus grands modèles terrestres d’Enercon, d’environ 6 MW.",
+   "pl": "E-175 to jeden z największych lądowych modeli Enercon, o mocy ok. 6 MW.",
+   "it": "L’E-175 è uno dei più grandi modelli onshore di Enercon, circa 6 MW.",
+   "pt": "A E-175 é um dos maiores modelos terrestres da Enercon, com cerca de 6 MW.",
+   "nl": "De E-175 is een van Enercons grootste modellen voor op land, ongeveer 6 MW.",
+   "sv": "E-175 är en av Enercons största landbaserade modeller, cirka 6 MW."
   }
  },
  {
@@ -409,19 +697,37 @@
    "zh": "%",
    "en": "%",
    "de": "%",
-   "es": "%"
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
   },
   "q": {
    "zh": "贝茨极限：风机理论上最多能从风中提取百分之多少的能量？",
    "en": "Betz limit: what is the maximum percentage of wind energy a turbine can theoretically extract?",
    "de": "Betz-Grenze: Wie viel Prozent der Windenergie kann eine Anlage theoretisch maximal nutzen?",
-   "es": "Límite de Betz: ¿qué porcentaje máximo de la energía del viento puede extraer teóricamente un aerogenerador?"
+   "es": "Límite de Betz: ¿qué porcentaje máximo de la energía del viento puede extraer teóricamente un aerogenerador?",
+   "fr": "Limite de Betz : quel pourcentage maximal de l’énergie du vent une éolienne peut-elle théoriquement capter ?",
+   "pl": "Granica Betza: jaki maksymalny procent energii wiatru turbina może teoretycznie wykorzystać?",
+   "it": "Limite di Betz: quale percentuale massima dell’energia del vento può teoricamente estrarre una turbina?",
+   "pt": "Limite de Betz: que percentagem máxima da energia do vento pode uma turbina teoricamente extrair?",
+   "nl": "Betz-limiet: welk maximaal percentage van de windenergie kan een turbine theoretisch benutten?",
+   "sv": "Betz gräns: hur stor andel av vindens energi kan ett vindkraftverk i teorin som mest ta tillvara?"
   },
   "ex": {
    "zh": "贝茨极限 16/27 ≈ 59.3%，现代风机实际约 45–50%。",
    "en": "Betz limit = 16/27 ≈ 59.3%; modern turbines reach about 45–50% in practice.",
    "de": "Betz-Grenze = 16/27 ≈ 59,3 %; moderne Anlagen erreichen in der Praxis etwa 45–50 %.",
-   "es": "Límite de Betz = 16/27 ≈ 59,3 %; los aerogeneradores modernos alcanzan en la práctica un 45–50 %."
+   "es": "Límite de Betz = 16/27 ≈ 59,3 %; los aerogeneradores modernos alcanzan en la práctica un 45–50 %.",
+   "fr": "Limite de Betz = 16/27 ≈ 59,3 % ; les éoliennes modernes atteignent environ 45–50 % en pratique.",
+   "pl": "Granica Betza = 16/27 ≈ 59,3%; nowoczesne turbiny osiągają w praktyce ok. 45–50%.",
+   "it": "Limite di Betz = 16/27 ≈ 59,3%; le turbine moderne arrivano in pratica al 45–50% circa.",
+   "pt": "Limite de Betz = 16/27 ≈ 59,3%; as turbinas modernas chegam na prática a cerca de 45–50%.",
+   "nl": "Betz-limiet = 16/27 ≈ 59,3%; moderne turbines halen in de praktijk ongeveer 45–50%.",
+   "sv": "Betz gräns = 16/27 ≈ 59,3 %; moderna verk når i praktiken cirka 45–50 %."
   }
  },
  {
@@ -434,19 +740,37 @@
    "zh": "m/s",
    "en": "m/s",
    "de": "m/s",
-   "es": "m/s"
+   "es": "m/s",
+   "fr": "m/s",
+   "pl": "m/s",
+   "it": "m/s",
+   "pt": "m/s",
+   "nl": "m/s",
+   "sv": "m/s"
   },
   "q": {
    "zh": "大多数风机从多少 m/s 的风速开始发电（切入风速）？",
    "en": "At what wind speed (m/s) do most turbines start generating (cut-in speed)?",
    "de": "Ab welcher Windgeschwindigkeit (m/s) beginnen die meisten Anlagen zu produzieren (Einschaltgeschwindigkeit)?",
-   "es": "¿A partir de qué velocidad de viento (m/s) empiezan a generar la mayoría de los aerogeneradores (velocidad de arranque)?"
+   "es": "¿A partir de qué velocidad de viento (m/s) empiezan a generar la mayoría de los aerogeneradores (velocidad de arranque)?",
+   "fr": "À partir de quelle vitesse de vent (m/s) la plupart des éoliennes commencent-elles à produire (vitesse de démarrage) ?",
+   "pl": "Przy jakiej prędkości wiatru (m/s) większość turbin zaczyna produkować energię (prędkość startowa)?",
+   "it": "A quale velocità del vento (m/s) la maggior parte delle turbine inizia a produrre (velocità di cut-in)?",
+   "pt": "A que velocidade do vento (m/s) a maioria das turbinas começa a produzir (velocidade de arranque)?",
+   "nl": "Bij welke windsnelheid (m/s) beginnen de meeste turbines te produceren (inschakelsnelheid)?",
+   "sv": "Vid vilken vindhastighet (m/s) börjar de flesta vindkraftverk producera (startvind)?"
   },
   "ex": {
    "zh": "典型切入风速约 3 m/s，大约是能吹动树叶的微风。",
    "en": "Typical cut-in speed is about 3 m/s – a light breeze that rustles leaves.",
    "de": "Typisch sind etwa 3 m/s – eine leichte Brise, die Blätter rascheln lässt.",
-   "es": "La velocidad de arranque típica es de unos 3 m/s, una brisa ligera que mueve las hojas."
+   "es": "La velocidad de arranque típica es de unos 3 m/s, una brisa ligera que mueve las hojas.",
+   "fr": "La vitesse de démarrage typique est d’environ 3 m/s – une petite brise qui fait bruisser les feuilles.",
+   "pl": "Typowo około 3 m/s – lekki wietrzyk, który porusza liśćmi.",
+   "it": "La velocità di cut-in tipica è circa 3 m/s, una brezza leggera che muove le foglie.",
+   "pt": "A velocidade de arranque típica é cerca de 3 m/s – uma brisa leve que agita as folhas.",
+   "nl": "Meestal rond 3 m/s – een zwakke bries die de bladeren doet ritselen.",
+   "sv": "Typiskt omkring 3 m/s – en svag bris som får löven att prassla."
   }
  },
  {
@@ -459,19 +783,37 @@
    "zh": "年",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "Vestas 公司（最初是一家铁匠铺）创立于哪一年？",
    "en": "In which year was Vestas (originally a blacksmith's shop) founded?",
    "de": "In welchem Jahr wurde Vestas (ursprünglich eine Schmiede) gegründet?",
-   "es": "¿En qué año se fundó Vestas (originalmente una herrería)?"
+   "es": "¿En qué año se fundó Vestas (originalmente una herrería)?",
+   "fr": "En quelle année Vestas (à l’origine une forge) a-t-elle été fondée ?",
+   "pl": "W którym roku założono firmę Vestas (pierwotnie kuźnię)?",
+   "it": "In che anno è stata fondata Vestas (in origine una fucina)?",
+   "pt": "Em que ano foi fundada a Vestas (originalmente uma ferraria)?",
+   "nl": "In welk jaar werd Vestas (oorspronkelijk een smederij) opgericht?",
+   "sv": "Vilket år grundades Vestas (ursprungligen en smedja)?"
   },
   "ex": {
    "zh": "1898 年在丹麦创立，1979 年才开始做风机。",
    "en": "Founded in Denmark in 1898; it only started building wind turbines in 1979.",
    "de": "1898 in Dänemark gegründet; Windenergieanlagen baut Vestas erst seit 1979.",
-   "es": "Fundada en Dinamarca en 1898; no empezó a fabricar aerogeneradores hasta 1979."
+   "es": "Fundada en Dinamarca en 1898; no empezó a fabricar aerogeneradores hasta 1979.",
+   "fr": "Fondée au Danemark en 1898 ; elle ne fabrique des éoliennes que depuis 1979.",
+   "pl": "Założona w Danii w 1898 r.; turbiny wiatrowe produkuje dopiero od 1979 r.",
+   "it": "Fondata in Danimarca nel 1898; costruisce turbine eoliche solo dal 1979.",
+   "pt": "Fundada na Dinamarca em 1898; só começou a fabricar turbinas eólicas em 1979.",
+   "nl": "Opgericht in Denemarken in 1898; pas sinds 1979 bouwt Vestas windturbines.",
+   "sv": "Grundades i Danmark 1898; började bygga vindkraftverk först 1979."
   }
  },
  {
@@ -484,19 +826,37 @@
    "zh": "年",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "Enercon 由 Aloys Wobben 创立于哪一年？",
    "en": "In which year did Aloys Wobben found Enercon?",
    "de": "In welchem Jahr gründete Aloys Wobben Enercon?",
-   "es": "¿En qué año fundó Aloys Wobben Enercon?"
+   "es": "¿En qué año fundó Aloys Wobben Enercon?",
+   "fr": "En quelle année Aloys Wobben a-t-il fondé Enercon ?",
+   "pl": "W którym roku Aloys Wobben założył firmę Enercon?",
+   "it": "In che anno Aloys Wobben ha fondato Enercon?",
+   "pt": "Em que ano Aloys Wobben fundou a Enercon?",
+   "nl": "In welk jaar richtte Aloys Wobben Enercon op?",
+   "sv": "Vilket år grundade Aloys Wobben Enercon?"
   },
   "ex": {
    "zh": "1984 年创立于德国奥里希 (Aurich)，以无齿轮箱直驱技术著称。",
    "en": "Founded in 1984 in Aurich, Germany – famous for gearless direct-drive technology.",
    "de": "1984 in Aurich gegründet – bekannt für getriebelose Direktantriebe.",
-   "es": "Fundada en 1984 en Aurich (Alemania), conocida por su tecnología de accionamiento directo sin multiplicadora."
+   "es": "Fundada en 1984 en Aurich (Alemania), conocida por su tecnología de accionamiento directo sin multiplicadora.",
+   "fr": "Fondée en 1984 à Aurich (Allemagne), connue pour ses entraînements directs sans multiplicateur.",
+   "pl": "Założona w 1984 r. w Aurich (Niemcy), znana z bezprzekładniowego napędu bezpośredniego.",
+   "it": "Fondata nel 1984 ad Aurich (Germania), nota per la trasmissione diretta senza moltiplicatore.",
+   "pt": "Fundada em 1984 em Aurich (Alemanha), conhecida pela tecnologia de acionamento direto sem caixa multiplicadora.",
+   "nl": "Opgericht in 1984 in Aurich (Duitsland), bekend om de tandwielloze directe aandrijving.",
+   "sv": "Grundades 1984 i Aurich i Tyskland, känt för växellös direktdrift."
   }
  },
  {
@@ -509,19 +869,37 @@
    "zh": "年",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "Siemens 风电业务与西班牙 Gamesa 合并成 Siemens Gamesa 是哪一年？",
    "en": "In which year did Siemens' wind business merge with Spain's Gamesa to form Siemens Gamesa?",
    "de": "In welchem Jahr fusionierte das Windgeschäft von Siemens mit Gamesa zu Siemens Gamesa?",
-   "es": "¿En qué año se fusionó el negocio eólico de Siemens con la española Gamesa para formar Siemens Gamesa?"
+   "es": "¿En qué año se fusionó el negocio eólico de Siemens con la española Gamesa para formar Siemens Gamesa?",
+   "fr": "En quelle année l’activité éolienne de Siemens a-t-elle fusionné avec l’espagnol Gamesa pour former Siemens Gamesa ?",
+   "pl": "W którym roku dział wiatrowy Siemensa połączył się z hiszpańską Gamesą, tworząc Siemens Gamesa?",
+   "it": "In che anno il business eolico di Siemens si è fuso con la spagnola Gamesa formando Siemens Gamesa?",
+   "pt": "Em que ano o negócio eólico da Siemens se fundiu com a espanhola Gamesa, formando a Siemens Gamesa?",
+   "nl": "In welk jaar fuseerde de windtak van Siemens met het Spaanse Gamesa tot Siemens Gamesa?",
+   "sv": "Vilket år slogs Siemens vindkraftsverksamhet ihop med spanska Gamesa till Siemens Gamesa?"
   },
   "ex": {
    "zh": "2017 年合并；2023 年起 Siemens Energy 将其完全收购退市。",
    "en": "Merged in 2017; Siemens Energy took it fully private in 2023.",
    "de": "Fusion 2017; 2023 hat Siemens Energy das Unternehmen vollständig übernommen und von der Börse genommen.",
-   "es": "Fusión en 2017; en 2023 Siemens Energy la adquirió por completo y la excluyó de bolsa."
+   "es": "Fusión en 2017; en 2023 Siemens Energy la adquirió por completo y la excluyó de bolsa.",
+   "fr": "Fusion en 2017 ; Siemens Energy l’a entièrement rachetée et retirée de la Bourse en 2023.",
+   "pl": "Fuzja w 2017 r.; w 2023 r. Siemens Energy przejął całość i wycofał spółkę z giełdy.",
+   "it": "Fusione nel 2017; nel 2023 Siemens Energy l’ha acquisita interamente e ritirata dalla Borsa.",
+   "pt": "Fusão em 2017; em 2023 a Siemens Energy comprou-a na totalidade e retirou-a da bolsa.",
+   "nl": "Fusie in 2017; in 2023 nam Siemens Energy het volledig over en haalde het van de beurs.",
+   "sv": "Sammanslagning 2017; 2023 köpte Siemens Energy ut hela bolaget från börsen."
   }
  },
  {
@@ -534,19 +912,37 @@
    "zh": "年",
    "en": "",
    "de": "",
-   "es": ""
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
   },
   "q": {
    "zh": "Nordex 创立于哪一年？",
    "en": "In which year was Nordex founded?",
    "de": "In welchem Jahr wurde Nordex gegründet?",
-   "es": "¿En qué año se fundó Nordex?"
+   "es": "¿En qué año se fundó Nordex?",
+   "fr": "En quelle année Nordex a-t-elle été fondée ?",
+   "pl": "W którym roku założono firmę Nordex?",
+   "it": "In che anno è stata fondata Nordex?",
+   "pt": "Em que ano foi fundada a Nordex?",
+   "nl": "In welk jaar werd Nordex opgericht?",
+   "sv": "Vilket år grundades Nordex?"
   },
   "ex": {
    "zh": "1985 年在丹麦创立，后总部迁到德国汉堡。",
    "en": "Founded in Denmark in 1985; headquarters later moved to Hamburg.",
    "de": "1985 in Dänemark gegründet; der Hauptsitz ist heute in Hamburg.",
-   "es": "Fundada en Dinamarca en 1985; su sede se trasladó después a Hamburgo."
+   "es": "Fundada en Dinamarca en 1985; su sede se trasladó después a Hamburgo.",
+   "fr": "Fondée au Danemark en 1985 ; le siège a ensuite déménagé à Hambourg.",
+   "pl": "Założona w Danii w 1985 r.; siedziba została później przeniesiona do Hamburga.",
+   "it": "Fondata in Danimarca nel 1985; la sede si è poi trasferita ad Amburgo.",
+   "pt": "Fundada na Dinamarca em 1985; a sede mudou-se depois para Hamburgo.",
+   "nl": "Opgericht in Denemarken in 1985; het hoofdkantoor verhuisde later naar Hamburg.",
+   "sv": "Grundades i Danmark 1985; huvudkontoret flyttade senare till Hamburg."
   }
  },
  {
@@ -559,19 +955,37 @@
    "zh": "GW",
    "en": "GW",
    "de": "GW",
-   "es": "GW"
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
   },
   "q": {
    "zh": "2024 年底德国陆上风电累计装机大约是多少 GW？",
    "en": "Roughly how many GW of onshore wind were installed in Germany at the end of 2024?",
    "de": "Wie viele GW Wind an Land waren Ende 2024 in Deutschland ungefähr installiert?",
-   "es": "¿Aproximadamente cuántos GW de eólica terrestre había instalados en Alemania a finales de 2024?"
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre había instalados en Alemania a finales de 2024?",
+   "fr": "Combien de GW d’éolien terrestre l’Allemagne comptait-elle environ fin 2024 ?",
+   "pl": "Ile GW lądowej energetyki wiatrowej miały Niemcy mniej więcej pod koniec 2024 r.?",
+   "it": "Quanti GW di eolico onshore aveva circa la Germania a fine 2024?",
+   "pt": "Quantos GW de eólica terrestre tinha aproximadamente a Alemanha no fim de 2024?",
+   "nl": "Hoeveel GW wind op land had Duitsland ongeveer eind 2024?",
+   "sv": "Ungefär hur många GW landbaserad vindkraft hade Tyskland i slutet av 2024?"
   },
   "ex": {
    "zh": "约 63 GW（Deutsche WindGuard 统计）。要到 2030 年 115 GW，每年得新增约 8–9 GW。",
    "en": "About 63 GW (Deutsche WindGuard). Reaching 115 GW by 2030 needs roughly 8–9 GW of additions per year.",
    "de": "Rund 63 GW (Deutsche WindGuard). Für 115 GW bis 2030 braucht es etwa 8–9 GW Zubau pro Jahr.",
-   "es": "Unos 63 GW (Deutsche WindGuard). Para llegar a 115 GW en 2030 hacen falta unos 8–9 GW nuevos al año."
+   "es": "Unos 63 GW (Deutsche WindGuard). Para llegar a 115 GW en 2030 hacen falta unos 8–9 GW nuevos al año.",
+   "fr": "Environ 63 GW (Deutsche WindGuard). Pour atteindre 115 GW en 2030, il faut environ 8–9 GW de plus par an.",
+   "pl": "Około 63 GW (Deutsche WindGuard). Aby dojść do 115 GW w 2030 r., trzeba dodawać ok. 8–9 GW rocznie.",
+   "it": "Circa 63 GW (Deutsche WindGuard). Per arrivare a 115 GW nel 2030 servono circa 8–9 GW in più all’anno.",
+   "pt": "Cerca de 63 GW (Deutsche WindGuard). Para chegar a 115 GW em 2030 são precisos cerca de 8–9 GW por ano.",
+   "nl": "Ongeveer 63 GW (Deutsche WindGuard). Voor 115 GW in 2030 is zo’n 8–9 GW per jaar extra nodig.",
+   "sv": "Cirka 63 GW (Deutsche WindGuard). För att nå 115 GW 2030 krävs runt 8–9 GW nytt per år."
   }
  },
  {
@@ -584,19 +998,37 @@
    "zh": "GW",
    "en": "GW",
    "de": "GW",
-   "es": "GW"
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
   },
   "q": {
    "zh": "2024 年德国陆上风电获得建设许可（BImSchG 审批）的容量大约是多少 GW？",
    "en": "Roughly how many GW of onshore wind received construction permits (BImSchG) in Germany in 2024?",
    "de": "Wie viele GW Wind an Land wurden 2024 in Deutschland ungefähr nach BImSchG genehmigt?",
-   "es": "¿Aproximadamente cuántos GW de eólica terrestre obtuvieron permiso de construcción (BImSchG) en Alemania en 2024?"
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre obtuvieron permiso de construcción (BImSchG) en Alemania en 2024?",
+   "fr": "Combien de GW d’éolien terrestre ont environ obtenu un permis de construire (BImSchG) en Allemagne en 2024 ?",
+   "pl": "Ile GW lądowych farm wiatrowych otrzymało mniej więcej pozwolenia na budowę (BImSchG) w Niemczech w 2024 r.?",
+   "it": "Quanti GW di eolico onshore hanno ottenuto circa l’autorizzazione (BImSchG) in Germania nel 2024?",
+   "pt": "Quantos GW de eólica terrestre obtiveram aproximadamente licença de construção (BImSchG) na Alemanha em 2024?",
+   "nl": "Hoeveel GW wind op land kreeg in Duitsland in 2024 ongeveer een bouwvergunning (BImSchG)?",
+   "sv": "Ungefär hur många GW landbaserad vindkraft fick bygglov (BImSchG) i Tyskland 2024?"
   },
   "ex": {
    "zh": "约 14 GW，是新增装机的 4 倍多——审批提速了，装机会在之后几年跟上。",
    "en": "About 14 GW – more than 4× the new installations. Permitting has sped up; construction will follow in the coming years.",
    "de": "Rund 14 GW – mehr als das Vierfache des Zubaus. Die Genehmigungen haben angezogen, der Bau folgt in den nächsten Jahren.",
-   "es": "Unos 14 GW, más de 4 veces lo instalado. Los permisos se han acelerado; la construcción llegará en los próximos años."
+   "es": "Unos 14 GW, más de 4 veces lo instalado. Los permisos se han acelerado; la construcción llegará en los próximos años.",
+   "fr": "Environ 14 GW – plus de 4 fois les nouvelles installations. Les autorisations se sont accélérées ; les chantiers suivront dans les années à venir.",
+   "pl": "Około 14 GW – ponad 4 razy więcej niż nowe instalacje. Pozwolenia przyspieszyły, budowy nastąpią w kolejnych latach.",
+   "it": "Circa 14 GW, oltre 4 volte le nuove installazioni. Le autorizzazioni hanno accelerato; i cantieri seguiranno nei prossimi anni.",
+   "pt": "Cerca de 14 GW – mais de 4 vezes o instalado. O licenciamento acelerou; a construção seguirá nos próximos anos.",
+   "nl": "Ongeveer 14 GW – ruim 4 keer de nieuwbouw. De vergunningverlening is versneld; de bouw volgt de komende jaren.",
+   "sv": "Cirka 14 GW – mer än 4 gånger de nya installationerna. Tillstånden har snabbats upp; byggandet följer de kommande åren."
   }
  },
  {
@@ -609,19 +1041,37 @@
    "zh": "GW",
    "en": "GW",
    "de": "GW",
-   "es": "GW"
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
   },
   "q": {
    "zh": "2024 年德国陆上风电新增装机（毛增量）大约是多少 GW？",
    "en": "Roughly how many GW of new onshore wind (gross) did Germany install in 2024?",
    "de": "Wie viele GW Wind an Land wurden 2024 in Deutschland ungefähr neu errichtet (brutto)?",
-   "es": "¿Aproximadamente cuántos GW de nueva eólica terrestre (bruta) instaló Alemania en 2024?"
+   "es": "¿Aproximadamente cuántos GW de nueva eólica terrestre (bruta) instaló Alemania en 2024?",
+   "fr": "Combien de GW de nouvel éolien terrestre (brut) l’Allemagne a-t-elle installés environ en 2024 ?",
+   "pl": "Ile GW nowych lądowych farm wiatrowych (brutto) zainstalowały mniej więcej Niemcy w 2024 r.?",
+   "it": "Quanti GW di nuovo eolico onshore (lordi) ha installato circa la Germania nel 2024?",
+   "pt": "Quantos GW de nova eólica terrestre (bruta) instalou aproximadamente a Alemanha em 2024?",
+   "nl": "Hoeveel GW nieuwe wind op land (bruto) installeerde Duitsland ongeveer in 2024?",
+   "sv": "Ungefär hur många GW ny landbaserad vindkraft (brutto) installerade Tyskland 2024?"
   },
   "ex": {
    "zh": "约 3.3 GW，远低于实现目标所需的速度；但审批量在大幅回升。",
    "en": "About 3.3 GW – far below the pace the targets require, but permits are rising sharply.",
    "de": "Rund 3,3 GW – weit unter dem nötigen Tempo, aber die Genehmigungen steigen deutlich.",
-   "es": "Unos 3,3 GW, muy por debajo del ritmo necesario, aunque los permisos están creciendo con fuerza."
+   "es": "Unos 3,3 GW, muy por debajo del ritmo necesario, aunque los permisos están creciendo con fuerza.",
+   "fr": "Environ 3,3 GW – bien en dessous du rythme nécessaire, mais les autorisations augmentent fortement.",
+   "pl": "Około 3,3 GW – dużo poniżej wymaganego tempa, ale liczba pozwoleń mocno rośnie.",
+   "it": "Circa 3,3 GW, molto sotto il ritmo richiesto dagli obiettivi, ma le autorizzazioni crescono rapidamente.",
+   "pt": "Cerca de 3,3 GW – muito abaixo do ritmo necessário, mas as licenças estão a subir fortemente.",
+   "nl": "Ongeveer 3,3 GW – ver onder het benodigde tempo, maar het aantal vergunningen stijgt sterk.",
+   "sv": "Cirka 3,3 GW – långt under den takt målen kräver, men tillstånden ökar kraftigt."
   }
  },
  {
@@ -634,19 +1084,37 @@
    "zh": "%",
    "en": "%",
    "de": "%",
-   "es": "%"
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
   },
   "q": {
    "zh": "欧洲风电装机中，陆上风电大约占百分之多少？",
    "en": "Roughly what percentage of Europe's installed wind capacity is onshore?",
    "de": "Wie viel Prozent der installierten Windleistung in Europa entfallen ungefähr auf Wind an Land?",
-   "es": "¿Aproximadamente qué porcentaje de la potencia eólica instalada en Europa es terrestre?"
+   "es": "¿Aproximadamente qué porcentaje de la potencia eólica instalada en Europa es terrestre?",
+   "fr": "Quel pourcentage environ de la capacité éolienne installée en Europe est terrestre ?",
+   "pl": "Jaki procent mocy wiatrowej zainstalowanej w Europie przypada mniej więcej na ląd?",
+   "it": "Che percentuale circa della capacità eolica installata in Europa è onshore?",
+   "pt": "Que percentagem aproximada da capacidade eólica instalada na Europa é terrestre?",
+   "nl": "Welk percentage van het geïnstalleerde windvermogen in Europa staat ongeveer op land?",
+   "sv": "Ungefär hur stor andel av Europas installerade vindkraft står på land?"
   },
   "ex": {
    "zh": "约 85–90%。海上风电新闻多，但欧洲风电的主力一直是陆上。",
    "en": "About 85–90%. Offshore gets the headlines, but onshore has always been the backbone of European wind.",
    "de": "Etwa 85–90 %. Offshore macht die Schlagzeilen, das Rückgrat ist aber Wind an Land.",
-   "es": "Alrededor del 85–90 %. La eólica marina acapara titulares, pero la terrestre es la columna vertebral en Europa."
+   "es": "Alrededor del 85–90 %. La eólica marina acapara titulares, pero la terrestre es la columna vertebral en Europa.",
+   "fr": "Environ 85–90 %. L’éolien en mer fait les gros titres, mais le terrestre reste la colonne vertébrale de l’éolien européen.",
+   "pl": "Około 85–90%. Morskie farmy trafiają na nagłówki, ale podstawą europejskiej energetyki wiatrowej zawsze był ląd.",
+   "it": "Circa l’85–90%. L’offshore fa notizia, ma la spina dorsale dell’eolico europeo è sempre stata l’onshore.",
+   "pt": "Cerca de 85–90%. A eólica marítima faz manchetes, mas a terrestre sempre foi a espinha dorsal da eólica europeia.",
+   "nl": "Ongeveer 85–90%. Wind op zee haalt de krantenkoppen, maar wind op land is altijd de ruggengraat geweest.",
+   "sv": "Cirka 85–90 %. Havsbaserad vindkraft får rubrikerna, men ryggraden har alltid varit landbaserad."
   }
  },
  {
@@ -659,44 +1127,80 @@
    "zh": "小时",
    "en": "h",
    "de": "h",
-   "es": "h"
+   "es": "h",
+   "fr": "h",
+   "pl": "h",
+   "it": "h",
+   "pt": "h",
+   "nl": "h",
+   "sv": "h"
   },
   "q": {
    "zh": "德国陆上风机一年的“满负荷小时数”大约是多少小时？",
    "en": "Roughly how many full-load hours per year does an onshore turbine in Germany achieve?",
    "de": "Wie viele Volllaststunden erreicht eine Windanlage an Land in Deutschland ungefähr pro Jahr?",
-   "es": "¿Aproximadamente cuántas horas equivalentes a plena carga al año logra un aerogenerador terrestre en Alemania?"
+   "es": "¿Aproximadamente cuántas horas equivalentes a plena carga al año logra un aerogenerador terrestre en Alemania?",
+   "fr": "Combien d’heures équivalentes pleine charge par an une éolienne terrestre réalise-t-elle environ en Allemagne ?",
+   "pl": "Ile godzin pracy z pełną mocą rocznie osiąga mniej więcej lądowa turbina w Niemczech?",
+   "it": "Quante ore equivalenti a pieno carico all’anno realizza circa una turbina onshore in Germania?",
+   "pt": "Quantas horas equivalentes a plena carga por ano faz aproximadamente uma turbina terrestre na Alemanha?",
+   "nl": "Hoeveel vollasturen per jaar haalt een turbine op land in Duitsland ongeveer?",
+   "sv": "Ungefär hur många fullasttimmar per år når ett landbaserat vindkraftverk i Tyskland?"
   },
   "ex": {
    "zh": "新机型在德国约 2000 小时左右（一年共 8760 小时），即容量系数约 23%。",
    "en": "New turbines in Germany reach about 2,000 hours (out of 8,760) – a capacity factor of roughly 23%.",
    "de": "Neue Anlagen kommen auf rund 2.000 Stunden (von 8.760) – ein Kapazitätsfaktor von etwa 23 %.",
-   "es": "Las máquinas nuevas en Alemania alcanzan unas 2.000 horas (de 8.760), un factor de capacidad de alrededor del 23 %."
+   "es": "Las máquinas nuevas en Alemania alcanzan unas 2.000 horas (de 8.760), un factor de capacidad de alrededor del 23 %.",
+   "fr": "Les nouvelles éoliennes atteignent environ 2 000 heures (sur 8 760) – un facteur de charge d’environ 23 %.",
+   "pl": "Nowe turbiny osiągają ok. 2000 godzin (z 8760) – współczynnik wykorzystania mocy ok. 23%.",
+   "it": "Le nuove turbine arrivano a circa 2.000 ore (su 8.760), un fattore di capacità di circa il 23%.",
+   "pt": "As turbinas novas chegam a cerca de 2.000 horas (em 8.760) – um fator de capacidade de cerca de 23%.",
+   "nl": "Nieuwe turbines halen zo’n 2.000 uur (van de 8.760) – een capaciteitsfactor van ongeveer 23%.",
+   "sv": "Nya verk når omkring 2 000 timmar (av 8 760) – en kapacitetsfaktor på ungefär 23 %."
   }
  },
  {
   "id": "dev-28",
   "c": "dev",
   "l": 3,
-  "a": 250,
+  "a": 248,
   "r": 200,
   "u": {
    "zh": "GW",
    "en": "GW",
    "de": "GW",
-   "es": "GW"
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
   },
   "q": {
    "zh": "2024 年底欧洲（含非欧盟）陆上风电累计装机大约是多少 GW？",
    "en": "Roughly how many GW of onshore wind were installed across Europe (incl. non-EU) at the end of 2024?",
    "de": "Wie viele GW Wind an Land waren Ende 2024 in ganz Europa (inkl. Nicht-EU) ungefähr installiert?",
-   "es": "¿Aproximadamente cuántos GW de eólica terrestre había instalados en toda Europa (incl. fuera de la UE) a finales de 2024?"
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre había instalados en toda Europa (incl. fuera de la UE) a finales de 2024?",
+   "fr": "Combien de GW d’éolien terrestre y avait-il environ dans toute l’Europe (UE et hors UE) fin 2024 ?",
+   "pl": "Ile GW lądowej energetyki wiatrowej było mniej więcej w całej Europie (także poza UE) pod koniec 2024 r.?",
+   "it": "Quanti GW di eolico onshore c’erano circa in tutta Europa (anche fuori UE) a fine 2024?",
+   "pt": "Quantos GW de eólica terrestre havia aproximadamente em toda a Europa (incluindo fora da UE) no fim de 2024?",
+   "nl": "Hoeveel GW wind op land stond er eind 2024 ongeveer in heel Europa (ook buiten de EU)?",
+   "sv": "Ungefär hur många GW landbaserad vindkraft fanns i hela Europa (även utanför EU) i slutet av 2024?"
   },
   "ex": {
-   "zh": "约 250 GW（欧洲风电总装机约 285 GW，海上约 37 GW）。",
-   "en": "About 250 GW (total European wind ≈ 285 GW, of which offshore ≈ 37 GW).",
-   "de": "Rund 250 GW (Windenergie in Europa insgesamt ≈ 285 GW, davon offshore ≈ 37 GW).",
-   "es": "Unos 250 GW (eólica total en Europa ≈ 285 GW, de los cuales marina ≈ 37 GW)."
+   "zh": "约 248 GW（欧洲风电总装机 285 GW，其中海上 37 GW，WindEurope）。",
+   "en": "About 248 GW (Europe's total wind fleet is 285 GW, of which 37 GW offshore – WindEurope).",
+   "de": "Rund 248 GW (insgesamt 285 GW Windenergie in Europa, davon 37 GW offshore – WindEurope).",
+   "es": "Unos 248 GW (Europa tiene 285 GW eólicos en total, de los cuales 37 GW marinos – WindEurope).",
+   "fr": "Environ 248 GW (le parc éolien européen total est de 285 GW, dont 37 GW en mer – WindEurope).",
+   "pl": "Około 248 GW (łącznie w Europie 285 GW, z czego 37 GW na morzu – WindEurope).",
+   "it": "Circa 248 GW (l’eolico europeo totale è 285 GW, di cui 37 GW offshore – WindEurope).",
+   "pt": "Cerca de 248 GW (a eólica total na Europa é 285 GW, dos quais 37 GW no mar – WindEurope).",
+   "nl": "Ongeveer 248 GW (het totale Europese windpark is 285 GW, waarvan 37 GW op zee – WindEurope).",
+   "sv": "Cirka 248 GW (Europas totala vindkraft är 285 GW, varav 37 GW till havs – WindEurope)."
   }
  },
  {
@@ -709,19 +1213,37 @@
    "zh": "台",
    "en": "turbines",
    "de": "Anlagen",
-   "es": "aerogeneradores"
+   "es": "aerogeneradores",
+   "fr": "éoliennes",
+   "pl": "turbin",
+   "it": "turbine",
+   "pt": "turbinas",
+   "nl": "turbines",
+   "sv": "verk"
   },
   "q": {
    "zh": "2024 年德国新装了大约多少台陆上风机？",
    "en": "Roughly how many new onshore wind turbines were installed in Germany in 2024?",
    "de": "Wie viele Windenergieanlagen an Land wurden 2024 in Deutschland ungefähr neu errichtet?",
-   "es": "¿Aproximadamente cuántos aerogeneradores terrestres nuevos se instalaron en Alemania en 2024?"
+   "es": "¿Aproximadamente cuántos aerogeneradores terrestres nuevos se instalaron en Alemania en 2024?",
+   "fr": "Combien de nouvelles éoliennes terrestres ont été installées environ en Allemagne en 2024 ?",
+   "pl": "Ile nowych lądowych turbin wiatrowych zainstalowano mniej więcej w Niemczech w 2024 r.?",
+   "it": "Quante nuove turbine eoliche onshore sono state installate circa in Germania nel 2024?",
+   "pt": "Quantas turbinas eólicas terrestres novas foram instaladas aproximadamente na Alemanha em 2024?",
+   "nl": "Hoeveel nieuwe windturbines op land werden er in 2024 ongeveer in Duitsland gebouwd?",
+   "sv": "Ungefär hur många nya landbaserade vindkraftverk byggdes i Tyskland 2024?"
   },
   "ex": {
    "zh": "约 635 台、3.3 GW，平均每台约 5 MW。",
    "en": "About 635 turbines totalling 3.3 GW – roughly 5 MW each on average.",
    "de": "Rund 635 Anlagen mit 3,3 GW – im Schnitt etwa 5 MW pro Anlage.",
-   "es": "Unos 635 aerogeneradores y 3,3 GW, en promedio unos 5 MW cada uno."
+   "es": "Unos 635 aerogeneradores y 3,3 GW, en promedio unos 5 MW cada uno.",
+   "fr": "Environ 635 éoliennes pour 3,3 GW – soit environ 5 MW chacune en moyenne.",
+   "pl": "Około 635 turbin o łącznej mocy 3,3 GW – średnio ok. 5 MW każda.",
+   "it": "Circa 635 turbine per 3,3 GW, in media circa 5 MW ciascuna.",
+   "pt": "Cerca de 635 turbinas, num total de 3,3 GW – em média cerca de 5 MW cada.",
+   "nl": "Ongeveer 635 turbines, samen 3,3 GW – gemiddeld zo’n 5 MW per stuk.",
+   "sv": "Cirka 635 verk på totalt 3,3 GW – i snitt omkring 5 MW styck."
   }
  },
  {
@@ -734,19 +1256,37 @@
    "zh": "%",
    "en": "%",
    "de": "%",
-   "es": "%"
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
   },
   "q": {
    "zh": "一个典型的陆上风电项目融资中，银行贷款大约占总投资的百分之多少？",
    "en": "In a typical onshore wind project financing, roughly what percentage of the total investment is bank debt?",
    "de": "Wie viel Prozent der Gesamtinvestition eines typischen Onshore-Windprojekts sind ungefähr Bankkredit?",
-   "es": "En la financiación típica de un parque eólico terrestre, ¿qué porcentaje aproximado de la inversión total es deuda bancaria?"
+   "es": "En la financiación típica de un parque eólico terrestre, ¿qué porcentaje aproximado de la inversión total es deuda bancaria?",
+   "fr": "Dans un financement typique de parc éolien terrestre, quel pourcentage environ de l’investissement total est de la dette bancaire ?",
+   "pl": "Jaki procent całkowitej inwestycji w typowym finansowaniu lądowej farmy wiatrowej stanowi mniej więcej kredyt bankowy?",
+   "it": "In un tipico finanziamento di un parco eolico onshore, che percentuale circa dell’investimento totale è debito bancario?",
+   "pt": "No financiamento típico de um parque eólico terrestre, que percentagem aproximada do investimento total é dívida bancária?",
+   "nl": "Welk percentage van de totale investering is bij een typische financiering van een windpark op land ongeveer bankschuld?",
+   "sv": "Ungefär hur stor andel av den totala investeringen är banklån i en typisk finansiering av en landbaserad vindpark?"
   },
   "ex": {
    "zh": "通常 70–80% 是债务，其余是股本。补贴/长期 PPA 越稳，银行越愿意多借。",
    "en": "Usually 70–80% debt, the rest equity. The more stable the subsidy or long-term PPA, the more banks will lend.",
    "de": "Meist 70–80 % Fremdkapital, der Rest Eigenkapital. Je stabiler Förderung oder langfristiger PPA, desto mehr leihen Banken.",
-   "es": "Normalmente un 70–80 % es deuda y el resto capital. Cuanto más estable sea el apoyo o el PPA a largo plazo, más prestan los bancos."
+   "es": "Normalmente un 70–80 % es deuda y el resto capital. Cuanto más estable sea el apoyo o el PPA a largo plazo, más prestan los bancos.",
+   "fr": "En général 70–80 % de dette, le reste en fonds propres. Plus le soutien ou le PPA long terme est stable, plus les banques prêtent.",
+   "pl": "Zwykle 70–80% to dług, reszta to kapitał własny. Im stabilniejsze wsparcie lub długi PPA, tym więcej pożyczają banki.",
+   "it": "Di solito il 70–80% è debito, il resto capitale proprio. Più stabile è il sostegno o il PPA a lungo termine, più le banche prestano.",
+   "pt": "Normalmente 70–80% é dívida e o resto capital próprio. Quanto mais estável o apoio ou o PPA de longo prazo, mais os bancos emprestam.",
+   "nl": "Meestal 70–80% schuld, de rest eigen vermogen. Hoe stabieler de subsidie of de langlopende PPA, hoe meer banken lenen.",
+   "sv": "Oftast 70–80 % lån, resten eget kapital. Ju stabilare stöd eller långsiktigt PPA, desto mer lånar bankerna ut."
   }
  },
  {
@@ -759,19 +1299,37 @@
    "zh": "百万€/MW",
    "en": "M€/MW",
    "de": "Mio. €/MW",
-   "es": "M€/MW"
+   "es": "M€/MW",
+   "fr": "M€/MW",
+   "pl": "mln €/MW",
+   "it": "mln €/MW",
+   "pt": "M€/MW",
+   "nl": "mln €/MW",
+   "sv": "mn €/MW"
   },
   "q": {
    "zh": "欧洲陆上风电每 MW 的建设投资 (CAPEX) 大约是多少百万欧元？",
    "en": "Roughly how many million euros of CAPEX per MW does onshore wind cost in Europe?",
    "de": "Wie viele Mio. € Investitionskosten (CAPEX) pro MW kostet Wind an Land in Europa ungefähr?",
-   "es": "¿Aproximadamente cuántos millones de euros de inversión (CAPEX) por MW cuesta la eólica terrestre en Europa?"
+   "es": "¿Aproximadamente cuántos millones de euros de inversión (CAPEX) por MW cuesta la eólica terrestre en Europa?",
+   "fr": "Combien de millions d’euros d’investissement (CAPEX) par MW coûte environ l’éolien terrestre en Europe ?",
+   "pl": "Ile milionów euro nakładów inwestycyjnych (CAPEX) na MW kosztuje mniej więcej lądowa energetyka wiatrowa w Europie?",
+   "it": "Quanti milioni di euro di investimento (CAPEX) per MW costa circa l’eolico onshore in Europa?",
+   "pt": "Quantos milhões de euros de investimento (CAPEX) por MW custa aproximadamente a eólica terrestre na Europa?",
+   "nl": "Hoeveel miljoen euro investering (CAPEX) per MW kost wind op land in Europa ongeveer?",
+   "sv": "Ungefär hur många miljoner euro i investering (CAPEX) per MW kostar landbaserad vindkraft i Europa?"
   },
   "ex": {
    "zh": "大约 1.3–1.7 百万欧元/MW，德国偏高。一个 30 MW 风电场约 4500 万欧元。",
    "en": "About €1.3–1.7 million per MW, higher in Germany. A 30 MW wind farm costs around €45 million.",
    "de": "Etwa 1,3–1,7 Mio. €/MW, in Deutschland eher am oberen Ende. Ein 30-MW-Park kostet rund 45 Mio. €.",
-   "es": "Unos 1,3–1,7 M€/MW, más en Alemania. Un parque de 30 MW cuesta unos 45 millones de euros."
+   "es": "Unos 1,3–1,7 M€/MW, más en Alemania. Un parque de 30 MW cuesta unos 45 millones de euros.",
+   "fr": "Environ 1,3–1,7 M€ par MW, davantage en Allemagne. Un parc de 30 MW coûte environ 45 M€.",
+   "pl": "Około 1,3–1,7 mln € na MW, w Niemczech więcej. Farma 30 MW kosztuje ok. 45 mln €.",
+   "it": "Circa 1,3–1,7 mln € per MW, di più in Germania. Un parco da 30 MW costa circa 45 mln €.",
+   "pt": "Cerca de 1,3–1,7 M€ por MW, mais na Alemanha. Um parque de 30 MW custa cerca de 45 M€.",
+   "nl": "Ongeveer 1,3–1,7 mln € per MW, in Duitsland meer. Een windpark van 30 MW kost zo’n 45 mln €.",
+   "sv": "Cirka 1,3–1,7 mn € per MW, mer i Tyskland. En vindpark på 30 MW kostar runt 45 mn €."
   }
  },
  {
@@ -784,19 +1342,37 @@
    "zh": "年",
    "en": "years",
    "de": "Jahre",
-   "es": "años"
+   "es": "años",
+   "fr": "ans",
+   "pl": "lat",
+   "it": "anni",
+   "pt": "anos",
+   "nl": "jaar",
+   "sv": "år"
   },
   "q": {
    "zh": "陆上风电项目贷款的期限一般大约是多少年？",
    "en": "What is the typical tenor of an onshore wind project loan, in years?",
    "de": "Welche Laufzeit hat ein typischer Projektkredit für Wind an Land (in Jahren)?",
-   "es": "¿Cuál es el plazo típico de un préstamo para un proyecto eólico terrestre, en años?"
+   "es": "¿Cuál es el plazo típico de un préstamo para un proyecto eólico terrestre, en años?",
+   "fr": "Quelle est la durée typique d’un prêt pour un projet éolien terrestre, en années ?",
+   "pl": "Jaki jest typowy okres kredytu na projekt lądowej farmy wiatrowej, w latach?",
+   "it": "Qual è la durata tipica di un prestito per un progetto eolico onshore, in anni?",
+   "pt": "Qual é o prazo típico de um empréstimo para um projeto eólico terrestre, em anos?",
+   "nl": "Wat is de gebruikelijke looptijd van een lening voor een windproject op land, in jaren?",
+   "sv": "Vilken löptid har ett typiskt lån till ett landbaserat vindprojekt, i år?"
   },
   "ex": {
    "zh": "通常 15–18 年，短于 EEG 的 20 年支付期，给银行留出“尾期”缓冲。",
    "en": "Usually 15–18 years – shorter than the 20-year EEG period, leaving banks a \"tail\" buffer.",
    "de": "Meist 15–18 Jahre – kürzer als die 20 EEG-Jahre, damit Banken einen Puffer („Tail“) haben.",
-   "es": "Normalmente 15–18 años, menos que los 20 años de la EEG, para dejar a los bancos un colchón (\"tail\")."
+   "es": "Normalmente 15–18 años, menos que los 20 años de la EEG, para dejar a los bancos un colchón (\"tail\").",
+   "fr": "Généralement 15–18 ans – moins que les 20 ans de l’EEG, ce qui laisse aux banques une marge (« tail »).",
+   "pl": "Zwykle 15–18 lat – krócej niż 20 lat wsparcia EEG, co daje bankom bufor („tail”).",
+   "it": "Di solito 15–18 anni, meno dei 20 anni dell’EEG, così le banche hanno un margine («tail»).",
+   "pt": "Normalmente 15–18 anos – menos que os 20 anos da EEG, deixando aos bancos uma margem («tail»).",
+   "nl": "Meestal 15–18 jaar – korter dan de 20 EEG-jaren, zodat banken een buffer (‘tail’) hebben.",
+   "sv": "Oftast 15–18 år – kortare än EEG:s 20 år, så att bankerna har en buffert (”tail”)."
   }
  },
  {
@@ -809,19 +1385,37 @@
    "zh": "倍",
    "en": "×",
    "de": "×",
-   "es": "×"
+   "es": "×",
+   "fr": "×",
+   "pl": "×",
+   "it": "×",
+   "pt": "×",
+   "nl": "×",
+   "sv": "×"
   },
   "q": {
    "zh": "银行常要求的偿债覆盖率 DSCR（现金流 ÷ 还款额）大约是多少倍？",
    "en": "What debt service coverage ratio (DSCR = cash flow ÷ debt service) do banks typically require?",
    "de": "Welchen Schuldendienstdeckungsgrad (DSCR = Cashflow ÷ Schuldendienst) verlangen Banken üblicherweise?",
-   "es": "¿Qué ratio de cobertura del servicio de la deuda (DSCR = flujo de caja ÷ servicio de la deuda) suelen exigir los bancos?"
+   "es": "¿Qué ratio de cobertura del servicio de la deuda (DSCR = flujo de caja ÷ servicio de la deuda) suelen exigir los bancos?",
+   "fr": "Quel ratio de couverture du service de la dette (DSCR = flux de trésorerie ÷ service de la dette) les banques exigent-elles en général ?",
+   "pl": "Jakiego wskaźnika pokrycia obsługi długu (DSCR = przepływy pieniężne ÷ obsługa długu) zwykle wymagają banki?",
+   "it": "Quale indice di copertura del servizio del debito (DSCR = flusso di cassa ÷ servizio del debito) richiedono di solito le banche?",
+   "pt": "Que rácio de cobertura do serviço da dívida (DSCR = fluxo de caixa ÷ serviço da dívida) os bancos costumam exigir?",
+   "nl": "Welke schuldendekkingsgraad (DSCR = kasstroom ÷ schuldaflossing en rente) eisen banken meestal?",
+   "sv": "Vilken skuldtäckningsgrad (DSCR = kassaflöde ÷ räntor och amorteringar) kräver bankerna normalt?"
   },
   "ex": {
    "zh": "有补贴/PPA 的项目约 1.15–1.25 倍；纯市场电价项目要求更高。",
    "en": "About 1.15–1.25× for projects with subsidy or PPA; merchant projects need more.",
    "de": "Etwa 1,15–1,25 bei Projekten mit Förderung oder PPA; reine Merchant-Projekte brauchen mehr.",
-   "es": "Alrededor de 1,15–1,25 para proyectos con apoyo o PPA; los proyectos merchant necesitan más."
+   "es": "Alrededor de 1,15–1,25 para proyectos con apoyo o PPA; los proyectos merchant necesitan más.",
+   "fr": "Environ 1,15–1,25 pour les projets avec soutien ou PPA ; les projets « merchant » doivent faire mieux.",
+   "pl": "Około 1,15–1,25 dla projektów ze wsparciem lub PPA; projekty rynkowe (merchant) potrzebują więcej.",
+   "it": "Circa 1,15–1,25 per progetti con sostegno o PPA; i progetti merchant devono fare di più.",
+   "pt": "Cerca de 1,15–1,25 para projetos com apoio ou PPA; os projetos merchant precisam de mais.",
+   "nl": "Ongeveer 1,15–1,25 voor projecten met subsidie of PPA; merchantprojecten moeten hoger zitten.",
+   "sv": "Cirka 1,15–1,25 för projekt med stöd eller PPA; rena marknadsprojekt kräver mer."
   }
  },
  {
@@ -834,19 +1428,37 @@
    "zh": "千€",
    "en": "k€",
    "de": "Tsd. €",
-   "es": "miles de €"
+   "es": "miles de €",
+   "fr": "k€",
+   "pl": "tys. €",
+   "it": "mila €",
+   "pt": "mil €",
+   "nl": "k€",
+   "sv": "tusen €"
   },
   "q": {
    "zh": "算一算：1 MW 风机一年发 2000 小时，电价 70 €/MWh，年收入是多少千欧元？",
    "en": "Calculate: 1 MW running 2,000 full-load hours at 70 €/MWh – what is the annual revenue in thousand euros?",
    "de": "Rechnen Sie: 1 MW, 2.000 Volllaststunden, 70 €/MWh – wie hoch ist der Jahresumsatz in Tausend Euro?",
-   "es": "Calcula: 1 MW, 2.000 horas a plena carga y 70 €/MWh. ¿Cuántos miles de euros ingresa al año?"
+   "es": "Calcula: 1 MW, 2.000 horas a plena carga y 70 €/MWh. ¿Cuántos miles de euros ingresa al año?",
+   "fr": "Calculez : 1 MW fonctionnant 2 000 heures pleine charge à 70 €/MWh – quel est le chiffre d’affaires annuel en milliers d’euros ?",
+   "pl": "Policz: 1 MW, 2000 godzin pracy z pełną mocą, 70 €/MWh – ile wynosi roczny przychód w tysiącach euro?",
+   "it": "Calcola: 1 MW, 2.000 ore a pieno carico, 70 €/MWh – qual è il ricavo annuo in migliaia di euro?",
+   "pt": "Calcule: 1 MW, 2.000 horas a plena carga, 70 €/MWh – qual é a receita anual em milhares de euros?",
+   "nl": "Reken uit: 1 MW, 2.000 vollasturen, 70 €/MWh – wat is de jaaromzet in duizenden euro’s?",
+   "sv": "Räkna: 1 MW, 2 000 fullasttimmar, 70 €/MWh – vad blir årsintäkten i tusen euro?"
   },
   "ex": {
    "zh": "1 MW × 2000 h = 2000 MWh；× 70 € = 140,000 €。",
    "en": "1 MW × 2,000 h = 2,000 MWh; × €70 = €140,000.",
    "de": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €.",
-   "es": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €."
+   "es": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €.",
+   "fr": "1 MW × 2 000 h = 2 000 MWh ; × 70 € = 140 000 €.",
+   "pl": "1 MW × 2000 h = 2000 MWh; × 70 € = 140 000 €.",
+   "it": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €.",
+   "pt": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €.",
+   "nl": "1 MW × 2.000 h = 2.000 MWh; × 70 € = 140.000 €.",
+   "sv": "1 MW × 2 000 h = 2 000 MWh; × 70 € = 140 000 €."
   }
  },
  {
@@ -859,19 +1471,1800 @@
    "zh": "年",
    "en": "years",
    "de": "Jahre",
-   "es": "años"
+   "es": "años",
+   "fr": "ans",
+   "pl": "lat",
+   "it": "anni",
+   "pt": "anos",
+   "nl": "jaar",
+   "sv": "år"
   },
   "q": {
    "zh": "算一算：每 MW 投资 150 万€，年收入 14 万€，运维成本 4 万€，静态回收期是几年？",
    "en": "Calculate: €1.5 m investment per MW, €140k revenue and €40k O&M cost per year – what is the simple payback period?",
    "de": "Rechnen Sie: 1,5 Mio. € Investition pro MW, 140 Tsd. € Umsatz und 40 Tsd. € Betriebskosten pro Jahr – wie lang ist die statische Amortisationszeit?",
-   "es": "Calcula: 1,5 M€ de inversión por MW, 140.000 € de ingresos y 40.000 € de O&M al año. ¿Cuál es el periodo de retorno simple?"
+   "es": "Calcula: 1,5 M€ de inversión por MW, 140.000 € de ingresos y 40.000 € de O&M al año. ¿Cuál es el periodo de retorno simple?",
+   "fr": "Calculez : 1,5 M€ d’investissement par MW, 140 k€ de recettes et 40 k€ de coûts d’exploitation par an – quel est le délai de retour simple ?",
+   "pl": "Policz: 1,5 mln € inwestycji na MW, 140 tys. € przychodu i 40 tys. € kosztów eksploatacji rocznie – jaki jest prosty okres zwrotu?",
+   "it": "Calcola: 1,5 mln € di investimento per MW, 140 mila € di ricavi e 40 mila € di costi O&M all’anno – qual è il tempo di ritorno semplice?",
+   "pt": "Calcule: 1,5 M€ de investimento por MW, 140 mil € de receita e 40 mil € de O&M por ano – qual é o período de retorno simples?",
+   "nl": "Reken uit: 1,5 mln € investering per MW, 140 k€ omzet en 40 k€ bedrijfskosten per jaar – wat is de eenvoudige terugverdientijd?",
+   "sv": "Räkna: 1,5 mn € investering per MW, 140 000 € intäkter och 40 000 € driftkostnader per år – vad är den enkla återbetalningstiden?"
   },
   "ex": {
    "zh": "每年净现金流 14−4=10 万€，150÷10=15 年（未算利息和税）。",
    "en": "Net cash flow €140k − €40k = €100k per year; 1,500 ÷ 100 = 15 years (before interest and tax).",
    "de": "Netto-Cashflow 140 − 40 = 100 Tsd. € pro Jahr; 1.500 ÷ 100 = 15 Jahre (ohne Zinsen und Steuern).",
-   "es": "Flujo neto 140 − 40 = 100.000 € al año; 1.500 ÷ 100 = 15 años (sin intereses ni impuestos)."
+   "es": "Flujo neto 140 − 40 = 100.000 € al año; 1.500 ÷ 100 = 15 años (sin intereses ni impuestos).",
+   "fr": "Flux net 140 − 40 = 100 k€ par an ; 1 500 ÷ 100 = 15 ans (hors intérêts et impôts).",
+   "pl": "Przepływ netto 140 − 40 = 100 tys. € rocznie; 1500 ÷ 100 = 15 lat (bez odsetek i podatków).",
+   "it": "Flusso netto 140 − 40 = 100 mila € l’anno; 1.500 ÷ 100 = 15 anni (al lordo di interessi e tasse).",
+   "pt": "Fluxo líquido 140 − 40 = 100 mil € por ano; 1.500 ÷ 100 = 15 anos (antes de juros e impostos).",
+   "nl": "Netto kasstroom 140 − 40 = 100 k€ per jaar; 1.500 ÷ 100 = 15 jaar (vóór rente en belasting).",
+   "sv": "Nettokassaflöde 140 − 40 = 100 000 € per år; 1 500 ÷ 100 = 15 år (före räntor och skatt)."
+  }
+ },
+ {
+  "id": "policy-36",
+  "c": "policy",
+  "l": 1,
+  "a": 55,
+  "r": 40,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "欧盟《气候法》规定：到 2030 年温室气体排放要比 1990 年至少减少百分之多少？",
+   "en": "Under the European Climate Law, by what percentage must the EU cut greenhouse gas emissions by 2030 compared with 1990?",
+   "de": "Um wie viel Prozent muss die EU laut Europäischem Klimagesetz ihre Treibhausgasemissionen bis 2030 gegenüber 1990 senken?",
+   "es": "Según la Ley Europea del Clima, ¿en qué porcentaje debe la UE reducir sus emisiones de gases de efecto invernadero en 2030 respecto a 1990?",
+   "fr": "Selon la loi européenne sur le climat, de quel pourcentage l’UE doit-elle réduire ses émissions de gaz à effet de serre d’ici 2030 par rapport à 1990 ?",
+   "pl": "O ile procent UE musi zgodnie z Europejskim prawem o klimacie obniżyć emisje gazów cieplarnianych do 2030 r. względem 1990 r.?",
+   "it": "Secondo la legge europea sul clima, di quale percentuale l’UE deve ridurre le emissioni di gas serra entro il 2030 rispetto al 1990?",
+   "pt": "Segundo a Lei Europeia do Clima, em que percentagem deve a UE reduzir as emissões de gases com efeito de estufa até 2030 face a 1990?",
+   "nl": "Met hoeveel procent moet de EU volgens de Europese klimaatwet de broeikasgasuitstoot in 2030 verminderen ten opzichte van 1990?",
+   "sv": "Med hur många procent måste EU enligt den europeiska klimatlagen minska växthusgasutsläppen till 2030 jämfört med 1990?"
+  },
+  "ex": {
+   "zh": "至少 55%——这就是“Fit for 55”一揽子政策名字的由来。",
+   "en": "At least 55% – which is where the name of the “Fit for 55” package comes from.",
+   "de": "Mindestens 55 % – daher der Name des Pakets „Fit for 55“.",
+   "es": "Al menos un 55 %, de ahí el nombre del paquete «Fit for 55».",
+   "fr": "D’au moins 55 % – d’où le nom du paquet « Fit for 55 ».",
+   "pl": "O co najmniej 55% – stąd nazwa pakietu „Fit for 55”.",
+   "it": "Di almeno il 55%, da cui il nome del pacchetto «Fit for 55».",
+   "pt": "Pelo menos 55% – daí o nome do pacote «Fit for 55».",
+   "nl": "Met minstens 55% – vandaar de naam van het pakket ‘Fit for 55’.",
+   "sv": "Med minst 55 % – därav namnet på paketet ”Fit for 55”."
+  }
+ },
+ {
+  "id": "policy-37",
+  "c": "policy",
+  "l": 1,
+  "a": 2050,
+  "r": 30,
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
+  },
+  "q": {
+   "zh": "欧盟目标在哪一年实现气候中和（净零排放）？",
+   "en": "By which year does the EU aim to become climate-neutral (net zero)?",
+   "de": "Bis zu welchem Jahr will die EU klimaneutral werden?",
+   "es": "¿En qué año quiere la UE alcanzar la neutralidad climática?",
+   "fr": "En quelle année l’UE vise-t-elle la neutralité climatique (zéro émission nette) ?",
+   "pl": "W którym roku UE chce osiągnąć neutralność klimatyczną (zero emisji netto)?",
+   "it": "Entro quale anno l’UE punta alla neutralità climatica (zero emissioni nette)?",
+   "pt": "Até que ano pretende a UE atingir a neutralidade climática (emissões líquidas nulas)?",
+   "nl": "In welk jaar wil de EU klimaatneutraal (netto nul) zijn?",
+   "sv": "Vilket år siktar EU på att bli klimatneutralt (nettonoll)?"
+  },
+  "ex": {
+   "zh": "2050 年，写入了《欧洲气候法》。德国自己的目标更早：2045 年。",
+   "en": "2050, as set in the European Climate Law. Germany's own target is earlier: 2045.",
+   "de": "2050, festgeschrieben im Europäischen Klimagesetz. Deutschland will es schon 2045 schaffen.",
+   "es": "2050, fijado en la Ley Europea del Clima. Alemania se ha marcado un objetivo anterior: 2045.",
+   "fr": "2050, comme le prévoit la loi européenne sur le climat. L’Allemagne vise plus tôt : 2045.",
+   "pl": "W 2050 r., zgodnie z Europejskim prawem o klimacie. Niemcy mają cel wcześniejszy: 2045 r.",
+   "it": "Il 2050, come stabilito dalla legge europea sul clima. La Germania punta prima: 2045.",
+   "pt": "2050, como fixa a Lei Europeia do Clima. A Alemanha tem uma meta mais cedo: 2045.",
+   "nl": "2050, zoals vastgelegd in de Europese klimaatwet. Duitsland wil het eerder: in 2045.",
+   "sv": "2050, enligt den europeiska klimatlagen. Tysklands eget mål är tidigare: 2045."
+  }
+ },
+ {
+  "id": "policy-38",
+  "c": "policy",
+  "l": 1,
+  "a": 2015,
+  "r": 20,
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
+  },
+  "q": {
+   "zh": "《巴黎协定》是在哪一年通过的？",
+   "en": "In which year was the Paris Agreement adopted?",
+   "de": "In welchem Jahr wurde das Pariser Klimaabkommen verabschiedet?",
+   "es": "¿En qué año se adoptó el Acuerdo de París?",
+   "fr": "En quelle année l’Accord de Paris a-t-il été adopté ?",
+   "pl": "W którym roku przyjęto porozumienie paryskie?",
+   "it": "In che anno è stato adottato l’Accordo di Parigi?",
+   "pt": "Em que ano foi adotado o Acordo de Paris?",
+   "nl": "In welk jaar werd het Akkoord van Parijs aangenomen?",
+   "sv": "Vilket år antogs Parisavtalet?"
+  },
+  "ex": {
+   "zh": "2015 年 12 月在 COP21 上通过，目标是把升温控制在远低于 2°C，并努力限制在 1.5°C。",
+   "en": "Adopted at COP21 in December 2015, aiming to keep warming well below 2 °C and pursue 1.5 °C.",
+   "de": "Im Dezember 2015 auf der COP21 verabschiedet – Ziel: deutlich unter 2 °C, möglichst 1,5 °C.",
+   "es": "Adoptado en la COP21 en diciembre de 2015, con el objetivo de mantener el calentamiento muy por debajo de 2 °C y aspirar a 1,5 °C.",
+   "fr": "Adopté à la COP21 en décembre 2015 pour limiter le réchauffement bien en dessous de 2 °C et viser 1,5 °C.",
+   "pl": "Przyjęte na COP21 w grudniu 2015 r.; cel to utrzymanie ocieplenia znacznie poniżej 2 °C i dążenie do 1,5 °C.",
+   "it": "Adottato alla COP21 nel dicembre 2015 per mantenere il riscaldamento ben sotto i 2 °C e puntare a 1,5 °C.",
+   "pt": "Adotado na COP21 em dezembro de 2015, para manter o aquecimento bem abaixo de 2 °C e procurar 1,5 °C.",
+   "nl": "Aangenomen op COP21 in december 2015, met als doel de opwarming ruim onder 2 °C te houden en te streven naar 1,5 °C.",
+   "sv": "Antogs vid COP21 i december 2015, med målet att hålla uppvärmningen väl under 2 °C och sträva mot 1,5 °C."
+  }
+ },
+ {
+  "id": "policy-39",
+  "c": "policy",
+  "l": 2,
+  "a": 28,
+  "r": 25,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "英国《2030 清洁电力行动计划》要求到 2030 年陆上风电达到多少 GW（取区间中间值）？",
+   "en": "The UK's Clean Power 2030 Action Plan calls for how many GW of onshore wind by 2030 (mid-point of the range)?",
+   "de": "Wie viele GW Wind an Land sieht der britische Clean Power 2030 Action Plan bis 2030 vor (Mitte der Spanne)?",
+   "es": "¿Cuántos GW de eólica terrestre prevé para 2030 el Clean Power 2030 Action Plan del Reino Unido (punto medio del rango)?",
+   "fr": "Le Clean Power 2030 Action Plan britannique prévoit combien de GW d’éolien terrestre en 2030 (milieu de la fourchette) ?",
+   "pl": "Ile GW lądowej energetyki wiatrowej do 2030 r. przewiduje brytyjski Clean Power 2030 Action Plan (środek przedziału)?",
+   "it": "Quanti GW di eolico onshore al 2030 prevede il Clean Power 2030 Action Plan britannico (valore centrale dell’intervallo)?",
+   "pt": "Quantos GW de eólica terrestre em 2030 prevê o Clean Power 2030 Action Plan britânico (ponto médio do intervalo)?",
+   "nl": "Hoeveel GW wind op land in 2030 vraagt het Britse Clean Power 2030 Action Plan (midden van de bandbreedte)?",
+   "sv": "Hur många GW landbaserad vindkraft till 2030 kräver Storbritanniens Clean Power 2030 Action Plan (mitten av intervallet)?"
+  },
+  "ex": {
+   "zh": "目标是 27–29 GW，差不多是 2024 年约 15 GW 的两倍（2024 年 12 月发布）。",
+   "en": "The target is 27–29 GW – almost double the roughly 15 GW installed in 2024 (published December 2024).",
+   "de": "Ziel sind 27–29 GW – fast doppelt so viel wie die rund 15 GW von 2024 (veröffentlicht im Dezember 2024).",
+   "es": "El objetivo es de 27–29 GW, casi el doble de los unos 15 GW de 2024 (publicado en diciembre de 2024).",
+   "fr": "L’objectif est de 27–29 GW – presque le double des quelque 15 GW installés en 2024 (publié en décembre 2024).",
+   "pl": "Cel to 27–29 GW – prawie dwa razy więcej niż ok. 15 GW w 2024 r. (opublikowany w grudniu 2024 r.).",
+   "it": "L’obiettivo è 27–29 GW, quasi il doppio dei circa 15 GW installati nel 2024 (pubblicato a dicembre 2024).",
+   "pt": "A meta é 27–29 GW – quase o dobro dos cerca de 15 GW instalados em 2024 (publicado em dezembro de 2024).",
+   "nl": "Het doel is 27–29 GW – bijna het dubbele van de ongeveer 15 GW in 2024 (gepubliceerd in december 2024).",
+   "sv": "Målet är 27–29 GW – nästan dubbelt så mycket som de cirka 15 GW som fanns 2024 (publicerad i december 2024)."
+  }
+ },
+ {
+  "id": "policy-40",
+  "c": "policy",
+  "l": 2,
+  "a": 62,
+  "r": 50,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "西班牙国家能源与气候计划 (PNIEC 2023–2030) 定下的 2030 年风电装机目标是多少 GW？",
+   "en": "What 2030 wind capacity target does Spain's National Energy and Climate Plan (PNIEC 2023–2030) set, in GW?",
+   "de": "Welches Windziel für 2030 setzt Spaniens Energie- und Klimaplan (PNIEC 2023–2030), in GW?",
+   "es": "¿Qué objetivo de potencia eólica para 2030 fija el PNIEC 2023-2030 de España, en GW?",
+   "fr": "Quel objectif éolien pour 2030 fixe le plan national énergie-climat espagnol (PNIEC 2023–2030), en GW ?",
+   "pl": "Jaki cel dla energetyki wiatrowej na 2030 r. wyznacza hiszpański krajowy plan na rzecz energii i klimatu (PNIEC 2023–2030), w GW?",
+   "it": "Quale obiettivo eolico al 2030 fissa il piano nazionale energia e clima spagnolo (PNIEC 2023–2030), in GW?",
+   "pt": "Que meta eólica para 2030 fixa o plano nacional de energia e clima espanhol (PNIEC 2023–2030), em GW?",
+   "nl": "Welk windvermogen voor 2030 legt het Spaanse nationale energie- en klimaatplan (PNIEC 2023–2030) vast, in GW?",
+   "sv": "Vilket vindkraftsmål för 2030 sätter Spaniens nationella energi- och klimatplan (PNIEC 2023–2030), i GW?"
+  },
+  "ex": {
+   "zh": "62 GW，其中海上风电 3 GW，陆上约 59 GW。2024 年底西班牙约有 31 GW。",
+   "en": "62 GW, including 3 GW offshore – so about 59 GW onshore. Spain had about 31 GW at the end of 2024.",
+   "de": "62 GW, davon 3 GW offshore – also rund 59 GW an Land. Ende 2024 hatte Spanien etwa 31 GW.",
+   "es": "62 GW, de los cuales 3 GW marinos, es decir, unos 59 GW terrestres. España tenía unos 31 GW a finales de 2024.",
+   "fr": "62 GW, dont 3 GW en mer – soit environ 59 GW sur terre. L’Espagne en avait environ 31 GW fin 2024.",
+   "pl": "62 GW, w tym 3 GW na morzu – czyli ok. 59 GW na lądzie. Pod koniec 2024 r. Hiszpania miała ok. 31 GW.",
+   "it": "62 GW, di cui 3 GW offshore, quindi circa 59 GW onshore. A fine 2024 la Spagna ne aveva circa 31 GW.",
+   "pt": "62 GW, incluindo 3 GW no mar – ou seja, cerca de 59 GW em terra. Espanha tinha cerca de 31 GW no fim de 2024.",
+   "nl": "62 GW, waarvan 3 GW op zee – dus ongeveer 59 GW op land. Spanje had eind 2024 ongeveer 31 GW.",
+   "sv": "62 GW, varav 3 GW till havs – alltså cirka 59 GW på land. Spanien hade runt 31 GW i slutet av 2024."
+  }
+ },
+ {
+  "id": "policy-41",
+  "c": "policy",
+  "l": 2,
+  "a": 40,
+  "r": 40,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "欧盟《净零工业法案》(NZIA) 的目标：到 2030 年，欧盟本土制造要满足清洁技术年需求的百分之多少？",
+   "en": "Net-Zero Industry Act: by 2030, EU manufacturing should cover what percentage of the EU's annual deployment needs for clean technologies?",
+   "de": "Net-Zero Industry Act: Wie viel Prozent des jährlichen Bedarfs an Netto-Null-Technologien soll bis 2030 in der EU hergestellt werden?",
+   "es": "Ley de Industria Cero Neto: ¿qué porcentaje de las necesidades anuales de tecnologías limpias de la UE debería fabricarse en la UE en 2030?",
+   "fr": "Règlement pour une industrie « zéro net » (NZIA) : d’ici 2030, la production européenne doit couvrir quel pourcentage des besoins annuels de l’UE en technologies propres ?",
+   "pl": "Akt w sprawie przemysłu neutralnego emisyjnie (NZIA): jaki procent rocznego zapotrzebowania UE na czyste technologie ma do 2030 r. pokrywać produkcja w UE?",
+   "it": "Net-Zero Industry Act: entro il 2030 la produzione UE deve coprire quale percentuale del fabbisogno annuo di tecnologie pulite?",
+   "pt": "Regulamento Indústria de Impacto Zero (NZIA): até 2030, a produção na UE deve cobrir que percentagem das necessidades anuais de tecnologias limpas?",
+   "nl": "Net-Zero Industry Act: welk percentage van de jaarlijkse EU-behoefte aan schone technologie moet in 2030 in de EU worden gemaakt?",
+   "sv": "Net-Zero Industry Act: hur stor andel av EU:s årliga behov av ren teknik ska tillverkas inom EU till 2030?"
+  },
+  "ex": {
+   "zh": "至少 40%（包括风机）。该法规于 2024 年通过，另一个目标是 2040 年占全球产量的 15%。",
+   "en": "At least 40% (wind turbines included). Adopted in 2024; a second benchmark is 15% of world production by 2040.",
+   "de": "Mindestens 40 % (inklusive Windenergieanlagen). 2024 verabschiedet; zweites Ziel: 15 % der Weltproduktion bis 2040.",
+   "es": "Al menos un 40 % (incluidos los aerogeneradores). Aprobada en 2024; otro objetivo es el 15 % de la producción mundial en 2040.",
+   "fr": "Au moins 40 % (éoliennes comprises). Adopté en 2024 ; un second repère vise 15 % de la production mondiale en 2040.",
+   "pl": "Co najmniej 40% (w tym turbiny wiatrowe). Przyjęty w 2024 r.; drugi cel to 15% światowej produkcji do 2040 r.",
+   "it": "Almeno il 40% (turbine eoliche incluse). Adottato nel 2024; un secondo riferimento è il 15% della produzione mondiale entro il 2040.",
+   "pt": "Pelo menos 40% (incluindo turbinas eólicas). Adotado em 2024; uma segunda referência é 15% da produção mundial até 2040.",
+   "nl": "Minstens 40% (windturbines inbegrepen). Aangenomen in 2024; een tweede richtpunt is 15% van de wereldproductie in 2040.",
+   "sv": "Minst 40 % (vindkraftverk inräknade). Antogs 2024; ett andra riktmärke är 15 % av världsproduktionen till 2040."
+  }
+ },
+ {
+  "id": "policy-42",
+  "c": "policy",
+  "l": 2,
+  "a": 26,
+  "r": 20,
+  "u": {
+   "zh": "个国家",
+   "en": "countries",
+   "de": "Staaten",
+   "es": "países",
+   "fr": "pays",
+   "pl": "państw",
+   "it": "paesi",
+   "pt": "países",
+   "nl": "landen",
+   "sv": "länder"
+  },
+  "q": {
+   "zh": "2023 年 12 月签署《欧洲风电宪章》(European Wind Charter) 的欧盟成员国有多少个？",
+   "en": "How many EU member states signed the European Wind Charter in December 2023?",
+   "de": "Wie viele EU-Mitgliedstaaten unterzeichneten im Dezember 2023 die Europäische Windcharta?",
+   "es": "¿Cuántos Estados miembros de la UE firmaron la Carta Eólica Europea en diciembre de 2023?",
+   "fr": "Combien d’États membres de l’UE ont signé la Charte européenne de l’éolien en décembre 2023 ?",
+   "pl": "Ile państw członkowskich UE podpisało Europejską Kartę Wiatrową w grudniu 2023 r.?",
+   "it": "Quanti Stati membri dell’UE hanno firmato la Carta europea dell’eolico nel dicembre 2023?",
+   "pt": "Quantos Estados-Membros da UE assinaram a Carta Europeia da Energia Eólica em dezembro de 2023?",
+   "nl": "Hoeveel EU-lidstaten ondertekenden in december 2023 het Europees Windhandvest?",
+   "sv": "Hur många EU-länder undertecknade den europeiska vindkraftsstadgan i december 2023?"
+  },
+  "ex": {
+   "zh": "26 个成员国的能源部长和 300 多家企业签署，承诺落实《风电一揽子计划》。",
+   "en": "Energy ministers of 26 member states and over 300 companies signed it, committing to implement the Wind Power Package.",
+   "de": "Die Energieminister von 26 Mitgliedstaaten und über 300 Unternehmen unterzeichneten – als Zusage zur Umsetzung des Wind Power Package.",
+   "es": "La firmaron los ministros de energía de 26 Estados miembros y más de 300 empresas, comprometiéndose a aplicar el paquete eólico.",
+   "fr": "Les ministres de l’Énergie de 26 États membres et plus de 300 entreprises l’ont signée, s’engageant à mettre en œuvre le Wind Power Package.",
+   "pl": "Podpisali ją ministrowie energii 26 państw i ponad 300 firm, zobowiązując się do wdrożenia Wind Power Package.",
+   "it": "L’hanno firmata i ministri dell’energia di 26 Stati membri e oltre 300 aziende, impegnandosi ad attuare il Wind Power Package.",
+   "pt": "Assinaram-na os ministros da energia de 26 Estados-Membros e mais de 300 empresas, comprometendo-se a aplicar o Wind Power Package.",
+   "nl": "De energieministers van 26 lidstaten en ruim 300 bedrijven tekenden, en beloofden het Wind Power Package uit te voeren.",
+   "sv": "Energiministrarna i 26 medlemsländer och över 300 företag skrev under och lovade att genomföra Wind Power Package."
+  }
+ },
+ {
+  "id": "policy-43",
+  "c": "policy",
+  "l": 3,
+  "a": 6,
+  "r": 12,
+  "u": {
+   "zh": "个月",
+   "en": "months",
+   "de": "Monate",
+   "es": "meses",
+   "fr": "mois",
+   "pl": "mies.",
+   "it": "mesi",
+   "pt": "meses",
+   "nl": "maanden",
+   "sv": "månader"
+  },
+  "q": {
+   "zh": "RED III 规定：陆上风电“改造升级”(repowering) 项目的审批最长不超过几个月？",
+   "en": "Under RED III, what is the maximum permitting time for repowering onshore wind projects, in months?",
+   "de": "Wie viele Monate darf die Genehmigung für Repowering-Projekte an Land laut RED III höchstens dauern?",
+   "es": "Según la RED III, ¿cuántos meses como máximo puede durar la autorización de un proyecto de repotenciación eólica terrestre?",
+   "fr": "Selon RED III, quelle est la durée maximale d’autorisation pour le repowering d’un parc éolien terrestre, en mois ?",
+   "pl": "Zgodnie z RED III, ile miesięcy maksymalnie może trwać wydanie pozwolenia na repowering lądowej farmy wiatrowej?",
+   "it": "Secondo la RED III, qual è il tempo massimo di autorizzazione per il repowering di un parco eolico onshore, in mesi?",
+   "pt": "Segundo a RED III, qual é o prazo máximo de licenciamento para o repowering de um parque eólico terrestre, em meses?",
+   "nl": "Wat is volgens RED III de maximale vergunningstermijn voor repowering van een windpark op land, in maanden?",
+   "sv": "Enligt RED III, hur många månader får tillståndsprövningen för repowering av en landbaserad vindpark högst ta?"
+  },
+  "ex": {
+   "zh": "6 个月（海上为 1 年），特殊情况可再延长 6 个月。用新大风机替换老风机，发电量通常能翻几倍。",
+   "en": "6 months (1 year offshore), extendable by 6 months in extraordinary cases. Replacing old turbines with new ones often multiplies output.",
+   "de": "6 Monate (offshore 1 Jahr), in Ausnahmefällen um 6 Monate verlängerbar. Repowering vervielfacht oft den Ertrag.",
+   "es": "6 meses (1 año en el mar), ampliables 6 meses en casos excepcionales. Sustituir máquinas antiguas suele multiplicar la producción.",
+   "fr": "6 mois (1 an en mer), prolongeables de 6 mois dans des cas exceptionnels. Remplacer de vieilles éoliennes par des neuves multiplie souvent la production.",
+   "pl": "6 miesięcy (rok na morzu), z możliwością przedłużenia o 6 miesięcy w wyjątkowych przypadkach. Wymiana starych turbin na nowe często wielokrotnie zwiększa produkcję.",
+   "it": "6 mesi (1 anno offshore), prorogabili di 6 mesi in casi eccezionali. Sostituire turbine vecchie con nuove spesso moltiplica la produzione.",
+   "pt": "6 meses (1 ano no mar), prorrogáveis por 6 meses em casos excecionais. Trocar turbinas antigas por novas muitas vezes multiplica a produção.",
+   "nl": "6 maanden (1 jaar op zee), in uitzonderlijke gevallen te verlengen met 6 maanden. Oude turbines vervangen door nieuwe levert vaak een veelvoud aan productie op.",
+   "sv": "6 månader (1 år till havs), kan förlängas med 6 månader i undantagsfall. Att byta gamla verk mot nya mångdubblar ofta produktionen."
+  }
+ },
+ {
+  "id": "policy-44",
+  "c": "policy",
+  "l": 3,
+  "a": 2024,
+  "r": 8,
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
+  },
+  "q": {
+   "zh": "欧盟电力市场设计改革（要求新的公共补贴采用“双向差价合约”）是在哪一年通过的？",
+   "en": "In which year was the EU electricity market design reform (requiring two-way CfDs for new public support) adopted?",
+   "de": "In welchem Jahr wurde die EU-Strommarktreform verabschiedet, die für neue Förderung zweiseitige Differenzverträge (CfD) vorschreibt?",
+   "es": "¿En qué año se aprobó la reforma del diseño del mercado eléctrico de la UE, que exige contratos por diferencia bidireccionales para las nuevas ayudas?",
+   "fr": "En quelle année la réforme de l’organisation du marché de l’électricité de l’UE (imposant des CfD bidirectionnels pour les nouveaux soutiens publics) a-t-elle été adoptée ?",
+   "pl": "W którym roku przyjęto reformę unijnego rynku energii elektrycznej (wymagającą dwustronnych kontraktów różnicowych dla nowego wsparcia publicznego)?",
+   "it": "In che anno è stata adottata la riforma del mercato elettrico UE (che impone CfD bidirezionali per i nuovi sostegni pubblici)?",
+   "pt": "Em que ano foi adotada a reforma do mercado de eletricidade da UE (que exige CfD bidirecionais para novos apoios públicos)?",
+   "nl": "In welk jaar werd de hervorming van de EU-elektriciteitsmarkt aangenomen (die tweezijdige CfD’s verplicht voor nieuwe publieke steun)?",
+   "sv": "Vilket år antogs reformen av EU:s elmarknad (som kräver dubbelriktade CfD för nytt offentligt stöd)?"
+  },
+  "ex": {
+   "zh": "2024 年。双向差价合约：电价低于约定价时补给发电方，高于约定价时发电方要退还差额。",
+   "en": "2024. A two-way CfD tops up the generator when prices are below the strike price and claws back the difference when they are above.",
+   "de": "2024. Beim zweiseitigen CfD bekommt der Betreiber die Differenz, wenn der Preis unter dem Zielwert liegt – und zahlt sie zurück, wenn er darüber liegt.",
+   "es": "2024. Con un CfD bidireccional, el generador recibe la diferencia si el precio está por debajo del precio de ejercicio y la devuelve si está por encima.",
+   "fr": "En 2024. Un CfD bidirectionnel complète la recette quand le prix est sous le prix d’exercice et récupère l’écart quand il est au-dessus.",
+   "pl": "W 2024 r. Dwustronny CfD dopłaca wytwórcy, gdy cena jest poniżej ceny referencyjnej, i odbiera nadwyżkę, gdy jest powyżej.",
+   "it": "Nel 2024. Un CfD bidirezionale integra il ricavo quando il prezzo è sotto lo strike e recupera la differenza quando è sopra.",
+   "pt": "Em 2024. Um CfD bidirecional complementa a receita quando o preço está abaixo do preço de exercício e recupera a diferença quando está acima.",
+   "nl": "In 2024. Een tweezijdige CfD vult aan als de marktprijs onder de uitoefenprijs ligt en vordert het verschil terug als die erboven ligt.",
+   "sv": "2024. Ett dubbelriktat CfD fyller på när priset ligger under lösenpriset och tar tillbaka skillnaden när det ligger över."
+  }
+ },
+ {
+  "id": "oem-45",
+  "c": "oem",
+  "l": 1,
+  "a": 3,
+  "r": 4,
+  "u": {
+   "zh": "片",
+   "en": "blades",
+   "de": "Blätter",
+   "es": "palas",
+   "fr": "pales",
+   "pl": "łopaty",
+   "it": "pale",
+   "pt": "pás",
+   "nl": "bladen",
+   "sv": "blad"
+  },
+  "q": {
+   "zh": "现代大型风机通常有几片叶片？",
+   "en": "How many blades does a modern utility-scale wind turbine usually have?",
+   "de": "Wie viele Rotorblätter hat eine moderne Windenergieanlage üblicherweise?",
+   "es": "¿Cuántas palas suele tener un aerogenerador moderno de gran tamaño?",
+   "fr": "Combien de pales une grande éolienne moderne a-t-elle généralement ?",
+   "pl": "Ile łopat ma zwykle nowoczesna duża turbina wiatrowa?",
+   "it": "Quante pale ha di solito una moderna turbina eolica di grande taglia?",
+   "pt": "Quantas pás tem normalmente uma turbina eólica moderna de grande porte?",
+   "nl": "Hoeveel bladen heeft een moderne grote windturbine meestal?",
+   "sv": "Hur många rotorblad har ett modernt stort vindkraftverk vanligtvis?"
+  },
+  "ex": {
+   "zh": "3 片：在效率、转动平稳性和成本之间最平衡。",
+   "en": "Three – the best balance of efficiency, smooth rotation and cost.",
+   "de": "Drei – der beste Kompromiss aus Effizienz, ruhigem Lauf und Kosten.",
+   "es": "Tres: el mejor equilibrio entre eficiencia, giro estable y coste.",
+   "fr": "Trois – le meilleur compromis entre rendement, rotation régulière et coût.",
+   "pl": "Trzy – najlepszy kompromis między sprawnością, płynnym obrotem i kosztem.",
+   "it": "Tre: il miglior equilibrio tra efficienza, rotazione regolare e costo.",
+   "pt": "Três – o melhor equilíbrio entre eficiência, rotação suave e custo.",
+   "nl": "Drie – de beste balans tussen rendement, rustig draaien en kosten.",
+   "sv": "Tre – den bästa balansen mellan verkningsgrad, jämn gång och kostnad."
+  }
+ },
+ {
+  "id": "oem-46",
+  "c": "oem",
+  "l": 1,
+  "a": 12,
+  "r": 15,
+  "u": {
+   "zh": "m/s",
+   "en": "m/s",
+   "de": "m/s",
+   "es": "m/s",
+   "fr": "m/s",
+   "pl": "m/s",
+   "it": "m/s",
+   "pt": "m/s",
+   "nl": "m/s",
+   "sv": "m/s"
+  },
+  "q": {
+   "zh": "风机达到满功率（额定功率）时的风速一般大约是多少 m/s？",
+   "en": "At roughly what wind speed (m/s) does a turbine typically reach its rated (full) power?",
+   "de": "Bei ungefähr welcher Windgeschwindigkeit (m/s) erreicht eine Anlage typischerweise ihre Nennleistung?",
+   "es": "¿Aproximadamente a qué velocidad de viento (m/s) alcanza un aerogenerador su potencia nominal?",
+   "fr": "À quelle vitesse de vent (m/s) environ une éolienne atteint-elle sa puissance nominale ?",
+   "pl": "Przy jakiej prędkości wiatru (m/s) turbina zwykle osiąga moc znamionową?",
+   "it": "A quale velocità del vento (m/s) circa una turbina raggiunge di solito la potenza nominale?",
+   "pt": "A que velocidade do vento (m/s) uma turbina atinge normalmente a potência nominal?",
+   "nl": "Bij ongeveer welke windsnelheid (m/s) bereikt een turbine meestal zijn nominale vermogen?",
+   "sv": "Ungefär vid vilken vindhastighet (m/s) når ett vindkraftverk normalt sin märkeffekt?"
+  },
+  "ex": {
+   "zh": "一般约 11–13 m/s。风速再高，风机会调节叶片角度，保持功率不变，直到约 25 m/s 停机。",
+   "en": "Typically about 11–13 m/s. Above that, the blades pitch to hold power constant until cut-out at about 25 m/s.",
+   "de": "Meist etwa 11–13 m/s. Darüber regeln die Blätter die Leistung konstant – bis zur Abschaltung bei rund 25 m/s.",
+   "es": "Normalmente unos 11–13 m/s. Por encima, las palas se orientan para mantener la potencia hasta la parada a unos 25 m/s.",
+   "fr": "En général vers 11–13 m/s. Au-delà, les pales s’orientent pour garder la puissance constante jusqu’à l’arrêt vers 25 m/s.",
+   "pl": "Zwykle przy ok. 11–13 m/s. Powyżej łopaty obracają się, utrzymując stałą moc aż do wyłączenia przy ok. 25 m/s.",
+   "it": "Di solito intorno a 11–13 m/s. Oltre, le pale ruotano (pitch) per mantenere la potenza costante fino al cut-out a circa 25 m/s.",
+   "pt": "Normalmente cerca de 11–13 m/s. Acima disso, as pás rodam (pitch) para manter a potência constante até ao corte, por volta dos 25 m/s.",
+   "nl": "Meestal rond 11–13 m/s. Daarboven verdraaien de bladen om het vermogen constant te houden tot afschakeling bij zo’n 25 m/s.",
+   "sv": "Oftast runt 11–13 m/s. Därefter vrids bladen för att hålla effekten konstant tills verket stoppar vid cirka 25 m/s."
+  }
+ },
+ {
+  "id": "oem-47",
+  "c": "oem",
+  "l": 2,
+  "a": 5,
+  "r": 6,
+  "u": {
+   "zh": "MW",
+   "en": "MW",
+   "de": "MW",
+   "es": "MW",
+   "fr": "MW",
+   "pl": "MW",
+   "it": "MW",
+   "pt": "MW",
+   "nl": "MW",
+   "sv": "MW"
+  },
+  "q": {
+   "zh": "2024 年全球新装陆上风机的平均单机容量大约是多少 MW？",
+   "en": "Roughly what was the average rated power of new onshore turbines installed worldwide in 2024, in MW?",
+   "de": "Wie groß war die durchschnittliche Nennleistung neuer Onshore-Anlagen weltweit 2024 ungefähr (MW)?",
+   "es": "¿Aproximadamente cuál fue la potencia media de los nuevos aerogeneradores terrestres instalados en el mundo en 2024, en MW?",
+   "fr": "Quelle était environ la puissance moyenne des nouvelles éoliennes terrestres installées dans le monde en 2024, en MW ?",
+   "pl": "Jaka była mniej więcej średnia moc nowych lądowych turbin zainstalowanych na świecie w 2024 r., w MW?",
+   "it": "Qual era circa la potenza media delle nuove turbine onshore installate nel mondo nel 2024, in MW?",
+   "pt": "Qual foi aproximadamente a potência média das novas turbinas terrestres instaladas no mundo em 2024, em MW?",
+   "nl": "Wat was ongeveer het gemiddelde vermogen van nieuwe turbines op land wereldwijd in 2024, in MW?",
+   "sv": "Ungefär vilken var medeleffekten för nya landbaserade vindkraftverk i världen 2024, i MW?"
+  },
+  "ex": {
+   "zh": "首次超过 5 MW（GWEC 统计），主要由中国的大机型推动。",
+   "en": "It passed 5 MW for the first time (GWEC), driven mainly by large turbines in China.",
+   "de": "Erstmals über 5 MW (GWEC) – vor allem wegen großer Anlagen in China.",
+   "es": "Superó por primera vez los 5 MW (GWEC), impulsada sobre todo por las grandes máquinas en China.",
+   "fr": "Elle a dépassé 5 MW pour la première fois (GWEC), surtout grâce aux grandes éoliennes installées en Chine.",
+   "pl": "Po raz pierwszy przekroczyła 5 MW (GWEC), głównie dzięki dużym turbinom w Chinach.",
+   "it": "Ha superato per la prima volta i 5 MW (GWEC), soprattutto grazie alle grandi turbine in Cina.",
+   "pt": "Ultrapassou pela primeira vez os 5 MW (GWEC), sobretudo graças às grandes turbinas instaladas na China.",
+   "nl": "Voor het eerst boven 5 MW (GWEC), vooral door grote turbines in China.",
+   "sv": "Den passerade 5 MW för första gången (GWEC), främst tack vare stora verk i Kina."
+  }
+ },
+ {
+  "id": "oem-48",
+  "c": "oem",
+  "l": 2,
+  "a": 170,
+  "r": 100,
+  "u": {
+   "zh": "米",
+   "en": "m",
+   "de": "m",
+   "es": "m",
+   "fr": "m",
+   "pl": "m",
+   "it": "m",
+   "pt": "m",
+   "nl": "m",
+   "sv": "m"
+  },
+  "q": {
+   "zh": "Siemens Gamesa SG 6.6-170 机型的叶轮直径是多少米？",
+   "en": "What is the rotor diameter of the Siemens Gamesa SG 6.6-170, in metres?",
+   "de": "Welchen Rotordurchmesser hat die Siemens Gamesa SG 6.6-170 (in Metern)?",
+   "es": "¿Cuál es el diámetro del rotor del Siemens Gamesa SG 6.6-170, en metros?",
+   "fr": "Quel est le diamètre du rotor de la Siemens Gamesa SG 6.6-170, en mètres ?",
+   "pl": "Jaka jest średnica wirnika turbiny Siemens Gamesa SG 6.6-170, w metrach?",
+   "it": "Qual è il diametro del rotore della Siemens Gamesa SG 6.6-170, in metri?",
+   "pt": "Qual é o diâmetro do rotor da Siemens Gamesa SG 6.6-170, em metros?",
+   "nl": "Wat is de rotordiameter van de Siemens Gamesa SG 6.6-170, in meter?",
+   "sv": "Vilken rotordiameter har Siemens Gamesa SG 6.6-170, i meter?"
+  },
+  "ex": {
+   "zh": "170 米。型号规则：6.6 = 额定功率 6.6 MW，170 = 叶轮直径。",
+   "en": "170 m. Naming rule: 6.6 = 6.6 MW rated power, 170 = rotor diameter.",
+   "de": "170 m. Namensregel: 6.6 = 6,6 MW Nennleistung, 170 = Rotordurchmesser.",
+   "es": "170 m. Regla del nombre: 6.6 = 6,6 MW de potencia, 170 = diámetro del rotor.",
+   "fr": "170 m. Règle de nommage : 6.6 = 6,6 MW de puissance nominale, 170 = diamètre du rotor.",
+   "pl": "170 m. Zasada nazewnictwa: 6.6 = 6,6 MW mocy znamionowej, 170 = średnica wirnika.",
+   "it": "170 m. Regola del nome: 6.6 = 6,6 MW di potenza nominale, 170 = diametro del rotore.",
+   "pt": "170 m. Regra do nome: 6.6 = 6,6 MW de potência nominal, 170 = diâmetro do rotor.",
+   "nl": "170 m. Naamgeving: 6.6 = 6,6 MW nominaal vermogen, 170 = rotordiameter.",
+   "sv": "170 m. Namnregel: 6.6 = 6,6 MW märkeffekt, 170 = rotordiameter."
+  }
+ },
+ {
+  "id": "oem-49",
+  "c": "oem",
+  "l": 2,
+  "a": 17.3,
+  "r": 20,
+  "u": {
+   "zh": "十亿€",
+   "en": "bn €",
+   "de": "Mrd. €",
+   "es": "mil M€",
+   "fr": "Md€",
+   "pl": "mld €",
+   "it": "mld €",
+   "pt": "mil M€",
+   "nl": "mld €",
+   "sv": "mdr €"
+  },
+  "q": {
+   "zh": "Vestas 2024 年的营业收入大约是多少十亿欧元？",
+   "en": "Roughly what was Vestas' revenue in 2024, in billion euros?",
+   "de": "Wie hoch war der Umsatz von Vestas 2024 ungefähr (in Mrd. €)?",
+   "es": "¿Aproximadamente cuántos miles de millones de euros facturó Vestas en 2024?",
+   "fr": "Quel a été environ le chiffre d’affaires de Vestas en 2024, en milliards d’euros ?",
+   "pl": "Ile mniej więcej wyniosły przychody Vestas w 2024 r., w miliardach euro?",
+   "it": "Qual è stato circa il fatturato di Vestas nel 2024, in miliardi di euro?",
+   "pt": "Qual foi aproximadamente a receita da Vestas em 2024, em milhares de milhões de euros?",
+   "nl": "Wat was ongeveer de omzet van Vestas in 2024, in miljarden euro’s?",
+   "sv": "Ungefär vad var Vestas omsättning 2024, i miljarder euro?"
+  },
+  "ex": {
+   "zh": "约 173 亿欧元（17.3 bn），全年订单 17 GW、价值约 190 亿欧元，创纪录。",
+   "en": "About €17.3 bn, with a record order intake of 17 GW worth about €19 bn.",
+   "de": "Rund 17,3 Mrd. €, bei einem Rekord-Auftragseingang von 17 GW im Wert von etwa 19 Mrd. €.",
+   "es": "Unos 17,3 mil M€, con una entrada de pedidos récord de 17 GW por valor de unos 19 mil M€.",
+   "fr": "Environ 17,3 Md€, avec un record de prises de commandes de 17 GW pour environ 19 Md€.",
+   "pl": "Około 17,3 mld €, przy rekordowych zamówieniach 17 GW o wartości ok. 19 mld €.",
+   "it": "Circa 17,3 mld €, con ordini record per 17 GW, del valore di circa 19 mld €.",
+   "pt": "Cerca de 17,3 mil M€, com encomendas recorde de 17 GW no valor de cerca de 19 mil M€.",
+   "nl": "Ongeveer 17,3 mld €, met een record aan orders van 17 GW ter waarde van zo’n 19 mld €.",
+   "sv": "Cirka 17,3 mdr €, med rekordorder på 17 GW värda omkring 19 mdr €."
+  }
+ },
+ {
+  "id": "oem-50",
+  "c": "oem",
+  "l": 3,
+  "a": 2.8,
+  "r": 5,
+  "u": {
+   "zh": "MW",
+   "en": "MW",
+   "de": "MW",
+   "es": "MW",
+   "fr": "MW",
+   "pl": "MW",
+   "it": "MW",
+   "pt": "MW",
+   "nl": "MW",
+   "sv": "MW"
+  },
+  "q": {
+   "zh": "2024 年法国新装陆上风机的平均单机容量大约是多少 MW？（法国是欧洲主要市场中最小的）",
+   "en": "Roughly what was the average size of new onshore turbines in France in 2024, in MW? (the smallest among Europe's main markets)",
+   "de": "Wie groß waren neue Onshore-Anlagen in Frankreich 2024 im Schnitt (MW)? (die kleinsten unter Europas großen Märkten)",
+   "es": "¿Aproximadamente cuál fue la potencia media de los nuevos aerogeneradores terrestres en Francia en 2024, en MW? (la menor entre los grandes mercados europeos)",
+   "fr": "Quelle était environ la taille moyenne des nouvelles éoliennes terrestres en France en 2024, en MW ? (la plus petite des grands marchés européens)",
+   "pl": "Jaka była mniej więcej średnia moc nowych lądowych turbin we Francji w 2024 r., w MW? (najmniejsza wśród głównych rynków Europy)",
+   "it": "Qual era circa la taglia media delle nuove turbine onshore in Francia nel 2024, in MW? (la più piccola tra i principali mercati europei)",
+   "pt": "Qual era aproximadamente a dimensão média das novas turbinas terrestres em França em 2024, em MW? (a menor entre os principais mercados europeus)",
+   "nl": "Wat was ongeveer de gemiddelde grootte van nieuwe turbines op land in Frankrijk in 2024, in MW? (de kleinste van de grote Europese markten)",
+   "sv": "Ungefär hur stora var nya landbaserade vindkraftverk i Frankrike i snitt 2024, i MW? (minst bland Europas stora marknader)"
+  },
+  "ex": {
+   "zh": "约 2.8 MW。法国的高度限制（例如航空、雷达相关）让开发商很难用最新的大机型。",
+   "en": "About 2.8 MW. Height restrictions (e.g. aviation and radar) keep developers from using the latest large models.",
+   "de": "Etwa 2,8 MW. Höhenbeschränkungen (z. B. Luftfahrt, Radar) verhindern den Einsatz der neuesten großen Modelle.",
+   "es": "Unos 2,8 MW. Las limitaciones de altura (aviación, radares…) impiden usar los modelos más grandes.",
+   "fr": "Environ 2,8 MW. Les limites de hauteur (aviation, radars…) empêchent d’utiliser les grands modèles récents.",
+   "pl": "Około 2,8 MW. Ograniczenia wysokości (np. lotnictwo, radary) nie pozwalają stosować najnowszych dużych modeli.",
+   "it": "Circa 2,8 MW. I limiti di altezza (aviazione, radar…) impediscono di usare i grandi modelli più recenti.",
+   "pt": "Cerca de 2,8 MW. As limitações de altura (aviação, radares…) impedem o uso dos modelos grandes mais recentes.",
+   "nl": "Ongeveer 2,8 MW. Hoogtebeperkingen (luchtvaart, radar…) houden de nieuwste grote modellen tegen.",
+   "sv": "Cirka 2,8 MW. Höjdbegränsningar (flyg, radar m.m.) hindrar de senaste stora modellerna."
+  }
+ },
+ {
+  "id": "oem-51",
+  "c": "oem",
+  "l": 3,
+  "a": 1957,
+  "r": 60,
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
+  },
+  "q": {
+   "zh": "现代三叶片风机的“鼻祖”——丹麦 Gedser 风机是在哪一年投入运行的？",
+   "en": "In which year did Denmark's Gedser turbine – the ancestor of the modern three-blade design – start operating?",
+   "de": "In welchem Jahr ging die dänische Gedser-Anlage – Urahn der modernen Dreiblatt-Bauweise – in Betrieb?",
+   "es": "¿En qué año empezó a funcionar el aerogenerador danés de Gedser, antepasado del diseño moderno de tres palas?",
+   "fr": "En quelle année l’éolienne danoise de Gedser – ancêtre du modèle tripale moderne – a-t-elle été mise en service ?",
+   "pl": "W którym roku uruchomiono duńską turbinę Gedser – protoplastę nowoczesnej konstrukcji trójłopatowej?",
+   "it": "In che anno è entrata in funzione la turbina danese di Gedser, antenata del moderno modello a tre pale?",
+   "pt": "Em que ano entrou em funcionamento a turbina dinamarquesa de Gedser, antepassada do moderno modelo de três pás?",
+   "nl": "In welk jaar ging de Deense Gedser-turbine – de voorloper van het moderne driebladige ontwerp – in bedrijf?",
+   "sv": "Vilket år togs det danska Gedser-verket – förfadern till dagens trebladiga vindkraftverk – i drift?"
+  },
+  "ex": {
+   "zh": "1957 年，由 Johannes Juul 设计，200 kW。今天的“丹麦概念”就源于它。",
+   "en": "1957, designed by Johannes Juul, 200 kW. The “Danish concept” of today's turbines goes back to it.",
+   "de": "1957, konstruiert von Johannes Juul, 200 kW. Das „dänische Konzept“ heutiger Anlagen geht auf sie zurück.",
+   "es": "1957, diseñado por Johannes Juul, de 200 kW. El «concepto danés» de los aerogeneradores actuales nace de él.",
+   "fr": "1957, conçue par Johannes Juul, 200 kW. Le « concept danois » des éoliennes actuelles en découle.",
+   "pl": "W 1957 r.; zaprojektował ją Johannes Juul, 200 kW. Od niej wywodzi się „duńska koncepcja” dzisiejszych turbin.",
+   "it": "Nel 1957, progettata da Johannes Juul, 200 kW. Il «concetto danese» delle turbine odierne nasce da lì.",
+   "pt": "Em 1957, projetada por Johannes Juul, 200 kW. O «conceito dinamarquês» das turbinas atuais vem daí.",
+   "nl": "In 1957, ontworpen door Johannes Juul, 200 kW. Het ‘Deense concept’ van de huidige turbines gaat erop terug.",
+   "sv": "1957, konstruerat av Johannes Juul, 200 kW. Dagens ”danska koncept” går tillbaka på det."
+  }
+ },
+ {
+  "id": "oem-52",
+  "c": "oem",
+  "l": 3,
+  "a": 2016,
+  "r": 15,
+  "u": {
+   "zh": "年",
+   "en": "",
+   "de": "",
+   "es": "",
+   "fr": "",
+   "pl": "",
+   "it": "",
+   "pt": "",
+   "nl": "",
+   "sv": ""
+  },
+  "q": {
+   "zh": "Nordex 与西班牙 Acciona Windpower 合并是在哪一年完成的？",
+   "en": "In which year was the merger of Nordex and Spain's Acciona Windpower completed?",
+   "de": "In welchem Jahr wurde der Zusammenschluss von Nordex und Acciona Windpower abgeschlossen?",
+   "es": "¿En qué año se completó la fusión de Nordex con Acciona Windpower?",
+   "fr": "En quelle année la fusion entre Nordex et l’espagnol Acciona Windpower a-t-elle été finalisée ?",
+   "pl": "W którym roku zakończono fuzję Nordexu z hiszpańską Acciona Windpower?",
+   "it": "In che anno si è conclusa la fusione tra Nordex e la spagnola Acciona Windpower?",
+   "pt": "Em que ano foi concluída a fusão entre a Nordex e a espanhola Acciona Windpower?",
+   "nl": "In welk jaar werd de fusie tussen Nordex en het Spaanse Acciona Windpower afgerond?",
+   "sv": "Vilket år slutfördes sammanslagningen av Nordex och spanska Acciona Windpower?"
+  },
+  "ex": {
+   "zh": "2016 年。Acciona 因此成为 Nordex 的最大股东。",
+   "en": "2016. Acciona became Nordex's largest shareholder.",
+   "de": "2016. Acciona wurde dadurch größter Aktionär von Nordex.",
+   "es": "2016. Acciona pasó a ser el mayor accionista de Nordex.",
+   "fr": "En 2016. Acciona est devenue le principal actionnaire de Nordex.",
+   "pl": "W 2016 r. Acciona została największym akcjonariuszem Nordexu.",
+   "it": "Nel 2016. Acciona è diventata il maggiore azionista di Nordex.",
+   "pt": "Em 2016. A Acciona tornou-se a maior acionista da Nordex.",
+   "nl": "In 2016. Acciona werd de grootste aandeelhouder van Nordex.",
+   "sv": "2016. Acciona blev Nordex största ägare."
+  }
+ },
+ {
+  "id": "oem-53",
+  "c": "oem",
+  "l": 3,
+  "a": 22700,
+  "r": 22700,
+  "u": {
+   "zh": "平方米",
+   "en": "m²",
+   "de": "m²",
+   "es": "m²",
+   "fr": "m²",
+   "pl": "m²",
+   "it": "m²",
+   "pt": "m²",
+   "nl": "m²",
+   "sv": "m²"
+  },
+  "q": {
+   "zh": "算一算：叶轮直径 170 米的风机，扫风面积大约是多少平方米？（π ≈ 3.14）",
+   "en": "Calculate: what is the swept area of a 170 m rotor, in m²? (π ≈ 3.14)",
+   "de": "Rechnen Sie: Wie groß ist die überstrichene Fläche eines Rotors mit 170 m Durchmesser (m²)? (π ≈ 3,14)",
+   "es": "Calcula: ¿cuál es el área barrida por un rotor de 170 m de diámetro, en m²? (π ≈ 3,14)",
+   "fr": "Calculez : quelle est la surface balayée par un rotor de 170 m, en m² ? (π ≈ 3,14)",
+   "pl": "Policz: jaka jest powierzchnia zakreślana przez wirnik o średnicy 170 m, w m²? (π ≈ 3,14)",
+   "it": "Calcola: qual è l’area spazzata da un rotore di 170 m, in m²? (π ≈ 3,14)",
+   "pt": "Calcule: qual é a área varrida por um rotor de 170 m, em m²? (π ≈ 3,14)",
+   "nl": "Reken uit: wat is het rotoroppervlak van een rotor van 170 m, in m²? (π ≈ 3,14)",
+   "sv": "Räkna: hur stor är den svepta ytan för en rotor på 170 m, i m²? (π ≈ 3,14)"
+  },
+  "ex": {
+   "zh": "π × 85² ≈ 22,700 平方米，比 3 个标准足球场还大。",
+   "en": "π × 85² ≈ 22,700 m² – more than three football pitches.",
+   "de": "π × 85² ≈ 22.700 m² – mehr als drei Fußballfelder.",
+   "es": "π × 85² ≈ 22.700 m², más que tres campos de fútbol.",
+   "fr": "π × 85² ≈ 22 700 m² – plus de trois terrains de football.",
+   "pl": "π × 85² ≈ 22 700 m² – ponad trzy boiska piłkarskie.",
+   "it": "π × 85² ≈ 22.700 m², più di tre campi da calcio.",
+   "pt": "π × 85² ≈ 22.700 m² – mais de três campos de futebol.",
+   "nl": "π × 85² ≈ 22.700 m² – meer dan drie voetbalvelden.",
+   "sv": "π × 85² ≈ 22 700 m² – mer än tre fotbollsplaner."
+  }
+ },
+ {
+  "id": "oem-54",
+  "c": "oem",
+  "l": 3,
+  "a": 89,
+  "r": 90,
+  "u": {
+   "zh": "m/s",
+   "en": "m/s",
+   "de": "m/s",
+   "es": "m/s",
+   "fr": "m/s",
+   "pl": "m/s",
+   "it": "m/s",
+   "pt": "m/s",
+   "nl": "m/s",
+   "sv": "m/s"
+  },
+  "q": {
+   "zh": "算一算：叶轮直径 170 米、每分钟转 10 圈，叶尖速度大约是多少 m/s？",
+   "en": "Calculate: a 170 m rotor turns at 10 rpm – what is the blade tip speed, in m/s?",
+   "de": "Rechnen Sie: Ein Rotor mit 170 m Durchmesser dreht mit 10 U/min – wie schnell ist die Blattspitze (m/s)?",
+   "es": "Calcula: un rotor de 170 m gira a 10 rpm. ¿Qué velocidad tiene la punta de la pala, en m/s?",
+   "fr": "Calculez : un rotor de 170 m tourne à 10 tr/min – quelle est la vitesse en bout de pale, en m/s ?",
+   "pl": "Policz: wirnik o średnicy 170 m obraca się z prędkością 10 obr./min – jaka jest prędkość końcówki łopaty, w m/s?",
+   "it": "Calcola: un rotore di 170 m gira a 10 giri/min – qual è la velocità in punta di pala, in m/s?",
+   "pt": "Calcule: um rotor de 170 m roda a 10 rpm – qual é a velocidade na ponta da pá, em m/s?",
+   "nl": "Reken uit: een rotor van 170 m draait 10 toeren per minuut – wat is de tipsnelheid van het blad, in m/s?",
+   "sv": "Räkna: en rotor på 170 m snurrar 10 varv per minut – vilken är bladspetshastigheten, i m/s?"
+  },
+  "ex": {
+   "zh": "周长 π × 170 ≈ 534 米，每秒转 1/6 圈：534 ÷ 6 ≈ 89 m/s，约 320 km/h。",
+   "en": "Circumference π × 170 ≈ 534 m, 1/6 turn per second: 534 ÷ 6 ≈ 89 m/s – about 320 km/h.",
+   "de": "Umfang π × 170 ≈ 534 m, 1/6 Umdrehung pro Sekunde: 534 ÷ 6 ≈ 89 m/s – rund 320 km/h.",
+   "es": "Circunferencia π × 170 ≈ 534 m, 1/6 de vuelta por segundo: 534 ÷ 6 ≈ 89 m/s, unos 320 km/h.",
+   "fr": "Circonférence π × 170 ≈ 534 m, 1/6 de tour par seconde : 534 ÷ 6 ≈ 89 m/s – environ 320 km/h.",
+   "pl": "Obwód π × 170 ≈ 534 m, 1/6 obrotu na sekundę: 534 ÷ 6 ≈ 89 m/s – ok. 320 km/h.",
+   "it": "Circonferenza π × 170 ≈ 534 m, 1/6 di giro al secondo: 534 ÷ 6 ≈ 89 m/s, circa 320 km/h.",
+   "pt": "Perímetro π × 170 ≈ 534 m, 1/6 de volta por segundo: 534 ÷ 6 ≈ 89 m/s – cerca de 320 km/h.",
+   "nl": "Omtrek π × 170 ≈ 534 m, 1/6 omwenteling per seconde: 534 ÷ 6 ≈ 89 m/s – ongeveer 320 km/u.",
+   "sv": "Omkrets π × 170 ≈ 534 m, 1/6 varv per sekund: 534 ÷ 6 ≈ 89 m/s – cirka 320 km/h."
+  }
+ },
+ {
+  "id": "dev-55",
+  "c": "dev",
+  "l": 1,
+  "a": 19,
+  "r": 30,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "2024 年风电大约占欧盟 27 国用电量的百分之多少？",
+   "en": "Roughly what share of the EU-27's electricity consumption came from wind in 2024?",
+   "de": "Welchen Anteil am Stromverbrauch der EU-27 hatte Windenergie 2024 ungefähr?",
+   "es": "¿Aproximadamente qué parte del consumo eléctrico de la UE-27 cubrió la eólica en 2024?",
+   "fr": "Quelle part environ de la consommation d’électricité de l’UE-27 provenait de l’éolien en 2024 ?",
+   "pl": "Jaka część zużycia energii elektrycznej w UE-27 pochodziła mniej więcej z wiatru w 2024 r.?",
+   "it": "Che quota circa dei consumi elettrici dell’UE-27 proveniva dall’eolico nel 2024?",
+   "pt": "Que parte aproximada do consumo de eletricidade da UE-27 veio da eólica em 2024?",
+   "nl": "Welk deel van het elektriciteitsverbruik in de EU-27 kwam in 2024 ongeveer uit wind?",
+   "sv": "Ungefär hur stor del av elanvändningen i EU-27 kom från vindkraft 2024?"
+  },
+  "ex": {
+   "zh": "约 19%（WindEurope）。各国差别很大：丹麦 56%，爱尔兰 33%，瑞典 31%，德国 30%。",
+   "en": "About 19% (WindEurope). Big differences: Denmark 56%, Ireland 33%, Sweden 31%, Germany 30%.",
+   "de": "Rund 19 % (WindEurope). Große Unterschiede: Dänemark 56 %, Irland 33 %, Schweden 31 %, Deutschland 30 %.",
+   "es": "Alrededor del 19 % (WindEurope). Grandes diferencias: Dinamarca 56 %, Irlanda 33 %, Suecia 31 %, Alemania 30 %.",
+   "fr": "Environ 19 % (WindEurope). Grandes différences : Danemark 56 %, Irlande 33 %, Suède 31 %, Allemagne 30 %.",
+   "pl": "Około 19% (WindEurope). Duże różnice: Dania 56%, Irlandia 33%, Szwecja 31%, Niemcy 30%.",
+   "it": "Circa il 19% (WindEurope). Grandi differenze: Danimarca 56%, Irlanda 33%, Svezia 31%, Germania 30%.",
+   "pt": "Cerca de 19% (WindEurope). Grandes diferenças: Dinamarca 56%, Irlanda 33%, Suécia 31%, Alemanha 30%.",
+   "nl": "Ongeveer 19% (WindEurope). Grote verschillen: Denemarken 56%, Ierland 33%, Zweden 31%, Duitsland 30%.",
+   "sv": "Cirka 19 % (WindEurope). Stora skillnader: Danmark 56 %, Irland 33 %, Sverige 31 %, Tyskland 30 %."
+  }
+ },
+ {
+  "id": "dev-56",
+  "c": "dev",
+  "l": 1,
+  "a": 56,
+  "r": 50,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "2024 年丹麦用电量中，风电大约占百分之多少？（欧洲最高）",
+   "en": "Roughly what share of Denmark's electricity consumption came from wind in 2024? (Europe's highest)",
+   "de": "Wie hoch war der Windanteil am Stromverbrauch in Dänemark 2024 ungefähr? (Europas höchster)",
+   "es": "¿Aproximadamente qué parte del consumo eléctrico de Dinamarca cubrió la eólica en 2024? (la más alta de Europa)",
+   "fr": "Quelle part environ de la consommation d’électricité du Danemark provenait de l’éolien en 2024 ? (la plus élevée d’Europe)",
+   "pl": "Jaka część zużycia energii elektrycznej w Danii pochodziła mniej więcej z wiatru w 2024 r.? (najwyższa w Europie)",
+   "it": "Che quota circa dei consumi elettrici della Danimarca proveniva dall’eolico nel 2024? (la più alta d’Europa)",
+   "pt": "Que parte aproximada do consumo de eletricidade da Dinamarca veio da eólica em 2024? (a mais alta da Europa)",
+   "nl": "Welk deel van het Deense elektriciteitsverbruik kwam in 2024 ongeveer uit wind? (het hoogste van Europa)",
+   "sv": "Ungefär hur stor del av Danmarks elanvändning kom från vindkraft 2024? (högst i Europa)"
+  },
+  "ex": {
+   "zh": "约 56%（WindEurope），丹麦常年是欧洲风电占比最高的国家。",
+   "en": "About 56% (WindEurope) – Denmark has long had the highest wind share in Europe.",
+   "de": "Rund 56 % (WindEurope) – Dänemark liegt seit Jahren an der Spitze.",
+   "es": "Alrededor del 56 % (WindEurope): Dinamarca lleva años en cabeza.",
+   "fr": "Environ 56 % (WindEurope) – le Danemark a depuis longtemps la plus forte part d’éolien en Europe.",
+   "pl": "Około 56% (WindEurope) – Dania od dawna ma najwyższy udział wiatru w Europie.",
+   "it": "Circa il 56% (WindEurope): la Danimarca ha da tempo la quota eolica più alta d’Europa.",
+   "pt": "Cerca de 56% (WindEurope) – a Dinamarca tem há muito a maior quota eólica da Europa.",
+   "nl": "Ongeveer 56% (WindEurope) – Denemarken heeft al lang het hoogste windaandeel van Europa.",
+   "sv": "Cirka 56 % (WindEurope) – Danmark har länge haft Europas högsta vindkraftsandel."
+  }
+ },
+ {
+  "id": "dev-57",
+  "c": "dev",
+  "l": 1,
+  "a": 31,
+  "r": 30,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "2024 年底西班牙风电累计装机大约是多少 GW？（几乎全部是陆上）",
+   "en": "Roughly how many GW of wind did Spain have at the end of 2024? (almost all onshore)",
+   "de": "Wie viele GW Windenergie hatte Spanien Ende 2024 ungefähr? (fast alles an Land)",
+   "es": "¿Aproximadamente cuántos GW eólicos tenía España a finales de 2024? (casi todo terrestre)",
+   "fr": "Combien de GW d’éolien l’Espagne avait-elle environ fin 2024 ? (presque tout sur terre)",
+   "pl": "Ile GW energetyki wiatrowej miała mniej więcej Hiszpania pod koniec 2024 r.? (prawie wszystko na lądzie)",
+   "it": "Quanti GW di eolico aveva circa la Spagna a fine 2024? (quasi tutto onshore)",
+   "pt": "Quantos GW de eólica tinha aproximadamente Espanha no fim de 2024? (quase tudo em terra)",
+   "nl": "Hoeveel GW wind had Spanje eind 2024 ongeveer? (vrijwel alles op land)",
+   "sv": "Ungefär hur många GW vindkraft hade Spanien i slutet av 2024? (nästan allt på land)"
+  },
+  "ex": {
+   "zh": "约 31 GW，欧洲第二大陆上风电国，仅次于德国。",
+   "en": "About 31 GW – Europe's second-largest onshore market after Germany.",
+   "de": "Rund 31 GW – nach Deutschland Europas zweitgrößter Onshore-Markt.",
+   "es": "Unos 31 GW: el segundo mayor mercado terrestre de Europa, tras Alemania.",
+   "fr": "Environ 31 GW – le deuxième marché éolien terrestre d’Europe après l’Allemagne.",
+   "pl": "Około 31 GW – drugi po Niemczech rynek lądowej energetyki wiatrowej w Europie.",
+   "it": "Circa 31 GW, il secondo mercato onshore d’Europa dopo la Germania.",
+   "pt": "Cerca de 31 GW – o segundo maior mercado de eólica terrestre da Europa, depois da Alemanha.",
+   "nl": "Ongeveer 31 GW – na Duitsland de grootste markt voor wind op land in Europa.",
+   "sv": "Cirka 31 GW – Europas näst största landbaserade marknad efter Tyskland."
+  }
+ },
+ {
+  "id": "dev-58",
+  "c": "dev",
+  "l": 1,
+  "a": 13.8,
+  "r": 15,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "2024 年全欧洲新装陆上风电大约多少 GW？",
+   "en": "Roughly how many GW of new onshore wind were installed across Europe in 2024?",
+   "de": "Wie viele GW Wind an Land wurden 2024 in ganz Europa ungefähr neu installiert?",
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre nueva se instalaron en toda Europa en 2024?",
+   "fr": "Combien de GW de nouvel éolien terrestre ont été installés environ dans toute l’Europe en 2024 ?",
+   "pl": "Ile GW nowych lądowych farm wiatrowych zainstalowano mniej więcej w całej Europie w 2024 r.?",
+   "it": "Quanti GW di nuovo eolico onshore sono stati installati circa in tutta Europa nel 2024?",
+   "pt": "Quantos GW de nova eólica terrestre foram instalados aproximadamente em toda a Europa em 2024?",
+   "nl": "Hoeveel GW nieuwe wind op land werd er in 2024 ongeveer in heel Europa gebouwd?",
+   "sv": "Ungefär hur många GW ny landbaserad vindkraft installerades i hela Europa 2024?"
+  },
+  "ex": {
+   "zh": "约 13.8 GW，占全部新增风电 16.4 GW 的 84%（WindEurope）。",
+   "en": "About 13.8 GW – 84% of the 16.4 GW of new wind capacity (WindEurope).",
+   "de": "Rund 13,8 GW – 84 % der 16,4 GW neuer Windleistung (WindEurope).",
+   "es": "Unos 13,8 GW, el 84 % de los 16,4 GW eólicos nuevos (WindEurope).",
+   "fr": "Environ 13,8 GW – 84 % des 16,4 GW de nouvelle capacité éolienne (WindEurope).",
+   "pl": "Około 13,8 GW – 84% z 16,4 GW nowej mocy wiatrowej (WindEurope).",
+   "it": "Circa 13,8 GW, l’84% dei 16,4 GW di nuova capacità eolica (WindEurope).",
+   "pt": "Cerca de 13,8 GW – 84% dos 16,4 GW de nova capacidade eólica (WindEurope).",
+   "nl": "Ongeveer 13,8 GW – 84% van de 16,4 GW nieuw windvermogen (WindEurope).",
+   "sv": "Cirka 13,8 GW – 84 % av de 16,4 GW ny vindkraft (WindEurope)."
+  }
+ },
+ {
+  "id": "dev-59",
+  "c": "dev",
+  "l": 2,
+  "a": 15,
+  "r": 15,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "英国（大不列颠）目前陆上风电装机大约是多少 GW？（2024–2025 年）",
+   "en": "Roughly how many GW of onshore wind does Great Britain have today (2024–2025)?",
+   "de": "Wie viele GW Wind an Land hat Großbritannien derzeit ungefähr (2024–2025)?",
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre tiene hoy Gran Bretaña (2024-2025)?",
+   "fr": "Combien de GW d’éolien terrestre la Grande-Bretagne compte-t-elle environ aujourd’hui (2024–2025) ?",
+   "pl": "Ile GW lądowej energetyki wiatrowej ma mniej więcej dziś Wielka Brytania (2024–2025)?",
+   "it": "Quanti GW di eolico onshore ha circa oggi la Gran Bretagna (2024–2025)?",
+   "pt": "Quantos GW de eólica terrestre tem aproximadamente hoje a Grã-Bretanha (2024–2025)?",
+   "nl": "Hoeveel GW wind op land heeft Groot-Brittannië nu ongeveer (2024–2025)?",
+   "sv": "Ungefär hur många GW landbaserad vindkraft har Storbritannien i dag (2024–2025)?"
+  },
+  "ex": {
+   "zh": "约 15 GW（政府文件称 14.2–14.8 GW），大部分在苏格兰。英国海上风电和陆上差不多大。",
+   "en": "About 15 GW (government figures: 14.2–14.8 GW), mostly in Scotland. UK offshore wind is about as large.",
+   "de": "Rund 15 GW (Regierungsangaben: 14,2–14,8 GW), überwiegend in Schottland. Offshore ist ähnlich groß.",
+   "es": "Unos 15 GW (cifras oficiales: 14,2–14,8 GW), sobre todo en Escocia. La eólica marina británica es de tamaño similar.",
+   "fr": "Environ 15 GW (chiffres officiels : 14,2–14,8 GW), surtout en Écosse. L’éolien en mer britannique est à peu près aussi grand.",
+   "pl": "Około 15 GW (dane rządowe: 14,2–14,8 GW), głównie w Szkocji. Brytyjskie farmy morskie mają podobną moc.",
+   "it": "Circa 15 GW (dati ufficiali: 14,2–14,8 GW), soprattutto in Scozia. L’offshore britannico è più o meno altrettanto grande.",
+   "pt": "Cerca de 15 GW (dados oficiais: 14,2–14,8 GW), sobretudo na Escócia. A eólica marítima britânica tem uma dimensão semelhante.",
+   "nl": "Ongeveer 15 GW (officiële cijfers: 14,2–14,8 GW), vooral in Schotland. Britse wind op zee is ongeveer even groot.",
+   "sv": "Cirka 15 GW (officiella siffror: 14,2–14,8 GW), mest i Skottland. Den brittiska havsbaserade vindkraften är ungefär lika stor."
+  }
+ },
+ {
+  "id": "dev-60",
+  "c": "dev",
+  "l": 2,
+  "a": 17,
+  "r": 17,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "2024 年底瑞典风电累计装机大约是多少 GW？",
+   "en": "Roughly how many GW of wind did Sweden have at the end of 2024?",
+   "de": "Wie viele GW Windenergie hatte Schweden Ende 2024 ungefähr?",
+   "es": "¿Aproximadamente cuántos GW eólicos tenía Suecia a finales de 2024?",
+   "fr": "Combien de GW d’éolien la Suède avait-elle environ fin 2024 ?",
+   "pl": "Ile GW energetyki wiatrowej miała mniej więcej Szwecja pod koniec 2024 r.?",
+   "it": "Quanti GW di eolico aveva circa la Svezia a fine 2024?",
+   "pt": "Quantos GW de eólica tinha aproximadamente a Suécia no fim de 2024?",
+   "nl": "Hoeveel GW wind had Zweden eind 2024 ongeveer?",
+   "sv": "Ungefär hur många GW vindkraft hade Sverige i slutet av 2024?"
+  },
+  "ex": {
+   "zh": "约 17 GW，几乎全是陆上，多在风资源好、人口少的北部。",
+   "en": "About 17 GW, almost all onshore, much of it in the windy, sparsely populated north.",
+   "de": "Rund 17 GW, fast alles an Land, viel davon im windreichen, dünn besiedelten Norden.",
+   "es": "Unos 17 GW, casi todo terrestre, gran parte en el norte, ventoso y poco poblado.",
+   "fr": "Environ 17 GW, presque tout sur terre, en grande partie dans le nord venteux et peu peuplé.",
+   "pl": "Około 17 GW, prawie wszystko na lądzie, w dużej części na wietrznej i słabo zaludnionej północy.",
+   "it": "Circa 17 GW, quasi tutto onshore, in gran parte nel nord ventoso e poco abitato.",
+   "pt": "Cerca de 17 GW, quase tudo em terra, em grande parte no norte ventoso e pouco povoado.",
+   "nl": "Ongeveer 17 GW, vrijwel alles op land, grotendeels in het winderige, dunbevolkte noorden.",
+   "sv": "Cirka 17 GW, nästan allt på land, mycket i det blåsiga och glesbefolkade norr."
+  }
+ },
+ {
+  "id": "dev-61",
+  "c": "dev",
+  "l": 2,
+  "a": 24,
+  "r": 25,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "2024 年底法国风电累计装机大约是多少 GW？（绝大部分是陆上）",
+   "en": "Roughly how many GW of wind did France have at the end of 2024? (mostly onshore)",
+   "de": "Wie viele GW Windenergie hatte Frankreich Ende 2024 ungefähr? (größtenteils an Land)",
+   "es": "¿Aproximadamente cuántos GW eólicos tenía Francia a finales de 2024? (en su mayoría terrestres)",
+   "fr": "Combien de GW d’éolien la France avait-elle environ fin 2024 ? (surtout sur terre)",
+   "pl": "Ile GW energetyki wiatrowej miała mniej więcej Francja pod koniec 2024 r.? (głównie na lądzie)",
+   "it": "Quanti GW di eolico aveva circa la Francia a fine 2024? (soprattutto onshore)",
+   "pt": "Quantos GW de eólica tinha aproximadamente a França no fim de 2024? (sobretudo em terra)",
+   "nl": "Hoeveel GW wind had Frankrijk eind 2024 ongeveer? (vooral op land)",
+   "sv": "Ungefär hur många GW vindkraft hade Frankrike i slutet av 2024? (mest på land)"
+  },
+  "ex": {
+   "zh": "约 24 GW，欧洲第四大风电国（REN21）。",
+   "en": "About 24 GW – Europe's fourth-largest wind fleet (REN21).",
+   "de": "Rund 24 GW – Europas viertgrößter Windpark-Bestand (REN21).",
+   "es": "Unos 24 GW, el cuarto mayor parque eólico de Europa (REN21).",
+   "fr": "Environ 24 GW – le quatrième parc éolien d’Europe (REN21).",
+   "pl": "Około 24 GW – czwarta co do wielkości flota wiatrowa w Europie (REN21).",
+   "it": "Circa 24 GW, il quarto parco eolico d’Europa (REN21).",
+   "pt": "Cerca de 24 GW – o quarto maior parque eólico da Europa (REN21).",
+   "nl": "Ongeveer 24 GW – het op drie na grootste windpark van Europa (REN21).",
+   "sv": "Cirka 24 GW – Europas fjärde största vindkraftsflotta (REN21)."
+  }
+ },
+ {
+  "id": "dev-62",
+  "c": "dev",
+  "l": 2,
+  "a": 10,
+  "r": 12,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "2024 年底波兰风电（全部是陆上）累计装机大约是多少 GW？",
+   "en": "Roughly how many GW of wind (all onshore) did Poland have at the end of 2024?",
+   "de": "Wie viele GW Windenergie (alles an Land) hatte Polen Ende 2024 ungefähr?",
+   "es": "¿Aproximadamente cuántos GW eólicos (todos terrestres) tenía Polonia a finales de 2024?",
+   "fr": "Combien de GW d’éolien (tout sur terre) la Pologne avait-elle environ fin 2024 ?",
+   "pl": "Ile GW energetyki wiatrowej (wszystko na lądzie) miała mniej więcej Polska pod koniec 2024 r.?",
+   "it": "Quanti GW di eolico (tutto onshore) aveva circa la Polonia a fine 2024?",
+   "pt": "Quantos GW de eólica (tudo em terra) tinha aproximadamente a Polónia no fim de 2024?",
+   "nl": "Hoeveel GW wind (alles op land) had Polen eind 2024 ongeveer?",
+   "sv": "Ungefär hur många GW vindkraft (allt på land) hade Polen i slutet av 2024?"
+  },
+  "ex": {
+   "zh": "约 10 GW。2023 年放宽距离规定后，陆上风电重新开始增长；第一个海上风电场预计 2026 年发电。",
+   "en": "About 10 GW. Growth restarted after the 2023 distance-rule reform; the first offshore farm is due around 2026.",
+   "de": "Rund 10 GW. Nach der Abstandsreform 2023 wächst der Markt wieder; der erste Offshore-Park soll etwa 2026 Strom liefern.",
+   "es": "Unos 10 GW. El crecimiento se reactivó tras la reforma de distancias de 2023; el primer parque marino llegaría hacia 2026.",
+   "fr": "Environ 10 GW. La croissance a repris après la réforme de la règle de distance en 2023 ; le premier parc en mer est attendu vers 2026.",
+   "pl": "Około 10 GW. Wzrost wrócił po reformie zasady odległości w 2023 r.; pierwsza farma morska ma ruszyć ok. 2026 r.",
+   "it": "Circa 10 GW. La crescita è ripartita dopo la riforma della regola delle distanze del 2023; il primo parco offshore è atteso intorno al 2026.",
+   "pt": "Cerca de 10 GW. O crescimento retomou após a reforma da regra de distância em 2023; o primeiro parque marítimo é esperado por volta de 2026.",
+   "nl": "Ongeveer 10 GW. De groei kwam terug na de hervorming van de afstandsregel in 2023; het eerste windpark op zee volgt rond 2026.",
+   "sv": "Cirka 10 GW. Tillväxten tog fart igen efter reformen av avståndsregeln 2023; den första havsbaserade parken väntas runt 2026."
+  }
+ },
+ {
+  "id": "dev-63",
+  "c": "dev",
+  "l": 2,
+  "a": 84,
+  "r": 50,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "2024 年欧洲新增风电中，陆上风电大约占百分之多少？",
+   "en": "Roughly what share of Europe's new wind capacity in 2024 was onshore?",
+   "de": "Welcher Anteil der 2024 in Europa neu installierten Windleistung entfiel ungefähr auf Wind an Land?",
+   "es": "¿Aproximadamente qué parte de la nueva potencia eólica de Europa en 2024 fue terrestre?",
+   "fr": "Quelle part environ de la nouvelle capacité éolienne installée en Europe en 2024 était terrestre ?",
+   "pl": "Jaka część nowej mocy wiatrowej zainstalowanej w Europie w 2024 r. przypadała mniej więcej na ląd?",
+   "it": "Che quota circa della nuova capacità eolica installata in Europa nel 2024 era onshore?",
+   "pt": "Que parte aproximada da nova capacidade eólica instalada na Europa em 2024 foi em terra?",
+   "nl": "Welk deel van het nieuwe windvermogen in Europa in 2024 stond ongeveer op land?",
+   "sv": "Ungefär hur stor del av Europas nya vindkraft 2024 var landbaserad?"
+  },
+  "ex": {
+   "zh": "约 84%（13.8 GW / 16.4 GW）。",
+   "en": "About 84% (13.8 GW of 16.4 GW).",
+   "de": "Rund 84 % (13,8 von 16,4 GW).",
+   "es": "Alrededor del 84 % (13,8 de 16,4 GW).",
+   "fr": "Environ 84 % (13,8 GW sur 16,4 GW).",
+   "pl": "Około 84% (13,8 GW z 16,4 GW).",
+   "it": "Circa l’84% (13,8 GW su 16,4 GW).",
+   "pt": "Cerca de 84% (13,8 GW de 16,4 GW).",
+   "nl": "Ongeveer 84% (13,8 GW van 16,4 GW).",
+   "sv": "Cirka 84 % (13,8 GW av 16,4 GW)."
+  }
+ },
+ {
+  "id": "dev-64",
+  "c": "dev",
+  "l": 3,
+  "a": 1.4,
+  "r": 3,
+  "u": {
+   "zh": "GW",
+   "en": "GW",
+   "de": "GW",
+   "es": "GW",
+   "fr": "GW",
+   "pl": "GW",
+   "it": "GW",
+   "pt": "GW",
+   "nl": "GW",
+   "sv": "GW"
+  },
+  "q": {
+   "zh": "2024 年芬兰新装了大约多少 GW 陆上风电？（欧洲第二多）",
+   "en": "Roughly how many GW of new onshore wind did Finland install in 2024? (second-most in Europe)",
+   "de": "Wie viele GW Wind an Land hat Finnland 2024 ungefähr neu installiert? (zweitmeiste in Europa)",
+   "es": "¿Aproximadamente cuántos GW de eólica terrestre nueva instaló Finlandia en 2024? (la segunda cifra de Europa)",
+   "fr": "Combien de GW de nouvel éolien terrestre la Finlande a-t-elle installés environ en 2024 ? (deuxième d’Europe)",
+   "pl": "Ile GW nowych lądowych farm wiatrowych zainstalowała mniej więcej Finlandia w 2024 r.? (druga w Europie)",
+   "it": "Quanti GW di nuovo eolico onshore ha installato circa la Finlandia nel 2024? (seconda in Europa)",
+   "pt": "Quantos GW de nova eólica terrestre instalou aproximadamente a Finlândia em 2024? (segunda na Europa)",
+   "nl": "Hoeveel GW nieuwe wind op land installeerde Finland ongeveer in 2024? (tweede van Europa)",
+   "sv": "Ungefär hur många GW ny landbaserad vindkraft installerade Finland 2024? (näst mest i Europa)"
+  },
+  "ex": {
+   "zh": "约 1.4 GW，陆上新增仅次于德国——以人口算非常惊人。",
+   "en": "About 1.4 GW – second only to Germany for new onshore capacity, remarkable for its population.",
+   "de": "Rund 1,4 GW – beim Onshore-Zubau nur hinter Deutschland, beachtlich für die Bevölkerungsgröße.",
+   "es": "Unos 1,4 GW, solo por detrás de Alemania en eólica terrestre nueva: notable para su población.",
+   "fr": "Environ 1,4 GW – deuxième derrière l’Allemagne pour le nouvel éolien terrestre, remarquable pour sa population.",
+   "pl": "Około 1,4 GW – druga po Niemczech pod względem nowych mocy na lądzie, imponujące jak na liczbę ludności.",
+   "it": "Circa 1,4 GW, seconda solo alla Germania per nuova capacità onshore: notevole per la sua popolazione.",
+   "pt": "Cerca de 1,4 GW – só atrás da Alemanha em nova capacidade terrestre, notável para a sua população.",
+   "nl": "Ongeveer 1,4 GW – alleen Duitsland bouwde meer wind op land, opvallend voor het aantal inwoners.",
+   "sv": "Cirka 1,4 GW – bara Tyskland byggde mer landbaserad vindkraft, anmärkningsvärt med tanke på befolkningen."
+  }
+ },
+ {
+  "id": "dev-65",
+  "c": "dev",
+  "l": 3,
+  "a": 33,
+  "r": 35,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "2024 年爱尔兰用电量中，风电大约占百分之多少？",
+   "en": "Roughly what share of Ireland's electricity consumption came from wind in 2024?",
+   "de": "Wie hoch war der Windanteil am Stromverbrauch in Irland 2024 ungefähr?",
+   "es": "¿Aproximadamente qué parte del consumo eléctrico de Irlanda cubrió la eólica en 2024?",
+   "fr": "Quelle part environ de la consommation d’électricité de l’Irlande provenait de l’éolien en 2024 ?",
+   "pl": "Jaka część zużycia energii elektrycznej w Irlandii pochodziła mniej więcej z wiatru w 2024 r.?",
+   "it": "Che quota circa dei consumi elettrici dell’Irlanda proveniva dall’eolico nel 2024?",
+   "pt": "Que parte aproximada do consumo de eletricidade da Irlanda veio da eólica em 2024?",
+   "nl": "Welk deel van het Ierse elektriciteitsverbruik kwam in 2024 ongeveer uit wind?",
+   "sv": "Ungefär hur stor del av Irlands elanvändning kom från vindkraft 2024?"
+  },
+  "ex": {
+   "zh": "约 33%，欧洲第二高，仅次于丹麦（WindEurope）。",
+   "en": "About 33% – second only to Denmark in Europe (WindEurope).",
+   "de": "Rund 33 % – europaweit nur hinter Dänemark (WindEurope).",
+   "es": "Alrededor del 33 %, solo por detrás de Dinamarca en Europa (WindEurope).",
+   "fr": "Environ 33 % – deuxième en Europe après le Danemark (WindEurope).",
+   "pl": "Około 33% – drugie miejsce w Europie po Danii (WindEurope).",
+   "it": "Circa il 33%, seconda in Europa dopo la Danimarca (WindEurope).",
+   "pt": "Cerca de 33% – a segunda maior da Europa, depois da Dinamarca (WindEurope).",
+   "nl": "Ongeveer 33% – na Denemarken het hoogste van Europa (WindEurope).",
+   "sv": "Cirka 33 % – näst högst i Europa efter Danmark (WindEurope)."
+  }
+ },
+ {
+  "id": "dev-66",
+  "c": "dev",
+  "l": 3,
+  "a": 4.5,
+  "r": 5,
+  "u": {
+   "zh": "MW",
+   "en": "MW",
+   "de": "MW",
+   "es": "MW",
+   "fr": "MW",
+   "pl": "MW",
+   "it": "MW",
+   "pt": "MW",
+   "nl": "MW",
+   "sv": "MW"
+  },
+  "q": {
+   "zh": "2023 年欧洲新装陆上风机的平均单机容量大约是多少 MW？",
+   "en": "Roughly what was the average size of new onshore turbines in Europe in 2023, in MW?",
+   "de": "Wie groß waren 2023 neu errichtete Onshore-Anlagen in Europa im Schnitt (MW)?",
+   "es": "¿Aproximadamente cuál fue la potencia media de los nuevos aerogeneradores terrestres en Europa en 2023, en MW?",
+   "fr": "Quelle était environ la taille moyenne des nouvelles éoliennes terrestres en Europe en 2023, en MW ?",
+   "pl": "Jaka była mniej więcej średnia moc nowych lądowych turbin w Europie w 2023 r., w MW?",
+   "it": "Qual era circa la taglia media delle nuove turbine onshore in Europa nel 2023, in MW?",
+   "pt": "Qual era aproximadamente a dimensão média das novas turbinas terrestres na Europa em 2023, em MW?",
+   "nl": "Wat was ongeveer de gemiddelde grootte van nieuwe turbines op land in Europa in 2023, in MW?",
+   "sv": "Ungefär hur stora var nya landbaserade vindkraftverk i Europa i snitt 2023, i MW?"
+  },
+  "ex": {
+   "zh": "约 4.5 MW（2022 年为 4.1 MW）。立陶宛、罗马尼亚 2024 年平均已到 6.3 MW。",
+   "en": "About 4.5 MW (4.1 MW in 2022). Lithuania and Romania averaged 6.3 MW in 2024.",
+   "de": "Rund 4,5 MW (2022: 4,1 MW). Litauen und Rumänien kamen 2024 schon auf 6,3 MW.",
+   "es": "Unos 4,5 MW (4,1 MW en 2022). Lituania y Rumanía promediaron 6,3 MW en 2024.",
+   "fr": "Environ 4,5 MW (4,1 MW en 2022). La Lituanie et la Roumanie atteignaient 6,3 MW en moyenne en 2024.",
+   "pl": "Około 4,5 MW (4,1 MW w 2022 r.). Litwa i Rumunia miały w 2024 r. średnio 6,3 MW.",
+   "it": "Circa 4,5 MW (4,1 MW nel 2022). Lituania e Romania hanno raggiunto in media 6,3 MW nel 2024.",
+   "pt": "Cerca de 4,5 MW (4,1 MW em 2022). A Lituânia e a Roménia chegaram a 6,3 MW em média em 2024.",
+   "nl": "Ongeveer 4,5 MW (4,1 MW in 2022). Litouwen en Roemenië haalden in 2024 gemiddeld 6,3 MW.",
+   "sv": "Cirka 4,5 MW (4,1 MW 2022). Litauen och Rumänien låg på i snitt 6,3 MW 2024."
+  }
+ },
+ {
+  "id": "fin-67",
+  "c": "fin",
+  "l": 1,
+  "a": 240,
+  "r": 240,
+  "u": {
+   "zh": "千€",
+   "en": "k€",
+   "de": "Tsd. €",
+   "es": "miles de €",
+   "fr": "k€",
+   "pl": "tys. €",
+   "it": "mila €",
+   "pt": "mil €",
+   "nl": "k€",
+   "sv": "tusen €"
+  },
+  "q": {
+   "zh": "算一算：风电场一年发电 3,000 MWh，电价 80 €/MWh，年收入是多少千欧元？",
+   "en": "Calculate: a wind farm produces 3,000 MWh a year at 80 €/MWh – what is its annual revenue in thousand euros?",
+   "de": "Rechnen Sie: Ein Windpark erzeugt 3.000 MWh pro Jahr zu 80 €/MWh – wie hoch ist der Jahresumsatz in Tausend Euro?",
+   "es": "Calcula: un parque produce 3.000 MWh al año a 80 €/MWh. ¿Cuántos miles de euros ingresa al año?",
+   "fr": "Calculez : un parc produit 3 000 MWh par an à 80 €/MWh – quel est son chiffre d’affaires annuel en milliers d’euros ?",
+   "pl": "Policz: farma produkuje 3000 MWh rocznie po 80 €/MWh – ile wynosi roczny przychód w tysiącach euro?",
+   "it": "Calcola: un parco produce 3.000 MWh l’anno a 80 €/MWh – qual è il ricavo annuo in migliaia di euro?",
+   "pt": "Calcule: um parque produz 3.000 MWh por ano a 80 €/MWh – qual é a receita anual em milhares de euros?",
+   "nl": "Reken uit: een windpark produceert 3.000 MWh per jaar tegen 80 €/MWh – wat is de jaaromzet in duizenden euro’s?",
+   "sv": "Räkna: en vindpark producerar 3 000 MWh per år till 80 €/MWh – vad blir årsintäkten i tusen euro?"
+  },
+  "ex": {
+   "zh": "3,000 × 80 = 240,000 €。",
+   "en": "3,000 × 80 = €240,000.",
+   "de": "3.000 × 80 = 240.000 €.",
+   "es": "3.000 × 80 = 240.000 €.",
+   "fr": "3 000 × 80 = 240 000 €.",
+   "pl": "3000 × 80 = 240 000 €.",
+   "it": "3.000 × 80 = 240.000 €.",
+   "pt": "3.000 × 80 = 240.000 €.",
+   "nl": "3.000 × 80 = 240.000 €.",
+   "sv": "3 000 × 80 = 240 000 €."
+  }
+ },
+ {
+  "id": "fin-68",
+  "c": "fin",
+  "l": 1,
+  "a": 25,
+  "r": 30,
+  "u": {
+   "zh": "%",
+   "en": "%",
+   "de": "%",
+   "es": "%",
+   "fr": "%",
+   "pl": "%",
+   "it": "%",
+   "pt": "%",
+   "nl": "%",
+   "sv": "%"
+  },
+  "q": {
+   "zh": "算一算：风机一年满负荷运行 2,190 小时（一年共 8,760 小时），容量系数是百分之多少？",
+   "en": "Calculate: a turbine runs 2,190 full-load hours a year (out of 8,760). What is its capacity factor, in %?",
+   "de": "Rechnen Sie: 2.190 Volllaststunden pro Jahr (von 8.760) – wie hoch ist der Kapazitätsfaktor in %?",
+   "es": "Calcula: un aerogenerador funciona 2.190 horas a plena carga al año (de 8.760). ¿Cuál es su factor de capacidad, en %?",
+   "fr": "Calculez : une éolienne tourne 2 190 heures pleine charge par an (sur 8 760). Quel est son facteur de charge, en % ?",
+   "pl": "Policz: turbina pracuje 2190 godzin z pełną mocą rocznie (z 8760). Jaki jest jej współczynnik wykorzystania mocy, w %?",
+   "it": "Calcola: una turbina lavora 2.190 ore a pieno carico l’anno (su 8.760). Qual è il fattore di capacità, in %?",
+   "pt": "Calcule: uma turbina funciona 2.190 horas a plena carga por ano (em 8.760). Qual é o fator de capacidade, em %?",
+   "nl": "Reken uit: een turbine draait 2.190 vollasturen per jaar (van de 8.760). Wat is de capaciteitsfactor, in %?",
+   "sv": "Räkna: ett verk går 2 190 fullasttimmar per år (av 8 760). Vilken är kapacitetsfaktorn, i %?"
+  },
+  "ex": {
+   "zh": "2,190 ÷ 8,760 = 25%。欧洲 2024 年新建陆上风电场预计容量系数在 30–45%（WindEurope）。",
+   "en": "2,190 ÷ 8,760 = 25%. New European onshore farms built in 2024 are expected to reach 30–45% (WindEurope).",
+   "de": "2.190 ÷ 8.760 = 25 %. Neue Onshore-Parks in Europa (2024) sollen 30–45 % erreichen (WindEurope).",
+   "es": "2.190 ÷ 8.760 = 25 %. Los parques terrestres europeos de 2024 deberían alcanzar un 30–45 % (WindEurope).",
+   "fr": "2 190 ÷ 8 760 = 25 %. Les nouveaux parcs terrestres européens de 2024 devraient atteindre 30–45 % (WindEurope).",
+   "pl": "2190 ÷ 8760 = 25%. Nowe europejskie farmy lądowe z 2024 r. mają osiągać 30–45% (WindEurope).",
+   "it": "2.190 ÷ 8.760 = 25%. I nuovi parchi onshore europei del 2024 dovrebbero arrivare al 30–45% (WindEurope).",
+   "pt": "2.190 ÷ 8.760 = 25%. Os novos parques terrestres europeus de 2024 devem chegar a 30–45% (WindEurope).",
+   "nl": "2.190 ÷ 8.760 = 25%. Nieuwe Europese windparken op land uit 2024 halen naar verwachting 30–45% (WindEurope).",
+   "sv": "2 190 ÷ 8 760 = 25 %. Nya europeiska landbaserade parker från 2024 väntas nå 30–45 % (WindEurope)."
+  }
+ },
+ {
+  "id": "fin-69",
+  "c": "fin",
+  "l": 2,
+  "a": 3.4,
+  "r": 5,
+  "u": {
+   "zh": "美分/kWh",
+   "en": "US¢/kWh",
+   "de": "US-Cent/kWh",
+   "es": "cént. USD/kWh",
+   "fr": "cents US/kWh",
+   "pl": "centów USD/kWh",
+   "it": "cent USD/kWh",
+   "pt": "cênt. USD/kWh",
+   "nl": "dollarcent/kWh",
+   "sv": "US-cent/kWh"
+  },
+  "q": {
+   "zh": "根据 IRENA，2024 年全球新建陆上风电的加权平均度电成本 (LCOE) 大约是多少美分/kWh？",
+   "en": "According to IRENA, what was the global weighted-average LCOE of new onshore wind in 2024, in US cents/kWh?",
+   "de": "Wie hoch waren laut IRENA die weltweit gewichteten Stromgestehungskosten neuer Onshore-Windparks 2024 (US-Cent/kWh)?",
+   "es": "Según IRENA, ¿cuál fue el LCOE medio ponderado mundial de la nueva eólica terrestre en 2024, en céntimos de USD/kWh?",
+   "fr": "Selon l’IRENA, quel était le LCOE moyen pondéré mondial du nouvel éolien terrestre en 2024, en cents US/kWh ?",
+   "pl": "Według IRENA, ile wynosił w 2024 r. średni ważony globalny LCOE nowych lądowych farm wiatrowych, w centach USD/kWh?",
+   "it": "Secondo IRENA, qual era nel 2024 il LCOE medio ponderato mondiale del nuovo eolico onshore, in cent USD/kWh?",
+   "pt": "Segundo a IRENA, qual foi o LCOE médio ponderado mundial da nova eólica terrestre em 2024, em cêntimos USD/kWh?",
+   "nl": "Wat was volgens IRENA in 2024 de wereldwijd gewogen gemiddelde LCOE van nieuwe wind op land, in dollarcent/kWh?",
+   "sv": "Enligt IRENA, vilken var den globala viktade genomsnittliga LCOE för ny landbaserad vindkraft 2024, i US-cent/kWh?"
+  },
+  "ex": {
+   "zh": "约 3.4 美分（0.034 USD/kWh），是最便宜的新增电源；欧洲平均约 5.2 美分。",
+   "en": "About 3.4 cents (USD 0.034/kWh) – the cheapest new source of power. Europe's average was about 5.2 cents.",
+   "de": "Rund 3,4 US-Cent (0,034 USD/kWh) – die günstigste neue Stromquelle. In Europa etwa 5,2 US-Cent.",
+   "es": "Unos 3,4 céntimos (0,034 USD/kWh), la fuente nueva más barata. En Europa, unos 5,2 céntimos.",
+   "fr": "Environ 3,4 cents (0,034 USD/kWh) – la nouvelle source d’électricité la moins chère. La moyenne européenne était d’environ 5,2 cents.",
+   "pl": "Około 3,4 centa (0,034 USD/kWh) – najtańsze nowe źródło energii. Średnia w Europie wynosiła ok. 5,2 centa.",
+   "it": "Circa 3,4 cent (0,034 USD/kWh), la nuova fonte di elettricità più economica. La media europea era circa 5,2 cent.",
+   "pt": "Cerca de 3,4 cêntimos (0,034 USD/kWh) – a nova fonte de eletricidade mais barata. A média europeia foi de cerca de 5,2 cêntimos.",
+   "nl": "Ongeveer 3,4 cent (0,034 USD/kWh) – de goedkoopste nieuwe stroombron. Het Europese gemiddelde was zo’n 5,2 cent.",
+   "sv": "Cirka 3,4 cent (0,034 USD/kWh) – den billigaste nya kraftkällan. Snittet i Europa var omkring 5,2 cent."
+  }
+ },
+ {
+  "id": "fin-70",
+  "c": "fin",
+  "l": 2,
+  "a": 4.3,
+  "r": 6,
+  "u": {
+   "zh": "ct/kWh",
+   "en": "ct/kWh",
+   "de": "ct/kWh",
+   "es": "ct/kWh",
+   "fr": "ct/kWh",
+   "pl": "ct/kWh",
+   "it": "ct/kWh",
+   "pt": "ct/kWh",
+   "nl": "ct/kWh",
+   "sv": "ct/kWh"
+  },
+  "q": {
+   "zh": "Fraunhofer ISE 2024 年研究：德国陆上风电度电成本区间的下限大约是多少 ct/kWh？",
+   "en": "Fraunhofer ISE (2024): what is the lower end of the LCOE range for onshore wind in Germany, in ct/kWh?",
+   "de": "Fraunhofer ISE (2024): Wo liegt die Untergrenze der Stromgestehungskosten für Wind an Land in Deutschland (ct/kWh)?",
+   "es": "Fraunhofer ISE (2024): ¿cuál es el límite inferior del LCOE de la eólica terrestre en Alemania, en ct/kWh?",
+   "fr": "Fraunhofer ISE (2024) : quelle est la borne basse du LCOE de l’éolien terrestre en Allemagne, en ct/kWh ?",
+   "pl": "Fraunhofer ISE (2024): jaka jest dolna granica LCOE lądowej energetyki wiatrowej w Niemczech, w ct/kWh?",
+   "it": "Fraunhofer ISE (2024): qual è il limite inferiore del LCOE dell’eolico onshore in Germania, in ct/kWh?",
+   "pt": "Fraunhofer ISE (2024): qual é o limite inferior do LCOE da eólica terrestre na Alemanha, em ct/kWh?",
+   "nl": "Fraunhofer ISE (2024): wat is de ondergrens van de LCOE van wind op land in Duitsland, in ct/kWh?",
+   "sv": "Fraunhofer ISE (2024): vilken är den nedre gränsen för LCOE för landbaserad vindkraft i Tyskland, i ct/kWh?"
+  },
+  "ex": {
+   "zh": "4.3–9.2 ct/kWh，取决于风资源；与新建大型光伏一样，是德国最便宜的电源之一。",
+   "en": "4.3–9.2 ct/kWh depending on the wind resource – among the cheapest sources in Germany, alongside utility-scale solar.",
+   "de": "4,3–9,2 ct/kWh je nach Standort – zusammen mit PV-Freiflächen die günstigste Erzeugung in Deutschland.",
+   "es": "4,3–9,2 ct/kWh según el recurso eólico: junto con la fotovoltaica en suelo, de lo más barato en Alemania.",
+   "fr": "4,3–9,2 ct/kWh selon la ressource en vent – parmi les sources les moins chères en Allemagne, avec le solaire au sol.",
+   "pl": "4,3–9,2 ct/kWh, zależnie od wietrzności – jedno z najtańszych źródeł w Niemczech, obok dużych farm PV.",
+   "it": "4,3–9,2 ct/kWh a seconda della ventosità, tra le fonti più economiche in Germania insieme al fotovoltaico a terra.",
+   "pt": "4,3–9,2 ct/kWh consoante o recurso eólico – entre as fontes mais baratas na Alemanha, a par do solar no solo.",
+   "nl": "4,3–9,2 ct/kWh, afhankelijk van de windlocatie – samen met grootschalige zonneparken een van de goedkoopste bronnen in Duitsland.",
+   "sv": "4,3–9,2 ct/kWh beroende på vindläge – bland de billigaste källorna i Tyskland, tillsammans med markbaserad solkraft."
+  }
+ },
+ {
+  "id": "fin-71",
+  "c": "fin",
+  "l": 2,
+  "a": 7.5,
+  "r": 10,
+  "u": {
+   "zh": "百万€",
+   "en": "M€",
+   "de": "Mio. €",
+   "es": "M€",
+   "fr": "M€",
+   "pl": "mln €",
+   "it": "mln €",
+   "pt": "M€",
+   "nl": "mln €",
+   "sv": "mn €"
+  },
+  "q": {
+   "zh": "算一算：风电项目总投资 3,000 万欧元，银行贷款占 75%，股东需要出多少百万欧元？",
+   "en": "Calculate: a €30 m project is 75% debt-financed. How much equity is needed, in million euros?",
+   "de": "Rechnen Sie: Ein Projekt für 30 Mio. € wird zu 75 % mit Krediten finanziert. Wie viel Eigenkapital ist nötig (Mio. €)?",
+   "es": "Calcula: un proyecto de 30 M€ se financia en un 75 % con deuda. ¿Cuánto capital propio hace falta, en M€?",
+   "fr": "Calculez : un projet de 30 M€ est financé à 75 % par la dette. Combien de fonds propres faut-il, en millions d’euros ?",
+   "pl": "Policz: projekt za 30 mln € jest w 75% finansowany długiem. Ile kapitału własnego potrzeba, w milionach euro?",
+   "it": "Calcola: un progetto da 30 mln € è finanziato al 75% con debito. Quanto capitale proprio serve, in milioni di euro?",
+   "pt": "Calcule: um projeto de 30 M€ é financiado a 75% com dívida. Quanto capital próprio é necessário, em milhões de euros?",
+   "nl": "Reken uit: een project van 30 mln € wordt voor 75% met schuld gefinancierd. Hoeveel eigen vermogen is nodig, in miljoen euro?",
+   "sv": "Räkna: ett projekt på 30 mn € lånefinansieras till 75 %. Hur mycket eget kapital behövs, i miljoner euro?"
+  },
+  "ex": {
+   "zh": "30 × 25% = 7.5 百万欧元。",
+   "en": "30 × 25% = €7.5 m.",
+   "de": "30 × 25 % = 7,5 Mio. €.",
+   "es": "30 × 25 % = 7,5 M€.",
+   "fr": "30 × 25 % = 7,5 M€.",
+   "pl": "30 × 25% = 7,5 mln €.",
+   "it": "30 × 25% = 7,5 mln €.",
+   "pt": "30 × 25% = 7,5 M€.",
+   "nl": "30 × 25% = 7,5 mln €.",
+   "sv": "30 × 25 % = 7,5 mn €."
+  }
+ },
+ {
+  "id": "fin-72",
+  "c": "fin",
+  "l": 2,
+  "a": 15,
+  "r": 30,
+  "u": {
+   "zh": "€/MWh",
+   "en": "€/MWh",
+   "de": "€/MWh",
+   "es": "€/MWh",
+   "fr": "€/MWh",
+   "pl": "€/MWh",
+   "it": "€/MWh",
+   "pt": "€/MWh",
+   "nl": "€/MWh",
+   "sv": "€/MWh"
+  },
+  "q": {
+   "zh": "算一算：差价合约 (CfD) 约定价 70 €/MWh，市场电价 55 €/MWh，发电方每 MWh 能拿到多少补差？",
+   "en": "Calculate: a CfD has a strike price of 70 €/MWh and the market price is 55 €/MWh. How much top-up does the generator get per MWh?",
+   "de": "Rechnen Sie: CfD-Zielwert 70 €/MWh, Marktpreis 55 €/MWh – wie viel Ausgleich bekommt der Betreiber pro MWh?",
+   "es": "Calcula: un CfD tiene un precio de ejercicio de 70 €/MWh y el mercado está a 55 €/MWh. ¿Cuánto recibe el generador por MWh?",
+   "fr": "Calculez : un CfD a un prix d’exercice de 70 €/MWh et le prix de marché est de 55 €/MWh. Combien le producteur reçoit-il en complément par MWh ?",
+   "pl": "Policz: CfD ma cenę referencyjną 70 €/MWh, a cena rynkowa wynosi 55 €/MWh. Ile dopłaty dostaje wytwórca za MWh?",
+   "it": "Calcola: un CfD ha uno strike di 70 €/MWh e il prezzo di mercato è 55 €/MWh. Quanto riceve il produttore come integrazione per MWh?",
+   "pt": "Calcule: um CfD tem preço de exercício de 70 €/MWh e o preço de mercado é 55 €/MWh. Quanto recebe o produtor como complemento por MWh?",
+   "nl": "Reken uit: een CfD heeft een uitoefenprijs van 70 €/MWh en de marktprijs is 55 €/MWh. Hoeveel aanvulling krijgt de producent per MWh?",
+   "sv": "Räkna: ett CfD har lösenpriset 70 €/MWh och marknadspriset är 55 €/MWh. Hur mycket påfyllnad får producenten per MWh?"
+  },
+  "ex": {
+   "zh": "70 − 55 = 15 €/MWh。如果市场价是 85，双向 CfD 下发电方要退还 15。",
+   "en": "70 − 55 = 15 €/MWh. If the market were at 85, under a two-way CfD the generator would pay back 15.",
+   "de": "70 − 55 = 15 €/MWh. Läge der Markt bei 85, müsste der Betreiber beim zweiseitigen CfD 15 zurückzahlen.",
+   "es": "70 − 55 = 15 €/MWh. Si el mercado estuviera a 85, con un CfD bidireccional el generador devolvería 15.",
+   "fr": "70 − 55 = 15 €/MWh. Si le marché était à 85, avec un CfD bidirectionnel le producteur rembourserait 15.",
+   "pl": "70 − 55 = 15 €/MWh. Gdyby rynek był na poziomie 85, przy dwustronnym CfD wytwórca oddałby 15.",
+   "it": "70 − 55 = 15 €/MWh. Se il mercato fosse a 85, con un CfD bidirezionale il produttore restituirebbe 15.",
+   "pt": "70 − 55 = 15 €/MWh. Se o mercado estivesse a 85, com um CfD bidirecional o produtor devolveria 15.",
+   "nl": "70 − 55 = 15 €/MWh. Stond de markt op 85, dan zou de producent bij een tweezijdige CfD 15 terugbetalen.",
+   "sv": "70 − 55 = 15 €/MWh. Om marknaden låg på 85 skulle producenten med ett dubbelriktat CfD betala tillbaka 15."
+  }
+ },
+ {
+  "id": "fin-73",
+  "c": "fin",
+  "l": 3,
+  "a": 1041,
+  "r": 1000,
+  "u": {
+   "zh": "美元/kW",
+   "en": "USD/kW",
+   "de": "USD/kW",
+   "es": "USD/kW",
+   "fr": "USD/kW",
+   "pl": "USD/kW",
+   "it": "USD/kW",
+   "pt": "USD/kW",
+   "nl": "USD/kW",
+   "sv": "USD/kW"
+  },
+  "q": {
+   "zh": "根据 IRENA，2024 年全球陆上风电的平均总安装成本大约是多少美元/kW？",
+   "en": "According to IRENA, what was the global average total installed cost of onshore wind in 2024, in USD/kW?",
+   "de": "Wie hoch waren laut IRENA die weltweiten durchschnittlichen Gesamtinvestitionskosten für Wind an Land 2024 (USD/kW)?",
+   "es": "Según IRENA, ¿cuál fue el coste total medio de instalación de la eólica terrestre en el mundo en 2024, en USD/kW?",
+   "fr": "Selon l’IRENA, quel était le coût total d’installation moyen mondial de l’éolien terrestre en 2024, en USD/kW ?",
+   "pl": "Według IRENA, ile wynosił w 2024 r. globalny średni całkowity koszt instalacji lądowej farmy wiatrowej, w USD/kW?",
+   "it": "Secondo IRENA, qual era nel 2024 il costo totale medio mondiale di installazione dell’eolico onshore, in USD/kW?",
+   "pt": "Segundo a IRENA, qual foi o custo total médio mundial de instalação da eólica terrestre em 2024, em USD/kW?",
+   "nl": "Wat waren volgens IRENA in 2024 de wereldwijd gemiddelde totale installatiekosten van wind op land, in USD/kW?",
+   "sv": "Enligt IRENA, vilken var den globala genomsnittliga totala installationskostnaden för landbaserad vindkraft 2024, i USD/kW?"
+  },
+  "ex": {
+   "zh": "约 1,041 美元/kW。全球平均被中国拉低，欧洲项目通常贵得多。",
+   "en": "About USD 1,041/kW. The global average is pulled down by China; European projects usually cost much more.",
+   "de": "Rund 1.041 USD/kW. China drückt den weltweiten Schnitt; Projekte in Europa sind meist deutlich teurer.",
+   "es": "Unos 1.041 USD/kW. China rebaja la media mundial; los proyectos europeos suelen costar bastante más.",
+   "fr": "Environ 1 041 USD/kW. La moyenne mondiale est tirée vers le bas par la Chine ; les projets européens coûtent généralement bien plus.",
+   "pl": "Około 1041 USD/kW. Średnią obniżają Chiny; projekty w Europie zwykle kosztują znacznie więcej.",
+   "it": "Circa 1.041 USD/kW. La media mondiale è abbassata dalla Cina; i progetti europei di solito costano molto di più.",
+   "pt": "Cerca de 1.041 USD/kW. A média mundial é puxada para baixo pela China; os projetos europeus costumam custar bastante mais.",
+   "nl": "Ongeveer 1.041 USD/kW. China drukt het wereldgemiddelde; Europese projecten kosten meestal veel meer.",
+   "sv": "Cirka 1 041 USD/kW. Kina drar ned världssnittet; europeiska projekt kostar oftast betydligt mer."
+  }
+ },
+ {
+  "id": "fin-74",
+  "c": "fin",
+  "l": 3,
+  "a": 56,
+  "r": 60,
+  "u": {
+   "zh": "百万€",
+   "en": "M€",
+   "de": "Mio. €",
+   "es": "M€",
+   "fr": "M€",
+   "pl": "mln €",
+   "it": "mln €",
+   "pt": "M€",
+   "nl": "mln €",
+   "sv": "mn €"
+  },
+  "q": {
+   "zh": "算一算：50 MW 风电场，每 MW 投资 150 万欧元，贷款占 75%，贷款大约是多少百万欧元？",
+   "en": "Calculate: a 50 MW wind farm costs €1.5 m per MW and is 75% debt-financed. Roughly how much debt is that, in million euros?",
+   "de": "Rechnen Sie: Ein 50-MW-Park kostet 1,5 Mio. € pro MW, 75 % Fremdkapital – wie hoch ist der Kredit ungefähr (Mio. €)?",
+   "es": "Calcula: un parque de 50 MW cuesta 1,5 M€ por MW y se financia en un 75 % con deuda. ¿Cuánta deuda es, aproximadamente, en M€?",
+   "fr": "Calculez : un parc de 50 MW coûte 1,5 M€ par MW et est financé à 75 % par la dette. Quel est environ le montant de la dette, en millions d’euros ?",
+   "pl": "Policz: farma 50 MW kosztuje 1,5 mln € za MW i jest w 75% finansowana długiem. Ile mniej więcej wynosi dług, w milionach euro?",
+   "it": "Calcola: un parco da 50 MW costa 1,5 mln € per MW ed è finanziato al 75% con debito. Quanto debito è circa, in milioni di euro?",
+   "pt": "Calcule: um parque de 50 MW custa 1,5 M€ por MW e é financiado a 75% com dívida. Quanto é aproximadamente a dívida, em milhões de euros?",
+   "nl": "Reken uit: een windpark van 50 MW kost 1,5 mln € per MW en wordt voor 75% met schuld gefinancierd. Hoeveel schuld is dat ongeveer, in miljoen euro?",
+   "sv": "Räkna: en vindpark på 50 MW kostar 1,5 mn € per MW och lånefinansieras till 75 %. Ungefär hur stort är lånet, i miljoner euro?"
+  },
+  "ex": {
+   "zh": "50 × 1.5 = 75 百万欧元总投资；× 75% ≈ 56 百万欧元贷款。",
+   "en": "50 × 1.5 = €75 m total; × 75% ≈ €56 m of debt.",
+   "de": "50 × 1,5 = 75 Mio. € gesamt; × 75 % ≈ 56 Mio. € Kredit.",
+   "es": "50 × 1,5 = 75 M€ en total; × 75 % ≈ 56 M€ de deuda.",
+   "fr": "50 × 1,5 = 75 M€ au total ; × 75 % ≈ 56 M€ de dette.",
+   "pl": "50 × 1,5 = 75 mln € łącznie; × 75% ≈ 56 mln € długu.",
+   "it": "50 × 1,5 = 75 mln € in totale; × 75% ≈ 56 mln € di debito.",
+   "pt": "50 × 1,5 = 75 M€ no total; × 75% ≈ 56 M€ de dívida.",
+   "nl": "50 × 1,5 = 75 mln € in totaal; × 75% ≈ 56 mln € schuld.",
+   "sv": "50 × 1,5 = 75 mn € totalt; × 75 % ≈ 56 mn € i lån."
+  }
+ },
+ {
+  "id": "fin-75",
+  "c": "fin",
+  "l": 3,
+  "a": 1500,
+  "r": 1500,
+  "u": {
+   "zh": "千€",
+   "en": "k€",
+   "de": "Tsd. €",
+   "es": "miles de €",
+   "fr": "k€",
+   "pl": "tys. €",
+   "it": "mila €",
+   "pt": "mil €",
+   "nl": "k€",
+   "sv": "tusen €"
+  },
+  "q": {
+   "zh": "算一算：10 MW 风电场，年满负荷 2,500 小时，PPA 电价 60 €/MWh，年收入是多少千欧元？",
+   "en": "Calculate: a 10 MW wind farm, 2,500 full-load hours a year, PPA price 60 €/MWh – annual revenue in thousand euros?",
+   "de": "Rechnen Sie: 10-MW-Park, 2.500 Volllaststunden, PPA-Preis 60 €/MWh – Jahresumsatz in Tausend Euro?",
+   "es": "Calcula: parque de 10 MW, 2.500 horas a plena carga al año, PPA a 60 €/MWh. ¿Ingresos anuales en miles de euros?",
+   "fr": "Calculez : parc de 10 MW, 2 500 heures pleine charge par an, PPA à 60 €/MWh – chiffre d’affaires annuel en milliers d’euros ?",
+   "pl": "Policz: farma 10 MW, 2500 godzin pracy z pełną mocą rocznie, cena PPA 60 €/MWh – roczny przychód w tysiącach euro?",
+   "it": "Calcola: parco da 10 MW, 2.500 ore a pieno carico l’anno, prezzo PPA 60 €/MWh – ricavo annuo in migliaia di euro?",
+   "pt": "Calcule: parque de 10 MW, 2.500 horas a plena carga por ano, preço PPA 60 €/MWh – receita anual em milhares de euros?",
+   "nl": "Reken uit: windpark van 10 MW, 2.500 vollasturen per jaar, PPA-prijs 60 €/MWh – jaaromzet in duizenden euro’s?",
+   "sv": "Räkna: vindpark på 10 MW, 2 500 fullasttimmar per år, PPA-pris 60 €/MWh – årsintäkt i tusen euro?"
+  },
+  "ex": {
+   "zh": "10 × 2,500 = 25,000 MWh；× 60 = 1,500,000 €。",
+   "en": "10 × 2,500 = 25,000 MWh; × 60 = €1,500,000.",
+   "de": "10 × 2.500 = 25.000 MWh; × 60 = 1.500.000 €.",
+   "es": "10 × 2.500 = 25.000 MWh; × 60 = 1.500.000 €.",
+   "fr": "10 × 2 500 = 25 000 MWh ; × 60 = 1 500 000 €.",
+   "pl": "10 × 2500 = 25 000 MWh; × 60 = 1 500 000 €.",
+   "it": "10 × 2.500 = 25.000 MWh; × 60 = 1.500.000 €.",
+   "pt": "10 × 2.500 = 25.000 MWh; × 60 = 1.500.000 €.",
+   "nl": "10 × 2.500 = 25.000 MWh; × 60 = 1.500.000 €.",
+   "sv": "10 × 2 500 = 25 000 MWh; × 60 = 1 500 000 €."
+  }
+ },
+ {
+  "id": "fin-76",
+  "c": "fin",
+  "l": 3,
+  "a": 5.2,
+  "r": 6,
+  "u": {
+   "zh": "美分/kWh",
+   "en": "US¢/kWh",
+   "de": "US-Cent/kWh",
+   "es": "cént. USD/kWh",
+   "fr": "cents US/kWh",
+   "pl": "centów USD/kWh",
+   "it": "cent USD/kWh",
+   "pt": "cênt. USD/kWh",
+   "nl": "dollarcent/kWh",
+   "sv": "US-cent/kWh"
+  },
+  "q": {
+   "zh": "根据 IRENA，2024 年欧洲陆上风电的平均度电成本大约是多少美分/kWh？",
+   "en": "According to IRENA, roughly what was the average LCOE of onshore wind in Europe in 2024, in US cents/kWh?",
+   "de": "Wie hoch waren laut IRENA die durchschnittlichen Stromgestehungskosten für Wind an Land in Europa 2024 (US-Cent/kWh)?",
+   "es": "Según IRENA, ¿aproximadamente cuál fue el LCOE medio de la eólica terrestre en Europa en 2024, en céntimos de USD/kWh?",
+   "fr": "Selon l’IRENA, quel était environ le LCOE moyen de l’éolien terrestre en Europe en 2024, en cents US/kWh ?",
+   "pl": "Według IRENA, ile mniej więcej wynosił w 2024 r. średni LCOE lądowej energetyki wiatrowej w Europie, w centach USD/kWh?",
+   "it": "Secondo IRENA, qual era circa il LCOE medio dell’eolico onshore in Europa nel 2024, in cent USD/kWh?",
+   "pt": "Segundo a IRENA, qual foi aproximadamente o LCOE médio da eólica terrestre na Europa em 2024, em cêntimos USD/kWh?",
+   "nl": "Wat was volgens IRENA ongeveer de gemiddelde LCOE van wind op land in Europa in 2024, in dollarcent/kWh?",
+   "sv": "Enligt IRENA, ungefär vilken var den genomsnittliga LCOE för landbaserad vindkraft i Europa 2024, i US-cent/kWh?"
+  },
+  "ex": {
+   "zh": "约 5.2 美分，和非洲差不多，但成本结构不同；高于全球平均 3.4 美分。",
+   "en": "About 5.2 cents – similar to Africa but with a different cost structure, and above the global 3.4 cents.",
+   "de": "Rund 5,2 US-Cent – ähnlich wie in Afrika, aber mit anderer Kostenstruktur; über dem Weltschnitt von 3,4.",
+   "es": "Unos 5,2 céntimos, parecido a África pero con otra estructura de costes, y por encima de los 3,4 mundiales.",
+   "fr": "Environ 5,2 cents – comparable à l’Afrique mais avec une autre structure de coûts, et au-dessus de la moyenne mondiale de 3,4 cents.",
+   "pl": "Około 5,2 centa – podobnie jak w Afryce, ale przy innej strukturze kosztów, i powyżej średniej światowej 3,4 centa.",
+   "it": "Circa 5,2 cent, simile all’Africa ma con una struttura dei costi diversa, e sopra la media mondiale di 3,4 cent.",
+   "pt": "Cerca de 5,2 cêntimos – semelhante a África mas com outra estrutura de custos, e acima da média mundial de 3,4 cêntimos.",
+   "nl": "Ongeveer 5,2 cent – vergelijkbaar met Afrika, maar met een andere kostenopbouw, en boven het wereldgemiddelde van 3,4 cent.",
+   "sv": "Cirka 5,2 cent – i nivå med Afrika men med en annan kostnadsstruktur, och över världssnittet på 3,4 cent."
   }
  }
 ]
